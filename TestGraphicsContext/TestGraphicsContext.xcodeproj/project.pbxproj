@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		6264AD0D11E0737F007541B6 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACC911E0737F007541B6 /* CTGradient.m */; };
+		6264AD0E11E0737F007541B6 /* PaintInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACCB11E0737F007541B6 /* PaintInstance.m */; };
+		6264AD0F11E0737F007541B6 /* PouredDroplet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACCD11E0737F007541B6 /* PouredDroplet.m */; };
+		6264AD1011E0737F007541B6 /* QAbstractContextModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACCF11E0737F007541B6 /* QAbstractContextModifier.m */; };
+		6264AD1111E0737F007541B6 /* QArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACD111E0737F007541B6 /* QArc.m */; };
+		6264AD1211E0737F007541B6 /* QBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACD311E0737F007541B6 /* QBezierCurve.m */; };
+		6264AD1311E0737F007541B6 /* QBlendMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACD511E0737F007541B6 /* QBlendMode.m */; };
+		6264AD1411E0737F007541B6 /* QColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACD811E0737F007541B6 /* QColor.m */; };
+		6264AD1511E0737F007541B6 /* QContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACDA11E0737F007541B6 /* QContext.m */; };
+		6264AD1611E0737F007541B6 /* QFillColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACDE11E0737F007541B6 /* QFillColor.m */; };
+		6264AD1711E0737F007541B6 /* QFilledRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACE011E0737F007541B6 /* QFilledRectangle.m */; };
+		6264AD1811E0737F007541B6 /* QFillPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACE211E0737F007541B6 /* QFillPath.m */; };
+		6264AD1911E0737F007541B6 /* QImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACE511E0737F007541B6 /* QImage.m */; };
+		6264AD1A11E0737F007541B6 /* QJoinCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACE711E0737F007541B6 /* QJoinCap.m */; };
+		6264AD1B11E0737F007541B6 /* QLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACE911E0737F007541B6 /* QLine.m */; };
+		6264AD1C11E0737F007541B6 /* QLineCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACEB11E0737F007541B6 /* QLineCap.m */; };
+		6264AD1D11E0737F007541B6 /* QModifierQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACED11E0737F007541B6 /* QModifierQueue.m */; };
+		6264AD1E11E0737F007541B6 /* QMove.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACEF11E0737F007541B6 /* QMove.m */; };
+		6264AD1F11E0737F007541B6 /* QPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACF111E0737F007541B6 /* QPoint.m */; };
+		6264AD2011E0737F007541B6 /* QRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACF311E0737F007541B6 /* QRectangle.m */; };
+		6264AD2111E0737F007541B6 /* QRestoreContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACF511E0737F007541B6 /* QRestoreContext.m */; };
+		6264AD2211E0737F007541B6 /* QSaveContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACF711E0737F007541B6 /* QSaveContext.m */; };
+		6264AD2311E0737F007541B6 /* QShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACF911E0737F007541B6 /* QShadow.m */; };
+		6264AD2411E0737F007541B6 /* QShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACFB11E0737F007541B6 /* QShape.m */; };
+		6264AD2511E0737F007541B6 /* QStrokeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACFD11E0737F007541B6 /* QStrokeColor.m */; };
+		6264AD2611E0737F007541B6 /* QStrokedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264ACFF11E0737F007541B6 /* QStrokedRectangle.m */; };
+		6264AD2711E0737F007541B6 /* QStrokePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD0111E0737F007541B6 /* QStrokePath.m */; };
+		6264AD2811E0737F007541B6 /* QStrokeWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD0311E0737F007541B6 /* QStrokeWidth.m */; };
+		6264AD2911E0737F007541B6 /* QTestYinYang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD0511E0737F007541B6 /* QTestYinYang.m */; };
+		6264AD2A11E0737F007541B6 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 6264AD0811E0737F007541B6 /* README */; };
+		6264AD2B11E0737F007541B6 /* UImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD0A11E0737F007541B6 /* UImageCategory.m */; };
+		6264AD2C11E0737F007541B6 /* Vector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD0C11E0737F007541B6 /* Vector2D.m */; };
+		629F52DE0FF5CF92002EFD1F /* CustomDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 629F52DD0FF5CF92002EFD1F /* CustomDrawing.m */; };
+		62D66FB20FFA190F00B60B0A /* QuartzTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* TestGraphicsContext_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGraphicsContext_Prefix.pch; sourceTree = "<group>"; };
+		6264ACC811E0737F007541B6 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTGradient.h; path = ../QuartzCocoaLib/CTGradient.h; sourceTree = SOURCE_ROOT; };
+		6264ACC911E0737F007541B6 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTGradient.m; path = ../QuartzCocoaLib/CTGradient.m; sourceTree = SOURCE_ROOT; };
+		6264ACCA11E0737F007541B6 /* PaintInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintInstance.h; path = ../QuartzCocoaLib/PaintInstance.h; sourceTree = SOURCE_ROOT; };
+		6264ACCB11E0737F007541B6 /* PaintInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintInstance.m; path = ../QuartzCocoaLib/PaintInstance.m; sourceTree = SOURCE_ROOT; };
+		6264ACCC11E0737F007541B6 /* PouredDroplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PouredDroplet.h; path = ../QuartzCocoaLib/PouredDroplet.h; sourceTree = SOURCE_ROOT; };
+		6264ACCD11E0737F007541B6 /* PouredDroplet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PouredDroplet.m; path = ../QuartzCocoaLib/PouredDroplet.m; sourceTree = SOURCE_ROOT; };
+		6264ACCE11E0737F007541B6 /* QAbstractContextModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QAbstractContextModifier.h; path = ../QuartzCocoaLib/QAbstractContextModifier.h; sourceTree = SOURCE_ROOT; };
+		6264ACCF11E0737F007541B6 /* QAbstractContextModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QAbstractContextModifier.m; path = ../QuartzCocoaLib/QAbstractContextModifier.m; sourceTree = SOURCE_ROOT; };
+		6264ACD011E0737F007541B6 /* QArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QArc.h; path = ../QuartzCocoaLib/QArc.h; sourceTree = SOURCE_ROOT; };
+		6264ACD111E0737F007541B6 /* QArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QArc.m; path = ../QuartzCocoaLib/QArc.m; sourceTree = SOURCE_ROOT; };
+		6264ACD211E0737F007541B6 /* QBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBezierCurve.h; path = ../QuartzCocoaLib/QBezierCurve.h; sourceTree = SOURCE_ROOT; };
+		6264ACD311E0737F007541B6 /* QBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBezierCurve.m; path = ../QuartzCocoaLib/QBezierCurve.m; sourceTree = SOURCE_ROOT; };
+		6264ACD411E0737F007541B6 /* QBlendMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBlendMode.h; path = ../QuartzCocoaLib/QBlendMode.h; sourceTree = SOURCE_ROOT; };
+		6264ACD511E0737F007541B6 /* QBlendMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBlendMode.m; path = ../QuartzCocoaLib/QBlendMode.m; sourceTree = SOURCE_ROOT; };
+		6264ACD611E0737F007541B6 /* QBoundedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBoundedObject.h; path = ../QuartzCocoaLib/QBoundedObject.h; sourceTree = SOURCE_ROOT; };
+		6264ACD711E0737F007541B6 /* QColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QColor.h; path = ../QuartzCocoaLib/QColor.h; sourceTree = SOURCE_ROOT; };
+		6264ACD811E0737F007541B6 /* QColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QColor.m; path = ../QuartzCocoaLib/QColor.m; sourceTree = SOURCE_ROOT; };
+		6264ACD911E0737F007541B6 /* QContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QContext.h; path = ../QuartzCocoaLib/QContext.h; sourceTree = SOURCE_ROOT; };
+		6264ACDA11E0737F007541B6 /* QContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QContext.m; path = ../QuartzCocoaLib/QContext.m; sourceTree = SOURCE_ROOT; };
+		6264ACDB11E0737F007541B6 /* QContextModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QContextModifier.h; path = ../QuartzCocoaLib/QContextModifier.h; sourceTree = SOURCE_ROOT; };
+		6264ACDC11E0737F007541B6 /* QEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QEnums.h; path = ../QuartzCocoaLib/QEnums.h; sourceTree = SOURCE_ROOT; };
+		6264ACDD11E0737F007541B6 /* QFillColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFillColor.h; path = ../QuartzCocoaLib/QFillColor.h; sourceTree = SOURCE_ROOT; };
+		6264ACDE11E0737F007541B6 /* QFillColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFillColor.m; path = ../QuartzCocoaLib/QFillColor.m; sourceTree = SOURCE_ROOT; };
+		6264ACDF11E0737F007541B6 /* QFilledRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFilledRectangle.h; path = ../QuartzCocoaLib/QFilledRectangle.h; sourceTree = SOURCE_ROOT; };
+		6264ACE011E0737F007541B6 /* QFilledRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFilledRectangle.m; path = ../QuartzCocoaLib/QFilledRectangle.m; sourceTree = SOURCE_ROOT; };
+		6264ACE111E0737F007541B6 /* QFillPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFillPath.h; path = ../QuartzCocoaLib/QFillPath.h; sourceTree = SOURCE_ROOT; };
+		6264ACE211E0737F007541B6 /* QFillPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFillPath.m; path = ../QuartzCocoaLib/QFillPath.m; sourceTree = SOURCE_ROOT; };
+		6264ACE311E0737F007541B6 /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = ../QuartzCocoaLib/QFramework.h; sourceTree = SOURCE_ROOT; };
+		6264ACE411E0737F007541B6 /* QImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QImage.h; path = ../QuartzCocoaLib/QImage.h; sourceTree = SOURCE_ROOT; };
+		6264ACE511E0737F007541B6 /* QImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QImage.m; path = ../QuartzCocoaLib/QImage.m; sourceTree = SOURCE_ROOT; };
+		6264ACE611E0737F007541B6 /* QJoinCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QJoinCap.h; path = ../QuartzCocoaLib/QJoinCap.h; sourceTree = SOURCE_ROOT; };
+		6264ACE711E0737F007541B6 /* QJoinCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QJoinCap.m; path = ../QuartzCocoaLib/QJoinCap.m; sourceTree = SOURCE_ROOT; };
+		6264ACE811E0737F007541B6 /* QLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QLine.h; path = ../QuartzCocoaLib/QLine.h; sourceTree = SOURCE_ROOT; };
+		6264ACE911E0737F007541B6 /* QLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QLine.m; path = ../QuartzCocoaLib/QLine.m; sourceTree = SOURCE_ROOT; };
+		6264ACEA11E0737F007541B6 /* QLineCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QLineCap.h; path = ../QuartzCocoaLib/QLineCap.h; sourceTree = SOURCE_ROOT; };
+		6264ACEB11E0737F007541B6 /* QLineCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QLineCap.m; path = ../QuartzCocoaLib/QLineCap.m; sourceTree = SOURCE_ROOT; };
+		6264ACEC11E0737F007541B6 /* QModifierQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QModifierQueue.h; path = ../QuartzCocoaLib/QModifierQueue.h; sourceTree = SOURCE_ROOT; };
+		6264ACED11E0737F007541B6 /* QModifierQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QModifierQueue.m; path = ../QuartzCocoaLib/QModifierQueue.m; sourceTree = SOURCE_ROOT; };
+		6264ACEE11E0737F007541B6 /* QMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMove.h; path = ../QuartzCocoaLib/QMove.h; sourceTree = SOURCE_ROOT; };
+		6264ACEF11E0737F007541B6 /* QMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMove.m; path = ../QuartzCocoaLib/QMove.m; sourceTree = SOURCE_ROOT; };
+		6264ACF011E0737F007541B6 /* QPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPoint.h; path = ../QuartzCocoaLib/QPoint.h; sourceTree = SOURCE_ROOT; };
+		6264ACF111E0737F007541B6 /* QPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPoint.m; path = ../QuartzCocoaLib/QPoint.m; sourceTree = SOURCE_ROOT; };
+		6264ACF211E0737F007541B6 /* QRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRectangle.h; path = ../QuartzCocoaLib/QRectangle.h; sourceTree = SOURCE_ROOT; };
+		6264ACF311E0737F007541B6 /* QRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRectangle.m; path = ../QuartzCocoaLib/QRectangle.m; sourceTree = SOURCE_ROOT; };
+		6264ACF411E0737F007541B6 /* QRestoreContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRestoreContext.h; path = ../QuartzCocoaLib/QRestoreContext.h; sourceTree = SOURCE_ROOT; };
+		6264ACF511E0737F007541B6 /* QRestoreContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRestoreContext.m; path = ../QuartzCocoaLib/QRestoreContext.m; sourceTree = SOURCE_ROOT; };
+		6264ACF611E0737F007541B6 /* QSaveContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSaveContext.h; path = ../QuartzCocoaLib/QSaveContext.h; sourceTree = SOURCE_ROOT; };
+		6264ACF711E0737F007541B6 /* QSaveContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSaveContext.m; path = ../QuartzCocoaLib/QSaveContext.m; sourceTree = SOURCE_ROOT; };
+		6264ACF811E0737F007541B6 /* QShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QShadow.h; path = ../QuartzCocoaLib/QShadow.h; sourceTree = SOURCE_ROOT; };
+		6264ACF911E0737F007541B6 /* QShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QShadow.m; path = ../QuartzCocoaLib/QShadow.m; sourceTree = SOURCE_ROOT; };
+		6264ACFA11E0737F007541B6 /* QShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QShape.h; path = ../QuartzCocoaLib/QShape.h; sourceTree = SOURCE_ROOT; };
+		6264ACFB11E0737F007541B6 /* QShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QShape.m; path = ../QuartzCocoaLib/QShape.m; sourceTree = SOURCE_ROOT; };
+		6264ACFC11E0737F007541B6 /* QStrokeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokeColor.h; path = ../QuartzCocoaLib/QStrokeColor.h; sourceTree = SOURCE_ROOT; };
+		6264ACFD11E0737F007541B6 /* QStrokeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokeColor.m; path = ../QuartzCocoaLib/QStrokeColor.m; sourceTree = SOURCE_ROOT; };
+		6264ACFE11E0737F007541B6 /* QStrokedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokedRectangle.h; path = ../QuartzCocoaLib/QStrokedRectangle.h; sourceTree = SOURCE_ROOT; };
+		6264ACFF11E0737F007541B6 /* QStrokedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokedRectangle.m; path = ../QuartzCocoaLib/QStrokedRectangle.m; sourceTree = SOURCE_ROOT; };
+		6264AD0011E0737F007541B6 /* QStrokePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokePath.h; path = ../QuartzCocoaLib/QStrokePath.h; sourceTree = SOURCE_ROOT; };
+		6264AD0111E0737F007541B6 /* QStrokePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokePath.m; path = ../QuartzCocoaLib/QStrokePath.m; sourceTree = SOURCE_ROOT; };
+		6264AD0211E0737F007541B6 /* QStrokeWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokeWidth.h; path = ../QuartzCocoaLib/QStrokeWidth.h; sourceTree = SOURCE_ROOT; };
+		6264AD0311E0737F007541B6 /* QStrokeWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokeWidth.m; path = ../QuartzCocoaLib/QStrokeWidth.m; sourceTree = SOURCE_ROOT; };
+		6264AD0411E0737F007541B6 /* QTestYinYang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QTestYinYang.h; path = ../QuartzCocoaLib/QTestYinYang.h; sourceTree = SOURCE_ROOT; };
+		6264AD0511E0737F007541B6 /* QTestYinYang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QTestYinYang.m; path = ../QuartzCocoaLib/QTestYinYang.m; sourceTree = SOURCE_ROOT; };
+		6264AD0611E0737F007541B6 /* QuartzCocoaLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuartzCocoaLib.h; path = ../QuartzCocoaLib/QuartzCocoaLib.h; sourceTree = SOURCE_ROOT; };
+		6264AD0711E0737F007541B6 /* QVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QVisitor.h; path = ../QuartzCocoaLib/QVisitor.h; sourceTree = SOURCE_ROOT; };
+		6264AD0811E0737F007541B6 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ../QuartzCocoaLib/README; sourceTree = SOURCE_ROOT; };
+		6264AD0911E0737F007541B6 /* UImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UImageCategory.h; path = ../QuartzCocoaLib/UImageCategory.h; sourceTree = SOURCE_ROOT; };
+		6264AD0A11E0737F007541B6 /* UImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UImageCategory.m; path = ../QuartzCocoaLib/UImageCategory.m; sourceTree = SOURCE_ROOT; };
+		6264AD0B11E0737F007541B6 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2D.h; path = ../QuartzCocoaLib/Vector2D.h; sourceTree = SOURCE_ROOT; };
+		6264AD0C11E0737F007541B6 /* Vector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vector2D.m; path = ../QuartzCocoaLib/Vector2D.m; sourceTree = SOURCE_ROOT; };
+		629F52DC0FF5CF92002EFD1F /* CustomDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDrawing.h; sourceTree = "<group>"; };
+		629F52DD0FF5CF92002EFD1F /* CustomDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDrawing.m; sourceTree = "<group>"; };
+		62D66FB00FFA190F00B60B0A /* QuartzTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzTestView.h; sourceTree = "<group>"; };
+		62D66FB10FFA190F00B60B0A /* QuartzTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzTestView.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TestGraphicsContext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGraphicsContext.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				629F52DC0FF5CF92002EFD1F /* CustomDrawing.h */,
+				629F52DD0FF5CF92002EFD1F /* CustomDrawing.m */,
+				62D66FB00FFA190F00B60B0A /* QuartzTestView.h */,
+				62D66FB10FFA190F00B60B0A /* QuartzTestView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TestGraphicsContext.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TestGraphicsContext */ = {
+			isa = PBXGroup;
+			children = (
+				62CD063F0FFB885E0001D102 /* QuartzCocoaLib */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = TestGraphicsContext;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TestGraphicsContext_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62CD063F0FFB885E0001D102 /* QuartzCocoaLib */ = {
+			isa = PBXGroup;
+			children = (
+				6264ACC811E0737F007541B6 /* CTGradient.h */,
+				6264ACC911E0737F007541B6 /* CTGradient.m */,
+				6264ACCA11E0737F007541B6 /* PaintInstance.h */,
+				6264ACCB11E0737F007541B6 /* PaintInstance.m */,
+				6264ACCC11E0737F007541B6 /* PouredDroplet.h */,
+				6264ACCD11E0737F007541B6 /* PouredDroplet.m */,
+				6264ACCE11E0737F007541B6 /* QAbstractContextModifier.h */,
+				6264ACCF11E0737F007541B6 /* QAbstractContextModifier.m */,
+				6264ACD011E0737F007541B6 /* QArc.h */,
+				6264ACD111E0737F007541B6 /* QArc.m */,
+				6264ACD211E0737F007541B6 /* QBezierCurve.h */,
+				6264ACD311E0737F007541B6 /* QBezierCurve.m */,
+				6264ACD411E0737F007541B6 /* QBlendMode.h */,
+				6264ACD511E0737F007541B6 /* QBlendMode.m */,
+				6264ACD611E0737F007541B6 /* QBoundedObject.h */,
+				6264ACD711E0737F007541B6 /* QColor.h */,
+				6264ACD811E0737F007541B6 /* QColor.m */,
+				6264ACD911E0737F007541B6 /* QContext.h */,
+				6264ACDA11E0737F007541B6 /* QContext.m */,
+				6264ACDB11E0737F007541B6 /* QContextModifier.h */,
+				6264ACDC11E0737F007541B6 /* QEnums.h */,
+				6264ACDD11E0737F007541B6 /* QFillColor.h */,
+				6264ACDE11E0737F007541B6 /* QFillColor.m */,
+				6264ACDF11E0737F007541B6 /* QFilledRectangle.h */,
+				6264ACE011E0737F007541B6 /* QFilledRectangle.m */,
+				6264ACE111E0737F007541B6 /* QFillPath.h */,
+				6264ACE211E0737F007541B6 /* QFillPath.m */,
+				6264ACE311E0737F007541B6 /* QFramework.h */,
+				6264ACE411E0737F007541B6 /* QImage.h */,
+				6264ACE511E0737F007541B6 /* QImage.m */,
+				6264ACE611E0737F007541B6 /* QJoinCap.h */,
+				6264ACE711E0737F007541B6 /* QJoinCap.m */,
+				6264ACE811E0737F007541B6 /* QLine.h */,
+				6264ACE911E0737F007541B6 /* QLine.m */,
+				6264ACEA11E0737F007541B6 /* QLineCap.h */,
+				6264ACEB11E0737F007541B6 /* QLineCap.m */,
+				6264ACEC11E0737F007541B6 /* QModifierQueue.h */,
+				6264ACED11E0737F007541B6 /* QModifierQueue.m */,
+				6264ACEE11E0737F007541B6 /* QMove.h */,
+				6264ACEF11E0737F007541B6 /* QMove.m */,
+				6264ACF011E0737F007541B6 /* QPoint.h */,
+				6264ACF111E0737F007541B6 /* QPoint.m */,
+				6264ACF211E0737F007541B6 /* QRectangle.h */,
+				6264ACF311E0737F007541B6 /* QRectangle.m */,
+				6264ACF411E0737F007541B6 /* QRestoreContext.h */,
+				6264ACF511E0737F007541B6 /* QRestoreContext.m */,
+				6264ACF611E0737F007541B6 /* QSaveContext.h */,
+				6264ACF711E0737F007541B6 /* QSaveContext.m */,
+				6264ACF811E0737F007541B6 /* QShadow.h */,
+				6264ACF911E0737F007541B6 /* QShadow.m */,
+				6264ACFA11E0737F007541B6 /* QShape.h */,
+				6264ACFB11E0737F007541B6 /* QShape.m */,
+				6264ACFC11E0737F007541B6 /* QStrokeColor.h */,
+				6264ACFD11E0737F007541B6 /* QStrokeColor.m */,
+				6264ACFE11E0737F007541B6 /* QStrokedRectangle.h */,
+				6264ACFF11E0737F007541B6 /* QStrokedRectangle.m */,
+				6264AD0011E0737F007541B6 /* QStrokePath.h */,
+				6264AD0111E0737F007541B6 /* QStrokePath.m */,
+				6264AD0211E0737F007541B6 /* QStrokeWidth.h */,
+				6264AD0311E0737F007541B6 /* QStrokeWidth.m */,
+				6264AD0411E0737F007541B6 /* QTestYinYang.h */,
+				6264AD0511E0737F007541B6 /* QTestYinYang.m */,
+				6264AD0611E0737F007541B6 /* QuartzCocoaLib.h */,
+				6264AD0711E0737F007541B6 /* QVisitor.h */,
+				6264AD0811E0737F007541B6 /* README */,
+				6264AD0911E0737F007541B6 /* UImageCategory.h */,
+				6264AD0A11E0737F007541B6 /* UImageCategory.m */,
+				6264AD0B11E0737F007541B6 /* Vector2D.h */,
+				6264AD0C11E0737F007541B6 /* Vector2D.m */,
+			);
+			name = QuartzCocoaLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* TestGraphicsContext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TestGraphicsContext" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestGraphicsContext;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TestGraphicsContext;
+			productReference = 8D1107320486CEB800E47090 /* TestGraphicsContext.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestGraphicsContext" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TestGraphicsContext */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TestGraphicsContext */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				6264AD2A11E0737F007541B6 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				629F52DE0FF5CF92002EFD1F /* CustomDrawing.m in Sources */,
+				62D66FB20FFA190F00B60B0A /* QuartzTestView.m in Sources */,
+				6264AD0D11E0737F007541B6 /* CTGradient.m in Sources */,
+				6264AD0E11E0737F007541B6 /* PaintInstance.m in Sources */,
+				6264AD0F11E0737F007541B6 /* PouredDroplet.m in Sources */,
+				6264AD1011E0737F007541B6 /* QAbstractContextModifier.m in Sources */,
+				6264AD1111E0737F007541B6 /* QArc.m in Sources */,
+				6264AD1211E0737F007541B6 /* QBezierCurve.m in Sources */,
+				6264AD1311E0737F007541B6 /* QBlendMode.m in Sources */,
+				6264AD1411E0737F007541B6 /* QColor.m in Sources */,
+				6264AD1511E0737F007541B6 /* QContext.m in Sources */,
+				6264AD1611E0737F007541B6 /* QFillColor.m in Sources */,
+				6264AD1711E0737F007541B6 /* QFilledRectangle.m in Sources */,
+				6264AD1811E0737F007541B6 /* QFillPath.m in Sources */,
+				6264AD1911E0737F007541B6 /* QImage.m in Sources */,
+				6264AD1A11E0737F007541B6 /* QJoinCap.m in Sources */,
+				6264AD1B11E0737F007541B6 /* QLine.m in Sources */,
+				6264AD1C11E0737F007541B6 /* QLineCap.m in Sources */,
+				6264AD1D11E0737F007541B6 /* QModifierQueue.m in Sources */,
+				6264AD1E11E0737F007541B6 /* QMove.m in Sources */,
+				6264AD1F11E0737F007541B6 /* QPoint.m in Sources */,
+				6264AD2011E0737F007541B6 /* QRectangle.m in Sources */,
+				6264AD2111E0737F007541B6 /* QRestoreContext.m in Sources */,
+				6264AD2211E0737F007541B6 /* QSaveContext.m in Sources */,
+				6264AD2311E0737F007541B6 /* QShadow.m in Sources */,
+				6264AD2411E0737F007541B6 /* QShape.m in Sources */,
+				6264AD2511E0737F007541B6 /* QStrokeColor.m in Sources */,
+				6264AD2611E0737F007541B6 /* QStrokedRectangle.m in Sources */,
+				6264AD2711E0737F007541B6 /* QStrokePath.m in Sources */,
+				6264AD2811E0737F007541B6 /* QStrokeWidth.m in Sources */,
+				6264AD2911E0737F007541B6 /* QTestYinYang.m in Sources */,
+				6264AD2B11E0737F007541B6 /* UImageCategory.m in Sources */,
+				6264AD2C11E0737F007541B6 /* Vector2D.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../QuartzCocoaLib/build/Debug\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestGraphicsContext_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TestGraphicsContext;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../QuartzCocoaLib/build/Debug\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestGraphicsContext_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TestGraphicsContext;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TestGraphicsContext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestGraphicsContext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

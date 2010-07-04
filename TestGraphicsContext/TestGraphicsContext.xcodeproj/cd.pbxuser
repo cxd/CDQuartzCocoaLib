@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 629F52C00FF5CB8A002EFD1F /* TestGraphicsContext */;
+		activeTarget = 8D1107260486CEB800E47090 /* TestGraphicsContext */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* TestGraphicsContext */,
+		);
+		breakpoints = (
+			62CD065A0FFB8A420001D102 /* QuartzTestView.m:26 */,
+		);
+		codeSenseManager = 629F52D90FF5CB9F002EFD1F /* Code sense */;
+		executables = (
+			629F52C00FF5CB8A002EFD1F /* TestGraphicsContext */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					526,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 299922253;
+			PBXWorkspaceStateSaveDate = 299922253;
+		};
+		perUserProjectItems = {
+			6204332310B79FEE003D394D = 6204332310B79FEE003D394D /* PBXTextBookmark */;
+			6204332410B79FEE003D394D = 6204332410B79FEE003D394D /* PBXTextBookmark */;
+			62507E1410DE5BEE0011E250 = 62507E1410DE5BEE0011E250 /* PBXTextBookmark */;
+			62507E1510DE5BEE0011E250 = 62507E1510DE5BEE0011E250 /* PBXTextBookmark */;
+			62507E1610DE5BEE0011E250 = 62507E1610DE5BEE0011E250 /* PBXTextBookmark */;
+			629F530F0FF5FDCD002EFD1F = 629F530F0FF5FDCD002EFD1F /* PBXTextBookmark */;
+			62CD065C0FFB8A4B0001D102 = 62CD065C0FFB8A4B0001D102 /* PBXTextBookmark */;
+			62D670E10FFA3E0900B60B0A = 62D670E10FFA3E0900B60B0A /* PBXTextBookmark */;
+		};
+		sourceControlManager = 629F52D80FF5CB9F002EFD1F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{251, 0}";
+			sepNavVisRange = "{0, 252}";
+		};
+	};
+	6204332310B79FEE003D394D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 629F52DC0FF5CF92002EFD1F /* CustomDrawing.h */;
+		name = "CustomDrawing.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 211;
+		vrLoc = 0;
+	};
+	6204332410B79FEE003D394D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FB00FFA190F00B60B0A /* QuartzTestView.h */;
+		name = "QuartzTestView.h: 10";
+		rLen = 47;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 261;
+		vrLoc = 0;
+	};
+	62507E1410DE5BEE0011E250 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 629F52DD0FF5CF92002EFD1F /* CustomDrawing.m */;
+		name = "CustomDrawing.m: 74";
+		rLen = 0;
+		rLoc = 2232;
+		rType = 0;
+		vrLen = 809;
+		vrLoc = 1575;
+	};
+	62507E1510DE5BEE0011E250 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
+		name = "QuartzTestView.m: 49";
+		rLen = 0;
+		rLoc = 1605;
+		rType = 0;
+		vrLen = 1404;
+		vrLoc = 1110;
+	};
+	62507E1610DE5BEE0011E250 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
+		name = "QuartzTestView.m: 49";
+		rLen = 0;
+		rLoc = 1605;
+		rType = 0;
+		vrLen = 1404;
+		vrLoc = 1110;
+	};
+	629F52C00FF5CB8A002EFD1F /* TestGraphicsContext */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = TestGraphicsContext;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	629F52D80FF5CB9F002EFD1F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	629F52D90FF5CB9F002EFD1F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	629F52DC0FF5CF92002EFD1F /* CustomDrawing.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 438}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 211}";
+		};
+	};
+	629F52DD0FF5CF92002EFD1F /* CustomDrawing.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 1131}}";
+			sepNavSelRange = "{2232, 0}";
+			sepNavVisRange = "{1575, 809}";
+		};
+	};
+	629F530F0FF5FDCD002EFD1F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 14";
+		rLen = 0;
+		rLoc = 251;
+		rType = 0;
+		vrLen = 252;
+		vrLoc = 0;
+	};
+	62CD065A0FFB8A420001D102 /* QuartzTestView.m:26 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
+		functionName = "-drawRect:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 26;
+		location = TestGraphicsContext;
+		modificationTime = 283005176.524915;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62CD065C0FFB8A4B0001D102 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62CD065D0FFB8A4B0001D102 /* Cocoa.h */;
+		name = "Cocoa.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 485;
+		vrLoc = 0;
+	};
+	62CD065D0FFB8A4B0001D102 /* Cocoa.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Cocoa.h;
+		path = /System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h;
+		sourceTree = "<absolute>";
+	};
+	62D66FB00FFA190F00B60B0A /* QuartzTestView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 438}}";
+			sepNavSelRange = "{165, 47}";
+			sepNavVisRange = "{0, 261}";
+		};
+	};
+	62D66FB10FFA190F00B60B0A /* QuartzTestView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {866, 923}}";
+			sepNavSelRange = "{1605, 0}";
+			sepNavVisRange = "{1110, 1404}";
+		};
+	};
+	62D670E10FFA3E0900B60B0A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D670E20FFA3E0900B60B0A /* CGContext.h */;
+		name = "CGContext.h: 541";
+		rLen = 114;
+		rLoc = 20642;
+		rType = 0;
+		vrLen = 1339;
+		vrLoc = 20154;
+	};
+	62D670E20FFA3E0900B60B0A /* CGContext.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CGContext.h;
+		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers/CGContext.h;
+		sourceTree = "<absolute>";
+	};
+	8D1107260486CEB800E47090 /* TestGraphicsContext */ = {
+		activeExec = 0;
+		executables = (
+			629F52C00FF5CB8A002EFD1F /* TestGraphicsContext */,
+		);
+	};
+}
