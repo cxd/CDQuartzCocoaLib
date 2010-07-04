@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* TestQuartzIPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TestQuartzIPhoneAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* TestQuartzIPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TestQuartzIPhoneViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* TestQuartzIPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TestQuartzIPhoneViewController.m */; };
+		6264AD8311E073C3007541B6 /* PaintInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4011E073C3007541B6 /* PaintInstance.m */; };
+		6264AD8411E073C3007541B6 /* PouredDroplet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4211E073C3007541B6 /* PouredDroplet.m */; };
+		6264AD8511E073C3007541B6 /* QAbstractContextModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4411E073C3007541B6 /* QAbstractContextModifier.m */; };
+		6264AD8611E073C3007541B6 /* QArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4611E073C3007541B6 /* QArc.m */; };
+		6264AD8711E073C3007541B6 /* QBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4811E073C3007541B6 /* QBezierCurve.m */; };
+		6264AD8811E073C3007541B6 /* QBlendMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4A11E073C3007541B6 /* QBlendMode.m */; };
+		6264AD8911E073C3007541B6 /* QColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4D11E073C3007541B6 /* QColor.m */; };
+		6264AD8A11E073C3007541B6 /* QContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD4F11E073C3007541B6 /* QContext.m */; };
+		6264AD8B11E073C3007541B6 /* QFillColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD5311E073C3007541B6 /* QFillColor.m */; };
+		6264AD8C11E073C3007541B6 /* QFilledRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD5511E073C3007541B6 /* QFilledRectangle.m */; };
+		6264AD8D11E073C3007541B6 /* QFillPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD5711E073C3007541B6 /* QFillPath.m */; };
+		6264AD8E11E073C3007541B6 /* QImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD5A11E073C3007541B6 /* QImage.m */; };
+		6264AD8F11E073C3007541B6 /* QJoinCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD5C11E073C3007541B6 /* QJoinCap.m */; };
+		6264AD9011E073C3007541B6 /* QLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD5E11E073C3007541B6 /* QLine.m */; };
+		6264AD9111E073C3007541B6 /* QLineCap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6011E073C3007541B6 /* QLineCap.m */; };
+		6264AD9211E073C3007541B6 /* QModifierQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6211E073C3007541B6 /* QModifierQueue.m */; };
+		6264AD9311E073C3007541B6 /* QMove.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6411E073C3007541B6 /* QMove.m */; };
+		6264AD9411E073C3007541B6 /* QPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6611E073C3007541B6 /* QPoint.m */; };
+		6264AD9511E073C3007541B6 /* QRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6811E073C3007541B6 /* QRectangle.m */; };
+		6264AD9611E073C3007541B6 /* QRestoreContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6A11E073C3007541B6 /* QRestoreContext.m */; };
+		6264AD9711E073C3007541B6 /* QSaveContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6C11E073C3007541B6 /* QSaveContext.m */; };
+		6264AD9811E073C3007541B6 /* QShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD6E11E073C3007541B6 /* QShadow.m */; };
+		6264AD9911E073C3007541B6 /* QShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7011E073C3007541B6 /* QShape.m */; };
+		6264AD9A11E073C3007541B6 /* QStrokeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7211E073C3007541B6 /* QStrokeColor.m */; };
+		6264AD9B11E073C3007541B6 /* QStrokedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7411E073C3007541B6 /* QStrokedRectangle.m */; };
+		6264AD9C11E073C3007541B6 /* QStrokePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7611E073C3007541B6 /* QStrokePath.m */; };
+		6264AD9D11E073C3007541B6 /* QStrokeWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7811E073C3007541B6 /* QStrokeWidth.m */; };
+		6264AD9E11E073C3007541B6 /* QTestYinYang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7A11E073C3007541B6 /* QTestYinYang.m */; };
+		6264AD9F11E073C3007541B6 /* UImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD7F11E073C3007541B6 /* UImageCategory.m */; };
+		6264ADA011E073C3007541B6 /* Vector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6264AD8111E073C3007541B6 /* Vector2D.m */; };
+		62BBED711000581E00957334 /* TestDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BBED701000581E00957334 /* TestDrawView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TestQuartzIPhoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuartzIPhoneAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TestQuartzIPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuartzIPhoneAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TestQuartzIPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQuartzIPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* TestQuartzIPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestQuartzIPhoneViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* TestQuartzIPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuartzIPhoneViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TestQuartzIPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuartzIPhoneViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TestQuartzIPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuartzIPhone_Prefix.pch; sourceTree = "<group>"; };
+		6264AD3F11E073C3007541B6 /* PaintInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintInstance.h; path = ../QuartzCocoaLib/PaintInstance.h; sourceTree = SOURCE_ROOT; };
+		6264AD4011E073C3007541B6 /* PaintInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintInstance.m; path = ../QuartzCocoaLib/PaintInstance.m; sourceTree = SOURCE_ROOT; };
+		6264AD4111E073C3007541B6 /* PouredDroplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PouredDroplet.h; path = ../QuartzCocoaLib/PouredDroplet.h; sourceTree = SOURCE_ROOT; };
+		6264AD4211E073C3007541B6 /* PouredDroplet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PouredDroplet.m; path = ../QuartzCocoaLib/PouredDroplet.m; sourceTree = SOURCE_ROOT; };
+		6264AD4311E073C3007541B6 /* QAbstractContextModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QAbstractContextModifier.h; path = ../QuartzCocoaLib/QAbstractContextModifier.h; sourceTree = SOURCE_ROOT; };
+		6264AD4411E073C3007541B6 /* QAbstractContextModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QAbstractContextModifier.m; path = ../QuartzCocoaLib/QAbstractContextModifier.m; sourceTree = SOURCE_ROOT; };
+		6264AD4511E073C3007541B6 /* QArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QArc.h; path = ../QuartzCocoaLib/QArc.h; sourceTree = SOURCE_ROOT; };
+		6264AD4611E073C3007541B6 /* QArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QArc.m; path = ../QuartzCocoaLib/QArc.m; sourceTree = SOURCE_ROOT; };
+		6264AD4711E073C3007541B6 /* QBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBezierCurve.h; path = ../QuartzCocoaLib/QBezierCurve.h; sourceTree = SOURCE_ROOT; };
+		6264AD4811E073C3007541B6 /* QBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBezierCurve.m; path = ../QuartzCocoaLib/QBezierCurve.m; sourceTree = SOURCE_ROOT; };
+		6264AD4911E073C3007541B6 /* QBlendMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBlendMode.h; path = ../QuartzCocoaLib/QBlendMode.h; sourceTree = SOURCE_ROOT; };
+		6264AD4A11E073C3007541B6 /* QBlendMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QBlendMode.m; path = ../QuartzCocoaLib/QBlendMode.m; sourceTree = SOURCE_ROOT; };
+		6264AD4B11E073C3007541B6 /* QBoundedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QBoundedObject.h; path = ../QuartzCocoaLib/QBoundedObject.h; sourceTree = SOURCE_ROOT; };
+		6264AD4C11E073C3007541B6 /* QColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QColor.h; path = ../QuartzCocoaLib/QColor.h; sourceTree = SOURCE_ROOT; };
+		6264AD4D11E073C3007541B6 /* QColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QColor.m; path = ../QuartzCocoaLib/QColor.m; sourceTree = SOURCE_ROOT; };
+		6264AD4E11E073C3007541B6 /* QContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QContext.h; path = ../QuartzCocoaLib/QContext.h; sourceTree = SOURCE_ROOT; };
+		6264AD4F11E073C3007541B6 /* QContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QContext.m; path = ../QuartzCocoaLib/QContext.m; sourceTree = SOURCE_ROOT; };
+		6264AD5011E073C3007541B6 /* QContextModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QContextModifier.h; path = ../QuartzCocoaLib/QContextModifier.h; sourceTree = SOURCE_ROOT; };
+		6264AD5111E073C3007541B6 /* QEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QEnums.h; path = ../QuartzCocoaLib/QEnums.h; sourceTree = SOURCE_ROOT; };
+		6264AD5211E073C3007541B6 /* QFillColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFillColor.h; path = ../QuartzCocoaLib/QFillColor.h; sourceTree = SOURCE_ROOT; };
+		6264AD5311E073C3007541B6 /* QFillColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFillColor.m; path = ../QuartzCocoaLib/QFillColor.m; sourceTree = SOURCE_ROOT; };
+		6264AD5411E073C3007541B6 /* QFilledRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFilledRectangle.h; path = ../QuartzCocoaLib/QFilledRectangle.h; sourceTree = SOURCE_ROOT; };
+		6264AD5511E073C3007541B6 /* QFilledRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFilledRectangle.m; path = ../QuartzCocoaLib/QFilledRectangle.m; sourceTree = SOURCE_ROOT; };
+		6264AD5611E073C3007541B6 /* QFillPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFillPath.h; path = ../QuartzCocoaLib/QFillPath.h; sourceTree = SOURCE_ROOT; };
+		6264AD5711E073C3007541B6 /* QFillPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFillPath.m; path = ../QuartzCocoaLib/QFillPath.m; sourceTree = SOURCE_ROOT; };
+		6264AD5811E073C3007541B6 /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = ../QuartzCocoaLib/QFramework.h; sourceTree = SOURCE_ROOT; };
+		6264AD5911E073C3007541B6 /* QImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QImage.h; path = ../QuartzCocoaLib/QImage.h; sourceTree = SOURCE_ROOT; };
+		6264AD5A11E073C3007541B6 /* QImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QImage.m; path = ../QuartzCocoaLib/QImage.m; sourceTree = SOURCE_ROOT; };
+		6264AD5B11E073C3007541B6 /* QJoinCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QJoinCap.h; path = ../QuartzCocoaLib/QJoinCap.h; sourceTree = SOURCE_ROOT; };
+		6264AD5C11E073C3007541B6 /* QJoinCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QJoinCap.m; path = ../QuartzCocoaLib/QJoinCap.m; sourceTree = SOURCE_ROOT; };
+		6264AD5D11E073C3007541B6 /* QLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QLine.h; path = ../QuartzCocoaLib/QLine.h; sourceTree = SOURCE_ROOT; };
+		6264AD5E11E073C3007541B6 /* QLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QLine.m; path = ../QuartzCocoaLib/QLine.m; sourceTree = SOURCE_ROOT; };
+		6264AD5F11E073C3007541B6 /* QLineCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QLineCap.h; path = ../QuartzCocoaLib/QLineCap.h; sourceTree = SOURCE_ROOT; };
+		6264AD6011E073C3007541B6 /* QLineCap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QLineCap.m; path = ../QuartzCocoaLib/QLineCap.m; sourceTree = SOURCE_ROOT; };
+		6264AD6111E073C3007541B6 /* QModifierQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QModifierQueue.h; path = ../QuartzCocoaLib/QModifierQueue.h; sourceTree = SOURCE_ROOT; };
+		6264AD6211E073C3007541B6 /* QModifierQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QModifierQueue.m; path = ../QuartzCocoaLib/QModifierQueue.m; sourceTree = SOURCE_ROOT; };
+		6264AD6311E073C3007541B6 /* QMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMove.h; path = ../QuartzCocoaLib/QMove.h; sourceTree = SOURCE_ROOT; };
+		6264AD6411E073C3007541B6 /* QMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMove.m; path = ../QuartzCocoaLib/QMove.m; sourceTree = SOURCE_ROOT; };
+		6264AD6511E073C3007541B6 /* QPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QPoint.h; path = ../QuartzCocoaLib/QPoint.h; sourceTree = SOURCE_ROOT; };
+		6264AD6611E073C3007541B6 /* QPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QPoint.m; path = ../QuartzCocoaLib/QPoint.m; sourceTree = SOURCE_ROOT; };
+		6264AD6711E073C3007541B6 /* QRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRectangle.h; path = ../QuartzCocoaLib/QRectangle.h; sourceTree = SOURCE_ROOT; };
+		6264AD6811E073C3007541B6 /* QRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRectangle.m; path = ../QuartzCocoaLib/QRectangle.m; sourceTree = SOURCE_ROOT; };
+		6264AD6911E073C3007541B6 /* QRestoreContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRestoreContext.h; path = ../QuartzCocoaLib/QRestoreContext.h; sourceTree = SOURCE_ROOT; };
+		6264AD6A11E073C3007541B6 /* QRestoreContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRestoreContext.m; path = ../QuartzCocoaLib/QRestoreContext.m; sourceTree = SOURCE_ROOT; };
+		6264AD6B11E073C3007541B6 /* QSaveContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSaveContext.h; path = ../QuartzCocoaLib/QSaveContext.h; sourceTree = SOURCE_ROOT; };
+		6264AD6C11E073C3007541B6 /* QSaveContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSaveContext.m; path = ../QuartzCocoaLib/QSaveContext.m; sourceTree = SOURCE_ROOT; };
+		6264AD6D11E073C3007541B6 /* QShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QShadow.h; path = ../QuartzCocoaLib/QShadow.h; sourceTree = SOURCE_ROOT; };
+		6264AD6E11E073C3007541B6 /* QShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QShadow.m; path = ../QuartzCocoaLib/QShadow.m; sourceTree = SOURCE_ROOT; };
+		6264AD6F11E073C3007541B6 /* QShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QShape.h; path = ../QuartzCocoaLib/QShape.h; sourceTree = SOURCE_ROOT; };
+		6264AD7011E073C3007541B6 /* QShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QShape.m; path = ../QuartzCocoaLib/QShape.m; sourceTree = SOURCE_ROOT; };
+		6264AD7111E073C3007541B6 /* QStrokeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokeColor.h; path = ../QuartzCocoaLib/QStrokeColor.h; sourceTree = SOURCE_ROOT; };
+		6264AD7211E073C3007541B6 /* QStrokeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokeColor.m; path = ../QuartzCocoaLib/QStrokeColor.m; sourceTree = SOURCE_ROOT; };
+		6264AD7311E073C3007541B6 /* QStrokedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokedRectangle.h; path = ../QuartzCocoaLib/QStrokedRectangle.h; sourceTree = SOURCE_ROOT; };
+		6264AD7411E073C3007541B6 /* QStrokedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokedRectangle.m; path = ../QuartzCocoaLib/QStrokedRectangle.m; sourceTree = SOURCE_ROOT; };
+		6264AD7511E073C3007541B6 /* QStrokePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokePath.h; path = ../QuartzCocoaLib/QStrokePath.h; sourceTree = SOURCE_ROOT; };
+		6264AD7611E073C3007541B6 /* QStrokePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokePath.m; path = ../QuartzCocoaLib/QStrokePath.m; sourceTree = SOURCE_ROOT; };
+		6264AD7711E073C3007541B6 /* QStrokeWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokeWidth.h; path = ../QuartzCocoaLib/QStrokeWidth.h; sourceTree = SOURCE_ROOT; };
+		6264AD7811E073C3007541B6 /* QStrokeWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokeWidth.m; path = ../QuartzCocoaLib/QStrokeWidth.m; sourceTree = SOURCE_ROOT; };
+		6264AD7911E073C3007541B6 /* QTestYinYang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QTestYinYang.h; path = ../QuartzCocoaLib/QTestYinYang.h; sourceTree = SOURCE_ROOT; };
+		6264AD7A11E073C3007541B6 /* QTestYinYang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QTestYinYang.m; path = ../QuartzCocoaLib/QTestYinYang.m; sourceTree = SOURCE_ROOT; };
+		6264AD7B11E073C3007541B6 /* QuartzCocoaLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuartzCocoaLib.h; path = ../QuartzCocoaLib/QuartzCocoaLib.h; sourceTree = SOURCE_ROOT; };
+		6264AD7C11E073C3007541B6 /* QuartzCocoaLibExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuartzCocoaLibExt.h; path = ../QuartzCocoaLib/QuartzCocoaLibExt.h; sourceTree = SOURCE_ROOT; };
+		6264AD7D11E073C3007541B6 /* QVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QVisitor.h; path = ../QuartzCocoaLib/QVisitor.h; sourceTree = SOURCE_ROOT; };
+		6264AD7E11E073C3007541B6 /* UImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UImageCategory.h; path = ../QuartzCocoaLib/UImageCategory.h; sourceTree = SOURCE_ROOT; };
+		6264AD7F11E073C3007541B6 /* UImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UImageCategory.m; path = ../QuartzCocoaLib/UImageCategory.m; sourceTree = SOURCE_ROOT; };
+		6264AD8011E073C3007541B6 /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2D.h; path = ../QuartzCocoaLib/Vector2D.h; sourceTree = SOURCE_ROOT; };
+		6264AD8111E073C3007541B6 /* Vector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vector2D.m; path = ../QuartzCocoaLib/Vector2D.m; sourceTree = SOURCE_ROOT; };
+		62BBED6F1000581E00957334 /* TestDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDrawView.h; sourceTree = "<group>"; };
+		62BBED701000581E00957334 /* TestDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDrawView.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TestQuartzIPhone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestQuartzIPhone-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* TestQuartzIPhoneAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TestQuartzIPhoneAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* TestQuartzIPhoneViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TestQuartzIPhoneViewController.m */,
+				62BBED6F1000581E00957334 /* TestDrawView.h */,
+				62BBED701000581E00957334 /* TestDrawView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TestQuartzIPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				62BBEC1F1000548800957334 /* QuartzLib */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TestQuartzIPhone_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* TestQuartzIPhoneViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TestQuartzIPhone-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62BBEC1F1000548800957334 /* QuartzLib */ = {
+			isa = PBXGroup;
+			children = (
+				6264AD3F11E073C3007541B6 /* PaintInstance.h */,
+				6264AD4011E073C3007541B6 /* PaintInstance.m */,
+				6264AD4111E073C3007541B6 /* PouredDroplet.h */,
+				6264AD4211E073C3007541B6 /* PouredDroplet.m */,
+				6264AD4311E073C3007541B6 /* QAbstractContextModifier.h */,
+				6264AD4411E073C3007541B6 /* QAbstractContextModifier.m */,
+				6264AD4511E073C3007541B6 /* QArc.h */,
+				6264AD4611E073C3007541B6 /* QArc.m */,
+				6264AD4711E073C3007541B6 /* QBezierCurve.h */,
+				6264AD4811E073C3007541B6 /* QBezierCurve.m */,
+				6264AD4911E073C3007541B6 /* QBlendMode.h */,
+				6264AD4A11E073C3007541B6 /* QBlendMode.m */,
+				6264AD4B11E073C3007541B6 /* QBoundedObject.h */,
+				6264AD4C11E073C3007541B6 /* QColor.h */,
+				6264AD4D11E073C3007541B6 /* QColor.m */,
+				6264AD4E11E073C3007541B6 /* QContext.h */,
+				6264AD4F11E073C3007541B6 /* QContext.m */,
+				6264AD5011E073C3007541B6 /* QContextModifier.h */,
+				6264AD5111E073C3007541B6 /* QEnums.h */,
+				6264AD5211E073C3007541B6 /* QFillColor.h */,
+				6264AD5311E073C3007541B6 /* QFillColor.m */,
+				6264AD5411E073C3007541B6 /* QFilledRectangle.h */,
+				6264AD5511E073C3007541B6 /* QFilledRectangle.m */,
+				6264AD5611E073C3007541B6 /* QFillPath.h */,
+				6264AD5711E073C3007541B6 /* QFillPath.m */,
+				6264AD5811E073C3007541B6 /* QFramework.h */,
+				6264AD5911E073C3007541B6 /* QImage.h */,
+				6264AD5A11E073C3007541B6 /* QImage.m */,
+				6264AD5B11E073C3007541B6 /* QJoinCap.h */,
+				6264AD5C11E073C3007541B6 /* QJoinCap.m */,
+				6264AD5D11E073C3007541B6 /* QLine.h */,
+				6264AD5E11E073C3007541B6 /* QLine.m */,
+				6264AD5F11E073C3007541B6 /* QLineCap.h */,
+				6264AD6011E073C3007541B6 /* QLineCap.m */,
+				6264AD6111E073C3007541B6 /* QModifierQueue.h */,
+				6264AD6211E073C3007541B6 /* QModifierQueue.m */,
+				6264AD6311E073C3007541B6 /* QMove.h */,
+				6264AD6411E073C3007541B6 /* QMove.m */,
+				6264AD6511E073C3007541B6 /* QPoint.h */,
+				6264AD6611E073C3007541B6 /* QPoint.m */,
+				6264AD6711E073C3007541B6 /* QRectangle.h */,
+				6264AD6811E073C3007541B6 /* QRectangle.m */,
+				6264AD6911E073C3007541B6 /* QRestoreContext.h */,
+				6264AD6A11E073C3007541B6 /* QRestoreContext.m */,
+				6264AD6B11E073C3007541B6 /* QSaveContext.h */,
+				6264AD6C11E073C3007541B6 /* QSaveContext.m */,
+				6264AD6D11E073C3007541B6 /* QShadow.h */,
+				6264AD6E11E073C3007541B6 /* QShadow.m */,
+				6264AD6F11E073C3007541B6 /* QShape.h */,
+				6264AD7011E073C3007541B6 /* QShape.m */,
+				6264AD7111E073C3007541B6 /* QStrokeColor.h */,
+				6264AD7211E073C3007541B6 /* QStrokeColor.m */,
+				6264AD7311E073C3007541B6 /* QStrokedRectangle.h */,
+				6264AD7411E073C3007541B6 /* QStrokedRectangle.m */,
+				6264AD7511E073C3007541B6 /* QStrokePath.h */,
+				6264AD7611E073C3007541B6 /* QStrokePath.m */,
+				6264AD7711E073C3007541B6 /* QStrokeWidth.h */,
+				6264AD7811E073C3007541B6 /* QStrokeWidth.m */,
+				6264AD7911E073C3007541B6 /* QTestYinYang.h */,
+				6264AD7A11E073C3007541B6 /* QTestYinYang.m */,
+				6264AD7B11E073C3007541B6 /* QuartzCocoaLib.h */,
+				6264AD7C11E073C3007541B6 /* QuartzCocoaLibExt.h */,
+				6264AD7D11E073C3007541B6 /* QVisitor.h */,
+				6264AD7E11E073C3007541B6 /* UImageCategory.h */,
+				6264AD7F11E073C3007541B6 /* UImageCategory.m */,
+				6264AD8011E073C3007541B6 /* Vector2D.h */,
+				6264AD8111E073C3007541B6 /* Vector2D.m */,
+			);
+			name = QuartzLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TestQuartzIPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestQuartzIPhone" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestQuartzIPhone;
+			productName = TestQuartzIPhone;
+			productReference = 1D6058910D05DD3D006BFB54 /* TestQuartzIPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestQuartzIPhone" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TestQuartzIPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* TestQuartzIPhoneViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TestQuartzIPhoneAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TestQuartzIPhoneViewController.m in Sources */,
+				62BBED711000581E00957334 /* TestDrawView.m in Sources */,
+				6264AD8311E073C3007541B6 /* PaintInstance.m in Sources */,
+				6264AD8411E073C3007541B6 /* PouredDroplet.m in Sources */,
+				6264AD8511E073C3007541B6 /* QAbstractContextModifier.m in Sources */,
+				6264AD8611E073C3007541B6 /* QArc.m in Sources */,
+				6264AD8711E073C3007541B6 /* QBezierCurve.m in Sources */,
+				6264AD8811E073C3007541B6 /* QBlendMode.m in Sources */,
+				6264AD8911E073C3007541B6 /* QColor.m in Sources */,
+				6264AD8A11E073C3007541B6 /* QContext.m in Sources */,
+				6264AD8B11E073C3007541B6 /* QFillColor.m in Sources */,
+				6264AD8C11E073C3007541B6 /* QFilledRectangle.m in Sources */,
+				6264AD8D11E073C3007541B6 /* QFillPath.m in Sources */,
+				6264AD8E11E073C3007541B6 /* QImage.m in Sources */,
+				6264AD8F11E073C3007541B6 /* QJoinCap.m in Sources */,
+				6264AD9011E073C3007541B6 /* QLine.m in Sources */,
+				6264AD9111E073C3007541B6 /* QLineCap.m in Sources */,
+				6264AD9211E073C3007541B6 /* QModifierQueue.m in Sources */,
+				6264AD9311E073C3007541B6 /* QMove.m in Sources */,
+				6264AD9411E073C3007541B6 /* QPoint.m in Sources */,
+				6264AD9511E073C3007541B6 /* QRectangle.m in Sources */,
+				6264AD9611E073C3007541B6 /* QRestoreContext.m in Sources */,
+				6264AD9711E073C3007541B6 /* QSaveContext.m in Sources */,
+				6264AD9811E073C3007541B6 /* QShadow.m in Sources */,
+				6264AD9911E073C3007541B6 /* QShape.m in Sources */,
+				6264AD9A11E073C3007541B6 /* QStrokeColor.m in Sources */,
+				6264AD9B11E073C3007541B6 /* QStrokedRectangle.m in Sources */,
+				6264AD9C11E073C3007541B6 /* QStrokePath.m in Sources */,
+				6264AD9D11E073C3007541B6 /* QStrokeWidth.m in Sources */,
+				6264AD9E11E073C3007541B6 /* QTestYinYang.m in Sources */,
+				6264AD9F11E073C3007541B6 /* UImageCategory.m in Sources */,
+				6264ADA011E073C3007541B6 /* Vector2D.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestQuartzIPhone_Prefix.pch;
+				INFOPLIST_FILE = "TestQuartzIPhone-Info.plist";
+				PRODUCT_NAME = TestQuartzIPhone;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos3.2;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestQuartzIPhone_Prefix.pch;
+				INFOPLIST_FILE = "TestQuartzIPhone-Info.plist";
+				PRODUCT_NAME = TestQuartzIPhone;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TestQuartzIPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestQuartzIPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
