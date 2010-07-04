@@ -2,3 +2,7 @@ build/*
 build/*/*
 QuartzCocoaLib/build/*
 QuartzCocoaLib/build/*/*
+TestGraphicsContext/build/*
+TestGraphicsContext/build/*/*
+TestQuartzIPhone/build/*
+TestQuartzIPhone/build/*/*
