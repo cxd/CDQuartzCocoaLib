@@ -1,0 +1,1366 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeSDKPreference = iphoneos3.2;
+		activeTarget = 6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */;
+		addToTargets = (
+		);
+		breakpoints = (
+			62757C040FFF1A060086AD09 /* QShadow.m:98 */,
+			62757C3F0FFF1FEA0086AD09 /* QShadow.m:90 */,
+			62757C4E0FFF20040086AD09 /* QModifierQueue.m:70 */,
+			62D1823E1000399500113ED7 /* QShape.m:37 */,
+			62BBEB181000455F00957334 /* QArc.m:116 */,
+			62BBEB261000456F00957334 /* QArc.m:114 */,
+		);
+		codeSenseManager = 62D66FDC0FFA235C00B60B0A /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					336,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_ObjectSize_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					448,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					408,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 303454432;
+			PBXWorkspaceStateSaveDate = 303454432;
+		};
+		perUserProjectItems = {
+			6231BE0B11D5E11600327B84 = 6231BE0B11D5E11600327B84 /* PBXTextBookmark */;
+			6231BE0C11D5E11600327B84 = 6231BE0C11D5E11600327B84 /* PBXTextBookmark */;
+			6231BE0D11D5E11600327B84 = 6231BE0D11D5E11600327B84 /* PBXTextBookmark */;
+			6231BE0E11D5E11600327B84 = 6231BE0E11D5E11600327B84 /* PBXTextBookmark */;
+			6231BE1011D5E11600327B84 = 6231BE1011D5E11600327B84 /* PBXTextBookmark */;
+			6231BE1111D5E11600327B84 = 6231BE1111D5E11600327B84 /* PBXTextBookmark */;
+			6231BE1211D5E11600327B84 = 6231BE1211D5E11600327B84 /* PBXTextBookmark */;
+			6231BE1311D5E11600327B84 = 6231BE1311D5E11600327B84 /* PBXTextBookmark */;
+			6231BE1411D5E11600327B84 = 6231BE1411D5E11600327B84 /* PBXTextBookmark */;
+			62393828120E4D67000CE6DB = 62393828120E4D67000CE6DB /* PBXTextBookmark */;
+			62393829120E4D67000CE6DB = 62393829120E4D67000CE6DB /* PBXTextBookmark */;
+			6239382A120E4D67000CE6DB = 6239382A120E4D67000CE6DB /* PBXTextBookmark */;
+			6239382B120E4D67000CE6DB = 6239382B120E4D67000CE6DB /* PBXTextBookmark */;
+			6239382C120E4D67000CE6DB = 6239382C120E4D67000CE6DB /* PBXTextBookmark */;
+			6239382D120E4D67000CE6DB = 6239382D120E4D67000CE6DB /* PBXTextBookmark */;
+			6239382E120E4D67000CE6DB = 6239382E120E4D67000CE6DB /* PBXTextBookmark */;
+			6239382F120E4D67000CE6DB = 6239382F120E4D67000CE6DB /* PBXTextBookmark */;
+			62393830120E4D67000CE6DB = 62393830120E4D67000CE6DB /* PBXTextBookmark */;
+			62393831120E4D67000CE6DB = 62393831120E4D67000CE6DB /* PBXTextBookmark */;
+			6240A5D7121655EF00840C1B = 6240A5D7121655EF00840C1B /* PBXTextBookmark */;
+			6240A5D8121655EF00840C1B = 6240A5D8121655EF00840C1B /* PBXTextBookmark */;
+			6240A5EF1216564900840C1B = 6240A5EF1216564900840C1B /* PBXTextBookmark */;
+			6240A7A012165A5500840C1B /* XCBuildMessageTextBookmark */ = 6240A7A012165A5500840C1B /* XCBuildMessageTextBookmark */;
+			6240A7A112165A5500840C1B /* PBXTextBookmark */ = 6240A7A112165A5500840C1B /* PBXTextBookmark */;
+			62757D0B0FFF35550086AD09 = 62757D0B0FFF35550086AD09 /* PBXTextBookmark */;
+			627AD7D611D8BF770064F2C7 = 627AD7D611D8BF770064F2C7 /* PBXTextBookmark */;
+			627AD7D711D8BF770064F2C7 = 627AD7D711D8BF770064F2C7 /* PBXTextBookmark */;
+			627AD7D811D8BF770064F2C7 = 627AD7D811D8BF770064F2C7 /* PBXTextBookmark */;
+			62BBEB1A1000456100957334 = 62BBEB1A1000456100957334 /* PBXTextBookmark */;
+			62BBED441000560300957334 = 62BBED441000560300957334 /* PBXTextBookmark */;
+			62BBED7A10005B1B00957334 = 62BBED7A10005B1B00957334 /* PBXTextBookmark */;
+			62BBED7E10005B1B00957334 = 62BBED7E10005B1B00957334 /* PBXTextBookmark */;
+			62BBED8210005B1B00957334 = 62BBED8210005B1B00957334 /* PBXTextBookmark */;
+			62BBED8510005B1B00957334 = 62BBED8510005B1B00957334 /* PBXTextBookmark */;
+			62BBED8710005B1B00957334 = 62BBED8710005B1B00957334 /* PBXTextBookmark */;
+			62BBED8810005B1B00957334 = 62BBED8810005B1B00957334 /* PBXTextBookmark */;
+			62BBED8910005B1B00957334 = 62BBED8910005B1B00957334 /* PBXTextBookmark */;
+			62BBED8C10005B1B00957334 = 62BBED8C10005B1B00957334 /* PBXTextBookmark */;
+			62BBED9410005B1B00957334 = 62BBED9410005B1B00957334 /* PBXTextBookmark */;
+			62BBED9510005B1B00957334 = 62BBED9510005B1B00957334 /* PBXTextBookmark */;
+			62BBEE18100075B900957334 = 62BBEE18100075B900957334 /* PBXTextBookmark */;
+			62BBEE7B1000BE6D00957334 = 62BBEE7B1000BE6D00957334 /* PBXTextBookmark */;
+			62BBEE7C1000BE6D00957334 = 62BBEE7C1000BE6D00957334 /* PBXTextBookmark */;
+			62BBEE831000BE6D00957334 = 62BBEE831000BE6D00957334 /* PBXTextBookmark */;
+			62CD06A90FFB8BD30001D102 = 62CD06A90FFB8BD30001D102 /* PBXTextBookmark */;
+			62CEE5A6100371470014870C = 62CEE5A6100371470014870C /* PBXTextBookmark */;
+		};
+		sourceControlManager = 62D66FDB0FFA235C00B60B0A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	089C1667FE841158C02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */ = {
+		activeExec = 0;
+	};
+	6231BE0B11D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BDE017104937B50072D351 /* QuartzCocoaLibExt.h */;
+		name = "QuartzCocoaLibExt.h: 12";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	6231BE0C11D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BDE009104935970072D351 /* PouredDroplet.h */;
+		name = "PouredDroplet.h: 13";
+		rLen = 0;
+		rLoc = 222;
+		rType = 0;
+		vrLen = 319;
+		vrLoc = 0;
+	};
+	6231BE0D11D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62CD06510FFB89D60001D102 /* QuartzCocoaLib.h */;
+		name = "QuartzCocoaLib.h: 10";
+		rLen = 0;
+		rLoc = 185;
+		rType = 0;
+		vrLen = 436;
+		vrLoc = 131;
+	};
+	6231BE0E11D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BDE012104936D60072D351 /* Vector2D.m */;
+		name = "Vector2D.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 471;
+		vrLoc = 2405;
+	};
+	6231BE1011D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BDE007104935970072D351 /* PaintInstance.h */;
+		name = "PaintInstance.h: 23";
+		rLen = 0;
+		rLoc = 718;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 0;
+	};
+	6231BE1111D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BDE008104935970072D351 /* PaintInstance.m */;
+		name = "PaintInstance.m: 139";
+		rLen = 0;
+		rLoc = 3452;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 3455;
+	};
+	6231BE1211D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BDE011104936D60072D351 /* Vector2D.h */;
+		name = "Vector2D.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 615;
+		vrLoc = 0;
+	};
+	6231BE1311D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FE00FFA23C100B60B0A /* QContextModifier.h */;
+		name = "QContextModifier.h: 9";
+		rLen = 0;
+		rLoc = 164;
+		rType = 0;
+		vrLen = 283;
+		vrLoc = 0;
+	};
+	6231BE1411D5E11600327B84 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FE40FFA240F00B60B0A /* QContext.h */;
+		name = "QContext.h: 21";
+		rLen = 0;
+		rLoc = 325;
+		rType = 0;
+		vrLen = 365;
+		vrLoc = 0;
+	};
+	62393828120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D6700E0FFA28BE00B60B0A /* QFilledRectangle.m */;
+		name = "QFilledRectangle.m: 17";
+		rLen = 0;
+		rLoc = 325;
+		rType = 0;
+		vrLen = 332;
+		vrLoc = 0;
+	};
+	62393829120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D670120FFA290400B60B0A /* QFillColor.m */;
+		name = "QFillColor.m: 18";
+		rLen = 0;
+		rLoc = 313;
+		rType = 0;
+		vrLen = 320;
+		vrLoc = 0;
+	};
+	6239382A120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54690FFEF1A100B803C1 /* QSaveContext.h */;
+		name = "QSaveContext.h: 9";
+		rLen = 0;
+		rLoc = 155;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	6239382B120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA546A0FFEF1A100B803C1 /* QSaveContext.m */;
+		name = "QSaveContext.m: 20";
+		rLen = 0;
+		rLoc = 275;
+		rType = 0;
+		vrLen = 321;
+		vrLoc = 0;
+	};
+	6239382C120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757CA30FFF2B800086AD09 /* QBlendMode.m */;
+		name = "QBlendMode.m: 30";
+		rLen = 0;
+		rLoc = 456;
+		rType = 0;
+		vrLen = 466;
+		vrLoc = 0;
+	};
+	6239382D120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757CF20FFF2E8B0086AD09 /* QShape.m */;
+		name = "QShape.m: 15";
+		rLen = 0;
+		rLoc = 191;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 897;
+	};
+	6239382E120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54720FFEF2C600B803C1 /* QStrokeWidth.m */;
+		name = "QStrokeWidth.m: 9";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 458;
+		vrLoc = 0;
+	};
+	6239382F120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54540FFEF01400B803C1 /* QStrokedRectangle.m */;
+		name = "QStrokedRectangle.m: 16";
+		rLen = 0;
+		rLoc = 279;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 0;
+	};
+	62393830120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54490FFEEF7300B803C1 /* QRectangle.m */;
+		name = "QRectangle.m: 25";
+		rLen = 0;
+		rLoc = 402;
+		rType = 0;
+		vrLen = 538;
+		vrLoc = 183;
+	};
+	62393831120E4D67000CE6DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA541F0FFEEE5200B803C1 /* QColor.m */;
+		name = "QColor.m: 56";
+		rLen = 0;
+		rLoc = 734;
+		rType = 0;
+		vrLen = 492;
+		vrLoc = 248;
+	};
+	6240A5D7121655EF00840C1B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA546E0FFEF1AC00B803C1 /* QRestoreContext.m */;
+		name = "QRestoreContext.m: 11";
+		rLen = 0;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 333;
+		vrLoc = 0;
+	};
+	6240A5D8121655EF00840C1B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 627AD7CE11D8BEE10064F2C7 /* UImageCategory.h */;
+		name = "UImageCategory.h: 20";
+		rLen = 0;
+		rLoc = 399;
+		rType = 0;
+		vrLen = 488;
+		vrLoc = 0;
+	};
+	6240A5EF1216564900840C1B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 627AD7CE11D8BEE10064F2C7 /* UImageCategory.h */;
+		name = "UImageCategory.h: 7";
+		rLen = 0;
+		rLoc = 134;
+		rType = 0;
+		vrLen = 488;
+		vrLoc = 0;
+	};
+	6240A6CE121659B800840C1B /* CTGradient.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = CTGradient.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/CTGradient.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 1001}}";
+			sepNavSelRange = "{677, 0}";
+			sepNavVisRange = "{640, 116}";
+		};
+	};
+	6240A6D0121659B800840C1B /* PaintInstance.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 637}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1031}";
+		};
+	};
+	6240A706121659B800840C1B /* QStrokePath.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 459}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 320}";
+		};
+	};
+	6240A709121659B800840C1B /* QTestYinYang.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 459}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 268}";
+		};
+	};
+	6240A70A121659B800840C1B /* QTestYinYang.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 1391}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 944}";
+		};
+	};
+	6240A70C121659B800840C1B /* QuartzCocoaLibExt.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 459}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 215}";
+		};
+	};
+	6240A70F121659B800840C1B /* UImageCategory.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {761, 1846}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1003}";
+		};
+	};
+	6240A710121659B800840C1B /* Vector2D.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 1378}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 662}";
+		};
+	};
+	6240A711121659B900840C1B /* Vector2D.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 2301}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 590}";
+		};
+	};
+	6240A7A012165A5500840C1B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ')' before 'NSColor'";
+		fRef = 6240A6CE121659B800840C1B /* CTGradient.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 35;
+		rType = 1;
+	};
+	6240A7A112165A5500840C1B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A6CE121659B800840C1B /* CTGradient.h */;
+		name = "CTGradient.h: 36";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 170;
+		vrLoc = 640;
+	};
+	6240A7B112165AA000840C1B /* QFramework.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 459}}";
+			sepNavSelRange = "{187, 0}";
+			sepNavVisRange = "{0, 219}";
+		};
+	};
+	62757B010FFF01950086AD09 /* QJoinCap.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QJoinCap.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QJoinCap.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 518}}";
+			sepNavSelRange = "{418, 0}";
+			sepNavVisRange = "{198, 265}";
+		};
+	};
+	62757B0C0FFF04ED0086AD09 /* QShadow.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QShadow.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QShadow.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 630}}";
+			sepNavSelRange = "{150, 0}";
+			sepNavVisRange = "{0, 368}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
+	62757B0D0FFF04ED0086AD09 /* QShadow.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QShadow.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QShadow.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {528, 1624}}";
+			sepNavSelRange = "{1718, 0}";
+			sepNavVisRange = "{1680, 447}";
+			sepNavWindowFrame = "{{38, 294}, {750, 558}}";
+		};
+	};
+	62757C040FFF1A060086AD09 /* QShadow.m:98 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62757B0D0FFF04ED0086AD09 /* QShadow.m */;
+		functionName = "-update:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 98;
+		modificationTime = 299327393.027428;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62757C3F0FFF1FEA0086AD09 /* QShadow.m:90 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62757B0D0FFF04ED0086AD09 /* QShadow.m */;
+		functionName = "-update:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 90;
+		location = TestGraphicsContext;
+		modificationTime = 299327393.0275069;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62757C4E0FFF20040086AD09 /* QModifierQueue.m:70 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62D670160FFA299700B60B0A /* QModifierQueue.m */;
+		functionName = "+updateContext:SourceQueue:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 70;
+		location = TestGraphicsContext;
+		modificationTime = 299327393.0275489;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62757CA30FFF2B800086AD09 /* QBlendMode.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QBlendMode.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QBlendMode.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 485}}";
+			sepNavSelRange = "{456, 0}";
+			sepNavVisRange = "{0, 466}";
+		};
+	};
+	62757CF20FFF2E8B0086AD09 /* QShape.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QShape.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QShape.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 1092}}";
+			sepNavSelRange = "{191, 0}";
+			sepNavVisRange = "{897, 639}";
+			sepNavWindowFrame = "{{15, 35}, {1089, 838}}";
+		};
+	};
+	62757D000FFF30FF0086AD09 /* QArc.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QArc.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QArc.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {840, 2324}}";
+			sepNavSelRange = "{4143, 0}";
+			sepNavVisRange = "{3093, 1114}";
+		};
+	};
+	62757D030FFF350D0086AD09 /* QPoint.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QPoint.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QPoint.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 406}}";
+			sepNavSelRange = "{380, 0}";
+			sepNavVisRange = "{123, 348}";
+		};
+	};
+	62757D0B0FFF35550086AD09 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757B010FFF01950086AD09 /* QJoinCap.m */;
+		name = "QJoinCap.m: 32";
+		rLen = 0;
+		rLoc = 418;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 198;
+	};
+	62757DD00FFF3BF40086AD09 /* QFillPath.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QFillPath.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFillPath.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 308}}";
+			sepNavSelRange = "{152, 0}";
+			sepNavVisRange = "{19, 279}";
+		};
+	};
+	627AD7CE11D8BEE10064F2C7 /* UImageCategory.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = UImageCategory.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/UImageCategory.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 466}}";
+			sepNavSelRange = "{134, 0}";
+			sepNavVisRange = "{0, 488}";
+		};
+	};
+	627AD7D611D8BF770064F2C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62E3CC1F11D77215004308CB /* NSObjCRuntime.h */;
+		name = "NSObjCRuntime.h: 166";
+		rLen = 0;
+		rLoc = 5827;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 5623;
+	};
+	627AD7D711D8BF770064F2C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62CEE5DE1003744D0014870C /* QVisitor.h */;
+		name = "QVisitor.h: 12";
+		rLen = 8;
+		rLoc = 173;
+		rType = 0;
+		vrLen = 254;
+		vrLoc = 0;
+	};
+	627AD7D811D8BF770064F2C7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BBED50100056A000957334 /* QFramework.h */;
+		name = "QFramework.h: 9";
+		rLen = 0;
+		rLoc = 134;
+		rType = 0;
+		vrLen = 219;
+		vrLoc = 0;
+	};
+	62BBEB181000455F00957334 /* QArc.m:116 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62757D000FFF30FF0086AD09 /* QArc.m */;
+		functionName = "-update:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 116;
+		modificationTime = 299327393.027641;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62BBEB1A1000456100957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54580FFEF02000B803C1 /* QStrokeColor.m */;
+		name = "QStrokeColor.m: 17";
+		rLen = 0;
+		rLoc = 318;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 3;
+	};
+	62BBEB261000456F00957334 /* QArc.m:114 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62757D000FFF30FF0086AD09 /* QArc.m */;
+		functionName = "-update:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 114;
+		location = TestGraphicsContext;
+		modificationTime = 299327393.027659;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62BBEB731000492800957334 /* QMove.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QMove.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QMove.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 336}}";
+			sepNavSelRange = "{149, 0}";
+			sepNavVisRange = "{0, 378}";
+		};
+	};
+	62BBEBE61000508D00957334 /* QTestYinYang.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QTestYinYang.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QTestYinYang.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 280}}";
+			sepNavSelRange = "{133, 0}";
+			sepNavVisRange = "{0, 268}";
+		};
+	};
+	62BBEBE71000508D00957334 /* QTestYinYang.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QTestYinYang.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QTestYinYang.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 1512}}";
+			sepNavSelRange = "{2703, 0}";
+			sepNavVisRange = "{2336, 374}";
+		};
+	};
+	62BBED441000560300957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BBEBE71000508D00957334 /* QTestYinYang.m */;
+		name = "QTestYinYang.m: 105";
+		rLen = 0;
+		rLoc = 2703;
+		rType = 0;
+		vrLen = 374;
+		vrLoc = 2336;
+	};
+	62BBED50100056A000957334 /* QFramework.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QFramework.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFramework.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {596, 405}}";
+			sepNavSelRange = "{134, 0}";
+			sepNavVisRange = "{0, 219}";
+		};
+	};
+	62BBED7A10005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BBEBE61000508D00957334 /* QTestYinYang.h */;
+		name = "QTestYinYang.h: 9";
+		rLen = 0;
+		rLoc = 133;
+		rType = 0;
+		vrLen = 268;
+		vrLoc = 0;
+	};
+	62BBED7E10005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D670110FFA290300B60B0A /* QFillColor.h */;
+		name = "QFillColor.h: 9";
+		rLen = 0;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 0;
+	};
+	62BBED8210005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA541E0FFEEE5200B803C1 /* QColor.h */;
+		name = "QColor.h: 8";
+		rLen = 0;
+		rLoc = 148;
+		rType = 0;
+		vrLen = 320;
+		vrLoc = 0;
+	};
+	62BBED8510005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54570FFEF02000B803C1 /* QStrokeColor.h */;
+		name = "QStrokeColor.h: 9";
+		rLen = 0;
+		rLoc = 155;
+		rType = 0;
+		vrLen = 269;
+		vrLoc = 0;
+	};
+	62BBED8710005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA546D0FFEF1AC00B803C1 /* QRestoreContext.h */;
+		name = "QRestoreContext.h: 9";
+		rLen = 0;
+		rLoc = 158;
+		rType = 0;
+		vrLen = 305;
+		vrLoc = 3;
+	};
+	62BBED8810005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54710FFEF2C600B803C1 /* QStrokeWidth.h */;
+		name = "QStrokeWidth.h: 9";
+		rLen = 0;
+		rLoc = 155;
+		rType = 0;
+		vrLen = 349;
+		vrLoc = 22;
+	};
+	62BBED8910005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA549D0FFEFBBB00B803C1 /* QLineCap.h */;
+		name = "QLineCap.h: 9";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 37;
+	};
+	62BBED8C10005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757B0C0FFF04ED0086AD09 /* QShadow.h */;
+		name = "QShadow.h: 9";
+		rLen = 0;
+		rLoc = 150;
+		rType = 0;
+		vrLen = 368;
+		vrLoc = 0;
+	};
+	62BBED9410005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757DD00FFF3BF40086AD09 /* QFillPath.h */;
+		name = "QFillPath.h: 9";
+		rLen = 0;
+		rLoc = 152;
+		rType = 0;
+		vrLen = 279;
+		vrLoc = 19;
+	};
+	62BBED9510005B1B00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BBEB731000492800957334 /* QMove.h */;
+		name = "QMove.h: 10";
+		rLen = 0;
+		rLoc = 149;
+		rType = 0;
+		vrLen = 378;
+		vrLoc = 0;
+	};
+	62BBEE18100075B900957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FE50FFA240F00B60B0A /* QContext.m */;
+		name = "QContext.m: 33";
+		rLen = 0;
+		rLoc = 526;
+		rType = 0;
+		vrLen = 256;
+		vrLoc = 343;
+	};
+	62BBEE64100080A200957334 /* QBoundedObject.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QBoundedObject.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QBoundedObject.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 439}}";
+			sepNavSelRange = "{252, 0}";
+			sepNavVisRange = "{0, 287}";
+			sepNavWindowFrame = "{{107, 231}, {750, 558}}";
+		};
+	};
+	62BBEE7B1000BE6D00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757B0D0FFF04ED0086AD09 /* QShadow.m */;
+		name = "QShadow.m: 90";
+		rLen = 0;
+		rLoc = 1718;
+		rType = 0;
+		vrLen = 447;
+		vrLoc = 1680;
+	};
+	62BBEE7C1000BE6D00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62757D030FFF350D0086AD09 /* QPoint.h */;
+		name = "QPoint.h: 23";
+		rLen = 0;
+		rLoc = 380;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 123;
+	};
+	62BBEE831000BE6D00957334 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54530FFEF01400B803C1 /* QStrokedRectangle.h */;
+		name = "QStrokedRectangle.h: 11";
+		rLen = 0;
+		rLoc = 184;
+		rType = 0;
+		vrLen = 282;
+		vrLoc = 0;
+	};
+	62BDE007104935970072D351 /* PaintInstance.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = PaintInstance.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/PaintInstance.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 663}}";
+			sepNavSelRange = "{718, 0}";
+			sepNavVisRange = "{0, 922}";
+		};
+	};
+	62BDE008104935970072D351 /* PaintInstance.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = PaintInstance.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/PaintInstance.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 2184}}";
+			sepNavSelRange = "{3452, 0}";
+			sepNavVisRange = "{3455, 785}";
+		};
+	};
+	62BDE009104935970072D351 /* PouredDroplet.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = PouredDroplet.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/PouredDroplet.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 429}}";
+			sepNavSelRange = "{222, 0}";
+			sepNavVisRange = "{0, 319}";
+		};
+	};
+	62BDE011104936D60072D351 /* Vector2D.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = Vector2D.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/Vector2D.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 1404}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 615}";
+		};
+	};
+	62BDE012104936D60072D351 /* Vector2D.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = Vector2D.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/Vector2D.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 2197}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{2405, 471}";
+		};
+	};
+	62BDE017104937B50072D351 /* QuartzCocoaLibExt.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QuartzCocoaLibExt.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QuartzCocoaLibExt.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 433}}";
+			sepNavSelRange = "{215, 0}";
+			sepNavVisRange = "{0, 215}";
+		};
+	};
+	62CD06510FFB89D60001D102 /* QuartzCocoaLib.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QuartzCocoaLib.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QuartzCocoaLib.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 507}}";
+			sepNavSelRange = "{185, 0}";
+			sepNavVisRange = "{131, 436}";
+		};
+	};
+	62CD06A90FFB8BD30001D102 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C1667FE841158C02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	62CEE5A6100371470014870C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62BBEE64100080A200957334 /* QBoundedObject.h */;
+		name = "QBoundedObject.h: 16";
+		rLen = 0;
+		rLoc = 252;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 0;
+	};
+	62CEE5DE1003744D0014870C /* QVisitor.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QVisitor.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QVisitor.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {596, 405}}";
+			sepNavSelRange = "{173, 8}";
+			sepNavVisRange = "{0, 254}";
+		};
+	};
+	62D1823E1000399500113ED7 /* QShape.m:37 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 62757CF20FFF2E8B0086AD09 /* QShape.m */;
+		functionName = "-update:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 37;
+		location = TestGraphicsContext;
+		modificationTime = 299327393.0275761;
+		originalNumberOfMultipleMatches = 0;
+		state = 2;
+	};
+	62D66FDB0FFA235C00B60B0A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	62D66FDC0FFA235C00B60B0A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	62D66FE00FFA23C100B60B0A /* QContextModifier.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QContextModifier.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QContextModifier.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 424}}";
+			sepNavSelRange = "{164, 0}";
+			sepNavVisRange = "{0, 283}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
+	62D66FE40FFA240F00B60B0A /* QContext.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QContext.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QContext.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 424}}";
+			sepNavSelRange = "{325, 0}";
+			sepNavVisRange = "{0, 365}";
+		};
+	};
+	62D66FE50FFA240F00B60B0A /* QContext.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QContext.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QContext.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 560}}";
+			sepNavSelRange = "{526, 0}";
+			sepNavVisRange = "{343, 256}";
+		};
+	};
+	62D6700E0FFA28BE00B60B0A /* QFilledRectangle.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QFilledRectangle.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFilledRectangle.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {663, 485}}";
+			sepNavSelRange = "{325, 0}";
+			sepNavVisRange = "{0, 332}";
+		};
+	};
+	62D670110FFA290300B60B0A /* QFillColor.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QFillColor.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFillColor.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{154, 0}";
+			sepNavVisRange = "{0, 265}";
+			sepNavWindowFrame = "{{38, 294}, {750, 558}}";
+		};
+	};
+	62D670120FFA290400B60B0A /* QFillColor.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QFillColor.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFillColor.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {656, 485}}";
+			sepNavSelRange = "{313, 0}";
+			sepNavVisRange = "{0, 320}";
+			sepNavWindowFrame = "{{61, 273}, {750, 558}}";
+		};
+	};
+	62D670160FFA299700B60B0A /* QModifierQueue.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QModifierQueue.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QModifierQueue.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {679, 1344}}";
+			sepNavSelRange = "{1707, 0}";
+			sepNavVisRange = "{676, 622}";
+			sepNavWindowFrame = "{{130, 210}, {750, 558}}";
+		};
+	};
+	62E3CC1F11D77215004308CB /* NSObjCRuntime.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSObjCRuntime.h;
+		path = /System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h;
+		sourceTree = "<absolute>";
+	};
+	62EA541E0FFEEE5200B803C1 /* QColor.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QColor.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QColor.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 462}}";
+			sepNavSelRange = "{148, 0}";
+			sepNavVisRange = "{0, 320}";
+		};
+	};
+	62EA541F0FFEEE5200B803C1 /* QColor.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QColor.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QColor.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 754}}";
+			sepNavSelRange = "{734, 0}";
+			sepNavVisRange = "{248, 492}";
+		};
+	};
+	62EA54490FFEEF7300B803C1 /* QRectangle.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 650}}";
+			sepNavSelRange = "{243, 0}";
+			sepNavVisRange = "{183, 533}";
+		};
+	};
+	62EA54530FFEF01400B803C1 /* QStrokedRectangle.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QStrokedRectangle.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QStrokedRectangle.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{184, 0}";
+			sepNavVisRange = "{0, 282}";
+		};
+	};
+	62EA54540FFEF01400B803C1 /* QStrokedRectangle.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QStrokedRectangle.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QStrokedRectangle.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {677, 485}}";
+			sepNavSelRange = "{279, 0}";
+			sepNavVisRange = "{0, 342}";
+		};
+	};
+	62EA54570FFEF02000B803C1 /* QStrokeColor.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QStrokeColor.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QStrokeColor.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 266}}";
+			sepNavSelRange = "{155, 0}";
+			sepNavVisRange = "{0, 269}";
+		};
+	};
+	62EA54580FFEF02000B803C1 /* QStrokeColor.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QStrokeColor.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QStrokeColor.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {576, 280}}";
+			sepNavSelRange = "{318, 0}";
+			sepNavVisRange = "{3, 323}";
+		};
+	};
+	62EA54690FFEF1A100B803C1 /* QSaveContext.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QSaveContext.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QSaveContext.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 485}}";
+			sepNavSelRange = "{155, 0}";
+			sepNavVisRange = "{0, 301}";
+		};
+	};
+	62EA546A0FFEF1A100B803C1 /* QSaveContext.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QSaveContext.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QSaveContext.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 485}}";
+			sepNavSelRange = "{275, 0}";
+			sepNavVisRange = "{0, 321}";
+		};
+	};
+	62EA546D0FFEF1AC00B803C1 /* QRestoreContext.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QRestoreContext.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QRestoreContext.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 280}}";
+			sepNavSelRange = "{158, 0}";
+			sepNavVisRange = "{3, 305}";
+		};
+	};
+	62EA546E0FFEF1AC00B803C1 /* QRestoreContext.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QRestoreContext.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QRestoreContext.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 466}}";
+			sepNavSelRange = "{165, 0}";
+			sepNavVisRange = "{0, 333}";
+		};
+	};
+	62EA54710FFEF2C600B803C1 /* QStrokeWidth.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QStrokeWidth.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QStrokeWidth.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 308}}";
+			sepNavSelRange = "{155, 0}";
+			sepNavVisRange = "{22, 349}";
+		};
+	};
+	62EA54720FFEF2C600B803C1 /* QStrokeWidth.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QStrokeWidth.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QStrokeWidth.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 485}}";
+			sepNavSelRange = "{157, 0}";
+			sepNavVisRange = "{0, 458}";
+		};
+	};
+	62EA549D0FFEFBBB00B803C1 /* QLineCap.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = QLineCap.h;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QLineCap.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 322}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{37, 357}";
+			sepNavWindowFrame = "{{15, 315}, {750, 558}}";
+		};
+	};
+}
