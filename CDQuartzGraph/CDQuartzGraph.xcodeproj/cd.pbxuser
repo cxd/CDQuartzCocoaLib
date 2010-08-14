@@ -55,6 +55,10 @@
 			PBXPerProjectTemplateStateSaveDate = 303452977;
 			PBXWorkspaceStateSaveDate = 303452977;
 		};
+		perUserProjectItems = {
+			6240A9DF12165EFE00840C1B /* PBXTextBookmark */ = 6240A9DF12165EFE00840C1B /* PBXTextBookmark */;
+			6240A9E012165EFE00840C1B /* PBXTextBookmark */ = 6240A9E012165EFE00840C1B /* PBXTextBookmark */;
+		};
 		sourceControlManager = 6240A5271216529A00840C1B /* Source Control */;
 		userBuildSettings = {
 		};
@@ -72,6 +76,33 @@
 	6240A5281216529A00840C1B /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	6240A7C312165B0400840C1B /* README */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 237}}";
+			sepNavSelRange = "{196, 0}";
+			sepNavVisRange = "{0, 198}";
+		};
+	};
+	6240A9DF12165EFE00840C1B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A7C312165B0400840C1B /* README */;
+		name = "README: 1";
+		rLen = 0;
+		rLoc = 198;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6240A9E012165EFE00840C1B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A7C312165B0400840C1B /* README */;
+		name = "README: 7";
+		rLen = 0;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 198;
+		vrLoc = 0;
 	};
 	8DC2EF4F0486A6940098B216 /* CDQuartzGraph */ = {
 		activeExec = 0;
