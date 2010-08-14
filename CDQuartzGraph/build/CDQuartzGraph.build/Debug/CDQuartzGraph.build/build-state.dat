@@ -1,0 +1,129 @@
+TCDQuartzGraph
+v7
+r0
+t303454954.733892
+cCheck dependencies
+cSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current A
+cSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
+cProcessInfoPlistFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
+cCopyStringsFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cTouch /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+
+N/Users/cd/Projects/Math/CDQuartzGraph/English.lproj/InfoPlist.strings
+c000000004C661AF70000000000000030
+t1281759991
+s48
+
+N/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+t1281759997
+s136
+
+N/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources
+t3
+s26
+
+N/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+t1281759997
+s92
+
+N/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist
+t1281759996
+s732
+
+N/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current
+t3
+s1
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/English.lproj/InfoPlist.strings
+c000000004C661AF70000000000000030
+t1281759991
+s48
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+t1281759997
+s136
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources
+t3
+s26
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+t1281759997
+s92
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist
+t1281759996
+s732
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current
+t3
+s1
+
+NInfo.plist
+c000000004C661AF70000000000000357
+t1281759991
+s855
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies303454954#303454954#0(0"0(0#1#0"8623371392#0"0#
+
+CCopyStringsFile /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s303452796.126321
+e303452797.659115
+r1
+xCopyStringsFile
+x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings303452796#303452797#0(0"0(0#0#69"/Users/cd/Projects/Math/CDQuartzGraph/English.lproj/InfoPlist.strings8605568096#377"    cd /Users/cd/Projects/Math/CDQuartzGraph    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj0#
+
+CCopyStringsFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+r0
+
+CProcessInfoPlistFile /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
+s303452796.041099
+e303452796.126195
+r1
+xProcessInfoPlistFile
+x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist303452796#303452796#0(0"0(0#0#48"/Users/cd/Projects/Math/CDQuartzGraph/Info.plist8606809312#232"    cd /Users/cd/Projects/Math/CDQuartzGraph    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist0#
+
+CProcessInfoPlistFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
+r0
+
+CSymLink /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
+s303452795.870394
+e303452796.041035
+r1
+xSymLink
+x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources
+xVersions/Current/Resources
+lSLF07#2@91"Process /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources303452795#303452796#0(0"0(0#0#0"8607090016#172"    cd /Users/cd/Projects/Math/CDQuartzGraph    /bin/ln -sf Versions/Current/Resources /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources0#
+
+CSymLink /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current A
+s303452795.807394
+e303452796.040343
+r1
+xSymLink
+x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current
+xA
+lSLF07#2@98"Process /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current303452795#303452796#0(0"0(0#0#0"32088452295688308#154"    cd /Users/cd/Projects/Math/CDQuartzGraph    /bin/ln -sf A /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current0#
+
+CSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
+r0
+
+CSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current A
+r0
+
+CTouch /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+s303452797.659290
+e303452797.818089
+r1
+xTouch
+x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+lSLF07#2@79"Touch /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework303452797#303452797#0(0"0(0#0#0"8604714368#141"    cd /Users/cd/Projects/Math/CDQuartzGraph    /usr/bin/touch -c /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework0#
+
+CTouch /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+r0
+
