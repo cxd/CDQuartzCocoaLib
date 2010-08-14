@@ -147,7 +147,7 @@
 		6240A70F121659B800840C1B /* UImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UImageCategory.m; path = ../QuartzCocoaLib/UImageCategory.m; sourceTree = SOURCE_ROOT; };
 		6240A710121659B800840C1B /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2D.h; path = ../QuartzCocoaLib/Vector2D.h; sourceTree = SOURCE_ROOT; };
 		6240A711121659B900840C1B /* Vector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vector2D.m; path = ../QuartzCocoaLib/Vector2D.m; sourceTree = SOURCE_ROOT; };
-		6240A7B112165AA000840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFramework.h; sourceTree = "<group>"; };
+		6240A7B112165AA000840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = QFramework_Header/QFramework.h; sourceTree = "<group>"; };
 		6240A7C512165B3400840C1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		62EA54490FFEEF7300B803C1 /* QRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRectangle.m; path = ../QuartzCocoaLib/QRectangle.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
