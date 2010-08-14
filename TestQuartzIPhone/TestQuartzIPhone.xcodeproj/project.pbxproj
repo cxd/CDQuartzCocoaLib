@@ -61,6 +61,7 @@
 		28D7ACF70DDB3853001CB0EB /* TestQuartzIPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQuartzIPhoneViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TestQuartzIPhone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQuartzIPhone_Prefix.pch; sourceTree = "<group>"; };
+		6240A9B112165E3100840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = ../QuartzCocoaLibTouch/QFramework_Header/QFramework.h; sourceTree = SOURCE_ROOT; };
 		6264AD3F11E073C3007541B6 /* PaintInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintInstance.h; path = ../QuartzCocoaLib/PaintInstance.h; sourceTree = SOURCE_ROOT; };
 		6264AD4011E073C3007541B6 /* PaintInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintInstance.m; path = ../QuartzCocoaLib/PaintInstance.m; sourceTree = SOURCE_ROOT; };
 		6264AD4111E073C3007541B6 /* PouredDroplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PouredDroplet.h; path = ../QuartzCocoaLib/PouredDroplet.h; sourceTree = SOURCE_ROOT; };
@@ -86,7 +87,6 @@
 		6264AD5511E073C3007541B6 /* QFilledRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFilledRectangle.m; path = ../QuartzCocoaLib/QFilledRectangle.m; sourceTree = SOURCE_ROOT; };
 		6264AD5611E073C3007541B6 /* QFillPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFillPath.h; path = ../QuartzCocoaLib/QFillPath.h; sourceTree = SOURCE_ROOT; };
 		6264AD5711E073C3007541B6 /* QFillPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFillPath.m; path = ../QuartzCocoaLib/QFillPath.m; sourceTree = SOURCE_ROOT; };
-		6264AD5811E073C3007541B6 /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = ../QuartzCocoaLib/QFramework.h; sourceTree = SOURCE_ROOT; };
 		6264AD5911E073C3007541B6 /* QImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QImage.h; path = ../QuartzCocoaLib/QImage.h; sourceTree = SOURCE_ROOT; };
 		6264AD5A11E073C3007541B6 /* QImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QImage.m; path = ../QuartzCocoaLib/QImage.m; sourceTree = SOURCE_ROOT; };
 		6264AD5B11E073C3007541B6 /* QJoinCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QJoinCap.h; path = ../QuartzCocoaLib/QJoinCap.h; sourceTree = SOURCE_ROOT; };
@@ -213,6 +213,7 @@
 		62BBEC1F1000548800957334 /* QuartzLib */ = {
 			isa = PBXGroup;
 			children = (
+				6240A9B112165E3100840C1B /* QFramework.h */,
 				6264AD3F11E073C3007541B6 /* PaintInstance.h */,
 				6264AD4011E073C3007541B6 /* PaintInstance.m */,
 				6264AD4111E073C3007541B6 /* PouredDroplet.h */,
@@ -238,7 +239,6 @@
 				6264AD5511E073C3007541B6 /* QFilledRectangle.m */,
 				6264AD5611E073C3007541B6 /* QFillPath.h */,
 				6264AD5711E073C3007541B6 /* QFillPath.m */,
-				6264AD5811E073C3007541B6 /* QFramework.h */,
 				6264AD5911E073C3007541B6 /* QImage.h */,
 				6264AD5A11E073C3007541B6 /* QImage.m */,
 				6264AD5B11E073C3007541B6 /* QJoinCap.h */,
