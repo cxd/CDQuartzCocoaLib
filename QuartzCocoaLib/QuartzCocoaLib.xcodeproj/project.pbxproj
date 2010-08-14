@@ -113,7 +113,7 @@
 		6240A6101216570000840C1B /* QFilledRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFilledRectangle.m; sourceTree = "<group>"; };
 		6240A6111216570000840C1B /* QFillPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFillPath.h; sourceTree = "<group>"; };
 		6240A6121216570000840C1B /* QFillPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFillPath.m; sourceTree = "<group>"; };
-		6240A6131216570000840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFramework.h; sourceTree = "<group>"; };
+		6240A6131216570000840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = QFramework_Header/QFramework.h; sourceTree = "<group>"; };
 		6240A6141216570000840C1B /* QImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QImage.h; sourceTree = "<group>"; };
 		6240A6151216570000840C1B /* QImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QImage.m; sourceTree = "<group>"; };
 		6240A6161216570000840C1B /* QJoinCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJoinCap.h; sourceTree = "<group>"; };
