@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,21 +267,23 @@
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
+								<string>6240A6CC1216593900840C1B</string>
 								<string>0867D69AFE84028FC02AAC07</string>
 								<string>034768DFFF38A50411DB9C8B</string>
+								<string>8DC2EF5B0486A6940098B216</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>28</integer>
+									<integer>55</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 48}, {286, 445}}</string>
+							<string>{{0, 489}, {286, 558}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -291,14 +295,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {303, 463}}</string>
+						<string>{{0, 0}, {303, 576}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>286</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>151 374 788 504 0 0 1440 878 </string>
+						<string>563 261 808 617 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -309,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>QuartzCocoaLibTouch_Prefix.pch</string>
+								<string>QStrokeColor.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,21 +326,53 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>QuartzCocoaLibTouch_Prefix.pch</string>
+										<string>QStrokeColor.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62602A8C12165F1E0018E683</string>
+										<string>62175A8A12180D6400E2120C</string>
 										<key>history</key>
 										<array>
 											<string>6240A69D1216589E00840C1B</string>
 											<string>6240A69E1216589E00840C1B</string>
-											<string>6240A6A21216589E00840C1B</string>
 											<string>6240A6A31216589E00840C1B</string>
 											<string>6240A6AE121658DB00840C1B</string>
 											<string>6240A6B0121658DB00840C1B</string>
-											<string>6240A7F612165DCE00840C1B</string>
-											<string>6240A9E812165EFF00840C1B</string>
+											<string>62602BFC12168C7D0018E683</string>
+											<string>62602BFD12168C7D0018E683</string>
+											<string>62602BFE12168C7D0018E683</string>
+											<string>62602BFF12168C7D0018E683</string>
+											<string>62602C0012168C7D0018E683</string>
+											<string>62602C0112168C7D0018E683</string>
+											<string>62602C0212168C7D0018E683</string>
+											<string>62602C0312168C7D0018E683</string>
+											<string>62602C0412168C7D0018E683</string>
+											<string>62602C0512168C7D0018E683</string>
+											<string>62602C0612168C7D0018E683</string>
+											<string>62602C0812168C7D0018E683</string>
+											<string>62602C0912168C7D0018E683</string>
+											<string>62602C0A12168C7D0018E683</string>
+											<string>62602C0B12168C7D0018E683</string>
+											<string>62602C0C12168C7D0018E683</string>
+											<string>62602C0E12168C7D0018E683</string>
+											<string>62602C0F12168C7D0018E683</string>
+											<string>62602C1012168C7D0018E683</string>
+											<string>62602C1212168C7D0018E683</string>
+											<string>62602C1312168C7D0018E683</string>
+											<string>62602C1412168C7D0018E683</string>
+											<string>62602C1512168C7D0018E683</string>
+											<string>62602C1612168C7D0018E683</string>
+											<string>62602C1812168C7D0018E683</string>
+											<string>62175A8012180D6400E2120C</string>
+											<string>62175A8112180D6400E2120C</string>
+											<string>62175A8212180D6400E2120C</string>
+											<string>62175A8312180D6400E2120C</string>
+											<string>62175A8412180D6400E2120C</string>
+											<string>62175A8512180D6400E2120C</string>
+											<string>62175A8612180D6400E2120C</string>
+											<string>62175A8712180D6400E2120C</string>
+											<string>62175A8812180D6400E2120C</string>
+											<string>62175A8912180D6400E2120C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -350,14 +384,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {480, 315}}</string>
+								<string>{{0, 0}, {500, 523}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 374 788 504 0 0 1440 878 </string>
+								<string>563 261 808 617 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>315pt</string>
+							<string>523pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -370,18 +404,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 320}, {480, 143}}</string>
+								<string>{{0, 528}, {500, 48}}</string>
 								<key>RubberWindowFrame</key>
-								<string>151 374 788 504 0 0 1440 878 </string>
+								<string>563 261 808 617 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>143pt</string>
+							<string>48pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>480pt</string>
+					<string>500pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -396,9 +430,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>62602A8D12165F1E0018E683</string>
+				<string>62175A8B12180D6400E2120C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>62602A8E12165F1E0018E683</string>
+				<string>62175A8C12180D6400E2120C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -540,7 +574,7 @@
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QuartzCocoaLib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>151 374 788 504 0 0 1440 878 </string>
+	<string>563 261 808 617 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -617,7 +651,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6240A5EB1216562000840C1B</string>
-				<string>62602A8F12165F1E0018E683</string>
+				<string>62175A8D12180D6400E2120C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

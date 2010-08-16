@@ -49,6 +49,15 @@
 	return self;
 }
 
+-(id)initWithQColor:(QColor *)color
+{
+	self = [super init];
+	self.alpha = color.alpha;
+	self.red = color.red;
+	self.blue = color.blue;
+	self.green = color.green;
+	return self;
+}
 
 -(void)update:(QContext *)context
 {

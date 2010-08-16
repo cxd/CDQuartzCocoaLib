@@ -25,6 +25,7 @@
 -(id)init;
 -(id)initWithRGB:(float)r G:(float)g B:(float)b;
 -(id)initWithRGBA:(float)r G:(float)g B:(float)b A:(float)a;
+-(id)initWithQColor:(QColor *)color;
 -(void)update:(QContext *)context;
 
 

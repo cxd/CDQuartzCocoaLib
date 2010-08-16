@@ -59,15 +59,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303455476;
-			PBXWorkspaceStateSaveDate = 303455476;
+			PBXPerProjectTemplateStateSaveDate = 303456266;
+			PBXWorkspaceStateSaveDate = 303456266;
 		};
 		perUserProjectItems = {
 			6204332310B79FEE003D394D /* PBXTextBookmark */ = 6204332310B79FEE003D394D /* PBXTextBookmark */;
-			6240A7E212165D6100840C1B /* XCBuildMessageTextBookmark */ = 6240A7E212165D6100840C1B /* XCBuildMessageTextBookmark */;
 			6240A9A112165E1A00840C1B /* PBXTextBookmark */ = 6240A9A112165E1A00840C1B /* PBXTextBookmark */;
 			6240A9A212165E1A00840C1B /* PBXTextBookmark */ = 6240A9A212165E1A00840C1B /* PBXTextBookmark */;
 			62507E1410DE5BEE0011E250 /* PBXTextBookmark */ = 62507E1410DE5BEE0011E250 /* PBXTextBookmark */;
+			62602AB2121660220018E683 /* PBXTextBookmark */ = 62602AB2121660220018E683 /* PBXTextBookmark */;
 			6264ADC411E079CF007541B6 /* PBXTextBookmark */ = 6264ADC411E079CF007541B6 /* PBXTextBookmark */;
 			6264ADC511E079CF007541B6 /* PBXTextBookmark */ = 6264ADC511E079CF007541B6 /* PBXTextBookmark */;
 			629F530F0FF5FDCD002EFD1F /* PBXTextBookmark */ = 629F530F0FF5FDCD002EFD1F /* PBXTextBookmark */;
@@ -94,15 +94,6 @@
 		rType = 0;
 		vrLen = 211;
 		vrLoc = 0;
-	};
-	6240A7E212165D6100840C1B /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "QContext.h: No such file or directory";
-		fRef = 62D66FB00FFA190F00B60B0A /* QuartzTestView.h */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 9;
-		rType = 1;
 	};
 	6240A9A112165E1A00840C1B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -134,6 +125,16 @@
 		vrLen = 809;
 		vrLoc = 1575;
 	};
+	62602AB2121660220018E683 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FB00FFA190F00B60B0A /* QuartzTestView.h */;
+		name = "QuartzTestView.h: 11";
+		rLen = 0;
+		rLoc = 201;
+		rType = 0;
+		vrLen = 261;
+		vrLoc = 0;
+	};
 	6264ACC811E0737F007541B6 /* CTGradient.h */ = {
 		isa = PBXFileReference;
 		fileEncoding = 4;
@@ -141,11 +142,6 @@
 		name = CTGradient.h;
 		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/CTGradient.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {704, 1001}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 673}";
-		};
 	};
 	6264ACC911E0737F007541B6 /* CTGradient.m */ = {
 		isa = PBXFileReference;
@@ -154,11 +150,6 @@
 		name = CTGradient.m;
 		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/CTGradient.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {704, 16107}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1018}";
-		};
 	};
 	6264ADC411E079CF007541B6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -287,9 +278,9 @@
 	};
 	62D66FB00FFA190F00B60B0A /* QuartzTestView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 247}}";
-			sepNavSelRange = "{165, 0}";
-			sepNavVisRange = "{186, 75}";
+			sepNavIntBoundsRect = "{{0, 0}, {704, 407}}";
+			sepNavSelRange = "{201, 0}";
+			sepNavVisRange = "{0, 261}";
 		};
 	};
 	62D66FB10FFA190F00B60B0A /* QuartzTestView.m */ = {
