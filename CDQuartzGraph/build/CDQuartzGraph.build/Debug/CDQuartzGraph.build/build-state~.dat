@@ -1,13 +1,39 @@
 TCDQuartzGraph
 v7
 r0
-t303452797.818138
+t303457059.293074
 cCheck dependencies
-cSymLink /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current A
-cSymLink /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
-cProcessInfoPlistFile /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
-cCopyStringsFile /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cTouch /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+cSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current A
+cSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
+cSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Headers Versions/Current/Headers
+cSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/CDQuartzGraph Versions/Current/CDQuartzGraph
+cProcessInfoPlistFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
+cCpHeader build/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzGraph.h CDQuartzGraph.h
+cCpHeader build/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzNode.h CDQuartzNode.h
+cCopyStringsFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCpResource build/Debug/CDQuartzGraph.framework/Versions/A/Resources/README README
+cProcessPCH /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-frjagllsnbwkbjcukzztonzjssiq/CDQuartzGraph_Prefix.pch.gch CDQuartzGraph_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzNode.o /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004C4C27AD00000000000000EE
+t1280059309
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/cd/Projects/Math/CDGraph/build/Debug/CDGraph.framework/CDGraph
+c000000004C662B7B000000000000C0A8
+t1281764219
+s49320
 
 N/Users/cd/Projects/Math/CDQuartzGraph/English.lproj/InfoPlist.strings
 c000000004C661AF70000000000000030
@@ -34,6 +60,122 @@ N/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versi
 t3
 s1
 
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../../../Math/CDGraph/build/Debug/CDGraph.framework/CDGraph
+c000000004C662B7B000000000000C0A8
+t1281764219
+s49320
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../QuartzCocoaLib/build/Debug/QuartzCocoaLib.framework/QuartzCocoaLib
+c000000004C662339000000000002A518
+t1281762105
+s173336
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h
+c000000004C66295000000000000000B5
+t1281763664
+s181
+i"QFramework.h"
+i"CDGraph.h"
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch
+c000000004C661AF7000000000000009E
+t1281759991
+s158
+i<Cocoa/Cocoa.h>
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h
+c000000004C66296300000000000000E6
+t1281763683
+s230
+i<Cocoa/Cocoa.h>
+i"CDQuartzGraph.h"
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m
+c000000004C66293900000000000000C3
+t1281763641
+s195
+i"CDQuartzNode.h"
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/English.lproj/InfoPlist.strings
+c000000004C661AF70000000000000030
+t1281759991
+s48
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/README
+c000000004C66243B00000000000000C6
+t1281762363
+s198
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzGraph.LinkFileList
+c000000004C662B9F0000000000000092
+t1281764255
+s146
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzNode.o
+t2
+s0
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+t2
+s0
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/CDQuartzGraph
+t3
+s30
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Headers
+t3
+s24
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources
+t3
+s26
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/CDQuartzGraph
+t2
+s0
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzGraph.h
+t1281764255
+s181
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzNode.h
+t1281764255
+s230
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+t1281764255
+s92
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist
+t1281764255
+s732
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/README
+t1281764255
+s198
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current
+t3
+s1
+
+N/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/build/Debug/QuartzCocoaLib.framework/QuartzCocoaLib
+c000000004C662339000000000002A518
+t1281762105
+s173336
+
+N/var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-bfkvfpbipvkkkjfyafavdpzrogbb/CDQuartzGraph_Prefix.pch.gch
+t1281763745
+s54265616
+
+N/var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-cvhcxcylmsvzamdtvyjljwcfgmqd/CDQuartzGraph_Prefix.pch.gch
+t1281763668
+s54265616
+
+N/var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-frjagllsnbwkbjcukzztonzjssiq/CDQuartzGraph_Prefix.pch.gch
+t1281764259
+s54265616
+
 NInfo.plist
 c000000004C661AF70000000000000357
 t1281759991
@@ -41,7 +183,24 @@ s855
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies303452795#303452795#0(0"0(0#1#0"32651513917735028#0"0#
+lSLF07#2@18"Check dependencies303457055#303457055#0(0"0(0#1#0"8625738464#0"0#
+
+CCompileC build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzNode.o /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s303457059.168333
+e303457059.292984
+r0
+xCompileC
+xbuild/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzNode.o
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h:10,
+o                 from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m:9:
+o/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h:10:23: error: QFramework.h: No such file or directory
+o/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h:11:20: error: CDGraph.h: No such file or directory
+lSLF07#2@79"Compile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m303457059#303457059#0(446"In file included from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h:10,                 from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m:9:/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h:10:23: error: QFramework.h: No such file or directory/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h:11:20: error: CDGraph.h: No such file or directory2(4@39"QFramework.h: No such file or directory303457059#195#127#3(7@93"In file included from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m303457059#18446744073709551615#0#0(6@71"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m303456441#9#0#9#0#0"0(7@93"In file included from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h303457059#18446744073709551615#0#0(6@71"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h303456483#10#0#10#0#0"0(13@115"QFramework.h: No such file or directory in /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h303457059#18446744073709551615#0#0(6@72"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h303456464#10#0#10#0#0"0(6@72"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h303456464#10#0#10#0#28"*: No such file or directory0(4@36"CDGraph.h: No such file or directory303457059#322#124#3(7@93"In file included from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m303457059#18446744073709551615#0#0(6@71"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m303456441#9#0#9#0#0"0(7@93"In file included from /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h303457059#18446744073709551615#0#0(6@71"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h303456483#10#0#10#0#0"0(13@112"CDGraph.h: No such file or directory in /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h303457059#18446744073709551615#0#0(6@72"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h303456464#11#0#11#0#0"0(6@72"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h303456464#11#0#11#0#28"*: No such file or directory0(0#0#71"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m8623282848#1966"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-generated-files.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-own-target-headers.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-all-target-headers.hmap -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-project-headers.hmap -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../QuartzCocoaLib/build/Debug -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../../../Math/CDGraph/build/Debug -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/include -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources/x86_64 -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources -include /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-frjagllsnbwkbjcukzztonzjssiq/CDQuartzGraph_Prefix.pch -c /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.m -o /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzNode.o1#
 
 CCopyStringsFile /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 s303452796.126321
@@ -52,6 +211,52 @@ x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versi
 xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings303452796#303452797#0(0"0(0#0#69"/Users/cd/Projects/Math/CDQuartzGraph/English.lproj/InfoPlist.strings8605568096#377"    cd /Users/cd/Projects/Math/CDQuartzGraph    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj0#
 
+CCopyStringsFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s303457055.317599
+e303457055.617274
+r1
+xCopyStringsFile
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings303457055#303457055#0(0"0(0#0#88"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/English.lproj/InfoPlist.strings8622515840#415"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/English.lproj0#
+
+CCpHeader build/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzGraph.h CDQuartzGraph.h
+s303457055.311779
+e303457055.317347
+r1
+xCpHeader
+xbuild/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzGraph.h
+xCDQuartzGraph.h
+lSLF07#2@20"Copy CDQuartzGraph.h303457055#303457055#0(0"0(0#0#72"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h8622612928#397"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.h /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Headers0#
+
+CCpHeader build/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzNode.h CDQuartzNode.h
+s303457055.312452
+e303457055.317517
+r1
+xCpHeader
+xbuild/Debug/CDQuartzGraph.framework/Versions/A/Headers/CDQuartzNode.h
+xCDQuartzNode.h
+lSLF07#2@19"Copy CDQuartzNode.h303457055#303457055#0(0"0(0#0#71"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h8622584000#396"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzNode.h /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Headers0#
+
+CCpResource build/Debug/CDQuartzGraph.framework/Versions/A/Resources/README README
+s303457055.318421
+e303457055.323734
+r1
+xCpResource
+xbuild/Debug/CDQuartzGraph.framework/Versions/A/Resources/README
+xREADME
+lSLF07#2@11"Copy README303457055#303457055#0(0"0(0#0#63"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/README8622324864#390"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/README /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources0#
+
+CLd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/CDQuartzGraph normal x86_64
+s303456468.885758
+e303456468.971419
+r1
+xLd
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/CDQuartzGraph
+xnormal
+xx86_64
+lSLF07#2@122"Link /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/CDQuartzGraph303456468#303456468#0(0"0(0#0#0"8596527104#1007"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug -filelist /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/Objects-normal/x86_64/CDQuartzGraph.LinkFileList -install_name /Users/cd/Library/Frameworks/CDQuartzGraph.framework/Versions/A/CDQuartzGraph -mmacosx-version-min=10.6 /Users/cd/Projects/Math/CDGraph/build/Debug/CDGraph.framework/CDGraph /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/build/Debug/QuartzCocoaLib.framework/QuartzCocoaLib -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/CDQuartzGraph0#
+
 CProcessInfoPlistFile /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
 s303452796.041099
 e303452796.126195
@@ -60,6 +265,54 @@ xProcessInfoPlistFile
 x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist
 xInfo.plist
 lSLF07#2@18"Process Info.plist303452796#303452796#0(0"0(0#0#48"/Users/cd/Projects/Math/CDQuartzGraph/Info.plist8606809312#232"    cd /Users/cd/Projects/Math/CDQuartzGraph    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist0#
+
+CProcessInfoPlistFile /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist Info.plist
+s303457055.308149
+e303457055.311686
+r1
+xProcessInfoPlistFile
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist303457055#303457055#0(0"0(0#0#67"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/Info.plist8622751104#270"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/A/Resources/Info.plist0#
+
+CProcessPCH /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-bfkvfpbipvkkkjfyafavdpzrogbb/CDQuartzGraph_Prefix.pch.gch CDQuartzGraph_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s303456541.881292
+e303456545.396861
+r1
+xProcessPCH
+x/var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-bfkvfpbipvkkkjfyafavdpzrogbb/CDQuartzGraph_Prefix.pch.gch
+xCDQuartzGraph_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile CDQuartzGraph_Prefix.pch303456541#303456545#0(0"0(0#0#81"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch8622539104#1739"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-generated-files.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-own-target-headers.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-all-target-headers.hmap -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-project-headers.hmap -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../QuartzCocoaLib/build/Debug -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/include -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources/x86_64 -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources -c /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch -o /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-bfkvfpbipvkkkjfyafavdpzrogbb/CDQuartzGraph_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-cvhcxcylmsvzamdtvyjljwcfgmqd/CDQuartzGraph_Prefix.pch.gch CDQuartzGraph_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s303456465.124120
+e303456468.738794
+r1
+xProcessPCH
+x/var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-cvhcxcylmsvzamdtvyjljwcfgmqd/CDQuartzGraph_Prefix.pch.gch
+xCDQuartzGraph_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile CDQuartzGraph_Prefix.pch303456465#303456468#0(0"0(0#0#81"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch8622383744#1650"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-generated-files.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-own-target-headers.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-all-target-headers.hmap -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-project-headers.hmap -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/include -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources/x86_64 -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources -c /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch -o /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-cvhcxcylmsvzamdtvyjljwcfgmqd/CDQuartzGraph_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-frjagllsnbwkbjcukzztonzjssiq/CDQuartzGraph_Prefix.pch.gch CDQuartzGraph_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s303457055.617569
+e303457059.167932
+r1
+xProcessPCH
+x/var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-frjagllsnbwkbjcukzztonzjssiq/CDQuartzGraph_Prefix.pch.gch
+xCDQuartzGraph_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile CDQuartzGraph_Prefix.pch303457055#303457059#0(0"0(0#0#81"/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch8625297408#1832"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-generated-files.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-own-target-headers.hmap -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-all-target-headers.hmap -iquote /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/CDQuartzGraph-project-headers.hmap -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../QuartzCocoaLib/build/Debug -F/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/../../../Math/CDGraph/build/Debug -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/include -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources/x86_64 -I/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/CDQuartzGraph.build/Debug/CDQuartzGraph.build/DerivedSources -c /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph_Prefix.pch -o /var/folders/pA/pA4VqE-DGDi5zlj+XZQDcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CDQuartzGraph_Prefix-frjagllsnbwkbjcukzztonzjssiq/CDQuartzGraph_Prefix.pch.gch0#
 
 CSymLink /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
 s303452795.870394
@@ -79,6 +332,42 @@ x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versi
 xA
 lSLF07#2@98"Process /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current303452795#303452796#0(0"0(0#0#0"32088452295688308#154"    cd /Users/cd/Projects/Math/CDQuartzGraph    /bin/ln -sf A /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current0#
 
+CSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/CDQuartzGraph Versions/Current/CDQuartzGraph
+s303457055.304656
+e303457055.308063
+r1
+xSymLink
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/CDQuartzGraph
+xVersions/Current/CDQuartzGraph
+lSLF07#2@114"Process /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/CDQuartzGraph303457055#303457055#0(0"0(0#0#0"8622818048#218"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /bin/ln -sf Versions/Current/CDQuartzGraph /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/CDQuartzGraph0#
+
+CSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Headers Versions/Current/Headers
+s303457055.301807
+e303457055.306248
+r1
+xSymLink
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Headers
+xVersions/Current/Headers
+lSLF07#2@108"Process /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Headers303457055#303457055#0(0"0(0#0#0"8622946816#206"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /bin/ln -sf Versions/Current/Headers /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Headers0#
+
+CSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources Versions/Current/Resources
+s303457055.298458
+e303457055.304567
+r1
+xSymLink
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources
+xVersions/Current/Resources
+lSLF07#2@110"Process /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources303457055#303457055#0(0"0(0#0#0"8622984736#210"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /bin/ln -sf Versions/Current/Resources /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Resources0#
+
+CSymLink /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current A
+s303457055.297200
+e303457055.301713
+r1
+xSymLink
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current
+xA
+lSLF07#2@117"Process /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current303457055#303457055#0(0"0(0#0#0"8623102976#192"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /bin/ln -sf A /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework/Versions/Current0#
+
 CTouch /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
 s303452797.659290
 e303452797.818089
@@ -86,4 +375,12 @@ r1
 xTouch
 x/Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
 lSLF07#2@79"Touch /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework303452797#303452797#0(0"0(0#0#0"8604714368#141"    cd /Users/cd/Projects/Math/CDQuartzGraph    /usr/bin/touch -c /Users/cd/Projects/Math/CDQuartzGraph/build/Debug/CDQuartzGraph.framework0#
+
+CTouch /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+s303456468.971531
+e303456468.974306
+r1
+xTouch
+x/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework
+lSLF07#2@98"Touch /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework303456468#303456468#0(0"0(0#0#0"8617363392#179"    cd /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph    /usr/bin/touch -c /Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/build/Debug/CDQuartzGraph.framework0#
 
