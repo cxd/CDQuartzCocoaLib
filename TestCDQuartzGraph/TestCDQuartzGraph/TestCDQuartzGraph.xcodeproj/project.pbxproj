@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m */; };
+		62227FC7121D5BCA0009DD2F /* CDGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD4121C0D6100599B3C /* CDGraph.framework */; };
+		62227FD7121D5BD30009DD2F /* CDQuartzGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */; };
+		62227FD8121D5BD70009DD2F /* QuartzCocoaLib.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */; };
+		6238FFA2121C0C7E00599B3C /* TestGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6238FFA1121C0C7E00599B3C /* TestGraphView.m */; };
+		6238FFCF121C0D2600599B3C /* QuartzCocoaLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */; };
+		6238FFD1121C0D4B00599B3C /* CDQuartzGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */; };
+		6238FFD5121C0D6100599B3C /* CDGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD4121C0D6100599B3C /* CDGraph.framework */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6238FF72121C0BDD00599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CDQuartzGraph;
+		};
+		6238FF7A121C0BF300599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = QuartzCocoaLib;
+		};
+		6238FF84121C0C0700599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC0C705546C1D00DB518D;
+			remoteInfo = CdADT;
+		};
+		6238FF86121C0C0700599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62E9DB720EEA78BE00DCE36C;
+			remoteInfo = CDGraphTest;
+		};
+		6238FF88121C0C0700599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 626F3A1B0F248AA100F566C4;
+			remoteInfo = CDGraphStatic;
+		};
+		6238FF8A121C0C0700599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 626F3A850F24915700F566C4;
+			remoteInfo = CDGraphTestConsole;
+		};
+		6238FF8C121C0C0700599B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62B545850F3D8A410027ED8F;
+			remoteInfo = CDGraph;
+		};
+		62546F6E122110B500714D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = CDQuartzGraph;
+		};
+		62546F70122110B500714D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 62B545840F3D8A410027ED8F;
+			remoteInfo = CDGraph;
+		};
+		62546F72122110B500714D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = QuartzCocoaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62227FDE121D5BFC0009DD2F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				62227FD8121D5BD70009DD2F /* QuartzCocoaLib.framework in Copy Frameworks */,
+				62227FD7121D5BD30009DD2F /* CDQuartzGraph.framework in Copy Frameworks */,
+				62227FC7121D5BCA0009DD2F /* CDGraph.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCDQuartzGraphAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCDQuartzGraphAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* TestCDQuartzGraph_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCDQuartzGraph_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDQuartzGraph.xcodeproj; path = ../../CDQuartzGraph/CDQuartzGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLib.xcodeproj; path = ../../QuartzCocoaLib/QuartzCocoaLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraph.xcodeproj; path = ../../../../Math/CDGraph/CDGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6238FFA0121C0C7E00599B3C /* TestGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGraphView.h; sourceTree = "<group>"; };
+		6238FFA1121C0C7E00599B3C /* TestGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGraphView.m; sourceTree = "<group>"; };
+		6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCocoaLib.framework; path = ../../QuartzCocoaLib/build/Debug/QuartzCocoaLib.framework; sourceTree = SOURCE_ROOT; };
+		6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CDQuartzGraph.framework; path = ../../CDQuartzGraph/build/Debug/CDQuartzGraph.framework; sourceTree = SOURCE_ROOT; };
+		6238FFD4121C0D6100599B3C /* CDGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CDGraph.framework; path = ../../../../Math/CDGraph/build/Debug/CDGraph.framework; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* TestCDQuartzGraph-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestCDQuartzGraph-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* TestCDQuartzGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCDQuartzGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				6238FFCF121C0D2600599B3C /* QuartzCocoaLib.framework in Frameworks */,
+				6238FFD1121C0D4B00599B3C /* CDQuartzGraph.framework in Frameworks */,
+				6238FFD5121C0D6100599B3C /* CDGraph.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m */,
+				6238FFA0121C0C7E00599B3C /* TestGraphView.h */,
+				6238FFA1121C0C7E00599B3C /* TestGraphView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6238FFD4121C0D6100599B3C /* CDGraph.framework */,
+				6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */,
+				6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* TestCDQuartzGraph.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* TestCDQuartzGraph */ = {
+			isa = PBXGroup;
+			children = (
+				6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */,
+				6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */,
+				6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = TestCDQuartzGraph;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* TestCDQuartzGraph_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* TestCDQuartzGraph-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6238FF6F121C0BDD00599B3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6238FF73121C0BDD00599B3C /* CDQuartzGraph.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6238FF77121C0BF300599B3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6238FF7B121C0BF300599B3C /* QuartzCocoaLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6238FF7D121C0C0700599B3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6238FF85121C0C0700599B3C /* libCDGraph.dylib */,
+				6238FF87121C0C0700599B3C /* CDGraphTest.octest */,
+				6238FF89121C0C0700599B3C /* libCDGraphStatic.a */,
+				6238FF8B121C0C0700599B3C /* CDGraphTestConsole */,
+				6238FF8D121C0C0700599B3C /* CDGraph.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* TestCDQuartzGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TestCDQuartzGraph" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				62227FDE121D5BFC0009DD2F /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62546F6F122110B500714D45 /* PBXTargetDependency */,
+				62546F71122110B500714D45 /* PBXTargetDependency */,
+				62546F73122110B500714D45 /* PBXTargetDependency */,
+			);
+			name = TestCDQuartzGraph;
+			productInstallPath = "$(HOME)/Applications";
+			productName = TestCDQuartzGraph;
+			productReference = 8D1107320486CEB800E47090 /* TestCDQuartzGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestCDQuartzGraph" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* TestCDQuartzGraph */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6238FF7D121C0C0700599B3C /* Products */;
+					ProjectRef = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
+				},
+				{
+					ProductGroup = 6238FF6F121C0BDD00599B3C /* Products */;
+					ProjectRef = 6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */;
+				},
+				{
+					ProductGroup = 6238FF77121C0BF300599B3C /* Products */;
+					ProjectRef = 6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* TestCDQuartzGraph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6238FF73121C0BDD00599B3C /* CDQuartzGraph.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CDQuartzGraph.framework;
+			remoteRef = 6238FF72121C0BDD00599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6238FF7B121C0BF300599B3C /* QuartzCocoaLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QuartzCocoaLib.framework;
+			remoteRef = 6238FF7A121C0BF300599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6238FF85121C0C0700599B3C /* libCDGraph.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libCDGraph.dylib;
+			remoteRef = 6238FF84121C0C0700599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6238FF87121C0C0700599B3C /* CDGraphTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CDGraphTest.octest;
+			remoteRef = 6238FF86121C0C0700599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6238FF89121C0C0700599B3C /* libCDGraphStatic.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCDGraphStatic.a;
+			remoteRef = 6238FF88121C0C0700599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6238FF8B121C0C0700599B3C /* CDGraphTestConsole */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CDGraphTestConsole;
+			remoteRef = 6238FF8A121C0C0700599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6238FF8D121C0C0700599B3C /* CDGraph.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CDGraph.framework;
+			remoteRef = 6238FF8C121C0C0700599B3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m in Sources */,
+				6238FFA2121C0C7E00599B3C /* TestGraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62546F6F122110B500714D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDQuartzGraph;
+			targetProxy = 62546F6E122110B500714D45 /* PBXContainerItemProxy */;
+		};
+		62546F71122110B500714D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDGraph;
+			targetProxy = 62546F70122110B500714D45 /* PBXContainerItemProxy */;
+		};
+		62546F73122110B500714D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuartzCocoaLib;
+			targetProxy = 62546F72122110B500714D45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../QuartzCocoaLib/build/Debug\"",
+					"\"$(SRCROOT)/../../CDQuartzGraph/build/Debug\"",
+					"\"$(SRCROOT)/../../../../Math/CDGraph/build/Debug\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestCDQuartzGraph_Prefix.pch;
+				INFOPLIST_FILE = "TestCDQuartzGraph-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "/Frameworks/QuartzCocoaLib.framework /Frameworks/CDQuartzGraph.framework /Frameworks/CDGraph.framework";
+				PRODUCT_NAME = TestCDQuartzGraph;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../QuartzCocoaLib/build/Debug\"",
+					"\"$(SRCROOT)/../../CDQuartzGraph/build/Debug\"",
+					"\"$(SRCROOT)/../../../../Math/CDGraph/build/Debug\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TestCDQuartzGraph_Prefix.pch;
+				INFOPLIST_FILE = "TestCDQuartzGraph-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = TestCDQuartzGraph;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TestCDQuartzGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestCDQuartzGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
