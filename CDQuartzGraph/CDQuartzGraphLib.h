@@ -16,7 +16,12 @@
 #import "AbstractGraphShape.h"
 #import "AbstractNodeShape.h"
 #import "AbstractConnectorShape.h"
+#import "BezierLineConnector.h"
+#import "CurvedRectangleNode.h"
+#import "CurvedRectanglePort.h"
 
 #import "CDQuartzNode.h"
 #import "CDQuartzEdge.h"
 #import "CDQuartzGraph.h"
+
+#import "CDGraphView.h"

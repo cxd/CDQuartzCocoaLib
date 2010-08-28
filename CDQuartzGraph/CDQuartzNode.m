@@ -85,4 +85,56 @@
 
 
 
+/**
+ Check whether a point occurs within the bounds
+ of this object.
+ **/
+-(BOOL)isWithinBounds:(QPoint *)point
+{
+	if (self.shapeDelegate != nil)
+	{
+	return [self.shapeDelegate isWithinBounds:point];
+	}
+	return NO;
+}
+
+/**
+ Check whether a rectangle intersects with the rectangle
+ of this object.
+ **/
+-(BOOL)intersects:(QRectangle *)other
+{
+	if (self.shapeDelegate != nil)
+	{
+		return [self.shapeDelegate intersects:other];	
+	}
+	return NO;
+}
+
+/**
+ Move by a relative offset.
+ **/
+-(void)moveBy:(QPoint *)point
+{
+	if (self.shapeDelegate == nil) return;
+	[self.shapeDelegate moveBy:point];
+}
+
+/**
+ Move to an absolute position.
+ **/
+-(void)moveTo:(QPoint *)point
+{
+	if (self.shapeDelegate == nil) return;
+	[self.shapeDelegate moveTo:point];
+}
+
+/**
+ Resize by with and height.
+ **/
+-(void)resizeToWidth:(int)w height:(int)h
+{
+	if (self.shapeDelegate == nil) return;
+	[self.shapeDelegate resizeToWidth:w height:h];
+}
 @end

@@ -81,6 +81,48 @@
 	[super update:context];
 }
 
+/**
+ Update Connections.
+ **/
+-(void)updateConnections 
+{
+	float sX, sY, eX, eY = 0.0;
+	// move to the mid point of the port shape.
+	if (self.startDecoration != nil)
+	{
+		sX = self.startDecoration.bounds.x;
+		sY = self.startDecoration.bounds.y;
+	}
+	if (self.endDecoration != nil)
+	{
+		eX = self.endDecoration.bounds.x;
+		eY = self.endDecoration.bounds.y;
+	}
+	
+	if (self.startPort != nil)
+	{
+		sX = self.startPort.bounds.x + self.startPort.bounds.width/2.0;
+		sY = self.startPort.bounds.y + self.startPort.bounds.height/2.0;
+	}
+	if (self.endPort != nil)
+	{
+		eX = self.endPort.bounds.x + self.startPort.bounds.width/2.0;
+		eY = self.endPort.bounds.y + self.endPort.bounds.height/2.0;
+		if ((sX - eX < 0) && (sY - eY < 0))
+		{
+			eX = self.endPort.bounds.x;
+		}
+	}
+	if (self.startDecoration != nil)
+	{
+	[self.startDecoration moveTo:[[QPoint alloc] initX:sX Y:sY]];
+	}
+	if (self.endDecoration != nil)
+	{
+	[self.endDecoration moveTo:[[QPoint alloc] initX:eX Y:eY]];
+	}
+}
+
 
 /**
  Connect the start line to supplied port.
@@ -88,7 +130,7 @@
 -(void)connectStartTo:(AbstractPortShape *)port
 {
 	self.startPort = port;
-	// TODO: move to the mid point of the port shape.
+	[self updateConnections];
 }
 
 /**
@@ -97,7 +139,44 @@
 -(void)connectEndTo:(AbstractPortShape *)port
 {
 	self.endPort = port;
-	// TODO: move to the mid point of the port shape
+	[self updateConnections];
+}
+
+
+-(void)moveStartBy:(QPoint *)p
+{
+	if (self.startDecoration != nil)
+	{
+		self.startDecoration.bounds.x += p.x;
+		self.startDecoration.bounds.y += p.y;
+	}
+}
+
+-(void)moveEndBy:(QPoint *)p
+{
+	if (self.endDecoration != nil)
+	{
+		self.endDecoration.bounds.x += p.x;
+		self.endDecoration.bounds.y += p.y;
+	}
+}
+
+-(void)moveStartTo:(QPoint *)p
+{
+	if (self.startDecoration != nil)
+	{
+		self.startDecoration.bounds.x = p.x;
+		self.startDecoration.bounds.y = p.y;
+	}
+}
+
+-(void)moveEndTo:(QPoint *)p
+{
+	if (self.endDecoration != nil)
+	{
+		self.endDecoration.bounds.x = p.x;
+		self.endDecoration.bounds.y = p.y;
+	}
 }
 
 

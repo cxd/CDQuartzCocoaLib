@@ -30,7 +30,7 @@
  **/
 -(id)initWithParent:(AbstractGraphShape *)p AndBounds:(QRectangle *)r;
 
--(void)createShape;
+-(void)createShapes;
 /**
  Event raised when outline weight has changed.
  **/

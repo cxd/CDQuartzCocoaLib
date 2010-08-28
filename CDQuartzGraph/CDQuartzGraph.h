@@ -69,8 +69,47 @@
 -(void)dealloc;
 
 /**
+ Connect the two nodes and use the supplied shape.
+ **/
+-(CDEdge *)connect:(CDNode *)fromNode 
+				to:(CDNode *)toNode 
+		 withShape:(AbstractConnectorShape *)shape
+		  fromPort:(AbstractPortShape *)from 
+			toPort:(AbstractPortShape*)to;
+/**
  Change the supplied context.
  **/
 -(void)update:(QContext *)context;
+
+/**
+ Find the first node that contains the point.
+ **/
+-(CDQuartzNode *)findNodeContaining:(QPoint *)p;
+
+/**
+ Check whether a rectangle intersects with the rectangle
+ of this object.
+ **/
+-(CDQuartzNode *)findIntersectingNode:(QRectangle *)other;
+
+/**
+ Move by a relative offset.
+ **/
+-(void)moveNode:(CDQuartzNode *)node By:(QPoint *)point;
+
+/**
+ Move to an absolute position.
+ **/
+-(void)moveNode:(CDQuartzNode *)node To:(QPoint *)point;
+
+/**
+ Resize by with and height.
+ **/
+-(void)resizeNode:(CDQuartzNode *)node ToWidth:(int)w height:(int)h;
+
+/**
+ Update any connections associated with the node.
+ **/
+-(void)updateConnections:(CDQuartzNode *)node;
 
 @end

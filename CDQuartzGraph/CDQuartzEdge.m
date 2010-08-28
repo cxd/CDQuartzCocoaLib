@@ -55,4 +55,15 @@
 	}
 }
 
+/**
+ Update Connections.
+ **/
+-(void)updateConnections 
+{
+	if (self.shapeDelegate != nil)
+	{
+		[self.shapeDelegate updateConnections];
+	}
+}
+
 @end

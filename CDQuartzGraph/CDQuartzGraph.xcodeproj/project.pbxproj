@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		621759CF121801BA00E2120C /* AbstractPortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759CD121801BA00E2120C /* AbstractPortShape.h */; };
+		621759CF121801BA00E2120C /* AbstractPortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759CD121801BA00E2120C /* AbstractPortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621759D0121801BA00E2120C /* AbstractPortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 621759CE121801BA00E2120C /* AbstractPortShape.m */; };
-		621759DB1218086C00E2120C /* CurvedRectanglePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759D91218086C00E2120C /* CurvedRectanglePort.h */; };
+		621759DB1218086C00E2120C /* CurvedRectanglePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759D91218086C00E2120C /* CurvedRectanglePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621759DC1218086C00E2120C /* CurvedRectanglePort.m in Sources */ = {isa = PBXBuildFile; fileRef = 621759DA1218086C00E2120C /* CurvedRectanglePort.m */; };
 		6240A7BD12165ADF00840C1B /* QuartzCocoaLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240A7BC12165ACE00840C1B /* QuartzCocoaLib.framework */; };
 		6240A7BF12165AE600840C1B /* CDGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240A5791216534600840C1B /* CDGraph.framework */; };
 		6240A7C412165B0400840C1B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 6240A7C312165B0400840C1B /* README */; };
+		62547117122149DE00714D45 /* CDGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62547115122149DE00714D45 /* CDGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62547118122149DE00714D45 /* CDGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62547116122149DE00714D45 /* CDGraphView.m */; };
 		62602AD11216608C0018E683 /* CDQuartzGraphLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602AD01216608C0018E683 /* CDQuartzGraphLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602AD6121660B90018E683 /* CDQuartzNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602AD4121660B90018E683 /* CDQuartzNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602AD7121660B90018E683 /* CDQuartzNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602AD5121660B90018E683 /* CDQuartzNode.m */; };
@@ -27,14 +29,14 @@
 		62602B6B12166A0B0018E683 /* Drawable.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602B6A12166A0B0018E683 /* Drawable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602B9512167A9D0018E683 /* AbstractGraphShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602B9312167A9D0018E683 /* AbstractGraphShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602B9612167A9D0018E683 /* AbstractGraphShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602B9412167A9D0018E683 /* AbstractGraphShape.m */; };
-		62602BA9121681150018E683 /* AbstractConnectorShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BA7121681150018E683 /* AbstractConnectorShape.h */; };
+		62602BA9121681150018E683 /* AbstractConnectorShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BA7121681150018E683 /* AbstractConnectorShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602BAA121681150018E683 /* AbstractConnectorShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BA8121681150018E683 /* AbstractConnectorShape.m */; };
-		62602BAD121681370018E683 /* AbstractNodeShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BAB121681370018E683 /* AbstractNodeShape.h */; };
+		62602BAD121681370018E683 /* AbstractNodeShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BAB121681370018E683 /* AbstractNodeShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602BAE121681370018E683 /* AbstractNodeShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BAC121681370018E683 /* AbstractNodeShape.m */; };
 		62602BB2121682C10018E683 /* AbstractGraphShape.h_2.xcclassmodel in Resources */ = {isa = PBXBuildFile; fileRef = 62602BB1121682C10018E683 /* AbstractGraphShape.h_2.xcclassmodel */; };
-		62602BF11216894D0018E683 /* BezierLineConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BEF1216894D0018E683 /* BezierLineConnector.h */; };
+		62602BF11216894D0018E683 /* BezierLineConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BEF1216894D0018E683 /* BezierLineConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602BF21216894D0018E683 /* BezierLineConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BF01216894D0018E683 /* BezierLineConnector.m */; };
-		62602BF5121689630018E683 /* CurvedRectangleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BF3121689630018E683 /* CurvedRectangleNode.h */; };
+		62602BF5121689630018E683 /* CurvedRectangleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BF3121689630018E683 /* CurvedRectangleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602BF6121689630018E683 /* CurvedRectangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BF4121689630018E683 /* CurvedRectangleNode.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
@@ -98,6 +100,8 @@
 		6240A5291216529D00840C1B /* CDGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraph.xcodeproj; path = ../../../Math/CDGraph/CDGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6240A7B712165ACE00840C1B /* QuartzCocoaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLib.xcodeproj; path = ../QuartzCocoaLib/QuartzCocoaLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6240A7C312165B0400840C1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		62547115122149DE00714D45 /* CDGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphView.h; sourceTree = "<group>"; };
+		62547116122149DE00714D45 /* CDGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphView.m; sourceTree = "<group>"; };
 		62602AD01216608C0018E683 /* CDQuartzGraphLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphLib.h; sourceTree = "<group>"; };
 		62602AD4121660B90018E683 /* CDQuartzNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzNode.h; sourceTree = "<group>"; };
 		62602AD5121660B90018E683 /* CDQuartzNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDQuartzNode.m; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				62547114122149CD00714D45 /* View */,
 				62602B67121669050018E683 /* Shapes */,
 				62602B5E121666AF0018E683 /* Protocol */,
 				62602AC51216603D0018E683 /* Decorator */,
@@ -239,6 +244,15 @@
 				6240A7BC12165ACE00840C1B /* QuartzCocoaLib.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		62547114122149CD00714D45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62547115122149DE00714D45 /* CDGraphView.h */,
+				62547116122149DE00714D45 /* CDGraphView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		62602AC51216603D0018E683 /* Decorator */ = {
@@ -305,13 +319,14 @@
 				62602BF5121689630018E683 /* CurvedRectangleNode.h in Headers */,
 				621759CF121801BA00E2120C /* AbstractPortShape.h in Headers */,
 				621759DB1218086C00E2120C /* CurvedRectanglePort.h in Headers */,
+				62547117122149DE00714D45 /* CDGraphView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8DC2EF4F0486A6940098B216 /* QuartzCocoaLib */ = {
+		8DC2EF4F0486A6940098B216 /* CDQuartzGraph */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CDQuartzGraph" */;
 			buildPhases = (
@@ -353,7 +368,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				8DC2EF4F0486A6940098B216 /* QuartzCocoaLib */,
+				8DC2EF4F0486A6940098B216 /* CDQuartzGraph */,
 			);
 		};
 /* End PBXProject section */
@@ -431,6 +446,7 @@
 				62602BF6121689630018E683 /* CurvedRectangleNode.m in Sources */,
 				621759D0121801BA00E2120C /* AbstractPortShape.m in Sources */,
 				621759DC1218086C00E2120C /* CurvedRectanglePort.m in Sources */,
+				62547118122149DE00714D45 /* CDGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,12 +479,13 @@
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CDQuartzGraph_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = CDQuartzGraph;
 				WRAPPER_EXTENSION = framework;
 			};

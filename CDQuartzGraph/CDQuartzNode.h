@@ -71,4 +71,32 @@
  **/
 -(void)update:(QContext *)context;
 
+
+/**
+ Check whether a point occurs within the bounds
+ of this object.
+ **/
+-(BOOL)isWithinBounds:(QPoint *)point;
+
+/**
+ Check whether a rectangle intersects with the rectangle
+ of this object.
+ **/
+-(BOOL)intersects:(QRectangle *)other;
+
+/**
+ Move by a relative offset.
+ **/
+-(void)moveBy:(QPoint *)point;
+
+/**
+ Move to an absolute position.
+ **/
+-(void)moveTo:(QPoint *)point;
+
+/**
+ Resize by with and height.
+ **/
+-(void)resizeToWidth:(int)w height:(int)h; 
+
 @end

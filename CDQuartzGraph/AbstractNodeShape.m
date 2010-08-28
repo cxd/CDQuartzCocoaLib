@@ -47,6 +47,7 @@
  **/
 -(void)moveBy:(QPoint *)point
 {
+	[super moveBy:point];
 	for(AbstractGraphShape *p in self.ports)
 	{
 		[p moveBy:point];
@@ -58,8 +59,9 @@
  **/
 -(void)moveTo:(QPoint *)point
 {
-	QPoint *delta = [[QPoint alloc] initWithX: point.x - self.bounds.x
+	QPoint *delta = [[QPoint alloc] initX: point.x - self.bounds.x
 											Y: point.y - self.bounds.y];
+	[super moveBy:delta];
 	for(AbstractGraphShape *p in self.ports)
 	{
 		[p moveBy:delta];	

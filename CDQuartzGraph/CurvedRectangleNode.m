@@ -11,6 +11,27 @@
 
 @implementation CurvedRectangleNode
 
+
+/**
+ Left hand port.
+ **/
+@synthesize leftPort;
+
+/**
+ Top port.
+ **/
+@synthesize topPort;
+
+/**
+ RHS port.
+ **/
+@synthesize rightPort;
+
+/**
+ Bottom port.
+ **/
+@synthesize bottomPort;
+
 /**
  Default initialisation.
  **/
@@ -75,7 +96,7 @@
 	strokeColor.alpha = self.outlineColor.alpha;
 }
 
--(void)createShape
+-(void)createShapes
 {
 	strokeColor = [[QStrokeColor alloc] initWithQColor:self.outlineColor];
 	[self.queue enqueue:strokeColor];
@@ -86,14 +107,14 @@
 	color = [[QFillColor alloc] initWithQColor:self.fillColor];
 	[self.queue enqueue:color];
 	
-	filledRectangle = [[QFilledRectangle alloc] initWithX:self.bounds.x
+	filledRectangle = [[QFilledRectangle alloc] initX:self.bounds.x
 														Y:self.bounds.y 
 													WIDTH:self.bounds.width 
 												   HEIGHT:self.bounds.height];
 	[filledRectangle retain];
 	[self.queue enqueue:filledRectangle];
 	
-	outlineRectangle = [[QStrokedRectangle alloc] initWithX:self.bounds.x 
+	outlineRectangle = [[QStrokedRectangle alloc] initX:self.bounds.x 
 														  Y:self.bounds.y
 													  WIDTH:self.bounds.width 
 													 HEIGHT:self.bounds.height];
@@ -109,28 +130,28 @@
 {
 	float portWidth = 50.0f;
 	// use the midpoints of each port.
-	QRectangle *leftB = [[QRectangle alloc] initWithX: self.bounds.x - portWidth/2.0
-													Y: self.bounds.height/2.0 - portWidth/2.0
+	QRectangle *leftB = [[QRectangle alloc] initX: self.bounds.x - portWidth/2.0
+													Y: (self.bounds.y + self.bounds.height/2.0 - portWidth/2.0)
 												WIDTH:portWidth
 											   HEIGHT:portWidth];
 	self.leftPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:leftB];
 	[self.ports addObject:self.leftPort];
 	
-	QRectangle *topB = [[QRectangle alloc] initWithX:self.bounds.x + self.bounds.width/2.0 - portWidth/2.0
+	QRectangle *topB = [[QRectangle alloc] initX:self.bounds.x + self.bounds.width/2.0 - portWidth/2.0
 												   Y:self.bounds.y - portWidth/2.0
 											   WIDTH:portWidth 
 											  HEIGHT:portWidth];
 	self.topPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:topB];
 	[self.ports addObject:self.topPort];
 	
-	QRectangle *rightB = [[QRectangle alloc] initWithX: self.bounds.x + self.bounds.width - portWidth/2.0
-													Y: self.bounds.height/2.0 - portWidth/2.0
+	QRectangle *rightB = [[QRectangle alloc] initX: self.bounds.x + self.bounds.width - portWidth/2.0
+													Y: self.bounds.y + self.bounds.height/2.0 - portWidth/2.0
 												WIDTH:portWidth
 											   HEIGHT:portWidth];
 	self.rightPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:rightB];
 	[self.ports addObject:self.rightPort];
 	
-	QRectangle *bottomB = [[QRectangle alloc] initWithX:self.bounds.x + self.bounds.width/2.0 - portWidth/2.0
+	QRectangle *bottomB = [[QRectangle alloc] initX:self.bounds.x + self.bounds.width/2.0 - portWidth/2.0
 												   Y:self.bounds.y + self.bounds.height - portWidth/2.0
 											   WIDTH:portWidth 
 											  HEIGHT:portWidth];
@@ -179,18 +200,18 @@
 	
 	float left = self.bounds.x - portWidth/2.0;
 	float top = self.bounds.height/2.0 - portWidth/2.0;
-	[self.leftPort moveTo:[[QPoint alloc] initWithX:left Y:top]];
+	[self.leftPort moveTo:[[QPoint alloc] initX:left Y:top]];
 	
 	left = self.bounds.x + self.bounds.width/2.0 - portWidth/2.0;
 	top = self.bounds.y - portWidth/2.0;
-	[self.topPort moveTo:[[QPoint alloc] initWithX:left Y:top]];
+	[self.topPort moveTo:[[QPoint alloc] initX:left Y:top]];
 	
 	left = self.bounds.x + self.bounds.width - portWidth/2.0;
 	top = self.bounds.height/2.0 - portWidth/2.0;
-	[self.rightPort moveTo:[[QPoint alloc] initWithX:left Y:top]];
+	[self.rightPort moveTo:[[QPoint alloc] initX:left Y:top]];
 	
 	left = self.bounds.x + self.bounds.width/2.0 - portWidth/2.0;
 	top = self.bounds.y + self.bounds.height - portWidth/2.0;
-	[self.bottomPort moveTo:[[QPoint alloc] initWithX:left Y:top]];
+	[self.bottomPort moveTo:[[QPoint alloc] initX:left Y:top]];
 }
 @end

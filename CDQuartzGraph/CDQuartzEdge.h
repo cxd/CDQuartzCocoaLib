@@ -50,11 +50,14 @@
  **/
 -(void)dealloc;
 
-
-
 /**
  Change the supplied context.
  **/
 -(void)update:(QContext *)context;
+
+/**
+ Update Connections.
+ **/
+-(void)updateConnections;
 
 @end

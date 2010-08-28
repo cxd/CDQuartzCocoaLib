@@ -27,7 +27,7 @@
 	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
 	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
 	self.outlineWeight = 1.0;
-	self.displacement = [[QPoint alloc] initWithX:0.0 Y:0.0];
+	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
 	[self attachObservers];
 	return self;
 }
@@ -42,7 +42,7 @@
 	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
 	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
 	self.outlineWeight = 1.0;
-	self.displacement = [[QPoint alloc] initWithX:0.0 Y:0.0];
+	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
 	[self attachObservers];
 	return self;
 }
@@ -134,8 +134,8 @@
  **/
 -(BOOL)isWithinBounds:(QPoint *)point
 {
-	QPoint *topLeft = [[QPoint alloc] initWithX:self.bounds.x Y:self.bounds.y];
-	QPoint *bottomRight = [[QPoint alloc] initWithX:self.bounds.x + self.bounds.width Y:self.bounds.y + self.bounds.height];
+	QPoint *topLeft = [[QPoint alloc] initX:self.bounds.x Y:self.bounds.y];
+	QPoint *bottomRight = [[QPoint alloc] initX:self.bounds.x + self.bounds.width Y:self.bounds.y + self.bounds.height];
 	
 	// distance should be positive as point is greater than top left.
 	float xTop = [topLeft horizontalDistanceTo:point];

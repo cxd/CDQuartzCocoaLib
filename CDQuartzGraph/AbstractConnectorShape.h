@@ -68,6 +68,11 @@
 -(void)dealloc;
 
 /**
+ Update Connections.
+ **/
+-(void)updateConnections;
+
+/**
  Connect the start line to supplied port.
  **/
 -(void)connectStartTo:(AbstractPortShape *)port;
@@ -76,6 +81,28 @@
  Connect the end line to supplied port.
  **/
 -(void)connectEndTo:(AbstractPortShape *)port;
+
+
+/**
+ Move start point by relative amount.
+ **/
+-(void)moveStartBy:(QPoint *)p;
+
+/**
+ Move end point by relative amount.
+ **/
+-(void)moveEndBy:(QPoint *)p;
+
+/**
+ Move start point to absolute point.
+ **/
+-(void)moveStartTo:(QPoint *)p;
+
+/**
+ Move end point to absolute point.
+ **/
+-(void)moveEndTo:(QPoint *)p;
+
 
 /**
  Update the context.

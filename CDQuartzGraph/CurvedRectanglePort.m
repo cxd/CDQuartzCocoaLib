@@ -19,7 +19,7 @@
 	self = [super initWithParent:p];
 	self.bounds.width = 50;
 	self.bounds.height = 50;
-	[self createShape];
+	[self createShapes];
 	return self;
 }
 
@@ -29,7 +29,7 @@
 -(id)initWithParent:(AbstractGraphShape *)p AndBounds:(QRectangle *)r
 {
 	self= [super initWithParent:p AndBounds:r];
-	[self createShape];
+	[self createShapes];
 	return self;
 }
 
@@ -73,7 +73,7 @@
 	strokeColor.alpha = self.outlineColor.alpha;
 }
 
--(void)createShape
+-(void)createShapes
 {
 	strokeColor = [[QStrokeColor alloc] initWithQColor:self.outlineColor];
 	[self.queue enqueue:strokeColor];
@@ -84,14 +84,14 @@
 	color = [[QFillColor alloc] initWithQColor:self.fillColor];
 	[self.queue enqueue:color];
 	
-	filledRectangle = [[QFilledRectangle alloc] initWithX:self.bounds.x
+	filledRectangle = [[QFilledRectangle alloc] initX:self.bounds.x
 																Y:self.bounds.y 
 															WIDTH:self.bounds.width 
 														   HEIGHT:self.bounds.height];
 	[filledRectangle retain];
 	[self.queue enqueue:filledRectangle];
 	
-	outlineRectangle = [[QStrokedRectangle alloc] initWithX:self.bounds.x 
+	outlineRectangle = [[QStrokedRectangle alloc] initX:self.bounds.x 
 												   Y:self.bounds.y
 											   WIDTH:self.bounds.width 
 											  HEIGHT:self.bounds.height];

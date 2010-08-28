@@ -116,6 +116,29 @@
 	return node;
 }
 
+/**
+ Connect two nodes graphically.
+ If the two supplied nodes are not quartz nodes
+ a quartz node will automatically be generated.
+ An edge with a default delegate will be created.
+ 
+ The supplied shape will be used to represent the edge.
+ 
+ **/
+-(CDEdge *)connect:(CDNode *)fromNode 
+				to:(CDNode *)toNode 
+		 withShape:(AbstractConnectorShape *)shape
+		  fromPort:(AbstractPortShape *)from 
+			toPort:(AbstractPortShape*)to
+{
+	CDQuartzEdge *edge = [self connect: fromNode to:toNode];
+	edge.shapeDelegate = shape;
+	[edge.shapeDelegate connectStartTo:from];
+	[edge.shapeDelegate connectEndTo:to];
+	return edge;
+}
+
+
 
 /**
  Connect two nodes graphically.
@@ -166,14 +189,99 @@
 	{
 		[self.shapeDelegate update:context];
 	}
-	for(CDQuartzNode *node in self.nodes)
-	{
-		[node update:context];
-	}
 	for(CDQuartzEdge *edge in self.edges)
 	{
 		[edge update:context];	
 	}
+	for(CDQuartzNode *node in self.nodes)
+	{
+		[node update:context];
+	}	
+}
+
+/**
+ Find the first node that contains the point.
+ **/
+-(CDQuartzNode *)findNodeContaining:(QPoint *)p
+{
+	// find a node that is associated with the click event.
+	for(CDQuartzNode *node in self.nodes)
+	{
+		if (node.shapeDelegate == nil)
+			continue;
+		
+		if ([node.shapeDelegate isWithinBounds:p])
+		{
+			// node is within bounds.
+			return node;
+		}
+	}
+	return nil;
+}
+
+/**
+ Check whether a rectangle intersects with the rectangle
+ of this object.
+ **/
+-(CDQuartzNode *)findIntersectingNode:(QRectangle *)other
+{
+	// find a node that is associated with the click event.
+	for(CDQuartzNode *node in self.nodes)
+	{
+		if (node.shapeDelegate == nil)
+			continue;
+		
+		if ([node.shapeDelegate intersects:other])
+		{
+			// node is within bounds.
+			return node;
+		}
+	}
+	return nil;	
+}
+
+/**
+ Move by a relative offset.
+ **/
+-(void)moveNode:(CDQuartzNode *)node By:(QPoint *)point
+{
+	if (node == nil) return;
+	[node moveBy:point];
+	[self updateConnections:node];
+}
+
+/**
+ Move to an absolute position.
+ **/
+-(void)moveNode:(CDQuartzNode *)node To:(QPoint *)point
+{
+	if (node == nil) return;
+	[node moveTo:point];
+	[self updateConnections:node];
+}
+
+/**
+ Resize by with and height.
+ **/
+-(void)resizeNode:(CDQuartzNode *)node ToWidth:(int)w height:(int)h
+{
+	if (node == nil) return;
+	[node resizeToWidth:w height:h];
+	[self updateConnections:node];
+}
+
+/**
+ Update any connections associated with the node.
+ **/
+-(void)updateConnections:(CDQuartzNode *)node
+{
+	for(CDQuartzEdge * edge in edges)
+	{
+		if ([edge.source isEqual:(id)node] || [edge.target isEqual:(id)node])
+		{
+			[edge updateConnections];		
+		}
+	}	
 }
 
 @end
