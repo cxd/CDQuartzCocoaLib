@@ -7,8 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "QContext.h"
-#import "QuartzCocoaLib.h"
+#import "QuartzCocoaLib/QuartzCocoaLib.h"
 
 @interface QuartzTestView : NSView {
 
