@@ -24,7 +24,7 @@ const float DEFAULT_FRICTION = 0.1;
 
 
 
--(id)initWithX:(float) x Y:(float) y Radius:(float) r
+-(id)initX:(float) x Y:(float) y Radius:(float) r
 {
 	self = [super init];
 	self.centreX = x;
@@ -33,7 +33,7 @@ const float DEFAULT_FRICTION = 0.1;
 	self.acceleration = DEFAULT_ACCELERATION;
 	self.radius = r;
 	self.arc = [[QArc alloc]
-				initWithX:self.centreX
+				initX:self.centreX
 				Y: self.centreY
 				Radius: self.radius
 				StartAngle: 0.0
@@ -44,7 +44,7 @@ const float DEFAULT_FRICTION = 0.1;
 	return self;
 }
 
--(id)initWithX:(float) x Y:(float) y Radius:(float) r Aceleration:(float) a;
+-(id)initX:(float) x Y:(float) y Radius:(float) r Aceleration:(float) a;
 {
 	self = [super init];
 	self.centreX = x;
@@ -53,7 +53,7 @@ const float DEFAULT_FRICTION = 0.1;
 	self.radius = r;
 	self.angle = 0.0;
 	self.arc = [[QArc alloc]
-				initWithX:self.centreX
+				initX:self.centreX
 				Y: self.centreY
 				Radius: self.radius
 				StartAngle: 0.0

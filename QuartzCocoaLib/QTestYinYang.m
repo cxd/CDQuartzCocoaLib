@@ -33,9 +33,9 @@
 												 END:NO
 										   CLOCKWISE:YES];
 	
-	QPoint *topArcCentre = [[QPoint alloc] initWithX:centre.x Y:centre.y + 25];
+	QPoint *topArcCentre = [[QPoint alloc] initX:centre.x Y:centre.y + 25];
 	
-	QPoint *bottomArcCentre = [[QPoint alloc] initWithX:centre.x Y:centre.y - 25];
+	QPoint *bottomArcCentre = [[QPoint alloc] initX:centre.x Y:centre.y - 25];
 	
 	QArc *topArc = [[QArc alloc] initWithCentre:topArcCentre
 										 Radius: 25
@@ -51,8 +51,8 @@
 											 START:YES
 											   END:YES];
 	
-	QPoint *topEyeCentre = [[QPoint alloc] initWithX:centre.x Y:centre.y + 25];
-	QPoint *bottomEyeCentre = [[QPoint alloc] initWithX:centre.x Y:centre.y - 25];
+	QPoint *topEyeCentre = [[QPoint alloc] initX:centre.x Y:centre.y + 25];
+	QPoint *bottomEyeCentre = [[QPoint alloc] initX:centre.x Y:centre.y - 25];
 	
 	QArc *topEye = [[QArc alloc] initWithCentre:topEyeCentre
 										 Radius: 10.0

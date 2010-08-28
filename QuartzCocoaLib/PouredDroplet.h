@@ -25,8 +25,8 @@
 @property(assign) float angle;
 @property(retain) QArc *arc;
 
--(id)initWithX:(float) x Y:(float) y Radius:(float) r;
+-(id)initX:(float) x Y:(float) y Radius:(float) r;
 
--(id)initWithX:(float) x Y:(float) y Radius:(float) r Aceleration:(float) a;
+-(id)initX:(float) x Y:(float) y Radius:(float) r Aceleration:(float) a;
 
 @end

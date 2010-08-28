@@ -17,7 +17,7 @@
 @property(assign) float y;
 
 -(id)init;
--(id)initWithX:(float)x Y:(float)y;
+-(id)initX:(float)x Y:(float)y;
 -(QPoint *)midPoint:(QPoint *)other;
 -(float)distanceTo:(QPoint *)other;
 -(float)horizontalDistanceTo:(QPoint *)other;

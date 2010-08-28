@@ -31,11 +31,11 @@
 @property(assign) BOOL isEnd;
 
 
--(id)initWithX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea;
+-(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea;
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea;
--(id)initWithX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e;
+-(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e;
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e;
--(id)initWithX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw ;
+-(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw ;
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw ;
 -(void)dealloc;
 -(void)update:(QContext*)context;

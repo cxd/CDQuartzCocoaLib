@@ -35,7 +35,7 @@
 /**
  Create a vector of given x y components.
  **/
--(id)initWithX:(float) xcoord Y:(float)ycoord;
+-(id)initX:(float) xcoord Y:(float)ycoord;
 
 
 /**

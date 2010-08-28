@@ -33,7 +33,7 @@ const float TO_DEGREES = (180.0 / M_PI);
 /**
  Create a vector of given x y components.
  **/
--(id)initWithX:(float) xcoord Y:(float)ycoord
+-(id)initX:(float) xcoord Y:(float)ycoord
 {
 	self = [super init];
 	self.x = xcoord;
@@ -118,7 +118,7 @@ const float TO_DEGREES = (180.0 / M_PI);
  **/
 +(Vector2D *)add:(Vector2D *)a AND:(Vector2D *)b
 {
-	return [[Vector2D alloc] initWithX:(a.x + b.x)
+	return [[Vector2D alloc] initX:(a.x + b.x)
 									 Y:(a.y + b.y)];
 }
 
@@ -127,7 +127,7 @@ const float TO_DEGREES = (180.0 / M_PI);
  **/
 +(Vector2D *)subtract:(Vector2D *)a AND:(Vector2D *)b
 {
-	return [[Vector2D alloc] initWithX:(a.x - b.x)
+	return [[Vector2D alloc] initX:(a.x - b.x)
 									 Y:(a.y - b.y)];	
 }
 
@@ -166,7 +166,7 @@ Dot product of two vectors.
  **/
 +(Vector2D *)crossProduct:(Vector2D *)a AND:(Vector2D *)b
 {
-	return [[Vector2D alloc] initWithX:(a.x*b.y) - (a.y*b.x)  Y:(a.y*b.x) - (a.x*b.y)];
+	return [[Vector2D alloc] initX:(a.x*b.y) - (a.y*b.x)  Y:(a.y*b.x) - (a.x*b.y)];
 }
 
 @end

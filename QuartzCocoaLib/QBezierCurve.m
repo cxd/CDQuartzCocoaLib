@@ -15,35 +15,35 @@
 @synthesize control2;
 
 
--(id)initWithX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy CX1:(float) cx1 CY1: (float) cy1 CX2:(float) cx2 CY2: (float)cy2
+-(id)initX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy CX1:(float) cx1 CY1: (float) cy1 CX2:(float) cx2 CY2: (float)cy2
 {
-	self = [super initWithX:x Y:y X2:xx Y2:yy];
-	self.control1 = [[QPoint alloc] initWithX:cx1 Y:cy1];
-	self.control2 = [[QPoint alloc] initWithX: cx2 Y:cy2];
+	self = [super initX:x Y:y X2:xx Y2:yy];
+	self.control1 = [[QPoint alloc] initX:cx1 Y:cy1];
+	self.control2 = [[QPoint alloc] initX: cx2 Y:cy2];
 	return self;
 }
 
--(id)initWidthX: (float)x Y:(float)y X2:(float)xx Y2:(float) yy CX1:(float) cx1 CY1: (float) cy1 CX2:(float) cx2 CY2: (float)cy2 START:(BOOL) s END:(BOOL) e
+-(id)initX: (float)x Y:(float)y X2:(float)xx Y2:(float) yy CX1:(float) cx1 CY1: (float) cy1 CX2:(float) cx2 CY2: (float)cy2 START:(BOOL) s END:(BOOL) e
 {
-	self = [super initWithX:x Y:y X2:xx Y2:yy START:s END:e];
-	self.control1 = [[QPoint alloc] initWithX:cx1 Y:cy1];
-	self.control2 = [[QPoint alloc] initWithX: cx2 Y:cy2];
+	self = [super initX:x Y:y X2:xx Y2:yy START:s END:e];
+	self.control1 = [[QPoint alloc] initX:cx1 Y:cy1];
+	self.control2 = [[QPoint alloc] initX: cx2 Y:cy2];
 	return self;
 }
 
 -(id)initWithStart: (QPoint *)from Finish: (QPoint *)to CtPoint1: (QPoint *)p1 CtPoint2: (QPoint*) p2
 {
 	self = [super initWithStart:from Finish:to];
-	self.control1 = [[QPoint alloc] initWithX:p1.x Y:p1.y];
-	self.control2 = [[QPoint alloc] initWithX:p2.x Y:p2.y];
+	self.control1 = [[QPoint alloc] initX:p1.x Y:p1.y];
+	self.control2 = [[QPoint alloc] initX:p2.x Y:p2.y];
 	return self;
 }
 
 -(id)initWidthStart: (QPoint *)from Finish: (QPoint *)to CtPoint1: (QPoint *)p1 CtPoint2: (QPoint*) p2 START:(BOOL) s END:(BOOL) e
 {
 	self = [super initWithStart:from Finish:to START:s END:e];
-	self.control1 = [[QPoint alloc] initWithX:p1.x Y:p1.y];
-	self.control2 = [[QPoint alloc] initWithX:p2.x Y:p2.y];
+	self.control1 = [[QPoint alloc] initX:p1.x Y:p1.y];
+	self.control2 = [[QPoint alloc] initX:p2.x Y:p2.y];
 	return self;
 }
 
@@ -123,7 +123,7 @@ NSInteger sortValue(id val1, id val2, void* reverse)
 	[heightArray autorelease];
 	[widthSorted autorelease];
 	[heightSorted autorelease];
-	return [[QRectangle alloc] initWithX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height];
+	return [[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height];
 }
 
 @end

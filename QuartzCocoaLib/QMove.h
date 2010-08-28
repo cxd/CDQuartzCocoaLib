@@ -15,7 +15,7 @@
 }
 @property(retain) QPoint *position;
 
--(id)initWithX:(float)x Y:(float)y;
+-(id)initX:(float)x Y:(float)y;
 -(id)initWithPoint:(QPoint *)p;
 -(void)dealloc;
 -(void)update:(QContext *)context;

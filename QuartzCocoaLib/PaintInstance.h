@@ -37,7 +37,7 @@
 @property(retain) QPoint *point;
 @property(assign) CGRect frame;
 
--(id)initWithX:(float)x Y:(float)y Rect:(CGRect) frame;
+-(id)initX:(float)x Y:(float)y Rect:(CGRect) frame;
 
 -(id)initWithFillColor:(QFillColor *)color X:(float)x Y:(float)y Rect:(CGRect) frame;
 

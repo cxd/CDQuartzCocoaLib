@@ -24,13 +24,13 @@ const float MAX_RADIUS = 100.0;
 @synthesize point;
 @synthesize frame;
 
--(id)initWithX: (float)x Y:(float)y Rect:(CGRect) f {
+-(id)initX: (float)x Y:(float)y Rect:(CGRect) f {
 	self = [super init];
 	self.droplets = [[NSMutableArray alloc] initWithCapacity:MAX_OBJECTS];
 	self.energy = DEFAULT_ENERGY; // initial energy.
 	self.fillColor = [[QFillColor alloc] initWithRGBA:0.0 G:0.5 B:1.0 A:0.2];
 	self.vector = [[Vector2D alloc] initWithMagnitude:0.0 Direction:0.0];
-	self.point = [[QPoint alloc] initWithX:x Y:y];
+	self.point = [[QPoint alloc] initX:x Y:y];
 	self.frame = f;
 	return self;
 }
@@ -42,7 +42,7 @@ const float MAX_RADIUS = 100.0;
 	self.energy = DEFAULT_ENERGY; // initial energy.
 	self.fillColor = color;
 	self.vector = [[Vector2D alloc] initWithMagnitude:0.0 Direction:0.0];
-	self.point = [[QPoint alloc] initWithX:x Y:y];
+	self.point = [[QPoint alloc] initX:x Y:y];
 	self.frame = f;
 	return self;	
 }
@@ -154,7 +154,7 @@ const float MAX_RADIUS = 100.0;
 		float radius = rnd * (DEFAULT_RADIUS +5);
 		if (radius < DEFAULT_RADIUS)
 			radius = DEFAULT_RADIUS;
-		PouredDroplet *drop = [[PouredDroplet alloc] initWithX:self.point.x + var Y:self.point.y Radius: radius];
+		PouredDroplet *drop = [[PouredDroplet alloc] initX:self.point.x + var Y:self.point.y Radius: radius];
 		[self.droplets addObject:drop];
 	}
 	// recalculate the x and y positions based on their acceleration and the direction of motion.

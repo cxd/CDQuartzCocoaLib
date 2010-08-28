@@ -27,10 +27,10 @@
 
 
 -(id)init;
--(void)enqueue:(QAbstractContextModifier *) modifier;
--(QAbstractContextModifier *)dequeue;
--(QAbstractContextModifier *)top;
--(QAbstractContextModifier *)tail;
+-(void)enqueue:(id<QContextModifier>) modifier;
+-(id<QContextModifier>)dequeue;
+-(id<QContextModifier>)top;
+-(id<QContextModifier>)tail;
 -(BOOL)isEmpty;
 -(void)clear;
 -(void)dealloc;

@@ -13,17 +13,17 @@
 
 @synthesize position;
 
--(id)initWithX:(float)x Y:(float)y
+-(id)initX:(float)x Y:(float)y
 {
 	self = [super init];
-	self.position = [[QPoint alloc] initWithX:x Y:y];
+	self.position = [[QPoint alloc] initX:x Y:y];
 	return self;
 }
 
 -(id)initWithPoint:(QPoint *)p
 {
 	self = [super init];
-	self.position = [[QPoint alloc] initWithX:p.x Y:p.y];
+	self.position = [[QPoint alloc] initX:p.x Y:p.y];
 	return self;
 }
 

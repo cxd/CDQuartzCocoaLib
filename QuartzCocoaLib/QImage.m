@@ -21,7 +21,7 @@
 -(id)initWithUrl:(NSString *)url X:(float)x Y:(float)y
 {
 	self = [super init];
-	self.anchor = [[QPoint alloc] initWithX:x Y:y];
+	self.anchor = [[QPoint alloc] initX:x Y:y];
 	CFURLRef urlRef;
 	BOOL isHttp = NO;
 	BOOL isJPG = NO;
@@ -97,7 +97,7 @@
 -(id)initWithResource:(NSString *)resource X:(float)x Y:(float)y
 {
 	self = [super init];
-	self.anchor = [[QPoint alloc] initWithX:x Y:y];
+	self.anchor = [[QPoint alloc] initX:x Y:y];
 	BOOL isJPG = NO;
 	BOOL isPNG = NO;
 	NSRange range = [resource rangeOfString:@".jpg" options:NSCaseInsensitiveSearch];
@@ -153,7 +153,7 @@
 
 -(QRectangle*)getBoundary
 {
-	return [[QRectangle alloc] initWithX:self.anchor.x Y:self.anchor.y WIDTH:self.width HEIGHT:self.height];
+	return [[QRectangle alloc] initX:self.anchor.x Y:self.anchor.y WIDTH:self.width HEIGHT:self.height];
 }
 
 @end

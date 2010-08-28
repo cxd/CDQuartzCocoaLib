@@ -41,7 +41,7 @@
 
 -(QRectangle*)getBoundary
 {
-	QRectangle *args = [[QRectangle alloc] initWithX:INFINITY Y:INFINITY WIDTH:0 HEIGHT:0];
+	QRectangle *args = [[QRectangle alloc] initX:INFINITY Y:INFINITY WIDTH:0 HEIGHT:0];
 	QModifierQueue *copy = [QModifierQueue traverseQueue:self.queue Visitor:self Args:args];
 	self.queue = copy;
 	return args;

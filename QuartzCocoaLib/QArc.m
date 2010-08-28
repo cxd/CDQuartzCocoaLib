@@ -21,10 +21,10 @@
 @synthesize isEnd;
 
 
--(id)initWithX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea
+-(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initWithX:cx Y:cy];
+	self.centre = [[QPoint alloc] initX:cx Y:cy];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -37,7 +37,7 @@
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initWithX:cp.x Y:cp.y];
+	self.centre = [[QPoint alloc] initX:cp.x Y:cp.y];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -47,10 +47,10 @@
 	return self;
 }
 
--(id)initWithX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e
+-(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initWithX:cx Y:cy];
+	self.centre = [[QPoint alloc] initX:cx Y:cy];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -64,7 +64,7 @@
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initWithX:cp.x Y:cp.y];
+	self.centre = [[QPoint alloc] initX:cp.x Y:cp.y];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -75,10 +75,10 @@
 	
 }
 
--(id)initWithX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw 
+-(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw 
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initWithX:cx Y:cy];
+	self.centre = [[QPoint alloc] initX:cx Y:cy];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -90,7 +90,7 @@
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw 
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initWithX:cp.x Y:cp.y];
+	self.centre = [[QPoint alloc] initX:cp.x Y:cp.y];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -147,9 +147,9 @@
 	float midX = self.centre.x + self.radius * cos((self.startAngle + (self.endAngle - self.startAngle)/2.0) * (M_PI/180.0));
 	float midY = self.centre.y + self.radius * sin((self.startAngle + (self.endAngle - self.startAngle)/2.0) * (M_PI/180.0));
 
-	QPoint *start = [[QPoint alloc]initWithX:startX Y:startY];
-	QPoint *mid = [[QPoint alloc]initWithX:midX Y:midY];
-	QPoint *end = [[QPoint alloc] initWithX:endX Y:endY];
+	QPoint *start = [[QPoint alloc] initX:startX Y:startY];
+	QPoint *mid = [[QPoint alloc] initX:midX Y:midY];
+	QPoint *end = [[QPoint alloc] initX:endX Y:endY];
 	
 	float width =  fabs([start distanceTo:end]);
 	float height = fabs([start distanceTo:mid]);
@@ -158,7 +158,7 @@
 	[mid autorelease];
 	[end autorelease];
 	
-	return [[QRectangle alloc] initWithX:startX Y:startY WIDTH:width HEIGHT:height];	
+	return [[QRectangle alloc] initX:startX Y:startY WIDTH:width HEIGHT:height];	
 }
 
 @end

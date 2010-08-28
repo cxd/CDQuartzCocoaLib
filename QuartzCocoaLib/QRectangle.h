@@ -24,7 +24,7 @@
 @property float width;
 @property float height;
 
--(id)initWithX:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h;
+-(id)initX:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h;
 -(id)initWithRect:(CGRect) rect;
 -(void)update:(QContext*) context;
 -(QRectangle*)getBoundary;

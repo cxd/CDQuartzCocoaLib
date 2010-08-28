@@ -17,7 +17,7 @@
 @synthesize width;
 @synthesize height;
 
--(id)initWithX:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h
+-(id)initX:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h
 {
 	self = [super init];
 	self.x = xcoord;

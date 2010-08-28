@@ -23,8 +23,8 @@
 @property(assign) BOOL isStart;
 @property(assign) BOOL isEnd;
 
--(id)initWithX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy;
--(id)initWithX: (float)x Y:(float)y X2:(float)xx Y2:(float) yy START:(BOOL) s END:(BOOL) e;
+-(id)initX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy;
+-(id)initX: (float)x Y:(float)y X2:(float)xx Y2:(float) yy START:(BOOL) s END:(BOOL) e;
 -(id)initWithStart: (QPoint *)from Finish: (QPoint *)to;
 -(id)initWithStart: (QPoint *)from Finish: (QPoint *)to START:(BOOL) s END:(BOOL) e;
 

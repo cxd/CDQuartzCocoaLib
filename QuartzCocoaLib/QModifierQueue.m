@@ -20,14 +20,14 @@
 	return self;
 }
 
--(void)enqueue:(QAbstractContextModifier *) modifier 
+-(void)enqueue:(id<QContextModifier>) modifier 
 {
 	[modifier retain];
 	[sequence addObject:(id)modifier];
 }
--(QAbstractContextModifier *)dequeue 
+-(id<QContextModifier>)dequeue 
 {
-	QAbstractContextModifier *obj = [self top];
+	id<QContextModifier> obj = [self top];
 	if (obj != nil) {
 		[sequence removeObjectAtIndex:0];
 		[obj autorelease];
@@ -35,13 +35,13 @@
 	return obj;
 }
 
--(QAbstractContextModifier *)top
+-(id<QContextModifier>)top
 {
 	if ([self isEmpty])
 		return nil;
 	return [sequence objectAtIndex:0];
 }
--(QAbstractContextModifier *)tail
+-(id<QContextModifier>)tail
 {
 	if ([self isEmpty])
 		return nil;
@@ -70,7 +70,7 @@
 	QModifierQueue *queue = [[QModifierQueue alloc] init];
 	while(![source isEmpty])
 	{
-		QAbstractContextModifier *modifier = [source dequeue];
+		id<QContextModifier> modifier = [source dequeue];
 		[modifier update:context];
 		[queue enqueue:modifier];
 	}
@@ -85,7 +85,7 @@
 	QModifierQueue *queue = [[QModifierQueue alloc] init];
 	while(![source isEmpty])
 	{
-		QAbstractContextModifier *modifier = [source dequeue];
+		id<QContextModifier> modifier = [source dequeue];
 		[visitor visit:modifier data:arguments];
 		[queue enqueue:modifier];
 	}

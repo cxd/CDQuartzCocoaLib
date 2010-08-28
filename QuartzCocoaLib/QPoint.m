@@ -22,7 +22,7 @@
 	return self;
 }
 
--(id)initWithX:(float)x1 Y:(float)y1
+-(id)initX:(float)x1 Y:(float)y1
 {
 	self = [super init];
 	self.x = x1;
@@ -32,7 +32,7 @@
 
 -(QPoint *)midPoint:(QPoint *)other
 {
-	QPoint *mid = [[QPoint alloc]initWithX: (self.x + other.x)/2.0 
+	QPoint *mid = [[QPoint alloc] initX: (self.x + other.x)/2.0 
 										 Y: (self.y + other.y)/2.0];
 	return mid;
 }
