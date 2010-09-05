@@ -34,6 +34,27 @@
 	return self;
 }
 
+/**
+ Default initialisation.
+ **/
+-(id)initWithLabel:(NSString *)l
+{
+	self = [super initWithLabel:l];
+	self.ports = [[NSMutableArray alloc] init];
+	return self;
+}
+
+/**
+ Initialise with bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l
+{
+	self = [super initWithBounds:b AndLabel:l];
+	self.ports = [[NSMutableArray alloc] init];
+	return self;
+}
+
+
 
 -(void)dealloc
 {

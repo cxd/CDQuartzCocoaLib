@@ -37,6 +37,23 @@
 	 **/
 	QPoint* displacement;
 	
+	/**
+	 The label associated with the shape.
+	 **/
+	NSString *label;
+	
+	/**
+	 The label shape associated with the graph object.
+	 **/
+	QLabel *labelShape;
+	/**
+	 The text color associated with the label.
+	 **/
+	QColor *textColor;
+	/**
+	 Determine whether the label is queued for presentation.
+	 **/
+	BOOL labelQueued;
 }
 
 /**
@@ -61,6 +78,21 @@
  Displacement of graph shape.
  **/
 @property(retain) QPoint* displacement;
+
+/**
+ The label associated with the shape.
+ **/
+@property(retain) NSString *label;
+
+/**
+ The label shape associated with the graph object.
+ **/
+@property(retain) QLabel *labelShape;
+
+/**
+ The text color associated with the label.
+ **/
+@property(retain) QColor *textColor;
 
 /**
  Attach observers.
@@ -96,14 +128,29 @@
 -(id)init;
 
 /**
+ Default initialisation.
+ **/
+-(id)initWithLabel:(NSString *)l;
+
+/**
  Initialise with bounds.
  **/
 -(id)initWithBounds:(QRectangle *)b;
+
+/**
+ Initialise with bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l;
 
 /*
  Dealloc.
  */
 -(void)dealloc;
+
+/**
+ Create the label to render.
+ **/
+-(void)createLabel;
 
 /**
  Check whether a point occurs within the bounds
@@ -131,5 +178,10 @@
  Resize by with and height.
  **/
 -(void)resizeToWidth:(int)w height:(int)h; 
+
+/**
+ Overridden to update the context with the text label.
+ **/
+-(void)update:(QContext*) context;
 
 @end

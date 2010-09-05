@@ -35,6 +35,15 @@
  **/
 -(id)initWithBounds:(QRectangle *)b;
 
+/**
+ Default initialisation.
+ **/
+-(id)initWithLabel:(NSString *)l;
+
+/**
+ Initialise with bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l;
 
 /**
  Left hand port.

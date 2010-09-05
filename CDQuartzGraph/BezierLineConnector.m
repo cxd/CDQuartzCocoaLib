@@ -39,6 +39,29 @@
 }
 
 /**
+ Default initialisation.
+ **/
+-(id)initWithLabel:(NSString *)l
+{
+	self = [super initWithLabel:l];
+	self.bounds.width = 150;
+	self.bounds.height = 150;
+	[self initialiseRect:self.bounds];
+	return self;	
+}
+
+/**
+ Initialise with bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l
+{
+	self = [super initWithBounds:b AndLabel:l];
+	[self initialiseRect:self.bounds];
+	return self;	
+}
+
+
+/**
  Dealloc.
  **/
 -(void)dealloc

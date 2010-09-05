@@ -35,12 +35,30 @@
 }
 
 /**
+ Default initialisation.
+ **/
+-(id)initWithLabel:(NSString *)l
+{
+	self = [super initWithLabel:l];
+	return self;
+}
+
+/**
  Initialise with bounds.
  **/
 -(id)initWithBounds:(QRectangle *)b
 {
 	self = [super initWithBounds:b];
 	return self;	
+}
+
+/**
+ Initialise with bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l
+{
+	self = [super initWithBounds:b AndLabel:l];
+	return self;
 }
 
 

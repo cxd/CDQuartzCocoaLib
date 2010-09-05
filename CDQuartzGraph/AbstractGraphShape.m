@@ -16,6 +16,9 @@
 @synthesize outlineColor;
 @synthesize outlineWeight;
 @synthesize displacement;
+@synthesize label;
+@synthesize labelShape;
+@synthesize textColor;
 
 /**
  Default initialisation.
@@ -28,6 +31,23 @@
 	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
 	self.outlineWeight = 1.0;
 	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	[self attachObservers];
+	return self;
+}
+
+/**
+ Default initialisation.
+ **/
+-(id)initWithLabel:(NSString *)l
+{
+	self = [super init];
+	self.bounds = [[QRectangle alloc] init];
+	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
+	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
+	self.outlineWeight = 1.0;
+	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	self.label = l;
+	[self createLabel];
 	[self attachObservers];
 	return self;
 }
@@ -47,6 +67,24 @@
 	return self;
 }
 
+/**
+ Initialise with bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l
+{
+	self = [super init];
+	self.bounds = b;
+	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
+	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
+	self.outlineWeight = 1.0;
+	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	self.label = l;
+	[self createLabel];
+	[self attachObservers];
+	return self;
+}
+
+
 
 /*
  Dealloc.
@@ -57,7 +95,33 @@
 	{
 		[self.bounds autorelease];	
 	}
+	if (self.label != nil)
+	{
+		[self.label autorelease];	
+	}
+	if (self.labelShape != nil)
+	{
+		[self.labelShape autorelease];	
+	}
+	if (self.textColor != nil)
+	{
+		[self.textColor autorelease];	
+	}
 	[super dealloc];
+}
+
+
+/**
+ Create the label to render.
+ **/
+-(void)createLabel
+{
+	self.labelShape = [[QLabel alloc] initWithText:self.label 
+												 X: self.bounds.x 
+												 Y: self.bounds.y
+											 WIDTH: self.bounds.width
+											HEIGHT: self.bounds.height];
+	self.labelShape.color;
 }
 
 -(void)attachObservers 
@@ -80,6 +144,11 @@
 					   NSKeyValueObservingOptionOld)
 			  context:NULL];
 	
+	[self addObserver:self
+		   forKeyPath:@"textColor"
+			  options:(NSKeyValueObservingOptionNew |
+					   NSKeyValueObservingOptionOld)
+			  context:NULL];
 }
 
 /**
@@ -101,6 +170,13 @@
 	else if ([keyPath isEqualToString:@"fillColor"]) 
 	{
 		[self onFillColorChanged];
+	}
+	else if ([keyPath isEqualToString:@"textColor"])
+	{
+		if (self.labelShape != nil)
+		{
+			self.labelShape.color = self.textColor;	
+		}
 	}
 }
 
@@ -196,6 +272,27 @@
 {
 	self.bounds.width = w;
 	self.bounds.height = h;
+}
+
+
+/**
+ Overridden to update the context with the text label.
+ **/
+-(void)update:(QContext*) context
+{
+	if (self.labelShape != nil && !labelQueued)
+	{
+		labelQueued = YES;
+		[self.queue enqueue:self.labelShape]; 
+	}
+	else if (self.labelShape != nil)
+	{
+		self.labelShape.x = self.bounds.x;
+		self.labelShape.y = self.bounds.y;
+		self.labelShape.width = self.bounds.width;
+		self.labelShape.height = self.bounds.height;
+	}
+	[super update:context];
 }
 
 @end
