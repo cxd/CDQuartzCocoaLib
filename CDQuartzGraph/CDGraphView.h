@@ -6,13 +6,11 @@
 //  Copyright 2010 none. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "CDQuartzGraphHeader.h"
 #import "CDQuartzGraph.h"
 #import "CDQuartzNode.h"
 #import "CDQuartzEdge.h"
 
-#import "QuartzCocoaLib/QuartzCocoaLib.h"
-#import "CDGraph/CDGraph.h"
 
 #import "ShapeDelegate.h"
 #import "Drawable.h"
@@ -21,6 +19,8 @@
 #import "AbstractNodeShape.h"
 #import "AbstractConnectorShape.h"
 
+#import "GraphLayoutAlgorithm.h"
+
 @interface CDGraphView : NSView {
 	/**
 	 Internal graph instance.
@@ -28,13 +28,20 @@
 	CDQuartzGraph *graph;
 	
 	CDQuartzNode *trackNode;
+	
+	id<GraphLayoutAlgorithm> algorithm;
 }
 
 /**
  Internal graph instance.
  **/
-@property(assign) CDQuartzGraph *graph;
+@property(retain) CDQuartzGraph *graph;
 
-@property(assign) CDQuartzNode *trackNode;
+@property(retain) CDQuartzNode *trackNode;
+
+/**
+ A reference to a graph layout algorithm.
+ **/
+@property(retain) id<GraphLayoutAlgorithm> algorithm;
 
 @end

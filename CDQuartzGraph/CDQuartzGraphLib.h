@@ -25,3 +25,5 @@
 #import "CDQuartzGraph.h"
 
 #import "CDGraphView.h"
+
+#import "ForceDirectedLayout.h"

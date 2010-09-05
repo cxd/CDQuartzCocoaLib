@@ -6,7 +6,8 @@
 //  Copyright 2010 none. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "CDQuartzGraphHeader.h"
+
 
 
 @protocol ShapeDelegate<QContextModifier>

@@ -6,8 +6,7 @@
 //  Copyright 2010 none. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import "QuartzCocoaLib/QuartzCocoaLib.h"
+#import "CDQuartzGraphHeader.h"
 #import "ShapeDelegate.h"
 
 /**

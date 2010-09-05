@@ -6,9 +6,7 @@
 //  Copyright 2010 none. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
-#import "QuartzCocoaLib/QuartzCocoaLib.h"
-#import "CDGraph/CDGraph.h"
+#import "CDQuartzGraphHeader.h"
 
 #import "ShapeDelegate.h"
 #import "Drawable.h"
@@ -24,6 +22,7 @@
 	 the vertice.
 	 **/
 	AbstractNodeShape* shapeDelegate;
+
 }
 
 /**

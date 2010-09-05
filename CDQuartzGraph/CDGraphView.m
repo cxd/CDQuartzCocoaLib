@@ -14,6 +14,7 @@
 
 @synthesize graph;
 @synthesize trackNode;
+@synthesize algorithm;
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
@@ -37,11 +38,18 @@
 	[self.trackNode autorelease];	
 	}
 	[self.graph autorelease];
+	if (self.algorithm != nil)
+	{
+		[self.algorithm autorelease];	
+	}
 	[super dealloc];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-    
+    if (self.algorithm != nil)
+	{
+		[self.algorithm layout:self.graph];	
+	}
 }
 
 -(void)mouseDown:(NSEvent *)event

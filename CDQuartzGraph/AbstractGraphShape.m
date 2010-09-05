@@ -254,6 +254,11 @@
 {
 	self.bounds.x += point.x;
 	self.bounds.y += point.y;
+	if (self.labelShape != nil)
+	{
+		self.labelShape.x += point.x;
+		self.labelShape.y += point.y;
+	}
 }
 
 /**
@@ -263,6 +268,11 @@
 {
 	self.bounds.x = point.x;
 	self.bounds.y = point.y;
+	if (self.labelShape != nil)
+	{
+		self.labelShape.x = point.x;
+		self.labelShape.y = point.y;
+	}
 }
 
 /**
@@ -272,6 +282,11 @@
 {
 	self.bounds.width = w;
 	self.bounds.height = h;
+	if (self.labelShape != nil)
+	{
+		self.labelShape.width = w;
+		self.labelShape.height = h;
+	}
 }
 
 
@@ -284,13 +299,6 @@
 	{
 		labelQueued = YES;
 		[self.queue enqueue:self.labelShape]; 
-	}
-	else if (self.labelShape != nil)
-	{
-		self.labelShape.x = self.bounds.x;
-		self.labelShape.y = self.bounds.y;
-		self.labelShape.width = self.bounds.width;
-		self.labelShape.height = self.bounds.height;
 	}
 	[super update:context];
 }

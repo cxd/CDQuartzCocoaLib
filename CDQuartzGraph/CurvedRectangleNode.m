@@ -153,7 +153,7 @@
  **/
 -(void)createPorts
 {
-	float portWidth = 50.0f;
+	float portWidth = 5.0f;
 	// use the midpoints of each port.
 	QRectangle *leftB = [[QRectangle alloc] initX: self.bounds.x - portWidth/2.0
 													Y: (self.bounds.y + self.bounds.height/2.0 - portWidth/2.0)
