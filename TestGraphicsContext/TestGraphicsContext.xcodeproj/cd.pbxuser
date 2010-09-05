@@ -61,8 +61,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 304675586;
-			PBXWorkspaceStateSaveDate = 304675586;
+			PBXPerProjectTemplateStateSaveDate = 305271881;
+			PBXWorkspaceStateSaveDate = 305271881;
 		};
 		perUserProjectItems = {
 			62227EFD121D59220009DD2F /* PBXTextBookmark */ = 62227EFD121D59220009DD2F /* PBXTextBookmark */;
@@ -73,13 +73,13 @@
 			62227F07121D59220009DD2F /* PBXTextBookmark */ = 62227F07121D59220009DD2F /* PBXTextBookmark */;
 			62CD065C0FFB8A4B0001D102 /* PBXTextBookmark */ = 62CD065C0FFB8A4B0001D102 /* PBXTextBookmark */;
 			62D670E10FFA3E0900B60B0A /* PBXTextBookmark */ = 62D670E10FFA3E0900B60B0A /* PBXTextBookmark */;
-			62DE64551228FB3900738FA9 /* PBXTextBookmark */ = 62DE64551228FB3900738FA9 /* PBXTextBookmark */;
 			62DE64EE1228FDC500738FA9 /* PBXTextBookmark */ = 62DE64EE1228FDC500738FA9 /* PBXTextBookmark */;
 			62DE654A1229016500738FA9 /* PBXTextBookmark */ = 62DE654A1229016500738FA9 /* PBXTextBookmark */;
 			62DE654C1229016500738FA9 /* PBXTextBookmark */ = 62DE654C1229016500738FA9 /* PBXTextBookmark */;
 			62DE654E1229016500738FA9 /* PlistBookmark */ = 62DE654E1229016500738FA9 /* PlistBookmark */;
-			62DE654F1229016500738FA9 /* PBXTextBookmark */ = 62DE654F1229016500738FA9 /* PBXTextBookmark */;
-			62DE655C122901E400738FA9 /* PBXTextBookmark */ = 62DE655C122901E400738FA9 /* PBXTextBookmark */;
+			62E53CA01232233E005C4D72 /* PBXTextBookmark */ = 62E53CA01232233E005C4D72 /* PBXTextBookmark */;
+			62E53CA11232233E005C4D72 /* XCBuildMessageTextBookmark */ = 62E53CA11232233E005C4D72 /* XCBuildMessageTextBookmark */;
+			62E53CFF123224AE005C4D72 /* PBXTextBookmark */ = 62E53CFF123224AE005C4D72 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 629F52D80FF5CB9F002EFD1F /* Source Control */;
 		userBuildSettings = {
@@ -188,12 +188,6 @@
 		name = QContext.h;
 		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QContext.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {708, 312}}";
-			sepNavSelRange = "{130, 0}";
-			sepNavVisRange = "{40, 215}";
-			sepNavWindowFrame = "{{15, 4}, {695, 869}}";
-		};
 	};
 	629F52C00FF5CB8A002EFD1F /* TestGraphicsContext */ = {
 		isa = PBXExecutable;
@@ -269,7 +263,7 @@
 		ignoreCount = 0;
 		lineNumber = 26;
 		location = TestGraphicsContext;
-		modificationTime = 304677333.768069;
+		modificationTime = 305275799.348222;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -292,16 +286,16 @@
 	};
 	62D66FB00FFA190F00B60B0A /* QuartzTestView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {704, 386}}";
-			sepNavSelRange = "{245, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {704, 379}}";
+			sepNavSelRange = "{189, 14}";
 			sepNavVisRange = "{0, 255}";
 		};
 	};
 	62D66FB10FFA190F00B60B0A /* QuartzTestView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {708, 949}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 455}";
+			sepNavIntBoundsRect = "{{0, 0}, {866, 949}}";
+			sepNavSelRange = "{2585, 0}";
+			sepNavVisRange = "{2181, 412}";
 		};
 	};
 	62D670E10FFA3E0900B60B0A /* PBXTextBookmark */ = {
@@ -320,16 +314,6 @@
 		name = CGContext.h;
 		path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers/CGContext.h;
 		sourceTree = "<absolute>";
-	};
-	62DE64551228FB3900738FA9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 62D66FB00FFA190F00B60B0A /* QuartzTestView.h */;
-		name = "QuartzTestView.h: 13";
-		rLen = 0;
-		rLoc = 245;
-		rType = 0;
-		vrLen = 255;
-		vrLoc = 0;
 	};
 	62DE64EE1228FDC500738FA9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -351,11 +335,11 @@
 		delayBeforeContinue = 0;
 		fileReference = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
 		functionName = "-drawRect:";
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 59;
 		location = TestGraphicsContext;
-		modificationTime = 304677339.457714;
+		modificationTime = 305275799.348411;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -371,6 +355,7 @@
 	};
 	62DE654B1229016500738FA9 /* QPoint.m */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
 		name = QPoint.m;
 		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QPoint.m;
 		sourceTree = "<absolute>";
@@ -387,6 +372,7 @@
 	};
 	62DE654D1229016500738FA9 /* QTestYinYang.m */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
 		name = QTestYinYang.m;
 		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QTestYinYang.m;
 		sourceTree = "<absolute>";
@@ -400,27 +386,36 @@
 		);
 		name = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/TestGraphicsContext/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
-	62DE654F1229016500738FA9 /* PBXTextBookmark */ = {
+	62E53CA01232233E005C4D72 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D66FB00FFA190F00B60B0A /* QuartzTestView.h */;
+		name = "QuartzTestView.h: 10";
+		rLen = 14;
+		rLoc = 189;
+		rType = 0;
+		vrLen = 255;
+		vrLoc = 0;
+	};
+	62E53CA11232233E005C4D72 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ']' before ';' token";
+		fRef = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 63;
+		rType = 1;
+	};
+	62E53CFF123224AE005C4D72 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
-		name = "QuartzTestView.m: 59";
+		name = "QuartzTestView.m: 64";
 		rLen = 0;
-		rLoc = 2088;
+		rLoc = 2412;
 		rType = 0;
-		vrLen = 1133;
-		vrLoc = 1357;
-	};
-	62DE655C122901E400738FA9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 62D66FB10FFA190F00B60B0A /* QuartzTestView.m */;
-		name = "QuartzTestView.m: 56";
-		rLen = 0;
-		rLoc = 1978;
-		rType = 0;
-		vrLen = 1131;
-		vrLoc = 1359;
+		vrLen = 1206;
+		vrLoc = 1387;
 	};
 	8D1107260486CEB800E47090 /* TestGraphicsContext */ = {
 		activeExec = 0;

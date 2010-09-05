@@ -22,14 +22,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 62DE64CE1228FD5200738FA9 /* QuartzCocoaLib.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216 /* QuartzCocoaLib.framework */;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = QuartzCocoaLib;
 		};
 		62DE653D1229012300738FA9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62DE64CE1228FD5200738FA9 /* QuartzCocoaLib.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* QuartzCocoaLib */;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = QuartzCocoaLib;
 		};
 /* End PBXContainerItemProxy section */

@@ -61,6 +61,9 @@
 	// test loading an image from a url.
 	[queue enqueue:[[QImage alloc] initWithUrl:@"http://devimages.apple.com/home/images/iphonedevcenter.png" X:10 Y:300]];
 	
+	[queue enqueue:[[QLabel alloc] initWithText:@"Test Text" X: 100 Y: 50 WIDTH:250 HEIGHT:100]];
+					
+	
 	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:queue];
 	[copy autorelease];
 	[queue release];
