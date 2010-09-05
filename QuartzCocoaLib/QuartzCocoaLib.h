@@ -34,6 +34,7 @@
 #import "QFillPath.h"
 #import "QMove.h"
 #import "QImage.h"
+#import "QLabel.h"
 #import "QTestYinYang.h"
 
 

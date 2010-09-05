@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6211ED71122BD1A6000A40AE /* QLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6211ED6F122BD1A6000A40AE /* QLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6211ED72122BD1A6000A40AE /* QLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6211ED70122BD1A6000A40AE /* QLabel.m */; };
 		6240A63F1216570000840C1B /* CTGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240A5F81216570000840C1B /* CTGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6240A6401216570000840C1B /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240A5F91216570000840C1B /* CTGradient.m */; };
 		6240A6411216570000840C1B /* PaintInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240A5FA1216570000840C1B /* PaintInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,6 +88,8 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* QuartzCocoaLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCocoaLib_Prefix.pch; sourceTree = "<group>"; };
+		6211ED6F122BD1A6000A40AE /* QLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLabel.h; sourceTree = "<group>"; };
+		6211ED70122BD1A6000A40AE /* QLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLabel.m; sourceTree = "<group>"; };
 		6240A5F81216570000840C1B /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
 		6240A5F91216570000840C1B /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
 		6240A5FA1216570000840C1B /* PaintInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintInstance.h; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 				6240A6381216570000840C1B /* QuartzCocoaLibTouch_Prefix.pch */,
 				6240A6391216570000840C1B /* QVisitor.h */,
 				6240A63A1216570000840C1B /* README */,
+				6211ED6F122BD1A6000A40AE /* QLabel.h */,
+				6211ED70122BD1A6000A40AE /* QLabel.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				6240A67F1216570000840C1B /* QuartzCocoaLibTouch_Prefix.pch in Headers */,
 				6240A6801216570000840C1B /* QVisitor.h in Headers */,
 				6240A6841216570000840C1B /* Vector2D.h in Headers */,
+				6211ED71122BD1A6000A40AE /* QLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +478,7 @@
 				6240A67A1216570000840C1B /* QStrokeWidth.m in Sources */,
 				6240A67C1216570000840C1B /* QTestYinYang.m in Sources */,
 				6240A6851216570000840C1B /* Vector2D.m in Sources */,
+				6211ED72122BD1A6000A40AE /* QLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
