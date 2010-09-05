@@ -10,23 +10,23 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TestCDQuartzGraphAppDelegate.m */; };
 		62227FC7121D5BCA0009DD2F /* CDGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD4121C0D6100599B3C /* CDGraph.framework */; };
-		62227FD7121D5BD30009DD2F /* CDQuartzGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */; };
 		62227FD8121D5BD70009DD2F /* QuartzCocoaLib.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */; };
 		6238FFA2121C0C7E00599B3C /* TestGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6238FFA1121C0C7E00599B3C /* TestGraphView.m */; };
 		6238FFCF121C0D2600599B3C /* QuartzCocoaLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */; };
-		6238FFD1121C0D4B00599B3C /* CDQuartzGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */; };
 		6238FFD5121C0D6100599B3C /* CDGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6238FFD4121C0D6100599B3C /* CDGraph.framework */; };
+		62655C6B1233691400A91E24 /* CDQuartzGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 623A1E57123365FE00160A95 /* CDQuartzGraph.framework */; };
+		62655C6C1233691E00A91E24 /* CDQuartzGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623A1E57123365FE00160A95 /* CDQuartzGraph.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6238FF72121C0BDD00599B3C /* PBXContainerItemProxy */ = {
+		622B3B171233682F00F4C53F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			containerPortal = 623A1E52123365FE00160A95 /* CDQuartzGraph.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = CDQuartzGraph;
 		};
 		6238FF7A121C0BF300599B3C /* PBXContainerItemProxy */ = {
@@ -71,11 +71,11 @@
 			remoteGlobalIDString = 62B545850F3D8A410027ED8F;
 			remoteInfo = CDGraph;
 		};
-		62546F6E122110B500714D45 /* PBXContainerItemProxy */ = {
+		623A1E56123365FE00160A95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			containerPortal = 623A1E52123365FE00160A95 /* CDQuartzGraph.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = CDQuartzGraph;
 		};
 		62546F70122110B500714D45 /* PBXContainerItemProxy */ = {
@@ -101,8 +101,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				62655C6B1233691400A91E24 /* CDQuartzGraph.framework in Copy Frameworks */,
 				62227FD8121D5BD70009DD2F /* QuartzCocoaLib.framework in Copy Frameworks */,
-				62227FD7121D5BD30009DD2F /* CDQuartzGraph.framework in Copy Frameworks */,
 				62227FC7121D5BCA0009DD2F /* CDGraph.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -121,14 +121,13 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDQuartzGraph.xcodeproj; path = ../../CDQuartzGraph/CDQuartzGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLib.xcodeproj; path = ../../QuartzCocoaLib/QuartzCocoaLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraph.xcodeproj; path = ../../../../Math/CDGraph/CDGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6238FFA0121C0C7E00599B3C /* TestGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGraphView.h; sourceTree = "<group>"; };
 		6238FFA1121C0C7E00599B3C /* TestGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGraphView.m; sourceTree = "<group>"; };
 		6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCocoaLib.framework; path = ../../QuartzCocoaLib/build/Debug/QuartzCocoaLib.framework; sourceTree = SOURCE_ROOT; };
-		6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CDQuartzGraph.framework; path = ../../CDQuartzGraph/build/Debug/CDQuartzGraph.framework; sourceTree = SOURCE_ROOT; };
 		6238FFD4121C0D6100599B3C /* CDGraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CDGraph.framework; path = ../../../../Math/CDGraph/build/Debug/CDGraph.framework; sourceTree = SOURCE_ROOT; };
+		623A1E52123365FE00160A95 /* CDQuartzGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDQuartzGraph.xcodeproj; path = ../../CDQuartzGraph/CDQuartzGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* TestCDQuartzGraph-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestCDQuartzGraph-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TestCDQuartzGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCDQuartzGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -138,9 +137,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62655C6C1233691E00A91E24 /* CDQuartzGraph.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				6238FFCF121C0D2600599B3C /* QuartzCocoaLib.framework in Frameworks */,
-				6238FFD1121C0D4B00599B3C /* CDQuartzGraph.framework in Frameworks */,
 				6238FFD5121C0D6100599B3C /* CDGraph.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				6238FFD4121C0D6100599B3C /* CDGraph.framework */,
-				6238FFD0121C0D4B00599B3C /* CDQuartzGraph.framework */,
 				6238FFCE121C0D2600599B3C /* QuartzCocoaLib.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
@@ -191,9 +189,9 @@
 		29B97314FDCFA39411CA2CEA /* TestCDQuartzGraph */ = {
 			isa = PBXGroup;
 			children = (
+				623A1E52123365FE00160A95 /* CDQuartzGraph.xcodeproj */,
 				6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */,
 				6238FF76121C0BF300599B3C /* QuartzCocoaLib.xcodeproj */,
-				6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -231,14 +229,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6238FF6F121C0BDD00599B3C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6238FF73121C0BDD00599B3C /* CDQuartzGraph.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		6238FF77121C0BF300599B3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +249,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		623A1E53123365FE00160A95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623A1E57123365FE00160A95 /* CDQuartzGraph.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,9 +272,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				62546F6F122110B500714D45 /* PBXTargetDependency */,
 				62546F71122110B500714D45 /* PBXTargetDependency */,
 				62546F73122110B500714D45 /* PBXTargetDependency */,
+				622B3B181233682F00F4C53F /* PBXTargetDependency */,
 			);
 			name = TestCDQuartzGraph;
 			productInstallPath = "$(HOME)/Applications";
@@ -300,8 +298,8 @@
 					ProjectRef = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
 				},
 				{
-					ProductGroup = 6238FF6F121C0BDD00599B3C /* Products */;
-					ProjectRef = 6238FF6E121C0BDD00599B3C /* CDQuartzGraph.xcodeproj */;
+					ProductGroup = 623A1E53123365FE00160A95 /* Products */;
+					ProjectRef = 623A1E52123365FE00160A95 /* CDQuartzGraph.xcodeproj */;
 				},
 				{
 					ProductGroup = 6238FF77121C0BF300599B3C /* Products */;
@@ -316,13 +314,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6238FF73121C0BDD00599B3C /* CDQuartzGraph.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CDQuartzGraph.framework;
-			remoteRef = 6238FF72121C0BDD00599B3C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		6238FF7B121C0BF300599B3C /* QuartzCocoaLib.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -365,6 +356,13 @@
 			remoteRef = 6238FF8C121C0C0700599B3C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		623A1E57123365FE00160A95 /* CDQuartzGraph.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CDQuartzGraph.framework;
+			remoteRef = 623A1E56123365FE00160A95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -393,10 +391,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62546F6F122110B500714D45 /* PBXTargetDependency */ = {
+		622B3B181233682F00F4C53F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CDQuartzGraph;
-			targetProxy = 62546F6E122110B500714D45 /* PBXContainerItemProxy */;
+			targetProxy = 622B3B171233682F00F4C53F /* PBXContainerItemProxy */;
 		};
 		62546F71122110B500714D45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

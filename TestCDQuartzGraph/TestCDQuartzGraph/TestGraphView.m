@@ -36,7 +36,16 @@
 		queue = [[QModifierQueue alloc] init];
 		[queue retain];
 		[queue enqueue:[self createGraph]];
+		
+		self.algorithm = [[ForceDirectedLayout alloc] initWidth:[self frame].size.width 
+														 Height:[self frame].size.height 
+														 Epochs:150
+													Temperature:50.0]; 
 	}
+	
+	self.algorithm.width = [self frame].size.width;
+	self.algorithm.height = [self frame].size.height;
+	[self.algorithm layout:self.graph];
 	
 	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:queue];
 	[queue autorelease];
@@ -65,6 +74,16 @@
 																	AndLabel:@"Test03"];
 	CDQuartzNode *node3 = (CDQuartzNode *)[self.graph add:@"Test03"];
 	node3.shapeDelegate = rect3;
+	rect3.fillColor = [[QColor alloc] initWithRGB:0.5 G:1.0 B:0.0];
+	
+	
+	CurvedRectangleNode *rect4 = [[CurvedRectangleNode alloc] initWithBounds:
+								  [[QRectangle alloc] initX:250 Y:400 WIDTH:150 HEIGHT:100]
+																	AndLabel:@"Test04"];
+	CDQuartzNode *node4 = (CDQuartzNode *)[self.graph add:@"Test04"];
+	node4.shapeDelegate = rect4;
+	rect4.fillColor = [[QColor alloc] initWithRGB:0.0 G:0.8 B:1.0];
+	
 	
 	BezierLineConnector *connect1 = [[BezierLineConnector alloc] init];
 	[self.graph connect:node1 
@@ -86,6 +105,28 @@
 			withShape:connect3
 			fromPort:rect2.rightPort
 			toPort:rect3.leftPort];
+	
+	BezierLineConnector *connect4 = [[BezierLineConnector alloc] init];
+	[self.graph connect:node2
+					 to: node4
+			  withShape:connect4
+			   fromPort:rect2.topPort
+				 toPort:rect4.bottomPort];
+	
+	
+	BezierLineConnector *connect5 = [[BezierLineConnector alloc] init];
+	[self.graph connect:node4
+					 to: node1
+			  withShape:connect5
+			   fromPort:rect4.topPort
+				 toPort:rect1.bottomPort];
+	
+	BezierLineConnector *connect6 = [[BezierLineConnector alloc] init];
+	[self.graph connect:node4
+					 to: node3
+			  withShape:connect6
+			   fromPort:rect4.leftPort
+				 toPort:rect3.topPort];
 	
 	return self.graph;
 }

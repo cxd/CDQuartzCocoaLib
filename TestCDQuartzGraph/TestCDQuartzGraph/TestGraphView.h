@@ -7,8 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "QuartzCocoaLib/QuartzCocoaLib.h"
-#import "CDGraph/CDGraph.h"
+#import "CDQuartzGraph/CDQuartzGraphHeader.h"
 #import "CDQuartzGraph/CDQuartzGraphLib.h"
 
 @interface TestGraphView : CDGraphView {
