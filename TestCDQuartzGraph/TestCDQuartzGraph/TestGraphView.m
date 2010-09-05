@@ -48,18 +48,21 @@
 	
 	CurvedRectangleNode *rect1 = [[CurvedRectangleNode alloc] 
 									initWithBounds:
-									[[QRectangle alloc] initX:30 Y:30 WIDTH:150 HEIGHT:100]];
+									[[QRectangle alloc] initX:30 Y:30 WIDTH:150 HEIGHT:100]
+								  AndLabel:@"Test01"];
 	
 	CDQuartzNode *node1 = (CDQuartzNode *)[self.graph add:@"Test01"];
 	node1.shapeDelegate = rect1;
 	
 	CurvedRectangleNode *rect2 = [[CurvedRectangleNode alloc] initWithBounds:
-								  [[QRectangle alloc] initX:400 Y:300 WIDTH:150 HEIGHT:100]];
+								  [[QRectangle alloc] initX:400 Y:300 WIDTH:150 HEIGHT:100]
+								  AndLabel:@"Test02"];
 	CDQuartzNode *node2 = (CDQuartzNode *)[self.graph add:@"Test02"];
 	node2.shapeDelegate = rect2;
 	
 	CurvedRectangleNode *rect3 = [[CurvedRectangleNode alloc] initWithBounds:
-								  [[QRectangle alloc] initX:50 Y:310 WIDTH:150 HEIGHT:100]];
+								  [[QRectangle alloc] initX:50 Y:310 WIDTH:150 HEIGHT:100]
+																	AndLabel:@"Test03"];
 	CDQuartzNode *node3 = (CDQuartzNode *)[self.graph add:@"Test03"];
 	node3.shapeDelegate = rect3;
 	
