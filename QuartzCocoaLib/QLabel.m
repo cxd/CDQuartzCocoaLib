@@ -85,7 +85,7 @@
 -(void)update:(QContext*) context
 {
 	// approximate middle y position.
-	float y = self.y + self.height/2.0;
+	float midy = self.y + self.height/2.0;
 	
 	// draw the point and then work out the adjustment.
 	CGContextSelectFont (context.context,
@@ -111,14 +111,14 @@
 								kCGTextFillStroke);
 	// calculate the width of the text.
 	float w = p.x - self.x;
+	if (isnan(w)) return;
 	// we want to position the text in the middle of the boundary.
 	float middle = (self.width - w) / 2.0f;
 	CGContextShowTextAtPoint(context.context, 
 							 self.x + middle, 
-							 y, 
+							 midy, 
 							 [self.text UTF8String],
 							 [self.text length]);
-	
 }
 
 @end
