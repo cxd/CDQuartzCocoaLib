@@ -6,7 +6,6 @@
 //  Copyright 2010 none. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "QFramework.h"
 #import "QModifierQueue.h"
 #import "QAbstractContextModifier.h"
