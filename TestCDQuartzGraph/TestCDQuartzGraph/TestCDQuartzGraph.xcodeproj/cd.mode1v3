@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -279,7 +281,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
+									<integer>8</integer>
 									<integer>5</integer>
 									<integer>0</integer>
 								</array>
@@ -315,14 +317,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TestGraphView.m</string>
+								<string>TestGraphView.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TestGraphView.m</string>
+										<string>TestGraphView.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62655F0C12338EEB00A91E24</string>
+										<string>62655FA71233BE1500A91E24</string>
 										<key>history</key>
 										<array>
 											<string>62380033121C102700599B3C</string>
@@ -344,8 +344,8 @@
 											<string>62655DCA1233842F00A91E24</string>
 											<string>62655E281233860D00A91E24</string>
 											<string>62655E301233861900A91E24</string>
-											<string>62655E6B1233888E00A91E24</string>
-											<string>62655E6C1233888E00A91E24</string>
+											<string>62655FA51233BE1500A91E24</string>
+											<string>62655FA61233BE1500A91E24</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -543,7 +543,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>62655F0D12338EEB00A91E24</string>
 		<string>62655C921233693700A91E24</string>
 		<string>62655C931233693700A91E24</string>
 		<string>6238003B121C102700599B3C</string>
