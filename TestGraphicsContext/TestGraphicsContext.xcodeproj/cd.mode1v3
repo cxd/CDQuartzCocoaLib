@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -274,7 +276,6 @@
 								<string>1058C7A2FEA54F0111CA2CBB</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>62E53C2812321449005C4D72</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
@@ -317,14 +318,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>QuartzTestView.m</string>
+								<string>QuartzTestView.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>QuartzTestView.m</string>
+										<string>QuartzTestView.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62E53CFF123224AE005C4D72</string>
+										<string>623A1E83123366AF00160A95</string>
 										<key>history</key>
 										<array>
 											<string>62D670E10FFA3E0900B60B0A</string>
@@ -351,8 +350,8 @@
 											<string>62DE654A1229016500738FA9</string>
 											<string>62DE654C1229016500738FA9</string>
 											<string>62DE654E1229016500738FA9</string>
-											<string>62E53CA01232233E005C4D72</string>
-											<string>62E53CA11232233E005C4D72</string>
+											<string>623A1E81123366AF00160A95</string>
+											<string>623A1E82123366AF00160A95</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -364,14 +363,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {765, 411}}</string>
+								<string>{{0, 0}, {765, 403}}</string>
 								<key>RubberWindowFrame</key>
 								<string>34 142 1076 695 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>411pt</string>
+							<string>403pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -384,14 +383,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 416}, {765, 238}}</string>
+								<string>{{0, 408}, {765, 246}}</string>
 								<key>RubberWindowFrame</key>
 								<string>34 142 1076 695 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>238pt</string>
+							<string>246pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -410,9 +409,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>62E53CA31232233E005C4D72</string>
+				<string>623A1E84123366AF00160A95</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>62E53CA41232233E005C4D72</string>
+				<string>623A1E85123366AF00160A95</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -548,9 +547,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>62E53CA71232233E005C4D72</string>
-		<string>62E53CA81232233E005C4D72</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>629F52CF0FF5CB9F002EFD1F</string>
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/TestGraphicsContext/TestGraphicsContext.xcodeproj</string>
@@ -577,7 +573,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>QuartzTestView.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -594,8 +590,6 @@
 							<string>200pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -635,7 +629,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>629F52CF0FF5CB9F002EFD1F</string>
-				<string>62E53C8F123222FF005C4D72</string>
+				<string>623A1E86123366AF00160A95</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -755,13 +749,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>62E53C90123222FF005C4D72</string>
+				<string>623A1E87123366AF00160A95</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>62E53C91123222FF005C4D72</string>
-				<string>62E53C92123222FF005C4D72</string>
-				<string>62E53C93123222FF005C4D72</string>
-				<string>62E53C94123222FF005C4D72</string>
-				<string>62E53C95123222FF005C4D72</string>
+				<string>623A1E88123366AF00160A95</string>
+				<string>623A1E89123366AF00160A95</string>
+				<string>623A1E8A123366AF00160A95</string>
+				<string>623A1E8B123366AF00160A95</string>
+				<string>623A1E8C123366AF00160A95</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
