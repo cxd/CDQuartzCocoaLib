@@ -5,6 +5,7 @@
 		activeSDKPreference = iphoneos3.2;
 		activeTarget = 6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */;
 		addToTargets = (
+			6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */,
 		);
 		breakpoints = (
 			62757C040FFF1A060086AD09 /* QShadow.m:98 */,
@@ -22,7 +23,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					336,
+					335.58349609375,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -54,7 +55,7 @@
 			};
 			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnSortingKey = PBXTargetDataSource_PrimaryAttribute;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					408,
@@ -74,14 +75,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 303454432;
-			PBXWorkspaceStateSaveDate = 303454432;
+			PBXPerProjectTemplateStateSaveDate = 305553785;
+			PBXWorkspaceStateSaveDate = 305553785;
 		};
 		perUserProjectItems = {
-			6240A9E412165EFF00840C1B /* PBXTextBookmark */ = 6240A9E412165EFF00840C1B /* PBXTextBookmark */;
-			6240A9E512165EFF00840C1B /* PBXTextBookmark */ = 6240A9E512165EFF00840C1B /* PBXTextBookmark */;
-			627AD7D611D8BF770064F2C7 /* PBXTextBookmark */ = 627AD7D611D8BF770064F2C7 /* PBXTextBookmark */;
-			62CD06A90FFB8BD30001D102 /* PBXTextBookmark */ = 62CD06A90FFB8BD30001D102 /* PBXTextBookmark */;
+			62168C17123518D9000941F2 = 62168C17123518D9000941F2 /* PBXTextBookmark */;
+			62655FB31233BE1700A91E24 = 62655FB31233BE1700A91E24 /* PBXTextBookmark */;
+			627AD7D611D8BF770064F2C7 = 627AD7D611D8BF770064F2C7 /* PBXTextBookmark */;
+			62C5717A123661C60035FDA0 /* PBXTextBookmark */ = 62C5717A123661C60035FDA0 /* PBXTextBookmark */;
+			62CD06A90FFB8BD30001D102 = 62CD06A90FFB8BD30001D102 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 62D66FDB0FFA235C00B60B0A /* Source Control */;
 		userBuildSettings = {
@@ -94,6 +96,16 @@
 			sepNavVisRange = "{0, 45}";
 		};
 	};
+	62168C17123518D9000941F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A7C512165B3400840C1B /* README */;
+		name = "README: 2";
+		rLen = 0;
+		rLoc = 57;
+		rType = 0;
+		vrLen = 57;
+		vrLoc = 0;
+	};
 	6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */ = {
 		activeExec = 0;
 	};
@@ -102,6 +114,13 @@
 			sepNavIntBoundsRect = "{{0, 0}, {626, 637}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1031}";
+		};
+	};
+	6240A6DA121659B800840C1B /* QBlendMode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 452}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 401}";
 		};
 	};
 	6240A706121659B800840C1B /* QStrokePath.m */ = {
@@ -162,22 +181,12 @@
 	};
 	6240A7C512165B3400840C1B /* README */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {626, 459}}";
+			sepNavIntBoundsRect = "{{0, 0}, {626, 438}}";
 			sepNavSelRange = "{57, 0}";
 			sepNavVisRange = "{0, 57}";
 		};
 	};
-	6240A9E412165EFF00840C1B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6240A7C512165B3400840C1B /* README */;
-		name = "README: 1";
-		rLen = 0;
-		rLoc = 57;
-		rType = 0;
-		vrLen = 0;
-		vrLoc = 0;
-	};
-	6240A9E512165EFF00840C1B /* PBXTextBookmark */ = {
+	62655FB31233BE1700A91E24 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 6240A7C512165B3400840C1B /* README */;
 		name = "README: 2";
@@ -187,20 +196,6 @@
 		vrLen = 57;
 		vrLoc = 0;
 	};
-	62757B0D0FFF04ED0086AD09 /* QShadow.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = QShadow.m;
-		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QShadow.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {528, 1624}}";
-			sepNavSelRange = "{1718, 0}";
-			sepNavVisRange = "{1680, 447}";
-			sepNavWindowFrame = "{{38, 294}, {750, 558}}";
-		};
-	};
 	62757C040FFF1A060086AD09 /* QShadow.m:98 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -209,7 +204,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 62757B0D0FFF04ED0086AD09 /* QShadow.m */;
+		fileReference = 6240A6FE121659B800840C1B /* QShadow.m */;
 		functionName = "-update:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -226,7 +221,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 62757B0D0FFF04ED0086AD09 /* QShadow.m */;
+		fileReference = 6240A6FE121659B800840C1B /* QShadow.m */;
 		functionName = "-update:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -244,7 +239,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 62D670160FFA299700B60B0A /* QModifierQueue.m */;
+		fileReference = 6240A6F3121659B800840C1B /* QModifierQueue.m */;
 		functionName = "+updateContext:SourceQueue:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -253,33 +248,6 @@
 		modificationTime = 299327393.0275489;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
-	};
-	62757CF20FFF2E8B0086AD09 /* QShape.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = QShape.m;
-		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QShape.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {656, 1092}}";
-			sepNavSelRange = "{191, 0}";
-			sepNavVisRange = "{897, 639}";
-			sepNavWindowFrame = "{{15, 35}, {1089, 838}}";
-		};
-	};
-	62757D000FFF30FF0086AD09 /* QArc.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = QArc.m;
-		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QArc.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {840, 2324}}";
-			sepNavSelRange = "{4143, 0}";
-			sepNavVisRange = "{3093, 1114}";
-		};
 	};
 	627AD7D611D8BF770064F2C7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -299,7 +267,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 62757D000FFF30FF0086AD09 /* QArc.m */;
+		fileReference = 6240A6D7121659B800840C1B /* QArc.m */;
 		functionName = "-update:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -316,7 +284,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 62757D000FFF30FF0086AD09 /* QArc.m */;
+		fileReference = 6240A6D7121659B800840C1B /* QArc.m */;
 		functionName = "-update:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -325,6 +293,16 @@
 		modificationTime = 299327393.027659;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
+	};
+	62C5717A123661C60035FDA0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A7C512165B3400840C1B /* README */;
+		name = "README: 2";
+		rLen = 0;
+		rLoc = 57;
+		rType = 0;
+		vrLen = 57;
+		vrLoc = 0;
 	};
 	62CD06A90FFB8BD30001D102 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -344,7 +322,7 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 62757CF20FFF2E8B0086AD09 /* QShape.m */;
+		fileReference = 6240A700121659B800840C1B /* QShape.m */;
 		functionName = "-update:";
 		hitCount = 0;
 		ignoreCount = 0;
@@ -367,20 +345,6 @@
 	62D66FDC0FFA235C00B60B0A /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	62D670160FFA299700B60B0A /* QModifierQueue.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = QModifierQueue.m;
-		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QModifierQueue.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {679, 1344}}";
-			sepNavSelRange = "{1707, 0}";
-			sepNavVisRange = "{676, 622}";
-			sepNavWindowFrame = "{{130, 210}, {750, 558}}";
-		};
 	};
 	62E3CC1F11D77215004308CB /* NSObjCRuntime.h */ = {
 		isa = PBXFileReference;
