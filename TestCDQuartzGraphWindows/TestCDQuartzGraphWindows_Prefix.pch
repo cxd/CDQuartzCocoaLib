@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TestCDQuartzGraphWindows' target in the 'TestCDQuartzGraphWindows' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
