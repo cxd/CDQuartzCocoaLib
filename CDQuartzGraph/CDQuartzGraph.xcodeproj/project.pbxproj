@@ -108,9 +108,9 @@
 		6240A5291216529D00840C1B /* CDGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraph.xcodeproj; path = ../../../Math/CDGraph/CDGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6240A7B712165ACE00840C1B /* QuartzCocoaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLib.xcodeproj; path = ../QuartzCocoaLib/QuartzCocoaLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6240A7C312165B0400840C1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		62547115122149DE00714D45 /* CDGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphView.h; sourceTree = "<group>"; };
-		62547116122149DE00714D45 /* CDGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGraphView.m; sourceTree = "<group>"; };
-		62602AD01216608C0018E683 /* CDQuartzGraphLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphLib.h; sourceTree = "<group>"; };
+		62547115122149DE00714D45 /* CDGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraphView.h; path = View/CDGraphView.h; sourceTree = "<group>"; };
+		62547116122149DE00714D45 /* CDGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraphView.m; path = View/CDGraphView.m; sourceTree = "<group>"; };
+		62602AD01216608C0018E683 /* CDQuartzGraphLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDQuartzGraphLib.h; path = Library_Header/CDQuartzGraphLib.h; sourceTree = "<group>"; };
 		62602AD4121660B90018E683 /* CDQuartzNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzNode.h; sourceTree = "<group>"; };
 		62602AD5121660B90018E683 /* CDQuartzNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDQuartzNode.m; sourceTree = "<group>"; };
 		62602AE21216611A0018E683 /* QuartzCocoaLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCocoaLib.framework; path = ../QuartzCocoaLib/build/Debug/QuartzCocoaLib.framework; sourceTree = SOURCE_ROOT; };
