@@ -36,9 +36,11 @@
 		
 		self.algorithm = [[ForceDirectedLayout alloc] initWidth:[self frame].size.width 
 														 Height:[self frame].size.height 
-														 Epochs:150
+														 Epochs:50
 													Temperature:50.0]; 
 	}
+	
+	
 	
 	self.algorithm.width = [self frame].size.width;
 	self.algorithm.height = [self frame].size.height;

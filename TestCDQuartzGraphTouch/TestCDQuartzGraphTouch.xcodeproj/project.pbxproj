@@ -26,42 +26,42 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C570971236555D0035FDA0 /* CDQuartzGraphTouch.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libCDQuartzGraphTouch.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CDQuartzGraphTouch;
 		};
 		62C570A11236556B0035FDA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C5709D1236556B0035FDA0 /* QuartzCocoaLibTouch.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6231BDB511D5DEAE00327B84 /* libQuartzCocoaLibTouchTouch.a */;
+			remoteGlobalIDString = 6231BDB511D5DEAE00327B84;
 			remoteInfo = QuartzCocoaLibTouchTouch;
 		};
 		62C570A71236557E0035FDA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C570A31236557E0035FDA0 /* CDGraphTouch.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libCDGraphTouch.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CDGraphTouch;
 		};
 		62C570A9123655960035FDA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C570A31236557E0035FDA0 /* CDGraphTouch.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* CDGraphTouch */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CDGraphTouch;
 		};
 		62C570AB123655960035FDA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C570971236555D0035FDA0 /* CDQuartzGraphTouch.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* CDQuartzGraphTouch */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CDQuartzGraphTouch;
 		};
 		62C570AD123655960035FDA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C5709D1236556B0035FDA0 /* QuartzCocoaLibTouch.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */;
+			remoteGlobalIDString = 6231BDB411D5DEAE00327B84;
 			remoteInfo = QuartzCocoaLibTouchTouch;
 		};
 /* End PBXContainerItemProxy section */
