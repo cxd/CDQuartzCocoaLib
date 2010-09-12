@@ -80,6 +80,7 @@
 	{
 		[self.font autorelease];	
 	}
+	[super dealloc];
 }
 
 -(void)update:(QContext*) context
@@ -90,7 +91,7 @@
 	// draw the point and then work out the adjustment.
 	CGContextSelectFont (context.context,
 						 [self.font UTF8String], 
-						 self.fontSize/10, 
+						 self.fontSize, 
 						 kCGEncodingMacRoman);
 	CGContextSetCharacterSpacing(context.context, 0.1);
 	CGContextSetRGBFillColor(context.context, 
@@ -98,6 +99,16 @@
 							 self.color.green, 
 							 self.color.blue, 
 							 self.color.alpha);
+	
+#ifdef UIKIT_EXTERN
+	CGContextSetTextMatrix(context.context, 
+						   CGAffineTransformMake(-1.0,0.0, 0.0, 1.0, 0.0, 0.0));
+	
+#else
+	CGContextSetTextMatrix(context.context, 
+						   CGAffineTransformMake(1.0,0.0, 0.0, 1.0, 0.0, 0.0));
+	
+#endif
 	// first draw the text at the current x y position to work out its size.
 	CGContextSetTextDrawingMode(context.context,
 								kCGTextInvisible);
@@ -112,6 +123,7 @@
 	// calculate the width of the text.
 	float w = p.x - self.x;
 	if (isnan(w)) return;
+	
 	// we want to position the text in the middle of the boundary.
 	float middle = (self.width - w) / 2.0f;
 	CGContextShowTextAtPoint(context.context, 

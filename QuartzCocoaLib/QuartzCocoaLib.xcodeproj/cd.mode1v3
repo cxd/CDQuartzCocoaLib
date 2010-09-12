@@ -281,7 +281,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 527}, {279, 713}}</string>
+							<string>{{0, 527}, {279, 719}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -293,14 +293,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {296, 731}}</string>
+						<string>{{0, 0}, {296, 737}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>279</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>569 100 849 772 0 0 1440 878 </string>
+						<string>354 100 1044 778 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62655FAD1233BE1600A91E24</string>
+										<string>62991ADA123C9AD700A94F84</string>
 										<key>history</key>
 										<array>
 											<string>6240A69E1216589E00840C1B</string>
@@ -378,7 +378,7 @@
 											<string>62E53CB312322375005C4D72</string>
 											<string>62655FAA1233BE1600A91E24</string>
 											<string>62655FAB1233BE1600A91E24</string>
-											<string>62655FAC1233BE1600A91E24</string>
+											<string>62977F07123B887100A132F9</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -390,14 +390,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {548, 476}}</string>
+								<string>{{0, 0}, {743, 468}}</string>
 								<key>RubberWindowFrame</key>
-								<string>569 100 849 772 0 0 1440 878 </string>
+								<string>354 100 1044 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>476pt</string>
+							<string>468pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -410,18 +410,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 481}, {548, 250}}</string>
+								<string>{{0, 473}, {743, 264}}</string>
 								<key>RubberWindowFrame</key>
-								<string>569 100 849 772 0 0 1440 878 </string>
+								<string>354 100 1044 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>250pt</string>
+							<string>264pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>548pt</string>
+					<string>743pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -436,9 +436,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>62655FAE1233BE1600A91E24</string>
+				<string>62991ADB123C9AD700A94F84</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>62655FAF1233BE1600A91E24</string>
+				<string>62991ADC123C9AD700A94F84</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -580,7 +580,7 @@
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QuartzCocoaLib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>569 100 849 772 0 0 1440 878 </string>
+	<string>354 100 1044 778 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -657,7 +657,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6240A5EB1216562000840C1B</string>
-				<string>62655FB01233BE1600A91E24</string>
+				<string>62991ADD123C9AD700A94F84</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
