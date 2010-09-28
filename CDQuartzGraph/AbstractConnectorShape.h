@@ -10,6 +10,8 @@
 #import "AbstractGraphShape.h"
 #import "ShapeDelegate.h"
 #import "AbstractPortShape.h"
+#import "CirclePortShape.h"
+#import "CurvedRectanglePort.h"
 
 @interface AbstractConnectorShape : AbstractGraphShape {
 	/**
@@ -74,6 +76,12 @@
 -(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l;
 
 -(void)dealloc;
+
+/**
+ Initialise the line with default bounds.
+ Use the diagonal of the bounds to set the key points.
+ **/
+-(void)initialiseRect:(QRectangle *)b;
 
 /**
  Update Connections.

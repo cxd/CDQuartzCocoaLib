@@ -220,6 +220,21 @@
 }
 
 /**
+ Find an edge that is contained by the supplied point.
+ **/
+-(CDQuartzEdge *)findEdgeContaining:(QPoint *)p
+{
+	for(CDQuartzEdge *edge in self.edges)
+	{
+		if ([edge.shapeDelegate isWithinBounds:p])
+		{
+			return edge;	
+		}
+	}
+	return nil;
+}
+
+/**
  Check whether a rectangle intersects with the rectangle
  of this object.
  **/

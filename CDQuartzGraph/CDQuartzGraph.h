@@ -86,6 +86,11 @@
 -(CDQuartzNode *)findNodeContaining:(QPoint *)p;
 
 /**
+ Find an edge that is contained by the supplied point.
+ **/
+-(CDQuartzEdge *)findEdgeContaining:(QPoint *)p;
+
+/**
  Check whether a rectangle intersects with the rectangle
  of this object.
  **/

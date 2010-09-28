@@ -20,6 +20,7 @@
 #import "AbstractConnectorShape.h"
 
 #import "GraphLayoutAlgorithm.h"
+#import "CDGraphViewState.h"
 
 /**
  The Graph View provides support for drawing graphs within an NSView. 
@@ -30,9 +31,14 @@
 	 **/
 	CDQuartzGraph *graph;
 	
-	CDQuartzNode *trackNode;
-	
 	id<GraphLayoutAlgorithm> algorithm;
+	
+	CDGraphViewState *state;
+	
+	/**
+	 A flag to indicate whether the view should delete.
+	 **/
+	BOOL shouldDelete;
 }
 
 /**
@@ -40,11 +46,19 @@
  **/
 @property(retain) CDQuartzGraph *graph;
 
-@property(retain) CDQuartzNode *trackNode;
+/**
+ The state associated with the view.
+ **/
+@property(retain) CDGraphViewState *state;
 
 /**
  A reference to a graph layout algorithm.
  **/
 @property(retain) id<GraphLayoutAlgorithm> algorithm;
+
+/**
+ A flag to indicate whether the view should delete.
+ **/
+@property(assign) BOOL shouldDelete;
 
 @end

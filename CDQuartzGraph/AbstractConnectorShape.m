@@ -84,6 +84,22 @@
 }
 
 /**
+ Initialise the line with default bounds.
+ Use the diagonal of the bounds to set the key points.
+ **/
+-(void)initialiseRect:(QRectangle *)b
+{
+	self.startDecoration = [[CirclePortShape alloc] initWithParent:self];
+	self.startDecoration.bounds.width = 10;
+	self.startDecoration.bounds.height = 10;
+	self.endDecoration = [[CirclePortShape alloc] initWithParent:self];
+	self.endDecoration.bounds.width = 10;
+	self.endDecoration.bounds.height = 10;
+
+}
+
+
+/**
  Update the context.
  **/
 -(void)update:(QContext *)context
@@ -133,11 +149,13 @@
 	}
 	if (self.startDecoration != nil)
 	{
-	[self.startDecoration moveTo:[[QPoint alloc] initX:sX Y:sY]];
+	[self.startDecoration moveTo:[[QPoint alloc] initX:sX - self.startDecoration.bounds.width/2.0f 
+													 Y:sY - self.startDecoration.bounds.height/2.0f]];
 	}
 	if (self.endDecoration != nil)
 	{
-	[self.endDecoration moveTo:[[QPoint alloc] initX:eX Y:eY]];
+	[self.endDecoration moveTo:[[QPoint alloc] initX:eX - self.endDecoration.bounds.width/2.0f 
+												   Y:eY - self.endDecoration.bounds.height/2.0f]];
 	}
 }
 
@@ -195,6 +213,24 @@
 		self.endDecoration.bounds.x = p.x;
 		self.endDecoration.bounds.y = p.y;
 	}
+}
+
+/**
+ Check whether a point occurs within the bounds
+ of this object.
+ **/
+-(BOOL)isWithinBounds:(QPoint *)point
+{
+	BOOL flag = NO;
+	if (self.endDecoration != nil)
+	{
+		flag = [self.endDecoration isWithinBounds:point];
+	}
+	if (self.startDecoration != nil)
+	{
+		flag |= [self.startDecoration isWithinBounds:point];	
+	}
+	return flag;
 }
 
 

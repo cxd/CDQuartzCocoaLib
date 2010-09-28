@@ -8,6 +8,7 @@
 
 #import "CDQuartzGraphHeader.h"
 #import "ShapeDelegate.h"
+#import "ITrackingViewBoundary.h"
 
 /**
  The abstract shape delegate provides the base
@@ -53,6 +54,16 @@
 	 Determine whether the label is queued for presentation.
 	 **/
 	BOOL labelQueued;
+	
+	/**
+	 A flag used to determine whether the shape is highlighted.
+	 **/
+	BOOL isHighlighted;
+	
+	/**
+	 Tracking view associated with the object.
+	 **/
+	id<ITrackingViewBoundary> trackingView;
 }
 
 /**
@@ -92,6 +103,16 @@
  The text color associated with the label.
  **/
 @property(retain) QColor *textColor;
+
+/**
+ A flag used to determine whether the shape is highlighted.
+ **/
+@property(assign) BOOL isHighlighted;
+
+/**
+ Tracking view associated with the object.
+ **/
+@property(retain) id<ITrackingViewBoundary> trackingView;
 
 /**
  Attach observers.
@@ -141,10 +162,17 @@
  **/
 -(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l;
 
+
+/**
+ Initialise with tracking areas bounds and label.
+ **/
+-(id)initWithBounds:(QRectangle *)b AndLabel:(NSString *)l;
+
 /*
  Dealloc.
  */
 -(void)dealloc;
+
 
 /**
  Create the label to render.

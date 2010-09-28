@@ -87,6 +87,7 @@
  **/
 -(void)initialiseRect:(QRectangle *)b
 {
+	[super initialiseRect:b];
 	self.strokeColor = [[QStrokeColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
 	self.strokeWidth = [[QStrokeWidth alloc] initWidth:2.0f];
 	float sX = b.x;

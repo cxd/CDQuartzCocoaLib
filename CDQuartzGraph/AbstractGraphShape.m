@@ -19,6 +19,7 @@
 @synthesize label;
 @synthesize labelShape;
 @synthesize textColor;
+@synthesize trackingView;
 
 /**
  Default initialisation.
@@ -106,6 +107,10 @@
 	if (self.textColor != nil)
 	{
 		[self.textColor autorelease];	
+	}
+	if (self.trackingView != nil)
+	{
+		[self.trackingView autorelease];
 	}
 	[super dealloc];
 }
