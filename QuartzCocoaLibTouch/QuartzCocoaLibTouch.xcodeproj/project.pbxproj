@@ -74,13 +74,13 @@
 		6240A79B12165A4400840C1B /* QTestYinYang.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240A709121659B800840C1B /* QTestYinYang.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6240A79C12165A4400840C1B /* QTestYinYang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240A70A121659B800840C1B /* QTestYinYang.m */; };
 		6240A7B212165AA000840C1B /* QFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240A7B112165AA000840C1B /* QFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62978045123B8FC700A132F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62978044123B8FC700A132F9 /* UIKit.framework */; };
 		62C57171123661A10035FDA0 /* QLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C5716F123661A10035FDA0 /* QLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C57172123661A10035FDA0 /* QLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C57170123661A10035FDA0 /* QLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		6231BDB511D5DEAE00327B84 /* libQuartzCocoaLibTouchTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuartzCocoaLibTouchTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +151,7 @@
 		6240A711121659B900840C1B /* Vector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vector2D.m; path = ../QuartzCocoaLib/Vector2D.m; sourceTree = SOURCE_ROOT; };
 		6240A7B112165AA000840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = QFramework_Header/QFramework.h; sourceTree = "<group>"; };
 		6240A7C512165B3400840C1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		62978044123B8FC700A132F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		62C5716F123661A10035FDA0 /* QLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QLabel.h; path = ../QuartzCocoaLib/QLabel.h; sourceTree = SOURCE_ROOT; };
 		62C57170123661A10035FDA0 /* QLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QLabel.m; path = ../QuartzCocoaLib/QLabel.m; sourceTree = SOURCE_ROOT; };
 		62EA54490FFEEF7300B803C1 /* QRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRectangle.m; path = ../QuartzCocoaLib/QRectangle.m; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62978045123B8FC700A132F9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +289,9 @@
 		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
 				D2F7E79907B2D74100F64583 /* CoreData.framework */,
 				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				62978044123B8FC700A132F9 /* UIKit.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
