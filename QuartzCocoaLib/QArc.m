@@ -109,21 +109,22 @@
 
 -(void)update:(QContext*)context
 {
+	float pi = M_PI;
 	if (self.isStart)
 	{
 		CGContextBeginPath(context.context);
 		// calculate the beginning of the arc using radius and angle 
 		// and move to that point.
-		float startX = self.centre.x + self.radius * cos(self.startAngle * (M_PI/180.0));
-		float startY = self.centre.y + self.radius * sin(self.startAngle * (M_PI/180.0));
+		float startX = self.centre.x + self.radius * cos(self.startAngle * (pi/180.0));
+		float startY = self.centre.y + self.radius * sin(self.startAngle * (pi/180.0));
 		CGContextMoveToPoint(context.context, startX, startY);
 	}
 	CGContextAddArc(context.context, 
 					self.centre.x, 
 					self.centre.y,
 					self.radius,
-					self.startAngle * (M_PI/180.0),
-					self.endAngle * (M_PI/180.0),
+					self.startAngle * (pi/180.0),
+					self.endAngle * (pi/180.0),
 					self.isClockwise);
 	if (self.isEnd)
 	{
@@ -134,18 +135,19 @@
 
 -(QRectangle*)getBoundary
 {
+	float pi = M_PI;
 	// determine the starting point.
-	float startX = self.centre.x + self.radius * cos(self.startAngle * (M_PI/180.0));
-	float startY = self.centre.y + self.radius * sin(self.startAngle * (M_PI/180.0));
+	float startX = self.centre.x + self.radius * cos(self.startAngle * (pi/180.0));
+	float startY = self.centre.y + self.radius * sin(self.startAngle * (pi/180.0));
 	
 	// the end point.
-	float endX = self.centre.x + self.radius * cos(self.endAngle * (M_PI/180.0));
-	float endY = self.centre.y + self.radius * sin(self.endAngle * (M_PI/180.0));
+	float endX = self.centre.x + self.radius * cos(self.endAngle * (pi/180.0));
+	float endY = self.centre.y + self.radius * sin(self.endAngle * (pi/180.0));
 	
 	// the mid point
 	// the end point.
-	float midX = self.centre.x + self.radius * cos((self.startAngle + (self.endAngle - self.startAngle)/2.0) * (M_PI/180.0));
-	float midY = self.centre.y + self.radius * sin((self.startAngle + (self.endAngle - self.startAngle)/2.0) * (M_PI/180.0));
+	float midX = self.centre.x + self.radius * cos((self.startAngle + (self.endAngle - self.startAngle)/2.0) * (pi/180.0));
+	float midY = self.centre.y + self.radius * sin((self.startAngle + (self.endAngle - self.startAngle)/2.0) * (pi/180.0));
 
 	QPoint *start = [[QPoint alloc] initX:startX Y:startY];
 	QPoint *mid = [[QPoint alloc] initX:midX Y:midY];
