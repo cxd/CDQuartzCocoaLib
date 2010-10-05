@@ -11,8 +11,42 @@
 #import "CDQuartzGraph/CDQuartzGraphLib.h"
 
 @interface TestGraphView : CDGraphView {
-	QModifierQueue *queue;
+
 }
 
 -(CDQuartzGraph *)createGraph;
+
+
+
+
+/**
+ Receive select action from ui.
+ **/
+-(IBAction)onSelect:(id)sender;
+
+/**
+ Receive add action from UI.
+ **/
+-(IBAction)onAdd:(id)sender;
+
+/**
+ Receive delete action from UI.
+ **/
+-(IBAction)onDelete:(id)sender;
+
+/**
+ Receive connect action from UI.
+ **/
+-(IBAction)onConnect:(id)sender;
+
+/**
+ Receive disconnect action from UI.
+ **/
+-(IBAction)onDisconnect:(id)sender;
+
+/**
+ Receive edit action from UI.
+ **/
+-(IBAction)onEdit:(id)sender;
+
 @end

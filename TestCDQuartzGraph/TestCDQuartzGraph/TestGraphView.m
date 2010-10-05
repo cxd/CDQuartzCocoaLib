@@ -27,30 +27,14 @@
 - (void)drawRect:(NSRect)dirtyRect {
     // Drawing code here.
 	
-    // a context reference.
-	// contexts can reference any type of graphics context.
-	QContext *context = [[QContext alloc] initWithContext:[[NSGraphicsContext currentContext] graphicsPort]];
-	[context retain];
-	if (queue == nil)
+	if (self.algorithm == nil)
 	{
-		queue = [[QModifierQueue alloc] init];
-		[queue retain];
-		[queue enqueue:[self createGraph]];
-		
 		self.algorithm = [[ForceDirectedLayout alloc] initWidth:[self frame].size.width 
 														 Height:[self frame].size.height 
 														 Epochs:150
 													Temperature:50.0]; 
 	}
-	
-	self.algorithm.width = [self frame].size.width;
-	self.algorithm.height = [self frame].size.height;
-	[self.algorithm layout:self.graph];
-	
-	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:queue];
-	[queue autorelease];
-	queue = copy;
-	[context release];
+	[super drawRect:dirtyRect];
 }
 
 -(CDQuartzGraph *)createGraph {
@@ -130,5 +114,58 @@
 	
 	return self.graph;
 }
+
+
+
+
+
+/**
+ Receive select action from ui.
+ **/
+-(IBAction)onSelect:(id)sender
+{
+	[super onSelect:sender];	
+}
+
+/**
+ Receive add action from UI.
+ **/
+-(IBAction)onAdd:(id)sender
+{
+	[super onAdd:sender];	
+}
+
+/**
+ Receive delete action from UI.
+ **/
+-(IBAction)onDelete:(id)sender
+{
+	[super onDelete:sender];	
+}
+
+/**
+ Receive connect action from UI.
+ **/
+-(IBAction)onConnect:(id)sender
+{
+	[super onConnect:sender];	
+}
+
+/**
+ Receive disconnect action from UI.
+ **/
+-(IBAction)onDisconnect:(id)sender
+{
+	[super onDisconnect:sender];	
+}
+
+/**
+ Receive edit action from UI.
+ **/
+-(IBAction)onEdit:(id)sender
+{
+	[super onEdit:sender];	
+}
+
 
 @end
