@@ -79,8 +79,8 @@
 		62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraphTouch.xcodeproj; path = ../../../../Math/CDGraphTouch/CDGraphTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62168BE912350D2F000941F2 /* UIGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGraphView.h; sourceTree = "<group>"; };
 		62168BEA12350D2F000941F2 /* UIGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGraphView.m; sourceTree = "<group>"; };
-		62168C1112351693000941F2 /* TrackedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackedNode.h; sourceTree = "<group>"; };
-		62168C1212351693000941F2 /* TrackedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackedNode.m; sourceTree = "<group>"; };
+		62168C1112351693000941F2 /* TrackedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackedNode.h; path = ../../CDQuartzGraph/TrackedNode.h; sourceTree = "<group>"; };
+		62168C1212351693000941F2 /* TrackedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackedNode.m; path = ../../CDQuartzGraph/TrackedNode.m; sourceTree = "<group>"; };
 		62655F221233AF3400A91E24 /* CDQuartzGraphHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphHeader.h; sourceTree = "<group>"; };
 		62655F3A1233AF9000A91E24 /* QuartzCocoaLibTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLibTouch.xcodeproj; path = ../../QuartzCocoaLibTouch/QuartzCocoaLibTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62655F471233B62800A91E24 /* AbstractConnectorShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractConnectorShape.h; path = ../../CDQuartzGraph/AbstractConnectorShape.h; sourceTree = SOURCE_ROOT; };
