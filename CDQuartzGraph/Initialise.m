@@ -22,7 +22,7 @@
  **/
 -(BOOL)appliesTo:(CDGraphViewState *)state
 {
-	return [state.trackPoints count] == 0;
+	return state.isCancelled || state.shouldDelete || [state.trackPoints count] == 0;
 }
 
 /**
@@ -32,8 +32,11 @@
 {
 	[state.trackNodes removeAllObjects];
 	[state.trackPoints removeAllObjects];
+	[state.hoverPoints removeAllObjects];
+	[state.selectEdges removeAllObjects];
 	state.isCancelled = NO;
 	state.shouldDelete = NO;
+	state.editConnections = NO;
 }
 
 

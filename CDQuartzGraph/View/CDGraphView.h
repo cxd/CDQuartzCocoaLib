@@ -39,6 +39,11 @@
 	 A flag to indicate whether the view should delete.
 	 **/
 	BOOL shouldDelete;
+	
+	/**
+	 The modifier queue.
+	 **/
+	QModifierQueue *queue;
 }
 
 /**
@@ -57,8 +62,65 @@
 @property(retain) id<GraphLayoutAlgorithm> algorithm;
 
 /**
+ The modifier queue.
+ **/
+@property(retain) QModifierQueue *queue;
+
+
+/**
  A flag to indicate whether the view should delete.
  **/
 @property(assign) BOOL shouldDelete;
+
+
+/**
+ The method used to create the initial graph by the view.
+ Override this method in derived classes in order to generate
+ the default graph.
+ **/
+-(CDQuartzGraph *)createGraph;
+
+
+
+/**
+ Prepare the view to allow connections.
+ **/
+-(void)onStartConnection;
+
+/**
+ Update the view to disallow connections.
+ **/
+-(void)onEndConnection;
+
+/**
+ Receive select action from ui.
+ **/
+-(IBAction)onSelect:(id)sender;
+
+/**
+ Receive add action from UI.
+ **/
+-(IBAction)onAdd:(id)sender;
+
+/**
+ Receive delete action from UI.
+ **/
+-(IBAction)onDelete:(id)sender;
+
+/**
+ Receive connect action from UI.
+ **/
+-(IBAction)onConnect:(id)sender;
+
+/**
+ Receive disconnect action from UI.
+ **/
+-(IBAction)onDisconnect:(id)sender;
+
+/**
+ Receive edit action from UI.
+ **/
+-(IBAction)onEdit:(id)sender;
+
 
 @end

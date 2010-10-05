@@ -20,6 +20,7 @@
 @synthesize labelShape;
 @synthesize textColor;
 @synthesize trackingView;
+@synthesize isHighlighted;
 
 /**
  Default initialisation.
@@ -32,6 +33,7 @@
 	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
 	self.outlineWeight = 1.0;
 	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	self.trackingView = [[TrackingViewBoundary alloc] init];
 	[self attachObservers];
 	return self;
 }
@@ -48,6 +50,7 @@
 	self.outlineWeight = 1.0;
 	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
 	self.label = l;
+	self.trackingView = [[TrackingViewBoundary alloc] init];
 	[self createLabel];
 	[self attachObservers];
 	return self;
@@ -64,6 +67,7 @@
 	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
 	self.outlineWeight = 1.0;
 	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	self.trackingView = [[TrackingViewBoundary alloc] init];
 	[self attachObservers];
 	return self;
 }
@@ -80,6 +84,7 @@
 	self.outlineWeight = 1.0;
 	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
 	self.label = l;
+	self.trackingView = [[TrackingViewBoundary alloc] init];
 	[self createLabel];
 	[self attachObservers];
 	return self;
@@ -264,6 +269,7 @@
 		self.labelShape.x += point.x;
 		self.labelShape.y += point.y;
 	}
+	[self.trackingView updateBoundary:self.bounds];
 }
 
 /**
@@ -278,6 +284,7 @@
 		self.labelShape.x = point.x;
 		self.labelShape.y = point.y;
 	}
+	[self.trackingView updateBoundary:self.bounds];
 }
 
 /**
@@ -292,6 +299,7 @@
 		self.labelShape.width = w;
 		self.labelShape.height = h;
 	}
+	[self.trackingView updateBoundary:self.bounds];
 }
 
 
@@ -307,5 +315,31 @@
 	}
 	[super update:context];
 }
+
+
+#ifdef UIKIT_EXTERN 
+
+// TODO: define tracking boundary protocol for ui kit.
+
+#else
+
+/**
+ Attach the tracking area to a view.
+ **/
+-(void)attachTrackingAreaToView:(NSView *)view
+{
+	[self.trackingView attach:view InBoundary:self.bounds];	
+}
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)removeTrackingAreaFromView:(NSView *)view
+{
+	[self.trackingView remove:view];	
+}
+
+#endif
+
 
 @end

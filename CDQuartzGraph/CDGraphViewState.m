@@ -20,6 +20,7 @@
 #import "Edit.h"
 #import "EdgeSelect.h"
 #import "EdgeMove.h"
+#import "StartConnections.h"
 
 @implementation CDGraphViewState
 
@@ -35,6 +36,9 @@
 @synthesize redraw;
 @synthesize hoverPoints;
 @synthesize selectEdges;
+@synthesize editConnections;
+@synthesize detachedEdges;
+@synthesize isEditing;
 
 -(id)initWithBounds:(QRectangle *)b
 {
@@ -45,6 +49,7 @@
 	self.trackPoints = [[NSMutableArray alloc] init];
 	self.hoverPoints = [[NSMutableArray alloc] init];
 	self.selectEdges = [[NSMutableArray alloc] init];
+	self.detachedEdges = [[NSMutableArray alloc] init];
 	[self buildTransitions];
 	return self;
 }
@@ -61,6 +66,7 @@
 	self.trackPoints = [[NSMutableArray alloc] init];
 	self.hoverPoints = [[NSMutableArray alloc] init];
 	self.selectEdges = [[NSMutableArray alloc] init];
+	self.detachedEdges = [[NSMutableArray alloc] init];
 	[self buildTransitions];
 	return self;	
 }
@@ -97,6 +103,11 @@
 		[self.selectEdges removeAllObjects];
 		[self.selectEdges autorelease];
 	}
+	if (self.detachedEdges != nil)
+	{
+		[self.detachedEdges removeAllObjects];
+		[self.detachedEdges autorelease];
+	}
 	[transitions autorelease];
 	[super dealloc];
 }
@@ -107,7 +118,7 @@
 -(void)buildTransitions
 {
 	/*
-	 Initialised -> { Select, Add, EdgeSelect }
+	 Initialised -> { Select, Add, StartConnections }
 	 Select -> { Delete, Move, Cancel }
 	 Cancel -> { Initialised }
 	 Move -> { Initialise, Move }
@@ -116,21 +127,21 @@
 	 Place -> { Initialised }
 	 Join -> { Initialised }
 	 Edit -> { Initialised, Cancel }
-	 EdgeSelect -> { Connect, Cancel }
-	 Connect -> { EdgeMove, Cancel }
-	 EdgeMove -> { Join, Initialise }
+	 StartConnections -> { Cancel, EdgeSelect }
+	 EdgeSelect -> { EdgeMove, Cancel }
+	 EdgeMove -> { EdgeMove, Join, Initialise }
 	 */
 	transitions = [[CDGraph alloc] init];
 	Initialise *init = [[Initialise alloc] init];
 	Select *select = [[Select alloc] init];
 	Cancel *cancel = [[Cancel alloc] init];
 	Move *move = [[Move alloc] init];
-	Connect *connect = [[Connect alloc] init];
 	Delete *delete = [[Delete alloc] init];
 	Add *add = [[Add alloc] init];
 	Place *place = [[Place alloc] init];
 	Join *join = [[Join alloc] init];
 	Edit *edit = [[Edit alloc] init];
+	StartConnections *startConnect = [[StartConnections alloc] init];
 	EdgeSelect *edgeSelect = [[EdgeSelect alloc] init];
 	EdgeMove *edgeMove = [[EdgeMove alloc] init];
 	
@@ -138,23 +149,23 @@
 	CDNode *selectNode = [transitions add:select];
 	CDNode *cancelNode = [transitions add:cancel];
 	CDNode *moveNode = [transitions add:move];
-	CDNode *connectNode = [transitions add:connect];
 	CDNode *deleteNode = [transitions add:delete];
 	CDNode *addNode = [transitions add:add];
 	CDNode *placeNode = [transitions add:place];
 	CDNode *joinNode = [transitions add:join];
 	CDNode *editNode = [transitions add:edit];
+	CDNode *startConnectNode = [transitions add:startConnect];
 	CDNode *edgeSelectNode = [transitions add:edgeSelect];
 	CDNode *edgeMoveNode = [transitions add:edgeMove];
 	
 	current = initNode;
 	
 	/*
-	 Initialised -> { Select, Add, EdgeSelect }
+	 Initialised -> { Select, Add, StartConnections }
 	 */
 	[transitions connect:initNode to:selectNode];
 	[transitions connect:initNode to:addNode];
-	[transitions connect:initNode to:edgeSelectNode];
+	[transitions connect:initNode to:startConnectNode];
 	
 	/*
 	 Select -> { Delete, Move, Cancel, Edit }
@@ -164,18 +175,25 @@
 	[transitions connect:selectNode to:cancelNode];
 	[transitions connect:selectNode to:editNode];
 	
+	
+	/**
+	 StartConnections -> { Cancel, EdgeSelect }
+	 **/
+	[transitions connect:startConnectNode to:cancelNode];
+	[transitions connect:startConnectNode to:edgeSelectNode];
+	
 	/*
 	 EdgeSelect -> { Connect, EdgeMove, Cancel }
 	 */
-	[transitions connect:edgeSelectNode to:connectNode];
 	[transitions connect:edgeSelectNode to:cancelNode];
 	[transitions connect:edgeSelectNode to:edgeMoveNode];
 	
 	/*
-	 EdgeMove -> { Join, Initialise }
+	 EdgeMove -> { Join, Cancel }
 	 */
 	[transitions connect:edgeMoveNode to:joinNode];
-	[transitions connect:edgeMoveNode to:joinNode];
+	[transitions connect:edgeMoveNode to:cancelNode];
+	[transitions connect:edgeMoveNode to:edgeMoveNode];
 	
 	/*
 	 Edit -> { Initialised, Cancel }
@@ -195,12 +213,6 @@
 	[transitions connect:moveNode to:moveNode];
 	[transitions connect:moveNode to:selectNode];
 
-	/*
-	 Connect -> { Move, Cancel }
-	 */
-	[transitions connect:connectNode to:moveNode];
-	[transitions connect:connectNode to:cancelNode];
-	
 	 /*
 	  Delete -> { Cancel, Initialised }
 	 */
@@ -237,10 +249,23 @@
 }
 
 /**
+ Find the tracked edge associated with the index.
+ **/
+-(TrackedEdge *)findTrackedEdge:(int)idx
+{
+	for(TrackedEdge *e in self.selectEdges)
+	{
+		if (e.index == idx) return e;		
+	}
+	return nil;
+}
+
+/**
  Search for and identify tracking nodes against the set of points.
  **/
 -(void)searchForTrackingNodes
 {
+	[self.trackNodes removeAllObjects];
 	int i = 0;
 	for(QPoint *p in self.trackPoints)
 	{
@@ -258,10 +283,23 @@
  **/
 -(void)searchForTrackingEdges
 {
+	[self.selectEdges removeAllObjects];
 	int i = 0;
 	for(QPoint *p in self.hoverPoints)
 	{
 		CDQuartzEdge *edge = [self.graph findEdgeContaining:p];
+		if (edge == nil)
+		{
+			// check detached edges.
+			for(CDQuartzEdge *detached in self.detachedEdges)
+			{
+				if ([detached.shapeDelegate isWithinBounds:p])
+				{
+				edge = detached;	
+				}
+			}
+		}
+		
 		TrackedEdge *tEdge = [[TrackedEdge alloc] initWithEdge:edge atIndex:i];
 		[self.selectEdges addObject:tEdge];
 		i++;
@@ -315,12 +353,16 @@
 -(void)updateState
 {
 	if (current == nil) return;
+	NSString *previous = [current.data className];
 	for(CDNode *next in current.neighbours)
 	{
 		if ([next.data appliesTo:self])
 		{
+			NSString *nextName = [next.data className];
 			current = next;
-			[current.data update:self];	
+			[current.data update:self];
+			
+			NSLog(@"Previous: %@ Next: %@", previous, nextName);
 		}
 	}
 }

@@ -9,6 +9,7 @@
 #import "CDQuartzGraphHeader.h"
 #import "ShapeDelegate.h"
 #import "ITrackingViewBoundary.h"
+#import "TrackingViewBoundary.h"
 
 /**
  The abstract shape delegate provides the base
@@ -63,7 +64,7 @@
 	/**
 	 Tracking view associated with the object.
 	 **/
-	id<ITrackingViewBoundary> trackingView;
+	TrackingViewBoundary *trackingView;
 }
 
 /**
@@ -112,7 +113,7 @@
 /**
  Tracking view associated with the object.
  **/
-@property(retain) id<ITrackingViewBoundary> trackingView;
+@property(retain) TrackingViewBoundary *trackingView;
 
 /**
  Attach observers.
@@ -210,5 +211,24 @@
  Overridden to update the context with the text label.
  **/
 -(void)update:(QContext*) context;
+
+#ifdef UIKIT_EXTERN 
+
+// TODO: define tracking boundary protocol for ui kit.
+
+#else
+
+/**
+ Attach the tracking area to a view.
+ **/
+-(void)attachTrackingAreaToView:(NSView *)view;
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)removeTrackingAreaFromView:(NSView *)view;
+
+#endif
+
 
 @end

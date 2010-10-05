@@ -233,5 +233,43 @@
 	return flag;
 }
 
+#ifdef UIKIT_EXTERN 
+
+// TODO: define tracking boundary protocol for ui kit.
+
+#else
+
+/**
+ Attach the tracking area to a view.
+ **/
+-(void)attachTrackingAreaToView:(NSView *)view
+{
+	if (self.startDecoration != nil)
+	{
+		[self.startDecoration attachTrackingAreaToView:view];	
+	}
+	if (self.endDecoration != nil)
+	{
+		[self.endDecoration attachTrackingAreaToView:view];	
+	}
+}
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)removeTrackingAreaFromView:(NSView *)view
+{
+	if (self.startDecoration != nil)
+	{
+		[self.startDecoration removeTrackingAreaFromView:view];	
+	}
+	if (self.endDecoration != nil)
+	{
+		[self.endDecoration removeTrackingAreaFromView:view];	
+	}	
+}
+
+#endif
+
 
 @end

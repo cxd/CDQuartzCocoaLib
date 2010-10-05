@@ -25,12 +25,7 @@
 {
 	if (state.shouldDelete || state.isCancelled) 
 		return NO;
-	if ([state.hoverPoints count] > 0)
-	{
-		[state searchForTrackingEdges];
-		return [state.selectEdges count] > 0;
-	}
-	return NO;
+	return ([state.hoverPoints count] > 0);
 }
 
 /**
@@ -39,7 +34,7 @@
 -(void)update:(CDGraphViewState *)state
 {
 	// search for tracking edges.
-	
+	[state searchForTrackingEdges];
 }
 
 

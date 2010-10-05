@@ -56,6 +56,11 @@
 	NSMutableArray *selectEdges;
 	
 	/**
+	 A collection of edges that are not connected to any objects in the graph.
+	 **/
+	NSMutableArray *detachedEdges;
+	
+	/**
 	 The graph layout algorithm.
 	 **/
 	id<GraphLayoutAlgorithm> algorithm;
@@ -94,6 +99,16 @@
 	 A flag use to determine whether the state should be redrawn.
 	 **/
 	BOOL redraw;
+	
+	/**
+	 A flag to indicate whether the connections are being edited.
+	 **/
+	BOOL editConnections;
+	
+	/**
+	 A flag used to indicate that editing is active.
+	 **/
+	BOOL isEditing;
 }
 
 /**
@@ -117,6 +132,11 @@
  eligible for manipulation by the mouse cursor.
  **/
 @property(retain) NSMutableArray *selectEdges;
+
+/**
+ A collection of edges that are not connected to any objects in the graph.
+ **/
+@property(retain) NSMutableArray *detachedEdges;
 
 /**
  A reference to a graph layout algorithm.
@@ -144,7 +164,6 @@
  **/
 @property(assign) BOOL shouldDelete;
 
-
 /**
  The bounds of the space in which the graph is visible.
  **/
@@ -154,6 +173,16 @@
  A flag use to determine whether the state should be redrawn.
  **/
 @property(assign) BOOL redraw;
+
+/**
+ A flag to indicate whether the connections are being edited.
+ **/
+@property(assign) BOOL editConnections;
+
+/**
+ A flag used to indicate that editing is active.
+ **/
+@property(assign) BOOL isEditing;
 
 /**
  Initialise with the bounds of the visible area.
@@ -179,14 +208,30 @@
 -(TrackedNode *)findNode:(int)idx;
 
 /**
+ Find the tracked edge associated with the index.
+ **/
+-(TrackedEdge *)findTrackedEdge:(int)idx;
+
+/**
  Search for and identify tracking nodes against the set of points.
  **/
 -(void)searchForTrackingNodes;
 
 /**
+ Find the set of edges that exist within the range
+ of the points used to hover over the edge shapes.
+ **/
+-(void)searchForTrackingEdges;
+
+/**
  Update the state with the selection of points
  **/
 -(void)trackShapes:(NSMutableArray*)points andDelete:(BOOL)flag;
+
+/**
+ Hover over shapes in the collection.
+ **/
+-(void)hoverShapes:(NSMutableArray *)points;
 
 /**
  Cancel the current operation if possible.

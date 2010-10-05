@@ -23,7 +23,9 @@
 -(BOOL)appliesTo:(CDGraphViewState *)state
 {
 	
-	return (!state.shouldDelete) && (!state.isCancelled) && ([state.trackNodes count] > 0);
+	return (!state.shouldDelete) && 
+			(!state.isCancelled) &&
+			([state.trackNodes count] > 0);
 }
 
 /**
