@@ -147,6 +147,10 @@
  An edge with a default delegate will be created.
  **/
 -(CDEdge *)connect:(CDNode *)fromNode to:(CDNode *)toNode {
+	
+	if (fromNode == nil || toNode == nil) 
+		return nil;
+	
 	// temporary references.
 	CDNode *nodeFrom = fromNode;
 	CDNode *nodeTo = toNode;

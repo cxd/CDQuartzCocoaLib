@@ -23,7 +23,7 @@
  **/
 -(BOOL)appliesTo:(CDGraphViewState *)state
 {
-	if (state.shouldDelete || state.isCancelled) 
+	if (state.isCancelled) 
 		return NO;
 	return ([state.hoverPoints count] > 0);
 }

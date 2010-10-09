@@ -68,11 +68,7 @@
  if they need to do any custom drawing before the base class.
  **/
 - (void)drawRect:(NSRect)dirtyRect {
-    if (self.algorithm != nil)
-	{
-		[self.algorithm layout:self.graph];	
-	}
-	// a context reference.
+    // a context reference.
 	// contexts can reference any type of graphics context.
 	QContext *context = [[QContext alloc] initWithContext:[[NSGraphicsContext currentContext] graphicsPort]];
 	[context retain];
@@ -89,16 +85,18 @@
 		self.algorithm.height = [self frame].size.height;
 		[self.algorithm layout:self.graph];
 	}
-	// update any detached edges.
-	for(CDQuartzEdge *edge in self.state.detachedEdges)
-	{
-		[edge.shapeDelegate update:context];
-	}
+	
 	
 	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:self.queue];
 	[self.queue autorelease];
 	self.queue = copy;
 	[context release];
+	
+	// update any detached edges.
+	for(CDQuartzEdge *edge in self.state.detachedEdges)
+	{
+		[edge.shapeDelegate update:context];
+	}
 }
 
 /**
@@ -151,6 +149,12 @@
 	self.state.isEditing = NO;
 	
 	self.state.redraw = NO;
+	self.shouldDelete = NO;
+	
+	if (self.state.editConnections)
+	{
+		[self onEndConnection];	
+	}
 }
 
 -(void)mouseDragged:(NSEvent *)event
@@ -253,7 +257,7 @@
 {
 	[self onEndConnection];
 	self.state.editConnections = NO;
-
+	self.shouldDelete = NO;
 }
 
 /**
@@ -262,7 +266,7 @@
 -(IBAction)onAdd:(id)sender
 {
 	[self onEndConnection];
-
+	self.shouldDelete = NO;
 }
 
 /**
@@ -271,7 +275,35 @@
 -(IBAction)onDelete:(id)sender
 {
 	[self onEndConnection];
+	self.shouldDelete = YES;
+}
 
+/**
+ Add a new connection to the graph.
+ **/
+-(IBAction)onAddConnect:(id)sender
+{
+	
+	float cx = [self frame].size.width/2.0f;
+	float cy = [self frame].size.height/2.0f;
+	QRectangle *bounds = [[QRectangle alloc] initX:cx-50 Y:cy+50 WIDTH:100 HEIGHT:100];
+	// create a new connection object centre screen.
+	BezierLineConnector *connect = [[BezierLineConnector alloc] initWithBounds:bounds];
+	
+	QPoint *start = [[QPoint alloc] initX:cx-50 Y:cy+50];
+	QPoint *end = [[QPoint alloc] initX:cx+50 Y:cy-50];
+	
+	[connect moveStartTo:start];
+	[connect moveEndTo:end];
+	
+	CDQuartzEdge *edge = [[CDQuartzEdge alloc] init];
+	edge.shapeDelegate = connect;
+	[self.state.detachedEdges addObject:edge];
+	self.state.redraw = YES;
+	// update the state.
+	[self onStartConnection];
+	[self setNeedsDisplay:YES];
+	self.shouldDelete = NO;
 }
 
 /**
@@ -280,6 +312,7 @@
 -(IBAction)onConnect:(id)sender
 {
 	[self onStartConnection];
+	self.shouldDelete = NO;
 }
 
 /**
@@ -287,6 +320,7 @@
  **/
 -(IBAction)onDisconnect:(id)sender
 {
+	self.state.shouldDelete = YES;
 	[self onStartConnection];
 }
 
@@ -295,6 +329,7 @@
  **/
 -(IBAction)onEdit:(id)sender
 {
+	self.shouldDelete = NO;
 	[self onEndConnection];
 
 }

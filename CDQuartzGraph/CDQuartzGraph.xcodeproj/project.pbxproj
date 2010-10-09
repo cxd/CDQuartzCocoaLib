@@ -83,6 +83,8 @@
 		628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 628BFC21125212F20049A675 /* TrackingViewBoundary.m */; };
 		62CC1409124DDA79001AF7CD /* CirclePortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CC1407124DDA79001AF7CD /* CirclePortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62CC140A124DDA79001AF7CD /* CirclePortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CC1408124DDA79001AF7CD /* CirclePortShape.m */; };
+		62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F797561260151D001CC0F1 /* EdgeDelete.h */; };
+		62F797591260151D001CC0F1 /* EdgeDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F797571260151D001CC0F1 /* EdgeDelete.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -214,6 +216,8 @@
 		628BFC21125212F20049A675 /* TrackingViewBoundary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingViewBoundary.m; sourceTree = "<group>"; };
 		62CC1407124DDA79001AF7CD /* CirclePortShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePortShape.h; sourceTree = "<group>"; };
 		62CC1408124DDA79001AF7CD /* CirclePortShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePortShape.m; sourceTree = "<group>"; };
+		62F797561260151D001CC0F1 /* EdgeDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeDelete.h; sourceTree = "<group>"; };
+		62F797571260151D001CC0F1 /* EdgeDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeDelete.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CDQuartzGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CDQuartzGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -357,6 +361,8 @@
 				6205242712477042001053D6 /* EdgeMove.m */,
 				62441E1E1258676B0077600B /* StartConnections.h */,
 				62441E1F1258676B0077600B /* StartConnections.m */,
+				62F797561260151D001CC0F1 /* EdgeDelete.h */,
+				62F797571260151D001CC0F1 /* EdgeDelete.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -495,6 +501,7 @@
 				623CEC5D1250BB4800AED181 /* ITrackingViewBoundary.h in Headers */,
 				628BFC22125212F20049A675 /* TrackingViewBoundary.h in Headers */,
 				62441E201258676B0077600B /* StartConnections.h in Headers */,
+				62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +650,7 @@
 				62CC140A124DDA79001AF7CD /* CirclePortShape.m in Sources */,
 				628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */,
 				62441E211258676B0077600B /* StartConnections.m in Sources */,
+				62F797591260151D001CC0F1 /* EdgeDelete.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

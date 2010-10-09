@@ -183,8 +183,7 @@
 {
 	if (self.startDecoration != nil)
 	{
-		self.startDecoration.bounds.x += p.x;
-		self.startDecoration.bounds.y += p.y;
+		[self.startDecoration moveBy:p];
 	}
 }
 
@@ -192,8 +191,7 @@
 {
 	if (self.endDecoration != nil)
 	{
-		self.endDecoration.bounds.x += p.x;
-		self.endDecoration.bounds.y += p.y;
+		[self.endDecoration moveBy:p];
 	}
 }
 
@@ -201,8 +199,7 @@
 {
 	if (self.startDecoration != nil)
 	{
-		self.startDecoration.bounds.x = p.x;
-		self.startDecoration.bounds.y = p.y;
+		[self.startDecoration moveTo:p];
 	}
 }
 
@@ -210,8 +207,7 @@
 {
 	if (self.endDecoration != nil)
 	{
-		self.endDecoration.bounds.x = p.x;
-		self.endDecoration.bounds.y = p.y;
+		[self.endDecoration moveTo:p];
 	}
 }
 

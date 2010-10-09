@@ -22,7 +22,7 @@
  **/
 -(BOOL)appliesTo:(CDGraphViewState *)state
 {
-	if (state.shouldDelete) 
+	if (state.shouldDelete || state.newNode != nil) 
 		return NO;
 	return [state.trackPoints count] > 0;
 }

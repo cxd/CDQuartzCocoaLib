@@ -30,9 +30,10 @@
  **/
 -(void)update:(CDGraphViewState *)state
 {
-	state.editConnections = NO;
 	[state.trackNodes removeAllObjects];
 	[state.trackPoints removeAllObjects];
+	state.isEditing = NO;
+	state.shouldDelete = NO;
 }
 
 

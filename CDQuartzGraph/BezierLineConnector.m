@@ -151,6 +151,20 @@
 {
 	[super updateConnections];
 	float sX, sY, sCX, sCY, eX, eY, eCX, eCY = 0.0;
+	
+	// store the original positions.
+	if (self.startDecoration != nil)
+	{
+		sX = self.startDecoration.bounds.x;
+		sY = self.startDecoration.bounds.y;
+	}
+	if (self.endDecoration != nil)
+	{
+		eX = self.endDecoration.bounds.x;
+		eY = self.endDecoration.bounds.y;
+	}
+	
+	
 	if (self.startPort != nil)
 	{
 		sX = self.startPort.bounds.x + self.startPort.bounds.width/2.0;

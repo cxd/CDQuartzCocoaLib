@@ -18,6 +18,7 @@
 #import "AbstractGraphShape.h"
 #import "AbstractNodeShape.h"
 #import "AbstractConnectorShape.h"
+#import "BezierLineConnector.h"
 
 #import "GraphLayoutAlgorithm.h"
 #import "CDGraphViewState.h"
@@ -44,6 +45,7 @@
 	 The modifier queue.
 	 **/
 	QModifierQueue *queue;
+	
 }
 
 /**
@@ -106,6 +108,11 @@
  Receive delete action from UI.
  **/
 -(IBAction)onDelete:(id)sender;
+
+/**
+ Add a new connection to the graph.
+ **/
+-(IBAction)onAddConnect:(id)sender;
 
 /**
  Receive connect action from UI.

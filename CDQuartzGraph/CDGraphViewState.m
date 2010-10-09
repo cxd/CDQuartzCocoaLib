@@ -21,6 +21,7 @@
 #import "EdgeSelect.h"
 #import "EdgeMove.h"
 #import "StartConnections.h"
+#import "EdgeDelete.h"
 
 @implementation CDGraphViewState
 
@@ -118,8 +119,8 @@
 -(void)buildTransitions
 {
 	/*
-	 Initialised -> { Select, Add, StartConnections }
-	 Select -> { Delete, Move, Cancel }
+	 Initialised -> { Select, Add, Delete, StartConnections }
+	 Select -> { Move, Cancel }
 	 Cancel -> { Initialised }
 	 Move -> { Initialise, Move }
 	 Delete -> { Cancel, Initialised }
@@ -127,9 +128,10 @@
 	 Place -> { Initialised }
 	 Join -> { Initialised }
 	 Edit -> { Initialised, Cancel }
-	 StartConnections -> { Cancel, EdgeSelect }
+	 StartConnections -> { Cancel, EdgeSelect, EdgeDelete }
 	 EdgeSelect -> { EdgeMove, Cancel }
-	 EdgeMove -> { EdgeMove, Join, Initialise }
+	 EdgeMove -> { EdgeMove, Join, Initialise, EdgeSelect }
+	 EdgeDelete -> { Initialised }
 	 */
 	transitions = [[CDGraph alloc] init];
 	Initialise *init = [[Initialise alloc] init];
@@ -144,6 +146,7 @@
 	StartConnections *startConnect = [[StartConnections alloc] init];
 	EdgeSelect *edgeSelect = [[EdgeSelect alloc] init];
 	EdgeMove *edgeMove = [[EdgeMove alloc] init];
+	EdgeDelete *edgeDelete = [[EdgeDelete alloc] init];
 	
 	CDNode *initNode = [transitions add:init];
 	CDNode *selectNode = [transitions add:select];
@@ -157,6 +160,7 @@
 	CDNode *startConnectNode = [transitions add:startConnect];
 	CDNode *edgeSelectNode = [transitions add:edgeSelect];
 	CDNode *edgeMoveNode = [transitions add:edgeMove];
+	CDNode *edgeDeleteNode = [transitions add:edgeDelete];
 	
 	current = initNode;
 	
@@ -166,34 +170,40 @@
 	[transitions connect:initNode to:selectNode];
 	[transitions connect:initNode to:addNode];
 	[transitions connect:initNode to:startConnectNode];
+	[transitions connect:initNode to:deleteNode];
 	
 	/*
-	 Select -> { Delete, Move, Cancel, Edit }
+	 Select -> { Move, Cancel, Edit }
 	 */
-	[transitions connect:selectNode to:deleteNode];
 	[transitions connect:selectNode to:moveNode];
 	[transitions connect:selectNode to:cancelNode];
 	[transitions connect:selectNode to:editNode];
 	
 	
 	/**
-	 StartConnections -> { Cancel, EdgeSelect }
+	 StartConnections -> { Cancel, EdgeSelect, EdgeDelete }
 	 **/
 	[transitions connect:startConnectNode to:cancelNode];
 	[transitions connect:startConnectNode to:edgeSelectNode];
 	
 	/*
-	 EdgeSelect -> { Connect, EdgeMove, Cancel }
+	 EdgeSelect -> { Connect, EdgeMove, Cancel, EdgeDelete }
 	 */
 	[transitions connect:edgeSelectNode to:cancelNode];
 	[transitions connect:edgeSelectNode to:edgeMoveNode];
+	[transitions connect:edgeSelectNode to:edgeDeleteNode];
 	
 	/*
-	 EdgeMove -> { Join, Cancel }
+	 EdgeMove -> { Join, Cancel, EdgeMove, EdgeSelect }
 	 */
 	[transitions connect:edgeMoveNode to:joinNode];
 	[transitions connect:edgeMoveNode to:cancelNode];
 	[transitions connect:edgeMoveNode to:edgeMoveNode];
+	
+	/**
+	 EdgeDelete -> { Initialised }
+	 **/
+	[transitions connect:edgeDeleteNode to:initNode];
 	
 	/*
 	 Edit -> { Initialised, Cancel }

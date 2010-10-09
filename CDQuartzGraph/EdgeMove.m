@@ -51,7 +51,7 @@
 			else {
 				[connector moveEndTo:p];	
 			}
-			[decorator moveTo:p];
+			//[decorator moveTo:p];
 			[self checkConnect:state trackEdge:t atPoint:p];
 			state.redraw = YES;
 		}
@@ -75,17 +75,21 @@
 		[state.graph disconnect:t.edge.source to:t.edge.target];
 	}
 	
-	if ([t.edge.shapeDelegate.startDecoration isWithinBounds:p])
+	// use the minimum absolute distance from the edge shapes to determine which
+	// is being edited.
+	QPoint* startMid = [t.edge.shapeDelegate.startDecoration.bounds midPoint];
+	QPoint* endMid = [t.edge.shapeDelegate.endDecoration.bounds midPoint];
+	
+	float startDist = [startMid distanceTo:p];
+	float endDist = [endMid distanceTo:p];
+	
+	if (startDist <= endDist)
 	{
 		// we are moving the start shape delegate.
 		moveStart = YES;
 		t.edge.source = nil;
-	}
-	else if ([t.edge.shapeDelegate.endDecoration isWithinBounds:p])
-	{
-		// we are moving the end shape delegate.
+	} else {
 		moveStart = NO;
-		// we need to determine whether the shape delegate is actually connected to anything yet.
 		t.edge.target = nil;
 	}
 }
@@ -112,8 +116,11 @@
 			closest = port;
 		}
 	}
+	if (closest == nil)
+		return;
+	
 	// reconnect the edge.
-	if ((closest != nil) && (moveStart))
+	if ((moveStart) && (t.edge.target != nil))
 	{
 		[state.graph connect:node
 						 to: t.edge.target
@@ -121,13 +128,24 @@
 				   fromPort:closest
 					 toPort:t.edge.shapeDelegate.endPort];
 		[state.detachedEdges removeObject:t.edge];
-	} else if (closest != nil) {
+	
+	} else if (t.edge.source != nil) {
 		[state.graph connect:t.edge.source
 						  to: node
 				   withShape:t.edge.shapeDelegate
 					fromPort:t.edge.shapeDelegate.startPort
 					  toPort:closest];
 		[state.detachedEdges removeObject:t.edge];	
+	} else if (moveStart && t.edge.target == nil) {
+		// connect to start only.
+		// remain detached.
+		t.edge.source = node;
+		[t.edge.shapeDelegate connectStartTo:closest];
+	} else {
+		// connect to end only.
+		// remain detached.
+		t.edge.target = node;
+		[t.edge.shapeDelegate connectEndTo:closest];
 	}
 }
 

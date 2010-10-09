@@ -35,8 +35,6 @@
 	[state.hoverPoints removeAllObjects];
 	[state.selectEdges removeAllObjects];
 	state.isCancelled = NO;
-	state.shouldDelete = NO;
-	state.editConnections = NO;
 }
 
 
