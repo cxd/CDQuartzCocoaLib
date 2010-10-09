@@ -9,6 +9,7 @@
 #import "QFramework.h"
 #import "QAbstractContextModifier.h"
 #import "QContext.h"
+#import "QPoint.h"
 
 
 @interface QRectangle : QAbstractContextModifier {
@@ -28,5 +29,8 @@
 -(id)initWithRect:(CGRect) rect;
 -(void)update:(QContext*) context;
 -(QRectangle*)getBoundary;
-
+/**
+ Calculate the midpoint of this rectangle.
+ **/
+-(QPoint *)midPoint;
 @end

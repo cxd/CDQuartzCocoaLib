@@ -45,20 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62168BD51235074A000941F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = CDGraphTouch;
-		};
-		62168BD712350752000941F2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = CDGraphTouch;
-		};
 		62655F3E1233AF9000A91E24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62655F3A1233AF9000A91E24 /* QuartzCocoaLibTouch.xcodeproj */;
@@ -73,10 +59,24 @@
 			remoteGlobalIDString = 6231BDB411D5DEAE00327B84;
 			remoteInfo = QuartzCocoaLibTouchTouch;
 		};
+		62A7E52E12606AB1003A617B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libCDGraphTouch.a */;
+			remoteInfo = CDGraphTouch;
+		};
+		62A7E53A12606B17003A617B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* CDGraphTouch */;
+			remoteInfo = CDGraphTouch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraphTouch.xcodeproj; path = ../../../../Math/CDGraphTouch/CDGraphTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
+		62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraphTouch.xcodeproj; path = ../../../../CDGraph/CDGraphTouch/CDGraphTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62168BE912350D2F000941F2 /* UIGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGraphView.h; sourceTree = "<group>"; };
 		62168BEA12350D2F000941F2 /* UIGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGraphView.m; sourceTree = "<group>"; };
 		62168C1112351693000941F2 /* TrackedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackedNode.h; path = ../../CDQuartzGraph/TrackedNode.h; sourceTree = "<group>"; };
@@ -202,14 +202,6 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		62168BD21235074A000941F2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				62168BD61235074A000941F2 /* libCDGraphTouch.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		62168C09123511B8000941F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +217,14 @@
 			isa = PBXGroup;
 			children = (
 				62655F3F1233AF9000A91E24 /* libQuartzCocoaLibTouchTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62A7E52B12606AB1003A617B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62A7E52F12606AB1003A617B /* libCDGraphTouch.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				62A7E53B12606B17003A617B /* PBXTargetDependency */,
 				62655F971233B73700A91E24 /* PBXTargetDependency */,
-				62168BD812350752000941F2 /* PBXTargetDependency */,
 			);
 			name = CDQuartzGraphTouch;
 			productName = CDQuartzGraphTouch;
@@ -303,7 +303,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 62168BD21235074A000941F2 /* Products */;
+					ProductGroup = 62A7E52B12606AB1003A617B /* Products */;
 					ProjectRef = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
 				},
 				{
@@ -319,18 +319,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		62168BD61235074A000941F2 /* libCDGraphTouch.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCDGraphTouch.a;
-			remoteRef = 62168BD51235074A000941F2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		62655F3F1233AF9000A91E24 /* libQuartzCocoaLibTouchTouch.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libQuartzCocoaLibTouchTouch.a;
 			remoteRef = 62655F3E1233AF9000A91E24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62A7E52F12606AB1003A617B /* libCDGraphTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCDGraphTouch.a;
+			remoteRef = 62A7E52E12606AB1003A617B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -359,15 +359,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62168BD812350752000941F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CDGraphTouch;
-			targetProxy = 62168BD712350752000941F2 /* PBXContainerItemProxy */;
-		};
 		62655F971233B73700A91E24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QuartzCocoaLibTouchTouch;
 			targetProxy = 62655F961233B73700A91E24 /* PBXContainerItemProxy */;
+		};
+		62A7E53B12606B17003A617B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDGraphTouch;
+			targetProxy = 62A7E53A12606B17003A617B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,8 +387,8 @@
 				GCC_PREFIX_HEADER = CDQuartzGraphTouch_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
 					/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFramework_Header,
+					/Users/cd/Projects/CDGraph/CDGraph,
 					/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib,
-					/Users/cd/Projects/Math/CDGraph,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = CDQuartzGraphTouch;

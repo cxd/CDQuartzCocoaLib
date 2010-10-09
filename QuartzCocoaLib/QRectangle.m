@@ -46,4 +46,13 @@
 	return self;	
 }
 
+
+/**
+ Calculate the midpoint of this rectangle.
+ **/
+-(QPoint *)midPoint
+{
+	return [[QPoint alloc] initX:self.x + (self.width/ 2.0f) Y:self.y + (self.height/2.0f)];	
+}
+
 @end
