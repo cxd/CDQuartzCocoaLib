@@ -14,7 +14,6 @@
 #ifdef UIKIT_EXTERN 
 // TODO: define tracking boundary protocol for ui kit.
 
-#else
 
 /**
  initialise.
@@ -24,6 +23,12 @@
 	self = [super init];
 	return self;
 }
+
+-(void)dealloc {
+	[super dealloc];	
+}
+
+#else
 
 -(void)dealloc
 {

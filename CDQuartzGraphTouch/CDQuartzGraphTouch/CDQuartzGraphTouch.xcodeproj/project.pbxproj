@@ -11,6 +11,10 @@
 		62168BEC12350D2F000941F2 /* UIGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BEA12350D2F000941F2 /* UIGraphView.m */; };
 		62168C1312351693000941F2 /* TrackedNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168C1112351693000941F2 /* TrackedNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62168C1412351693000941F2 /* TrackedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168C1212351693000941F2 /* TrackedNode.m */; };
+		62294CE9126084AA00003723 /* TrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 62294CE7126084AA00003723 /* TrackingViewBoundary.h */; };
+		62294CEA126084AA00003723 /* TrackingViewBoundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 62294CE8126084AA00003723 /* TrackingViewBoundary.m */; };
+		62294CED126084C500003723 /* CirclePortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62294CEB126084C500003723 /* CirclePortShape.h */; };
+		62294CEE126084C500003723 /* CirclePortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62294CEC126084C500003723 /* CirclePortShape.m */; };
 		62655F231233AF3400A91E24 /* CDQuartzGraphHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 62655F221233AF3400A91E24 /* CDQuartzGraphHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62655F421233AFA500A91E24 /* libQuartzCocoaLibTouchTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62655F3F1233AF9000A91E24 /* libQuartzCocoaLibTouchTouch.a */; };
 		62655F631233B62800A91E24 /* AbstractConnectorShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62655F471233B62800A91E24 /* AbstractConnectorShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,14 +67,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libCDGraphTouch.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CDGraphTouch;
 		};
 		62A7E53A12606B17003A617B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* CDGraphTouch */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CDGraphTouch;
 		};
 /* End PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		62168BEA12350D2F000941F2 /* UIGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGraphView.m; sourceTree = "<group>"; };
 		62168C1112351693000941F2 /* TrackedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackedNode.h; path = ../../CDQuartzGraph/TrackedNode.h; sourceTree = "<group>"; };
 		62168C1212351693000941F2 /* TrackedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackedNode.m; path = ../../CDQuartzGraph/TrackedNode.m; sourceTree = "<group>"; };
+		62294CE7126084AA00003723 /* TrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackingViewBoundary.h; path = ../../CDQuartzGraph/TrackingViewBoundary.h; sourceTree = SOURCE_ROOT; };
+		62294CE8126084AA00003723 /* TrackingViewBoundary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackingViewBoundary.m; path = ../../CDQuartzGraph/TrackingViewBoundary.m; sourceTree = SOURCE_ROOT; };
+		62294CEB126084C500003723 /* CirclePortShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CirclePortShape.h; path = ../../CDQuartzGraph/CirclePortShape.h; sourceTree = SOURCE_ROOT; };
+		62294CEC126084C500003723 /* CirclePortShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CirclePortShape.m; path = ../../CDQuartzGraph/CirclePortShape.m; sourceTree = SOURCE_ROOT; };
 		62655F221233AF3400A91E24 /* CDQuartzGraphHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphHeader.h; sourceTree = "<group>"; };
 		62655F3A1233AF9000A91E24 /* QuartzCocoaLibTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLibTouch.xcodeproj; path = ../../QuartzCocoaLibTouch/QuartzCocoaLibTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62655F471233B62800A91E24 /* AbstractConnectorShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractConnectorShape.h; path = ../../CDQuartzGraph/AbstractConnectorShape.h; sourceTree = SOURCE_ROOT; };
@@ -161,6 +169,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				62294CEB126084C500003723 /* CirclePortShape.h */,
+				62294CEC126084C500003723 /* CirclePortShape.m */,
 				62C570F4123658E60035FDA0 /* LibraryHeaders */,
 				62168C09123511B8000941F2 /* View */,
 				62655F471233B62800A91E24 /* AbstractConnectorShape.h */,
@@ -205,6 +215,8 @@
 		62168C09123511B8000941F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62294CE7126084AA00003723 /* TrackingViewBoundary.h */,
+				62294CE8126084AA00003723 /* TrackingViewBoundary.m */,
 				62168BE912350D2F000941F2 /* UIGraphView.h */,
 				62168BEA12350D2F000941F2 /* UIGraphView.m */,
 				62168C1112351693000941F2 /* TrackedNode.h */,
@@ -265,6 +277,8 @@
 				62655F7C1233B62800A91E24 /* GraphLayoutAlgorithm.h in Headers */,
 				62168BEB12350D2F000941F2 /* UIGraphView.h in Headers */,
 				62168C1312351693000941F2 /* TrackedNode.h in Headers */,
+				62294CE9126084AA00003723 /* TrackingViewBoundary.h in Headers */,
+				62294CED126084C500003723 /* CirclePortShape.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +367,8 @@
 				62655F7B1233B62800A91E24 /* ForceDirectedLayout.m in Sources */,
 				62168BEC12350D2F000941F2 /* UIGraphView.m in Sources */,
 				62168C1412351693000941F2 /* TrackedNode.m in Sources */,
+				62294CEA126084AA00003723 /* TrackingViewBoundary.m in Sources */,
+				62294CEE126084C500003723 /* CirclePortShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
