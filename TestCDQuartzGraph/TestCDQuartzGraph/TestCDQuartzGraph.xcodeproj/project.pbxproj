@@ -23,6 +23,7 @@
 		62441D9512585B190077600B /* connect_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 62441D9412585B190077600B /* connect_no.png */; };
 		62655C6B1233691400A91E24 /* CDQuartzGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 623A1E57123365FE00160A95 /* CDQuartzGraph.framework */; };
 		62655C6C1233691E00A91E24 /* CDQuartzGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623A1E57123365FE00160A95 /* CDQuartzGraph.framework */; };
+		62F7980E126026CF001CC0F1 /* connect_creating.png in Resources */ = {isa = PBXBuildFile; fileRef = 62F7980D126026CF001CC0F1 /* connect_creating.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -142,6 +143,7 @@
 		62441D8D12585AAC0077600B /* editdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = editdelete.png; path = Icons/editdelete.png; sourceTree = "<group>"; };
 		62441D8E12585AAC0077600B /* loopnone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loopnone.png; path = Icons/loopnone.png; sourceTree = "<group>"; };
 		62441D9412585B190077600B /* connect_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connect_no.png; path = Icons/connect_no.png; sourceTree = "<group>"; };
+		62F7980D126026CF001CC0F1 /* connect_creating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connect_creating.png; path = Icons/connect_creating.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TestCDQuartzGraph-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestCDQuartzGraph-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TestCDQuartzGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCDQuartzGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -275,6 +277,7 @@
 		62441D76125858660077600B /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				62F7980D126026CF001CC0F1 /* connect_creating.png */,
 				62441D9412585B190077600B /* connect_no.png */,
 				62441D8A12585AAC0077600B /* colorize.png */,
 				62441D8B12585AAC0077600B /* edit_add.png */,
@@ -408,6 +411,7 @@
 				62441D9212585AAC0077600B /* editdelete.png in Resources */,
 				62441D9312585AAC0077600B /* loopnone.png in Resources */,
 				62441D9512585B190077600B /* connect_no.png in Resources */,
+				62F7980E126026CF001CC0F1 /* connect_creating.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

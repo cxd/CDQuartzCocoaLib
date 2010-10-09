@@ -12,7 +12,17 @@
 
 @interface TestGraphView : CDGraphView {
 
+	/**
+	 a reference to the toolbar.
+	**/
+	NSToolbar* toolbar;
+	
 }
+
+/**
+ a reference to the toolbar.
+ **/
+@property(retain) IBOutlet NSToolbar* toolbar;
 
 -(CDQuartzGraph *)createGraph;
 
@@ -33,6 +43,11 @@
  Receive delete action from UI.
  **/
 -(IBAction)onDelete:(id)sender;
+
+/**
+ Add a new connection to the graph.
+ **/
+-(IBAction)onAddConnect:(id)sender;
 
 /**
  Receive connect action from UI.

@@ -11,6 +11,9 @@
 
 @implementation TestGraphView
 
+
+@synthesize toolbar;
+
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -22,6 +25,20 @@
 -(void)awakeFromNib
 {
 	[super awakeFromNib];
+	if (self.toolbar != nil)
+	{
+		[self.toolbar setSelectedItemIdentifier:@"select"];
+	}
+}
+
+
+-(void)dealloc
+{
+	if (self.toolbar != nil)
+	{
+		[self.toolbar autorelease];	
+	}
+	[super dealloc];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -36,6 +53,7 @@
 	}
 	[super drawRect:dirtyRect];
 }
+
 
 -(CDQuartzGraph *)createGraph {
 	
@@ -116,7 +134,15 @@
 }
 
 
-
+-(void)mouseUp:(NSEvent *)theEvent
+{
+	if (self.toolbar != nil)
+	{
+		[self.toolbar setSelectedItemIdentifier:nil];
+		[self.toolbar setSelectedItemIdentifier:@"select"];
+	}
+	[super mouseUp:theEvent];	
+}
 
 
 /**
@@ -132,7 +158,20 @@
  **/
 -(IBAction)onAdd:(id)sender
 {
-	[super onAdd:sender];	
+	self.state.newNode = [[CDQuartzNode alloc] init];
+	self.state.newNode.data = @"Untitled";
+	// add it to the centre of the screen.
+	float cx = [self frame].size.width/2.0f;
+	float cy = [self frame].size.height/2.0f;
+	
+	
+	CurvedRectangleNode *shape = [[CurvedRectangleNode alloc] initWithBounds:
+								  [[QRectangle alloc] initX:cx - 75.0f Y:cy - 50.0f 
+													  WIDTH:150 HEIGHT:100]
+																	AndLabel:@"Untitled"];
+	self.state.newNode.shapeDelegate = shape;
+	
+	[super onAdd:sender];
 }
 
 /**
@@ -141,6 +180,18 @@
 -(IBAction)onDelete:(id)sender
 {
 	[super onDelete:sender];	
+}
+
+/**
+ Add a new connection to the graph.
+ **/
+-(IBAction)onAddConnect:(id)sender
+{
+	[super onAddConnect:sender];
+	if (self.toolbar != nil)
+	{
+		[self.toolbar setSelectedItemIdentifier:@"connect"];	
+	}
 }
 
 /**
