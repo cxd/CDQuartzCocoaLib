@@ -28,7 +28,7 @@
 
 @protocol CDGraphViewOperation;
 
-@interface CDGraphViewState : NSObject {
+@interface CDGraphViewState : NSObject<CDGraphVisitor> {
 	/**
 	 Internal graph instance.
 	 **/
@@ -109,6 +109,12 @@
 	 A flag used to indicate that editing is active.
 	 **/
 	BOOL isEditing;
+	
+	/**
+	 QPoints used to estimate the overall dimensions of the graph.
+	 **/
+	QPoint* minPoint;
+	QPoint* maxPoint;
 }
 
 /**
@@ -247,5 +253,15 @@
  Update the state.
  **/
 -(void)updateState;
+
+/**
+ Compute the bounds for the graph based on the current rectangle.
+ **/
+-(QRectangle *)computeBounds:(QRectangle *)curRect;
+
+/**
+ Vist method used when processing the graph to compute the bounds.
+ **/
+-(void) visit:(CDNode *) node;
 
 @end

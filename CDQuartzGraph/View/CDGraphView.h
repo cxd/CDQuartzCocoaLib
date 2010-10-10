@@ -46,6 +46,11 @@
 	 **/
 	QModifierQueue *queue;
 	
+	/**
+	 Scroll view reference.
+	 Used if the view is nested within a parent view.
+	 **/
+	NSScrollView *parentScrollView;
 }
 
 /**
@@ -74,6 +79,11 @@
  **/
 @property(assign) BOOL shouldDelete;
 
+/**
+ Scroll view reference.
+ Used if the view is nested within a parent view.
+ **/
+@property(retain) IBOutlet NSScrollView *parentScrollView;
 
 /**
  The method used to create the initial graph by the view.
@@ -82,7 +92,11 @@
  **/
 -(CDQuartzGraph *)createGraph;
 
-
+/**
+ Handle event from bounds changing.
+ Will be used when this graph view is housed within a scroll view.
+ **/
+-(void)boundsDidChange:(NSNotification *)notification;
 
 /**
  Prepare the view to allow connections.

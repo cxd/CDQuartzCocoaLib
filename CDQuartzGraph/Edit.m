@@ -11,4 +11,28 @@
 
 @implementation Edit
 
+
+-(id)init {
+	self = [super init];
+	return self;
+}
+
+
+/**
+ Does the operation apply to the current state.
+ **/
+-(BOOL)appliesTo:(CDGraphViewState *)state
+{
+	return NO;
+}
+
+/**
+ Update the state. 
+ **/
+-(void)update:(CDGraphViewState *)state
+{
+
+}
+
+
 @end

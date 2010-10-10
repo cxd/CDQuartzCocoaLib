@@ -17,6 +17,7 @@
 @synthesize shouldDelete;
 @synthesize state;
 @synthesize queue;
+@synthesize parentScrollView;
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
@@ -41,6 +42,13 @@
 																				 Y:[self frame].origin.y
 																			 WIDTH:[self frame].size.width
 																			HEIGHT:[self frame].size.height]];
+	if (self.parentScrollView != nil)
+	{
+		[[NSNotificationCenter defaultCenter] addObserver:self 
+												 selector:@selector(boundsDidChange:) 
+													 name: NSViewBoundsDidChangeNotification 
+												   object:[self.parentScrollView contentView]];
+	}
 }
 
 
@@ -59,6 +67,10 @@
 	if (self.queue != nil)
 	{
 		[self.queue autorelease];	
+	}
+	if (self.parentScrollView != nil)
+	{
+		[self.parentScrollView autorelease];	
 	}
 	[super dealloc];
 }
@@ -159,6 +171,9 @@
 
 -(void)mouseDragged:(NSEvent *)event
 {
+	
+	[self autoscroll:event];
+	
 	NSPoint clickLocation;
     
     // convert the mouse-down location into the view coords
@@ -179,10 +194,40 @@
 	} else {
 		[self.state hoverShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]]];
 	}
-	[self setNeedsDisplay:state.redraw];
 	
-	state.redraw = NO;
+	if (self.state.redraw && self.parentScrollView != nil)
+	{
+		// recompute the bounds
+		QRectangle *currentRect = [[QRectangle alloc] initWithRect:[self frame]];
+		QRectangle *newBounds = [self.state computeBounds:currentRect];
+		if ( (currentRect.x != newBounds.x) || 
+			 (currentRect.y != newBounds.y) ||
+			 (currentRect.width != newBounds.width) ||
+			 (currentRect.height != newBounds.height) )
+		{
+			
+			[self setFrame:NSMakeRect((newBounds.x < [[self superview] frame].origin.x) ? newBounds.x : [[self superview] frame].origin.x, 
+									  (newBounds.y < [[self superview] frame].origin.y) ? newBounds.y : [[self superview] frame].origin.y, 
+									  (newBounds.width > [[self superview] frame].size.width) ? newBounds.width : [[self superview] frame].size.width, 
+									  (newBounds.height > [[self superview] frame].size.height) ? newBounds.height : [[self superview] frame].size.height)];
+			
+			[[self superview] setNeedsDisplay:YES];
+		}
+	}
 	
+	[self setNeedsDisplay:self.state.redraw];
+	
+	self.state.redraw = NO;
+	
+}
+
+/**
+ Handle event from bounds changing.
+ Will be used when this graph view is housed within a scroll view.
+ **/
+-(void)boundsDidChange:(NSNotification *)notification
+{
+	[self setNeedsDisplay:YES];
 }
 
 /**

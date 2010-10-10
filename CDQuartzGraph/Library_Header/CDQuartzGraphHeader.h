@@ -9,3 +9,5 @@
 #import <Cocoa/Cocoa.h>
 #import "QuartzCocoaLib/QuartzCocoaLib.h"
 #import "CDGraph/CDGraph.h"
+#import "CDGraph/CDGraphVisitor.h"
+#import "CDGraph/CDGraphTraversal.h"
