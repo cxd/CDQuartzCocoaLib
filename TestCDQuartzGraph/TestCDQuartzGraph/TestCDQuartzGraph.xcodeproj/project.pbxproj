@@ -61,35 +61,35 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC0C705546C1D00DB518D /* libCDGraph.dylib */;
+			remoteGlobalIDString = D2AAC0C705546C1D00DB518D;
 			remoteInfo = CdADT;
 		};
 		62A7E40C12606847003A617B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 62E9DB720EEA78BE00DCE36C /* CDGraphTest.octest */;
+			remoteGlobalIDString = 62E9DB720EEA78BE00DCE36C;
 			remoteInfo = CDGraphTest;
 		};
 		62A7E40E12606847003A617B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 626F3A1B0F248AA100F566C4 /* libCDGraphStatic.a */;
+			remoteGlobalIDString = 626F3A1B0F248AA100F566C4;
 			remoteInfo = CDGraphStatic;
 		};
 		62A7E41012606847003A617B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 626F3A850F24915700F566C4 /* CDGraphTestConsole */;
+			remoteGlobalIDString = 626F3A850F24915700F566C4;
 			remoteInfo = CDGraphTestConsole;
 		};
 		62A7E41212606847003A617B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6238FF7C121C0C0700599B3C /* CDGraph.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 62B545850F3D8A410027ED8F /* CDGraph.framework */;
+			remoteGlobalIDString = 62B545850F3D8A410027ED8F;
 			remoteInfo = CDGraph;
 		};
 /* End PBXContainerItemProxy section */

@@ -27,8 +27,6 @@
 -(CDQuartzGraph *)createGraph;
 
 
-
-
 /**
  Receive select action from ui.
  **/
