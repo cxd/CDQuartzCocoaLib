@@ -23,7 +23,20 @@
 	QColor *color;
 	NSString *font;
 	int fontSize;
+	float textX;
+	float textH;
 }
+
+/**
+ Position of text x
+ **/
+@property(assign) float textX;
+
+/**
+ Position of text y.
+ **/
+@property(assign) float textY;
+
 /**
  The text to display in the label.
  **/

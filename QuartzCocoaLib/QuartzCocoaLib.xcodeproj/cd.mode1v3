@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,6 +266,7 @@
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
 								<string>6240A6CC1216593900840C1B</string>
+								<string>6240A6CB1216593400840C1B</string>
 								<string>6240A6CA1216592C00840C1B</string>
 								<string>089C1665FE841158C02AAC07</string>
 								<string>0867D69AFE84028FC02AAC07</string>
@@ -279,13 +278,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>45</integer>
+									<integer>75</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 379}, {279, 719}}</string>
+							<string>{{0, 619}, {279, 719}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -304,7 +303,7 @@
 							<real>279</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>218 100 1044 778 0 0 1440 878 </string>
+						<string>2 100 1044 778 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -315,12 +314,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>QRectangle.h</string>
+								<string>QLabel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>QRectangle.h</string>
+										<string>QLabel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62F7995F12604345001CC0F1</string>
+										<string>62B440EA1285519F001F4D0D</string>
 										<key>history</key>
 										<array>
 											<string>6240A69E1216589E00840C1B</string>
@@ -343,7 +344,6 @@
 											<string>62602C0612168C7D0018E683</string>
 											<string>62602C0812168C7D0018E683</string>
 											<string>62602C1812168C7D0018E683</string>
-											<string>62175A8312180D6400E2120C</string>
 											<string>62175A8512180D6400E2120C</string>
 											<string>62175A8612180D6400E2120C</string>
 											<string>62175A8712180D6400E2120C</string>
@@ -356,7 +356,6 @@
 											<string>62DE65DE122937DE00738FA9</string>
 											<string>62DE65DF122937DE00738FA9</string>
 											<string>62DE65E0122937DE00738FA9</string>
-											<string>62DE65E2122937DE00738FA9</string>
 											<string>62DE65E4122937DE00738FA9</string>
 											<string>62DE65E5122937DE00738FA9</string>
 											<string>62DE65E9122937DE00738FA9</string>
@@ -370,19 +369,23 @@
 											<string>62E53C3612321F9B005C4D72</string>
 											<string>62E53CB012322375005C4D72</string>
 											<string>62E53CB112322375005C4D72</string>
-											<string>62E53CB312322375005C4D72</string>
-											<string>62655FAB1233BE1600A91E24</string>
-											<string>6204898C124625170004ED3C</string>
-											<string>623CEBCE1250ABDF00AED181</string>
 											<string>623CEBE41250ACBF00AED181</string>
 											<string>62441E65125897280077600B</string>
 											<string>62441E66125897280077600B</string>
 											<string>62F7995912604345001CC0F1</string>
 											<string>62F7995A12604345001CC0F1</string>
 											<string>62F7995B12604345001CC0F1</string>
-											<string>62F7995C12604345001CC0F1</string>
-											<string>62F7995D12604345001CC0F1</string>
-											<string>62F7995E12604345001CC0F1</string>
+											<string>6280875912619682006AC5BF</string>
+											<string>6280875A12619682006AC5BF</string>
+											<string>6280875B12619682006AC5BF</string>
+											<string>6280875E12619682006AC5BF</string>
+											<string>6280875F12619682006AC5BF</string>
+											<string>62D3E3A8127C0B730023E502</string>
+											<string>62D3E3A9127C0B730023E502</string>
+											<string>62D3E3AA127C0B730023E502</string>
+											<string>62B440B81285406B001F4D0D</string>
+											<string>62B440CB1285415A001F4D0D</string>
+											<string>62B440CC1285415A001F4D0D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -394,14 +397,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {743, 410}}</string>
+								<string>{{0, 0}, {743, 372}}</string>
 								<key>RubberWindowFrame</key>
-								<string>218 100 1044 778 0 0 1440 878 </string>
+								<string>2 100 1044 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>410pt</string>
+							<string>372pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -414,14 +417,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 415}, {743, 322}}</string>
+								<string>{{0, 377}, {743, 360}}</string>
 								<key>RubberWindowFrame</key>
-								<string>218 100 1044 778 0 0 1440 878 </string>
+								<string>2 100 1044 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>322pt</string>
+							<string>360pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -440,9 +443,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>62F7996012604345001CC0F1</string>
+				<string>62B440BB1285406B001F4D0D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>62F7996112604345001CC0F1</string>
+				<string>62B440BC1285406B001F4D0D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -584,7 +587,7 @@
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QuartzCocoaLib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>218 100 1044 778 0 0 1440 878 </string>
+	<string>2 100 1044 778 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -661,7 +664,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6240A5EB1216562000840C1B</string>
-				<string>62F7996212604345001CC0F1</string>
+				<string>62B440BD1285406B001F4D0D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

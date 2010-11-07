@@ -15,6 +15,8 @@
 @synthesize color;
 @synthesize font;
 @synthesize fontSize;
+@synthesize textY;
+@synthesize textX;
 
 -(id)initWithText:(NSString *)t X:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h
 {
@@ -131,6 +133,8 @@
 							 midy, 
 							 [self.text UTF8String],
 							 [self.text length]);
+	self.textX = self.x + middle;
+	self.textY = midy;
 }
 
 @end
