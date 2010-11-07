@@ -25,6 +25,7 @@
 	
 	return (!state.shouldDelete) && 
 			(!state.isCancelled) &&
+			(!state.selectLabel) &&
 			([state.trackNodes count] > 0);
 }
 

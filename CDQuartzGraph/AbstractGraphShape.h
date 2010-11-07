@@ -230,5 +230,10 @@
 
 #endif
 
+/**
+ Change the label.
+ **/
+-(void)changeLabel:(NSString *)newLabel;
+
 
 @end

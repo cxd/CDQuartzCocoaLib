@@ -26,6 +26,8 @@
 #import "TrackedNode.h"
 #import "TrackedEdge.h"
 
+#import "IEditNodeDelegate.h"
+
 @protocol CDGraphViewOperation;
 
 @interface CDGraphViewState : NSObject<CDGraphVisitor> {
@@ -64,6 +66,11 @@
 	 The graph layout algorithm.
 	 **/
 	id<GraphLayoutAlgorithm> algorithm;
+	
+	/**
+	 A delegate that will perform shape editing on behalf of the state.
+	 **/
+	id<IEditNodeDelegate> editDelegate;
 	
 	/**
 	 Internal state transition graph.
@@ -111,6 +118,11 @@
 	BOOL isEditing;
 	
 	/**
+	 Change label.
+	 **/
+	BOOL selectLabel;
+	
+	/**
 	 QPoints used to estimate the overall dimensions of the graph.
 	 **/
 	QPoint* minPoint;
@@ -149,6 +161,11 @@
  **/
 @property(retain) id<GraphLayoutAlgorithm> algorithm;
 
+/**
+ A delegate that will perform shape editing on behalf of the state.
+ This is a weak reference to the delegate.
+ **/
+@property(assign) id<IEditNodeDelegate> editDelegate;
 
 /**
  A flag to indicate whether the current operation should be cancelled.
@@ -189,6 +206,11 @@
  A flag used to indicate that editing is active.
  **/
 @property(assign) BOOL isEditing;
+
+/**
+ Change label.
+ **/
+@property(assign) BOOL selectLabel;
 
 /**
  Initialise with the bounds of the visible area.

@@ -18,6 +18,9 @@
 @synthesize state;
 @synthesize queue;
 @synthesize parentScrollView;
+@synthesize editLabel;
+@synthesize labelField;
+@synthesize selected;
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
@@ -28,6 +31,7 @@
 																					 Y:[self frame].origin.y
 																				 WIDTH:[self frame].size.width
 																				HEIGHT:[self frame].size.height]];
+		self.state.editDelegate = self;
 	}
     return self;
 }
@@ -42,6 +46,7 @@
 																				 Y:[self frame].origin.y
 																			 WIDTH:[self frame].size.width
 																			HEIGHT:[self frame].size.height]];
+	self.state.editDelegate = self;
 	if (self.parentScrollView != nil)
 	{
 		[[NSNotificationCenter defaultCenter] addObserver:self 
@@ -49,6 +54,13 @@
 													 name: NSViewBoundsDidChangeNotification 
 												   object:[self.parentScrollView contentView]];
 	}
+	
+	// attach to any colour change notification.
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(onColorChangeNotification:)
+												 name:@"NSColorPanelColorDidChangeNotification"
+											   object:nil];
+	
 }
 
 
@@ -71,6 +83,15 @@
 	if (self.parentScrollView != nil)
 	{
 		[self.parentScrollView autorelease];	
+	}
+	if (self.labelField != nil)
+	{
+		[self.labelField autorelease];	
+	}
+	if (self.selected != nil)
+	{
+		[self.selected autorelease];
+		self.selected = nil;
 	}
 	[super dealloc];
 }
@@ -98,7 +119,6 @@
 		[self.algorithm layout:self.graph];
 	}
 	
-	
 	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:self.queue];
 	[self.queue autorelease];
 	self.queue = copy;
@@ -121,7 +141,30 @@
 	return self.graph;
 }
 
+/**
+ Receive the event for colour changes.
+ This will change the fill colour of the selected node.
+ **/
+-(void)onColorChangeNotification:(NSNotification*)notification
+{
+	if (self.selected == nil)
+		return;
+	NSColorPanel * panel = [notification object];
+	if (panel == nil)
+		return;
+	NSColor *col = [panel color];
+	self.selected.shapeDelegate.fillColor = [[QColor alloc] initWithRGBA:[col redComponent] 
+																	  G:[col greenComponent] 
+																	  B:[col blueComponent]
+																	   A:[col alphaComponent]];
+	self.state.isEditing = YES;
+	[self setNeedsDisplay:YES];
+}
 
+
+/**
+ Process the mousedown event.
+ **/
 -(void)mouseDown:(NSEvent *)event
 {
    
@@ -140,6 +183,14 @@
 	
 	self.state.isEditing = YES;
 	
+	if (!self.editLabel)
+	{
+	self.state.selectLabel = [event clickCount] > 1;
+	}
+	else {
+		self.editLabel = self.state.selectLabel;	
+	}
+	
 	if (!self.state.editConnections) {
 		[self.state trackShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] 
 					  andDelete:self.shouldDelete];
@@ -147,14 +198,22 @@
 		[self.state hoverShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]]];
 	}
 	
-	[self setNeedsDisplay:state.redraw];
+	// update the state again if the label is being selected.
+	if (self.state.selectLabel)
+	{
+		[self.state updateState];
+	}
 	
+	[self setNeedsDisplay:state.redraw];
 	state.redraw = NO;
+	
 }
 
 -(void)mouseUp:(NSEvent *)theEvent
 {
-	[self.state cancelOperation:YES];
+	if (!self.editLabel) {
+		[self.state cancelOperation:YES];
+	}
 	
 	[self setNeedsDisplay:state.redraw];
 	
@@ -296,13 +355,99 @@
 
 
 /**
+ Implement the edit shape delegate method.
+ Edit the supplied shape.
+ **/
+-(void)editNode:(CDQuartzNode *)shape
+{
+	self.selected = shape;
+	
+	/**
+	 The implementing view needs to determine how to display
+	 the user interface elements for editing the details of a node.
+	 Refer to the TestCDQuartzGraph project for an example implementation.
+	 The default implementation will only modify the label itself.
+	 **/
+	if (self.labelField == nil)
+		return;
+	
+	if (shape.shapeDelegate.label != nil)
+	{
+	[self.labelField setStringValue:shape.shapeDelegate.label];
+	}
+	float x = shape.shapeDelegate.bounds.x;
+	float y = shape.shapeDelegate.bounds.y;
+	if (shape.shapeDelegate.labelShape != nil)
+	{
+		x = shape.shapeDelegate.labelShape.textX;
+		y = shape.shapeDelegate.labelShape.textY;
+	}
+	
+	[self onStartTextEdit: NSMakePoint(x, 
+									   y)
+					 size:NSMakeSize(shape.shapeDelegate.bounds.width, 
+									 25.0f)];
+	
+	
+}
+
+
+/**
+ Begin text editing.
+ The default behaviour is to place the label at the same position as the node.
+ **/
+-(void)onStartTextEdit:(NSPoint) point size:(NSSize) sz
+{
+	if (self.labelField == nil)
+		return;
+	if (![[self subviews] containsObject:(id)self.labelField])
+	{
+		[self addSubview:self.labelField];	
+	}
+	
+	NSRect rect = [self.labelField bounds];
+	rect.origin.x = point.x;
+	rect.origin.y = point.y;
+	rect.size.width = sz.width;
+	rect.size.height = sz.height;
+	[self.labelField setBounds:rect];
+	[self.labelField setFrame:rect];
+	[self setNeedsDisplay:YES];
+}
+
+
+/**
+ End text editing.
+ This will remove the text edit field from the subviews.
+ **/
+-(void)onEndTextEdit
+{
+	if (!self.editLabel) return;
+	if ([[self subviews] containsObject:(id)self.labelField])
+	{
+		[self.labelField removeFromSuperview];	
+	}
+	if (self.selected != nil)
+	{
+		[self.selected.shapeDelegate changeLabel: [self.labelField stringValue]];
+		
+		[self.selected autorelease];
+		self.selected = nil;
+	}
+	[self setNeedsDisplay:YES];
+} 
+
+/**
  Receive select action from ui.
  **/
 -(IBAction)onSelect:(id)sender
 {
 	[self onEndConnection];
+	[self onEndTextEdit];
 	self.state.editConnections = NO;
 	self.shouldDelete = NO;
+	self.state.selectLabel = NO;
+	self.editLabel = NO;
 }
 
 /**
@@ -311,7 +456,11 @@
 -(IBAction)onAdd:(id)sender
 {
 	[self onEndConnection];
+	[self onEndTextEdit];
+	
 	self.shouldDelete = NO;
+	self.state.selectLabel = NO;
+	self.editLabel = NO;
 }
 
 /**
@@ -320,7 +469,11 @@
 -(IBAction)onDelete:(id)sender
 {
 	[self onEndConnection];
+	[self onEndTextEdit];
+	
 	self.shouldDelete = YES;
+	self.state.selectLabel = NO;
+	self.editLabel = NO;
 }
 
 /**
@@ -349,6 +502,8 @@
 	[self onStartConnection];
 	[self setNeedsDisplay:YES];
 	self.shouldDelete = NO;
+	self.state.selectLabel = NO;
+	self.editLabel = NO;
 }
 
 /**
@@ -357,7 +512,11 @@
 -(IBAction)onConnect:(id)sender
 {
 	[self onStartConnection];
+	[self onEndTextEdit];
+	
 	self.shouldDelete = NO;
+	self.state.selectLabel = NO;
+	self.editLabel = NO;
 }
 
 /**
@@ -365,8 +524,12 @@
  **/
 -(IBAction)onDisconnect:(id)sender
 {
+	[self onEndTextEdit];
+	
 	self.state.shouldDelete = YES;
 	[self onStartConnection];
+	self.state.selectLabel = NO;
+	self.editLabel = NO;
 }
 
 /**
@@ -376,7 +539,8 @@
 {
 	self.shouldDelete = NO;
 	[self onEndConnection];
-
+	self.state.selectLabel = YES;
+	self.editLabel = YES;
 }
 
 @end

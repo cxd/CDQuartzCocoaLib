@@ -23,10 +23,12 @@
 #import "GraphLayoutAlgorithm.h"
 #import "CDGraphViewState.h"
 
+#import "IEditNodeDelegate.h"
+
 /**
  The Graph View provides support for drawing graphs within an NSView. 
  **/
-@interface CDGraphView : NSView {
+@interface CDGraphView : NSView<IEditNodeDelegate> {
 	/**
 	 Internal graph instance.
 	 **/
@@ -37,9 +39,20 @@
 	CDGraphViewState *state;
 	
 	/**
+	 The selected shape that is used to edit a label
+	 or other attributes.
+	 **/
+	CDQuartzNode *selected;
+	
+	/**
 	 A flag to indicate whether the view should delete.
 	 **/
 	BOOL shouldDelete;
+	
+	/**
+	 A flag to determine whether a menu is being used to edit the label of the node.
+	 **/
+	BOOL editLabel;
 	
 	/**
 	 The modifier queue.
@@ -51,6 +64,13 @@
 	 Used if the view is nested within a parent view.
 	 **/
 	NSScrollView *parentScrollView;
+	
+	/**
+	 An editable field to allow the user to modify the
+	 text of a node.
+	 **/
+	NSTextField *labelField;
+	
 }
 
 /**
@@ -62,6 +82,12 @@
  The state associated with the view.
  **/
 @property(retain) CDGraphViewState *state;
+
+/**
+ The selected shape that is used to edit a label
+ or other attributes.
+ **/
+@property(retain) CDQuartzNode *selected;
 
 /**
  A reference to a graph layout algorithm.
@@ -79,11 +105,23 @@
  **/
 @property(assign) BOOL shouldDelete;
 
+
+/**
+ A flag to determine whether a menu is being used to edit the label of the node.
+ **/
+@property(assign) BOOL editLabel;
+
 /**
  Scroll view reference.
  Used if the view is nested within a parent view.
  **/
 @property(retain) IBOutlet NSScrollView *parentScrollView;
+
+/**
+ An editable field to allow the user to modify the
+ text of a node.
+ **/
+@property(retain) IBOutlet 	NSTextField *labelField;
 
 /**
  The method used to create the initial graph by the view.
@@ -107,6 +145,23 @@
  Update the view to disallow connections.
  **/
 -(void)onEndConnection;
+
+/**
+ Begin text editing.
+ **/
+-(void)onStartTextEdit:(NSPoint) point size:(NSSize) sz;
+
+/**
+ Receive the event for colour changes.
+ This will change the fill colour of the selected node.
+ **/
+-(void)onColorChangeNotification:(NSNotification*)notification;
+
+/**
+ Begin text editing.
+ **/
+-(void)onEndTextEdit;
+
 
 /**
  Receive select action from ui.

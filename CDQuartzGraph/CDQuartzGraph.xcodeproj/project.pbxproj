@@ -42,6 +42,7 @@
 		621759D0121801BA00E2120C /* AbstractPortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 621759CE121801BA00E2120C /* AbstractPortShape.m */; };
 		621759DB1218086C00E2120C /* CurvedRectanglePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759D91218086C00E2120C /* CurvedRectanglePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621759DC1218086C00E2120C /* CurvedRectanglePort.m in Sources */ = {isa = PBXBuildFile; fileRef = 621759DA1218086C00E2120C /* CurvedRectanglePort.m */; };
+		6228D6D6127D5A1800DAA9CD /* IEditNodeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		622BE4761260650F00B6AB81 /* CDGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62602B30121663050018E683 /* CDGraph.framework */; };
 		623A1DD6123362AF00160A95 /* CDQuartzGraphHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 623A1DD5123362AF00160A95 /* CDQuartzGraphHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		623CEC5D1250BB4800AED181 /* ITrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,7 +83,7 @@
 		628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 628BFC21125212F20049A675 /* TrackingViewBoundary.m */; };
 		62CC1409124DDA79001AF7CD /* CirclePortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CC1407124DDA79001AF7CD /* CirclePortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62CC140A124DDA79001AF7CD /* CirclePortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CC1408124DDA79001AF7CD /* CirclePortShape.m */; };
-		62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F797561260151D001CC0F1 /* EdgeDelete.h */; };
+		62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F797561260151D001CC0F1 /* EdgeDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62F797591260151D001CC0F1 /* EdgeDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F797571260151D001CC0F1 /* EdgeDelete.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
@@ -174,6 +175,7 @@
 		621759CE121801BA00E2120C /* AbstractPortShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPortShape.m; sourceTree = "<group>"; };
 		621759D91218086C00E2120C /* CurvedRectanglePort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvedRectanglePort.h; sourceTree = "<group>"; };
 		621759DA1218086C00E2120C /* CurvedRectanglePort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedRectanglePort.m; sourceTree = "<group>"; };
+		6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEditNodeDelegate.h; sourceTree = "<group>"; };
 		623A1DD5123362AF00160A95 /* CDQuartzGraphHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDQuartzGraphHeader.h; path = Library_Header/CDQuartzGraphHeader.h; sourceTree = "<group>"; };
 		623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITrackingViewBoundary.h; sourceTree = "<group>"; };
 		6240A5291216529D00840C1B /* CDGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraph.xcodeproj; path = ../../../CDGraph/CDGraph/CDGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -400,6 +402,7 @@
 				62027EF912423A9F001535AA /* CDGraphViewOperation.h */,
 				6205243412477976001053D6 /* TrackedEdge.h */,
 				6205243512477976001053D6 /* TrackedEdge.m */,
+				6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				628BFC22125212F20049A675 /* TrackingViewBoundary.h in Headers */,
 				62441E201258676B0077600B /* StartConnections.h in Headers */,
 				62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */,
+				6228D6D6127D5A1800DAA9CD /* IEditNodeDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

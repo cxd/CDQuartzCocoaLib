@@ -317,6 +317,24 @@
 }
 
 
+/**
+ Change the label.
+ **/
+-(void)changeLabel:(NSString *)newLabel
+{
+	if (self.label != nil)
+	{
+		[self.label autorelease];	
+	}
+	self.label = newLabel;
+	if (self.labelShape != nil)
+	{
+		self.labelShape.text = self.label;	
+	}
+}
+
+
+
 #ifdef UIKIT_EXTERN 
 
 // TODO: define tracking boundary protocol for ui kit.

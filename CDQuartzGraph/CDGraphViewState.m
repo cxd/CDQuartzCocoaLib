@@ -40,6 +40,8 @@
 @synthesize editConnections;
 @synthesize detachedEdges;
 @synthesize isEditing;
+@synthesize selectLabel;
+@synthesize editDelegate;
 
 -(id)initWithBounds:(QRectangle *)b
 {
@@ -110,6 +112,7 @@
 		[self.detachedEdges autorelease];
 	}
 	[transitions autorelease];
+	self.editDelegate = nil; // remove weak reference.
 	[super dealloc];
 }
 
@@ -120,14 +123,14 @@
 {
 	/*
 	 Initialised -> { Select, Add, Delete, StartConnections }
-	 Select -> { Move, Cancel }
-	 Cancel -> { Initialised }
+	 Select -> { Move, Cancel, Edit }
+	 Cancel -> { Initialised, Edit }
 	 Move -> { Initialise, Move }
 	 Delete -> { Cancel, Initialised }
 	 Add -> { Cancel, Place }
 	 Place -> { Initialised }
 	 Join -> { Initialised }
-	 Edit -> { Initialised, Cancel }
+	 Edit -> { Edit, Initialised, Cancel }
 	 StartConnections -> { Cancel, EdgeSelect, EdgeDelete }
 	 EdgeSelect -> { EdgeMove, Cancel }
 	 EdgeMove -> { EdgeMove, Join, Initialise, EdgeSelect }
@@ -206,15 +209,17 @@
 	[transitions connect:edgeDeleteNode to:initNode];
 	
 	/*
-	 Edit -> { Initialised, Cancel }
+	 Edit -> { Edit, Initialised, Cancel }
 	 */
 	[transitions connect:editNode to:initNode];
 	[transitions connect:editNode to:cancelNode];
+	[transitions connect:editNode to:editNode];
 	
 	/*
-	 Cancel -> { Initialised }
+	 Cancel -> { Initialised, Edit }
 	 */
 	[transitions connect:cancelNode to:initNode];
+	[transitions connect:cancelNode to:editNode];
 	
 	/*
 	 Move -> { Join, Initialise, Move, Cancel }
