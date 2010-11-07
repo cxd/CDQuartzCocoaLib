@@ -266,24 +266,23 @@
 								<string>0867D691FE84028FC02AAC07</string>
 								<string>62655F3A1233AF9000A91E24</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
-								<string>62C570F4123658E60035FDA0</string>
 								<string>62168C09123511B8000941F2</string>
 								<string>32C88DFF0371C24200C91783</string>
 								<string>0867D69AFE84028FC02AAC07</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>62A7E54012606B4F003A617B</string>
-								<string>62A7E54112606B4F003A617B</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>46</integer>
-									<integer>45</integer>
+									<integer>10</integer>
+									<integer>8</integer>
+									<integer>4</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 299}, {258, 719}}</string>
+							<string>{{0, 0}, {258, 719}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -320,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CDQuartzGraphHeader.h</string>
+								<string>TrackingViewBoundary.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CDQuartzGraphHeader.h</string>
+										<string>TrackingViewBoundary.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62A7E58712606F1F003A617B</string>
+										<string>62294D0C12608E1A00003723</string>
 										<key>history</key>
 										<array>
 											<string>62655FA11233BE1500A91E24</string>
@@ -341,7 +340,9 @@
 											<string>62C5712F12365EA30035FDA0</string>
 											<string>623FAFCB1240E5AB009DB02A</string>
 											<string>62A7E54212606B4F003A617B</string>
-											<string>62A7E54312606B4F003A617B</string>
+											<string>62294D0912608E1A00003723</string>
+											<string>62294D0A12608E1A00003723</string>
+											<string>62294D0B12608E1A00003723</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -353,14 +354,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {651, 451}}</string>
+								<string>{{0, 0}, {651, 443}}</string>
 								<key>RubberWindowFrame</key>
 								<string>503 100 931 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>451pt</string>
+							<string>443pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -373,14 +374,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 456}, {651, 281}}</string>
+								<string>{{0, 448}, {651, 289}}</string>
 								<key>RubberWindowFrame</key>
 								<string>503 100 931 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>281pt</string>
+							<string>289pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -399,9 +400,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>62A7E54512606B4F003A617B</string>
+				<string>62294D0D12608E1A00003723</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>62A7E54612606B4F003A617B</string>
+				<string>62294D0E12608E1A00003723</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -564,7 +565,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CDQuartzGraphHeader.h</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -581,8 +582,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -622,7 +621,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>62655F1E1233AF1300A91E24</string>
-				<string>62A7E53712606AE2003A617B</string>
+				<string>62294D0F12608E1A00003723</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
