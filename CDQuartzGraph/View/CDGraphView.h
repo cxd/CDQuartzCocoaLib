@@ -198,5 +198,11 @@
  **/
 -(IBAction)onEdit:(id)sender;
 
+/**
+ Receive the change font event.
+The default behaviour is to change the
+ font of the selected node.
+ **/
+-(void)onChangeFont:(NSFont *)font;
 
 @end

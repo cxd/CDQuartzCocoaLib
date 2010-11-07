@@ -283,14 +283,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>46</integer>
+									<integer>47</integer>
 									<integer>13</integer>
 									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 359}, {346, 760}}</string>
+							<string>{{0, 191}, {346, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -309,7 +309,7 @@
 							<real>346</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>6 59 1200 819 0 0 1440 878 </string>
+						<string>7 59 1200 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -327,7 +327,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CDGraphView.h</string>
+								<string>CDGraphView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -335,11 +335,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CDGraphView.h</string>
+										<string>CDGraphView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>626648A812866E4B00D54D74</string>
+										<string>626649561286825700D54D74</string>
 										<key>history</key>
 										<array>
 											<string>62602C1D12168C7E0018E683</string>
@@ -415,8 +415,8 @@
 											<string>62B4403C12853535001F4D0D</string>
 											<string>62B440A612853DD0001F4D0D</string>
 											<string>62B440B51285406B001F4D0D</string>
-											<string>626648A612866E4B00D54D74</string>
-											<string>626648A712866E4B00D54D74</string>
+											<string>626648E1128679D500D54D74</string>
+											<string>626649511286824200D54D74</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -430,7 +430,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {832, 436}}</string>
 								<key>RubberWindowFrame</key>
-								<string>6 59 1200 819 0 0 1440 878 </string>
+								<string>7 59 1200 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -450,7 +450,7 @@
 								<key>Frame</key>
 								<string>{{0, 441}, {832, 337}}</string>
 								<key>RubberWindowFrame</key>
-								<string>6 59 1200 819 0 0 1440 878 </string>
+								<string>7 59 1200 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -618,7 +618,7 @@
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>6 59 1200 819 0 0 1440 878 </string>
+	<string>7 59 1200 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

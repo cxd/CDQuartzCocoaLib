@@ -161,6 +161,24 @@
 	[self setNeedsDisplay:YES];
 }
 
+/**
+ Receive the change font event.
+ The default behaviour is to change the
+ font of the selected node.
+ **/
+-(void)onChangeFont:(NSFont *)font
+{
+	if (self.selected == nil)
+		return;
+	if (self.selected.shapeDelegate.labelShape == nil)
+		return;
+	NSString* name = [font fontName];
+	CGFloat sz = [font pointSize];
+	self.selected.shapeDelegate.labelShape.font = name;
+	self.selected.shapeDelegate.labelShape.fontSize = sz;
+	self.state.isEditing = YES;
+	[self setNeedsDisplay:YES];
+}
 
 /**
  Process the mousedown event.
