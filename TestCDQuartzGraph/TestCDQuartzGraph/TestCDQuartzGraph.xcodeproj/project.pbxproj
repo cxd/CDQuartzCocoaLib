@@ -22,6 +22,7 @@
 		62655C6B1233691400A91E24 /* CDQuartzGraph.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 623A1E57123365FE00160A95 /* CDQuartzGraph.framework */; };
 		62A7E4F712606A5A003A617B /* CDQuartzGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A7E4F612606A5A003A617B /* CDQuartzGraph.framework */; };
 		62A7E4FB12606A6B003A617B /* QuartzCocoaLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A7E4FA12606A6B003A617B /* QuartzCocoaLib.framework */; };
+		62D3E357127C01890023E502 /* QuartzCocoaLib.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 62A7E4FA12606A6B003A617B /* QuartzCocoaLib.framework */; };
 		62F7980E126026CF001CC0F1 /* connect_creating.png in Resources */ = {isa = PBXBuildFile; fileRef = 62F7980D126026CF001CC0F1 /* connect_creating.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -101,6 +102,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				62D3E357127C01890023E502 /* QuartzCocoaLib.framework in Copy Frameworks */,
 				62655C6B1233691400A91E24 /* CDQuartzGraph.framework in Copy Frameworks */,
 				62227FC7121D5BCA0009DD2F /* CDGraph.framework in Copy Frameworks */,
 			);

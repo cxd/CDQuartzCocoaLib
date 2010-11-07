@@ -19,6 +19,7 @@
     if (self) {
         // Initialization code here.
     }
+	self.labelField = [[NSTextField alloc] initWithFrame:[self frame]];
     return self;
 }
 
@@ -29,6 +30,7 @@
 	{
 		[self.toolbar setSelectedItemIdentifier:@"select"];
 	}
+	self.labelField = [[NSTextField alloc] initWithFrame:[self frame]];
 }
 
 
@@ -136,7 +138,7 @@
 
 -(void)mouseUp:(NSEvent *)theEvent
 {
-	if (self.toolbar != nil)
+	if (self.toolbar != nil && !self.editLabel)
 	{
 		[self.toolbar setSelectedItemIdentifier:nil];
 		[self.toolbar setSelectedItemIdentifier:@"select"];
@@ -180,6 +182,26 @@
 -(IBAction)onDelete:(id)sender
 {
 	[super onDelete:sender];	
+}
+
+/**
+ Begin text editing.
+ The default behaviour is to place the label at the same position as the node.
+ **/
+-(void)onStartTextEdit:(NSPoint) point size:(NSSize) sz
+{
+	[super onStartTextEdit:point size:sz];
+	
+	
+}
+
+/**
+ End text editing.
+ This will remove the text edit field from the subviews.
+ **/
+-(void)onEndTextEdit
+{
+	[super onEndTextEdit];
 }
 
 /**
