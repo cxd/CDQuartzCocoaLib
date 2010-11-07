@@ -7,11 +7,23 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CDQuartzGraph/CDGraphView.h"
 
 @interface TestCDQuartzGraphAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
+	
+	/**
+	 A reference to the graph view.
+	 **/
+	CDGraphView *graphView;
+	
+	NSFont *defaultFont;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+
+@property(retain) IBOutlet CDGraphView *graphView;
+
+@property(retain) NSFont *defaultFont;
 
 @end
