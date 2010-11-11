@@ -140,4 +140,30 @@
 	outlineArc.radius = w;
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	fillColor = [aDecoder decodeObjectForKey:@"CirclePortShape_fillColor"];
+	strokeColor = [aDecoder decodeObjectForKey:@"CirclePortShape_strokeColor"];
+	filledCircle = [aDecoder decodeObjectForKey:@"CirclePortShape_filledCircle"];
+	outlineArc = [aDecoder decodeObjectForKey:@"CirclePortShape_outlineArc"];
+	strokeWidth = [aDecoder decodeObjectForKey:@"CirclePortShape_strokeWidth"];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:fillColor forKey:@"CirclePortShape_fillColor"];
+	[aCoder encodeObject:strokeColor forKey:@"CirclePortShape_strokeColor"];
+	[aCoder encodeObject:filledCircle forKey:@"CirclePortShape_filledCircle"];
+	[aCoder encodeObject:outlineArc forKey:@"CirclePortShape_outlineArc"];
+	[aCoder encodeObject:strokeWidth forKey:@"CirclePortShape_strokeWidth"];
+}
 @end

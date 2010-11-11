@@ -18,6 +18,9 @@
 
 #import "CDQuartzEdge.h"
 #import "CDQuartzNode.h"
+#import "CDPersistentQuartzEdge.h"
+#import <float.h>
+
 
 @interface CDQuartzGraph : CDGraph<QContextModifier,Drawable> {
 	/**
@@ -115,5 +118,20 @@
  Update any connections associated with the node.
  **/
 -(void)updateConnections:(CDQuartzNode *)node;
+
+/**
+ Find the closest port.
+ **/
+-(AbstractPortShape *)closestPort:(QPoint *)point toNode:(CDQuartzNode *)node;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
 
 @end

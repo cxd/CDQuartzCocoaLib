@@ -239,4 +239,45 @@
 	top = self.bounds.y + self.bounds.height - portWidth/2.0;
 	[self.bottomPort moveTo:[[QPoint alloc] initX:left Y:top]];
 }
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	outlineRectangle = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_outlineRectangle"];
+	filledRectangle = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_filledRectangle"];
+	strokeColor = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_strokeColor"];
+	color = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_color"];
+	strokeWidth = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_strokeWidth"];
+	self.leftPort=[aDecoder decodeObjectForKey:@"CurvedRectangleNode_leftPort"];
+	self.topPort = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_topPort"];
+	self.rightPort = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_rightPort"];
+	self.bottomPort = [aDecoder decodeObjectForKey:@"CurvedRectangleNode_bottomPort"];
+	self.leftPort.parent = self;
+	self.topPort.parent = self;
+	self.rightPort.parent = self;
+	self.bottomPort.parent = self;
+	return self;
+}
+
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:outlineRectangle forKey:@"CurvedRectangleNode_outlineRectangle"];
+	[aCoder encodeObject:filledRectangle forKey:@"CurvedRectangleNode_filledRectangle"];
+	[aCoder encodeObject:strokeColor forKey:@"CurvedRectangleNode_strokeColor"];
+	[aCoder encodeObject:color forKey:@"CurvedRectangleNode_color"];
+	[aCoder encodeObject:strokeWidth forKey:@"CurvedRectangleNode_strokeWidth"];
+	[aCoder encodeObject:self.leftPort forKey:@"CurvedRectangleNode_leftPort"];
+	[aCoder encodeObject:self.topPort forKey:@"CurvedRectangleNode_topPort"];
+	[aCoder encodeObject:self.rightPort forKey:@"CurvedRectangleNode_rightPort"];
+	[aCoder encodeObject:self.bottomPort forKey:@"CurvedRectangleNode_bottomPort"];
+}
+
 @end

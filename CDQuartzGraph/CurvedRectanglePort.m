@@ -136,4 +136,31 @@
 	outlineRectangle.height = self.bounds.height;
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	filledRectangle = [aDecoder decodeObjectForKey:@"CurvedRectanglePort_filledRectangle"];
+	outlineRectangle = [aDecoder decodeObjectForKey:@"CurvedRectanglePort_outlineRectangle"];
+	color = [aDecoder decodeObjectForKey:@"CurvedRectanglePort_color"];
+	outlineColor = [aDecoder decodeObjectForKey:@"CurvedRectanglePort_outlineColor"];
+	strokeWidth = [aDecoder decodeObjectForKey:@"CurvedRectanglePort_strokeWidth"];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:filledRectangle forKey:@"CurvedRectanglePort_filledRectangle"];
+	[aCoder encodeObject:outlineRectangle forKey:@"CurvedRectanglePort_outlineRectangle"];
+	[aCoder encodeObject:color forKey:@"CurvedRectanglePort_color"];
+	[aCoder encodeObject:outlineColor forKey:@"CurvedRectanglePort_outlineColor"];
+	[aCoder encodeObject:strokeWidth forKey:@"CurvedRectanglePort_strokeWidth"];
+}
+
 @end

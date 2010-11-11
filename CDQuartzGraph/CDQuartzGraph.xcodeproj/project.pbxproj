@@ -81,6 +81,8 @@
 		62602BF6121689630018E683 /* CurvedRectangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BF4121689630018E683 /* CurvedRectangleNode.m */; };
 		628BFC22125212F20049A675 /* TrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 628BFC20125212F20049A675 /* TrackingViewBoundary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 628BFC21125212F20049A675 /* TrackingViewBoundary.m */; };
+		62A4064C128A8DAE0016B682 /* CDPersistentQuartzEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A4064A128A8DAE0016B682 /* CDPersistentQuartzEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62A4064D128A8DAE0016B682 /* CDPersistentQuartzEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A4064B128A8DAE0016B682 /* CDPersistentQuartzEdge.m */; };
 		62CC1409124DDA79001AF7CD /* CirclePortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CC1407124DDA79001AF7CD /* CirclePortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62CC140A124DDA79001AF7CD /* CirclePortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CC1408124DDA79001AF7CD /* CirclePortShape.m */; };
 		62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F797561260151D001CC0F1 /* EdgeDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -215,6 +217,8 @@
 		62602BF4121689630018E683 /* CurvedRectangleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedRectangleNode.m; sourceTree = "<group>"; };
 		628BFC20125212F20049A675 /* TrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingViewBoundary.h; sourceTree = "<group>"; };
 		628BFC21125212F20049A675 /* TrackingViewBoundary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingViewBoundary.m; sourceTree = "<group>"; };
+		62A4064A128A8DAE0016B682 /* CDPersistentQuartzEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPersistentQuartzEdge.h; sourceTree = "<group>"; };
+		62A4064B128A8DAE0016B682 /* CDPersistentQuartzEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPersistentQuartzEdge.m; sourceTree = "<group>"; };
 		62CC1407124DDA79001AF7CD /* CirclePortShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePortShape.h; sourceTree = "<group>"; };
 		62CC1408124DDA79001AF7CD /* CirclePortShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePortShape.m; sourceTree = "<group>"; };
 		62F797561260151D001CC0F1 /* EdgeDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeDelete.h; sourceTree = "<group>"; };
@@ -416,6 +420,8 @@
 				62602B491216646E0018E683 /* CDQuartzEdge.m */,
 				62602B56121664F50018E683 /* CDQuartzGraph.h */,
 				62602B57121664F50018E683 /* CDQuartzGraph.m */,
+				62A4064A128A8DAE0016B682 /* CDPersistentQuartzEdge.h */,
+				62A4064B128A8DAE0016B682 /* CDPersistentQuartzEdge.m */,
 			);
 			name = Decorator;
 			sourceTree = "<group>";
@@ -504,6 +510,7 @@
 				62441E201258676B0077600B /* StartConnections.h in Headers */,
 				62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */,
 				6228D6D6127D5A1800DAA9CD /* IEditNodeDelegate.h in Headers */,
+				62A4064C128A8DAE0016B682 /* CDPersistentQuartzEdge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +660,7 @@
 				628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */,
 				62441E211258676B0077600B /* StartConnections.m in Sources */,
 				62F797591260151D001CC0F1 /* EdgeDelete.m in Sources */,
+				62A4064D128A8DAE0016B682 /* CDPersistentQuartzEdge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

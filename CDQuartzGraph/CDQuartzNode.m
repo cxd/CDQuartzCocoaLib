@@ -137,4 +137,25 @@
 	if (self.shapeDelegate == nil) return;
 	[self.shapeDelegate resizeToWidth:w height:h];
 }
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.shapeDelegate = [aDecoder decodeObjectForKey:@"shapeDelegate"];
+	return self;
+}
+
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.shapeDelegate forKey:@"shapeDelegate"];
+	
+}
 @end

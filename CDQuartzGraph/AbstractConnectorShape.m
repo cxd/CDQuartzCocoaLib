@@ -267,5 +267,31 @@
 
 #endif
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.startDecoration = [aDecoder decodeObjectForKey:@"AbstractConnectorShape_startDecoration"];
+	self.endDecoration = [aDecoder decodeObjectForKey:@"AbstractConnectorShape_endDecoration"];
+	self.startPort = [aDecoder decodeObjectForKey:@"AbstractConnectorShape_startPort"];
+	self.endPort = [aDecoder decodeObjectForKey:@"AbstractConnectorShape_endPort"];	
+	return self;
+}
+
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.startDecoration forKey:@"AbstractConnectorShape_startDecoration"];
+	[aCoder encodeObject:self.endDecoration forKey:@"AbstractConnectorShape_endDecoration"];
+	[aCoder encodeObject:self.startPort forKey:@"AbstractConnectorShape_startPort"];
+	[aCoder encodeObject:self.endPort forKey:@"AbstractConnectorShape_endPort"];
+}
+
 
 @end

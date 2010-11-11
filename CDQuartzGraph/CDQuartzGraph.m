@@ -303,4 +303,94 @@
 	}	
 }
 
+#pragma mark Encoder and Decoder.
+
+/**
+ Convert all the neighbours into a persistent edge.
+ **/
+-(NSMutableArray *)convertNeigboursForEncoding:(CDNode *)node atIndex:(int)n
+{
+	NSMutableArray *set = [[NSMutableArray alloc] init];
+	
+	for(CDQuartzNode *next in node.neighbours)
+	{
+		int i = [self findIndex:next];
+		if (i < 0)
+			continue;
+		CDQuartzEdge *qEdge = [self findEdge:node to:next];
+		if (qEdge == nil)
+			continue; // should not occur as the nodes are neighbours.
+		CDPersistentQuartzEdge *edge = [[CDPersistentQuartzEdge alloc] init];
+		edge.sourceIdx = n;
+		edge.targetIdx = i;
+		edge.edgeShape = qEdge.shapeDelegate;
+		[set addObject:edge];
+	}
+	return set;
+}
+
+
+/**
+ Find the closest port.
+ **/
+-(AbstractPortShape *)closestPort:(QPoint *)point toNode:(CDQuartzNode *)node
+{
+	AbstractPortShape *closest = nil;
+	float dist = FLT_MAX;
+	for(AbstractPortShape *port in node.shapeDelegate.ports)
+	{
+		float delta = [point distanceTo:[port.bounds midPoint]];
+		if (delta < dist) {
+			dist = delta;
+			closest = port;
+		}
+	}
+	return closest;
+}
+
+-(id) initWithCoder: (NSCoder *) decoder 
+{
+	self.shapeDelegate = [decoder decodeObjectForKey:@"shapeDelegate"];
+	self.isBidirectional = [decoder decodeBoolForKey: @"isBidirectional"];
+	self.nodes = [[decoder decodeObjectForKey: @"nodes"] retain];
+	self.edges = [[NSMutableArray alloc] init];
+	NSMutableArray* adjacentSet = [decoder decodeObjectForKey:@"adjacentSet"];
+	for(CDPersistentQuartzEdge *p in adjacentSet)
+	{
+		CDQuartzNode *source = [self.nodes objectAtIndex:p.sourceIdx];
+		CDQuartzNode *dest = [self.nodes objectAtIndex:p.targetIdx];
+		AbstractConnectorShape* connect= p.edgeShape;
+		AbstractPortShape *start, *end;
+		// find the closest source port
+		if (connect.startPort != nil)
+		{
+			start = [self closestPort:[connect.startPort.bounds midPoint] toNode:source];
+		}
+		// find the closest destination port.
+		if (connect.endPort != nil) {
+			end = [self closestPort:[connect.endPort.bounds midPoint] toNode:dest];	
+		}
+		// connect the two nodes.
+		if (start != nil && end != nil)
+		{
+			[self connect:source to:dest withShape:connect fromPort:start toPort:end];	
+		}
+	}
+	return self;
+}
+
+// NSCoding protocol implementation.
+-(void) encodeWithCoder: (NSCoder *) encoder
+{
+	[super encodeWithCoder:encoder];
+	[encoder encodeObject:self.shapeDelegate forKey:@"shapeDelegate"];
+}
+
+// implementation of NSCopying using archiver to create a deep copy.
+-(id)copyWithZone: (NSZone *) zone
+{
+	NSData *archive = [NSKeyedArchiver archivedDataWithRootObject: self];
+	CDQuartzGraph *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
+	return copy;
+}
 @end

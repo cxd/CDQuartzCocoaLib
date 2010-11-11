@@ -242,4 +242,28 @@
 	self.curve.end.y = p.y;
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.curve = [aDecoder decodeObjectForKey:@"BezierLineConnector_curve"];
+	self.strokeColor = [aDecoder decodeObjectForKey:@"BezierLineConnector_strokeColor"];
+	self.strokeWidth = [aDecoder decodeObjectForKey:@"BezierLineConnector_strokeWidth"];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.curve forKey:@"BezierLineConnector_curve"];
+	[aCoder encodeObject:self.strokeColor forKey:@"BezierLineConnector_strokeColor"];
+	[aCoder encodeObject:self.strokeWidth forKey:@"BezierLineConnector_strokeWidth"];
+}
+
+
 @end

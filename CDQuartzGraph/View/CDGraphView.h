@@ -124,6 +124,12 @@
 @property(retain) IBOutlet 	NSTextField *labelField;
 
 /**
+ Swap the current graph out for a new graph.
+ This effectively replaces the graph within the view state.
+ **/
+-(void)swapGraph:(CDQuartzGraph *)newGraph;
+
+/**
  The method used to create the initial graph by the view.
  Override this method in derived classes in order to generate
  the default graph.

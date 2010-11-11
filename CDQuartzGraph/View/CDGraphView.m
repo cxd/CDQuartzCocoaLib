@@ -97,6 +97,27 @@
 }
 
 /**
+ Swap the current graph out for a new graph.
+ This effectively replaces the graph within the view state.
+ **/
+-(void)swapGraph:(CDQuartzGraph *)newGraph
+{
+	[self.graph autorelease];	
+	[self.state autorelease];
+	[self.queue autorelease];
+	self.queue = nil;
+	self.graph = newGraph;
+	self.state = [[CDGraphViewState alloc] initWithGraph:self.graph 
+											   andBounds:[[QRectangle alloc] initX:[self frame].origin.x
+																				 Y:[self frame].origin.y
+																			 WIDTH:[self frame].size.width
+																			HEIGHT:[self frame].size.height]];	
+	self.shouldDelete = NO;
+	self.editLabel = NO;
+	[self setNeedsDisplay:YES]; 
+}
+
+/**
  Derived classes should override this method
  if they need to do any custom drawing before the base class.
  **/

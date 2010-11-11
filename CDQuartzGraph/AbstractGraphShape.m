@@ -360,4 +360,32 @@
 #endif
 
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.bounds = [aDecoder decodeObjectForKey:@"AbstractGraphShape_bounds"];
+	self.fillColor = [aDecoder decodeObjectForKey:@"AbstractGraphShape_fillColor"];
+	self.outlineColor = [aDecoder decodeObjectForKey:@"AbstractGraphShape_outlineColor"];
+	self.outlineWeight = [aDecoder decodeFloatForKey:@"AbstractGraphShape_outlineWeight"];
+	self.displacement = [aDecoder decodeObjectForKey:@"AbstractGraphShape_displacement"];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.bounds forKey:@"AbstractGraphShape_bounds"];
+	[aCoder encodeObject:self.fillColor forKey:@"AbstractGraphShape_fillColor"];
+	[aCoder encodeObject:self.outlineColor forKey:@"AbstractGraphShape_outlineColor"];
+	[aCoder encodeFloat:self.outlineWeight forKey:@"AbstractGraphShape_outlineWeight"];
+	[aCoder encodeObject:self.displacement forKey:@"AbstractGraphShape_displacement"];
+}
+
+
 @end
