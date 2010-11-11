@@ -26,4 +26,10 @@
 
 @property(retain) NSFont *defaultFont;
 
+
+- (IBAction) openDocument: sender;
+
+- (IBAction)saveDocument:(id)sender;
+
+
 @end
