@@ -112,4 +112,32 @@
 	}
 	[super dealloc];
 }
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.colorSpace = CGColorSpaceCreateDeviceRGB();
+	self.offset = [aDecoder decodeFloatForKey:@"offset"];
+	self.yoffset = [aDecoder decodeFloatForKey:@"yoffset"];
+	self.blur = [aDecoder decodeFloatForKey:@"blur"];
+	self.color = [aDecoder decodeObjectForKey:@"color"];
+	return self;
+}
+
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.color forKey:@"color"];
+	[aCoder encodeFloat:self.offset forKey:@"offset"];
+	[aCoder encodeFloat:self.yoffset forKey:@"yoffset"];
+	[aCoder encodeFloat:self.blur forKey:@"blur"];
+}
+
 @end

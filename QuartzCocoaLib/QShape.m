@@ -80,4 +80,23 @@
 	}
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.queue = [aDecoder decodeObjectForKey:@"queue"];
+	return self;
+}
+
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.queue forKey:@"queue"];
+}
 @end

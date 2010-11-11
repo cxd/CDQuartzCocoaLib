@@ -14,6 +14,14 @@
 @synthesize control1;
 @synthesize control2;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init
+{
+	self = [super init];
+	return self;
+}
 
 -(id)initX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy CX1:(float) cx1 CY1: (float) cy1 CX2:(float) cx2 CY2: (float)cy2
 {
@@ -124,6 +132,27 @@ NSInteger sortValue(id val1, id val2, void* reverse)
 	[widthSorted autorelease];
 	[heightSorted autorelease];
 	return [[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height];
+}
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.control1 = [aDecoder decodeObjectForKey:@"control1"];
+	self.control2 = [aDecoder decodeObjectForKey:@"control2"];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.control1 forKey:@"control1"];
+	[aCoder encodeObject:self.control2 forKey:@"control2"];
 }
 
 @end

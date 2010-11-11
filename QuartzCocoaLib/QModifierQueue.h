@@ -21,7 +21,7 @@
  and once applied a copy if returned.
  
  */
-@interface QModifierQueue : NSObject {
+@interface QModifierQueue : NSObject<NSCoding> {
 	NSMutableArray *sequence;
 }
 
@@ -38,5 +38,15 @@
 +(QModifierQueue *)updateContext:(QContext *)context SourceQueue:(QModifierQueue *)source;
 
 +(QModifierQueue *)traverseQueue:(QModifierQueue *)source Visitor:(id <QVisitor>)visitor Args:(id)arguments;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
 
 @end

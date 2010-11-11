@@ -29,8 +29,10 @@
 @property(assign) BOOL isClockwise;
 @property(assign) BOOL isStart;
 @property(assign) BOOL isEnd;
-
-
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init;
 -(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea;
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea;
 -(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e;
@@ -40,4 +42,10 @@
 -(void)dealloc;
 -(void)update:(QContext*)context;
 -(QRectangle*)getBoundary;
+
+
+#pragma mark Encoder.
+-(id)initWithCoder:(NSCoder *)aDecoder;
+-(void)encodeWithCoder:(NSCoder *)aCoder;
+
 @end

@@ -92,4 +92,39 @@
 	return queue;	
 }
 
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	sequence = [[NSMutableArray alloc] init];
+	int cnt = [aDecoder decodeIntForKey:@"sequenceCount"];
+	for(int i=0;i<cnt;i++)
+	{
+		NSString *name = [NSString stringWithFormat:@"sequence%i", i];
+		NSObject *o = [aDecoder decodeObjectForKey:name];
+		if (o == nil) continue;
+		[sequence addObject:o];
+	}
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	NSMutableArray *copy = [[NSMutableArray alloc] init];
+	int i=0;
+	for(NSObject *o in sequence)
+	{
+		if (o == nil) continue;
+		NSString *name =[NSString stringWithFormat:@"sequence%i", i];
+		[copy addObject:o];
+		[aCoder encodeObject:o forKey:name];
+		i++;
+	}
+	[aCoder encodeInt:i forKey:@"sequenceCount"];
+}
 @end

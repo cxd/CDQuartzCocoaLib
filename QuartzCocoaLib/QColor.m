@@ -63,4 +63,30 @@
 {
 }
 
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.alpha = [aDecoder decodeFloatForKey:@"alpha"];
+	self.red = [aDecoder decodeFloatForKey:@"red"];
+	self.blue = [aDecoder decodeFloatForKey:@"blue"];
+	self.green = [aDecoder decodeFloatForKey:@"green"];	
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeFloat:self.alpha forKey:@"alpha"];
+	[aCoder encodeFloat:self.red forKey:@"red"];
+	[aCoder encodeFloat:self.blue forKey:@"blue"];
+	[aCoder encodeFloat:self.green forKey:@"green"];
+}
+
 @end

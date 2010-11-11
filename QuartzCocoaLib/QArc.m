@@ -20,6 +20,14 @@
 @synthesize isStart;
 @synthesize isEnd;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init
+{
+	self = [super init];
+	return self;
+}
 
 -(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea
 {
@@ -161,6 +169,33 @@
 	[end autorelease];
 	
 	return [[QRectangle alloc] initX:startX Y:startY WIDTH:width HEIGHT:height];	
+}
+
+#pragma mark Encoder and Decoder.
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.centre = [aDecoder decodeObjectForKey:@"centre"];
+	self.radius = [aDecoder decodeFloatForKey:@"radius"];
+	self.startAngle = [aDecoder decodeFloatForKey:@"startAngle"];
+	self.endAngle = [aDecoder decodeFloatForKey:@"endAngle"];
+	self.isClockwise = [aDecoder decodeBoolForKey:@"isClockwise"];
+	self.isStart = [aDecoder decodeBoolForKey:@"isStart"];
+	self.isEnd	= [aDecoder decodeBoolForKey:@"isEnd"];
+	return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.centre forKey:@"centre"];
+	[aCoder encodeFloat:self.radius forKey:@"radius"];
+	[aCoder encodeFloat:self.startAngle forKey:@"startAngle"];
+	[aCoder encodeFloat:self.endAngle forKey:@"endAngle"];
+	[aCoder encodeBool:self.isClockwise forKey:@"isClockwise"];
+	[aCoder encodeBool:self.isStart forKey:@"isStart"];
+	[aCoder encodeBool:self.isEnd forKey:@"isEnd"];
 }
 
 @end

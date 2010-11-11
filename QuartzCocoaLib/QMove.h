@@ -15,9 +15,23 @@
 }
 @property(retain) QPoint *position;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init;
 -(id)initX:(float)x Y:(float)y;
 -(id)initWithPoint:(QPoint *)p;
 -(void)dealloc;
 -(void)update:(QContext *)context;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
 
 @end

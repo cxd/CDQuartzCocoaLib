@@ -16,6 +16,15 @@
 @synthesize isStart;
 @synthesize isEnd;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init
+{
+	self = [super init];
+	return self;
+}
+
 -(id)initX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy
 {
 	self = [super init];
@@ -84,4 +93,28 @@
 	return [[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height];
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.start = [aDecoder decodeObjectForKey:@"start"];
+	self.end = [aDecoder decodeObjectForKey:@"end"];
+	self.isStart = [aDecoder decodeBoolForKey:@"isStart"];
+	self.isEnd = [aDecoder decodeBoolForKey:@"isEnd"];	
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.start forKey:@"start"];
+	[aCoder encodeObject:self.end forKey:@"end"];
+	[aCoder encodeBool:self.isStart forKey:@"isStart"];
+	[aCoder encodeBool:self.isEnd forKey:@"isEnd"];
+}
 @end

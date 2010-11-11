@@ -17,7 +17,6 @@
 @interface QShape : QAbstractContextModifier<QBoundedObject,QVisitor> {
 
 	QModifierQueue* queue;
-	
 }
 
 @property(retain) QModifierQueue* queue;
@@ -29,4 +28,14 @@
 -(void)update:(QContext *)context;
 -(QRectangle*)getBoundary;
 -(void)visit:(id <QContextModifier>)modifier data:(id)arguments;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
 @end

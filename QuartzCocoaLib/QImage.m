@@ -17,6 +17,14 @@
 @synthesize height;
 @synthesize imageRef;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init
+{
+	self = [super init];
+	return self;
+}
 
 -(id)initWithUrl:(NSString *)url X:(float)x Y:(float)y
 {
@@ -140,7 +148,10 @@
 
 -(void)dealloc
 {
+	if (self.imageRef != NULL)
+	{
 	CGImageRelease(self.imageRef);
+	}
 	[self.anchor autorelease];
 	[super dealloc];
 }
@@ -156,4 +167,51 @@
 	return [[QRectangle alloc] initX:self.anchor.x Y:self.anchor.y WIDTH:self.width HEIGHT:self.height];
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.anchor = [aDecoder decodeObjectForKey:@"anchor"];
+	self.width = [aDecoder decodeFloatForKey:@"width"];
+	self.height = [aDecoder decodeFloatForKey:@"height"];
+	BOOL hasImage = [aDecoder decodeBoolForKey:@"imageExists"];
+	if (!hasImage) return;
+	// read the image from the memory buffer.
+	NSMutableData *buffer = [aDecoder decodeObjectForKey:@"buffer"];
+	[buffer retain];
+	CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)buffer, NULL);
+	self.imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+	CFRelease(source);
+	[buffer release];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.anchor forKey:@"anchor"];
+	[aCoder encodeFloat:self.width forKey:@"width"];
+	[aCoder encodeFloat:self.height forKey:@"height"];
+	
+	if (self.imageRef == NULL)
+	{
+		[aCoder encodeBool:NO forKey:@"imageExists"];
+		return;
+	}
+	[aCoder encodeBool:YES forKey:@"imageExists"];
+	// copy the image reference to the buffer.
+	NSMutableData *buffer = [NSMutableData data];
+	[buffer retain];
+	CGImageDestinationRef dest = CGImageDestinationCreateWithData((CFMutableDataRef)buffer, CFSTR("public.tiff"), 1, NULL);
+	CGImageDestinationAddImage(dest, self.imageRef, NULL);
+	CGImageDestinationFinalize(dest);
+	CFRelease(dest);
+	[aCoder encodeObject:buffer forKey:@"buffer"];
+	[buffer release];
+}
 @end

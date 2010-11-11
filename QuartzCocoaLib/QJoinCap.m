@@ -32,5 +32,23 @@
 	CGContextSetLineJoin(context.context, self.style);	
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.style = (JoinCap)[aDecoder decodeIntForKey:@"style"];
+	return self;
+}
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeInt32:(int)self.style forKey:@"style"];	
+}
 
 @end

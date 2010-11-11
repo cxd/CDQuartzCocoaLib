@@ -18,6 +18,15 @@
 @synthesize textY;
 @synthesize textX;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init
+{
+	self = [super init];
+	return self;
+}
+
 -(id)initWithText:(NSString *)t X:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h
 {
 	self = [super initX:xcoord Y:ycoord WIDTH:w HEIGHT:h];
@@ -137,4 +146,29 @@
 	self.textY = midy;
 }
 
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+	[super initWithCoder:aDecoder];
+	self.text = [aDecoder decodeObjectForKey:@"text"];
+	self.font = [aDecoder decodeObjectForKey:@"font"];
+	self.fontSize = [aDecoder decodeIntForKey:@"fontSize"];
+	self.color = [aDecoder decodeObjectForKey:@"color"];
+	return self;
+}
+
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+	[super encodeWithCoder:aCoder];
+	[aCoder encodeObject:self.text forKey:@"text"];
+	[aCoder encodeObject:self.font forKey:@"font"];
+	[aCoder encodeInt32:self.fontSize forKey:@"fontSize"];
+	[aCoder encodeObject:self.color forKey:@"color"];
+}
 @end

@@ -23,6 +23,11 @@
 @property(assign) float height;
 @property(assign) CGImageRef imageRef;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init;
+
 // load a file from a url.
 -(id)initWithUrl:(NSString *)url X:(float)x Y:(float)y;
 -(id)initWithUrl:(NSString *)url POINT:(QPoint *)p;
@@ -32,4 +37,14 @@
 -(void)dealloc;
 -(void)update:(QContext*)context;
 -(QRectangle*)getBoundary;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
 @end

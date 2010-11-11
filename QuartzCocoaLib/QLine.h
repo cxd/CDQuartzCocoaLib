@@ -23,6 +23,11 @@
 @property(assign) BOOL isStart;
 @property(assign) BOOL isEnd;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init;
+
 -(id)initX: (float)x Y: (float)y X2: (float)xx Y2:(float)yy;
 -(id)initX: (float)x Y:(float)y X2:(float)xx Y2:(float) yy START:(BOOL) s END:(BOOL) e;
 -(id)initWithStart: (QPoint *)from Finish: (QPoint *)to;
@@ -31,4 +36,14 @@
 -(void)dealloc;
 -(void)update:(QContext *)context;
 -(QRectangle*)getBoundary;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
 @end

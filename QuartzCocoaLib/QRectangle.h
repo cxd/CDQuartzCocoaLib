@@ -25,6 +25,11 @@
 @property float width;
 @property float height;
 
+/**
+ Allow parameterless constructor for NSCoding.
+ **/
+-(id)init;
+
 -(id)initX:(float)xcoord Y:(float)ycoord WIDTH:(float)w HEIGHT:(float)h;
 -(id)initWithRect:(CGRect) rect;
 -(void)update:(QContext*) context;
@@ -33,4 +38,15 @@
  Calculate the midpoint of this rectangle.
  **/
 -(QPoint *)midPoint;
+
+#pragma mark Encoder and Decoder.
+/**
+ Read data from an nscoder.
+ **/
+-(id)initWithCoder:(NSCoder *)aDecoder;
+/**
+ Write data to an nscoder.
+ **/
+-(void)encodeWithCoder:(NSCoder *)aCoder;
+
 @end
