@@ -65,14 +65,7 @@ if (self.graphView != nil)
 		return;
 	// decode the graph.
 	NSString *file = [sheet filename];
-	@try {
-		CDQuartzGraph *graph;
-		graph = [NSKeyedUnarchiver unarchiveObjectWithFile:file];
-		[self.graphView swapGraph:graph];
-	}
-	@catch (NSException * e) {
-		NSLog(@"%@ %@ %@", [e name], [e reason], [e description]);
-	}
+	[self.graphView openGraphFromFilePath:file];
 }
 
 - (IBAction)saveDocument:(id)sender  //IB action to invoke the Save panel.
@@ -94,24 +87,7 @@ if (self.graphView != nil)
 	if (returnCode != NSOKButton) return;
 	if (self.graphView == nil) return;
 	NSString *file = [sheet filename];
-	@try {
-		NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.graphView.graph];
-		[NSKeyedArchiver archiveRootObject:self.graphView.graph
-												   toFile:file];
-		NSString *error = nil;
-		
-		NSData *debugData = [NSPropertyListSerialization
-							 dataFromPropertyList:data
-							format:NSPropertyListXMLFormat_v1_0
-							 errorDescription:&error];
-		NSString *debugFile = [file stringByAppendingString:@".debug"];
-		[debugData writeToFile:debugFile atomically:YES];
-	}
-	@catch (NSException * e) {
-		NSLog(@"%@ %@ %@", [e name], [e reason], [e description]);	}
-	@finally {
-		
-	}
+	[self.graphView saveGraphToFilePath:file];
 }
 
 @end
