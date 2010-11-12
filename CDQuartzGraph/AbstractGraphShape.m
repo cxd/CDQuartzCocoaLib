@@ -372,6 +372,9 @@
 	self.outlineColor = [aDecoder decodeObjectForKey:@"AbstractGraphShape_outlineColor"];
 	self.outlineWeight = [aDecoder decodeFloatForKey:@"AbstractGraphShape_outlineWeight"];
 	self.displacement = [aDecoder decodeObjectForKey:@"AbstractGraphShape_displacement"];
+	self.labelShape = [aDecoder decodeObjectForKey:@"AbstractGraphShape_labelShape"];
+	self.textColor = [aDecoder decodeObjectForKey:@"AbstractGraphShape_textColor"];
+	self.label = [aDecoder decodeObjectForKey:@"AbstractGraphShape_label"];
 	return self;
 }
 /**
@@ -385,6 +388,9 @@
 	[aCoder encodeObject:self.outlineColor forKey:@"AbstractGraphShape_outlineColor"];
 	[aCoder encodeFloat:self.outlineWeight forKey:@"AbstractGraphShape_outlineWeight"];
 	[aCoder encodeObject:self.displacement forKey:@"AbstractGraphShape_displacement"];
+	[aCoder encodeObject:self.labelShape forKey:@"AbstractGraphShape_labelShape"];
+	[aCoder encodeObject:self.textColor forKey:@"AbstractGraphShape_textColor"];
+	[aCoder encodeObject:self.label forKey:@"AbstractGraphShape_label"];
 }
 
 

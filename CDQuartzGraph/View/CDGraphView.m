@@ -96,6 +96,42 @@
 	[super dealloc];
 }
 
+
+/**
+ Save the graph to the supplied file path.
+ **/
+-(BOOL)saveGraphToFilePath:(NSString *)filePath
+{
+	@try {
+		return [NSKeyedArchiver archiveRootObject:self.graph 
+										   toFile:filePath];
+	}
+	@catch (NSException * e) {
+		NSLog(@"%@ %@ %@", [e name], [e reason], [e description]);	
+	}
+	return NO;
+}
+
+/**
+ Open the graph from the supplied file path.
+ **/
+-(BOOL)openGraphFromFilePath:(NSString *)filePath
+{
+	@try {
+		CDQuartzGraph *copy;
+		copy = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+		if (copy != nil) {
+			[self swapGraph:copy];
+			return YES;
+		}
+	}
+	@catch (NSException * e) {
+		NSLog(@"%@ %@ %@", [e name], [e reason], [e description]);	
+	}
+	return NO;
+}
+
+
 /**
  Swap the current graph out for a new graph.
  This effectively replaces the graph within the view state.
@@ -105,13 +141,37 @@
 	[self.graph autorelease];	
 	[self.state autorelease];
 	[self.queue autorelease];
-	self.queue = nil;
+	self.queue = [[QModifierQueue alloc] init];
+	[self.queue retain];
 	self.graph = newGraph;
 	self.state = [[CDGraphViewState alloc] initWithGraph:self.graph 
 											   andBounds:[[QRectangle alloc] initX:[self frame].origin.x
 																				 Y:[self frame].origin.y
 																			 WIDTH:[self frame].size.width
 																			HEIGHT:[self frame].size.height]];	
+	self.state.editDelegate = self;
+	[self.queue enqueue:self.graph];
+	
+	if (self.parentScrollView != nil)
+	{
+		// recompute the bounds
+		QRectangle *currentRect = [[QRectangle alloc] initWithRect:[self frame]];
+		QRectangle *newBounds = [self.state computeBounds:currentRect];
+		if ( (currentRect.x != newBounds.x) || 
+			(currentRect.y != newBounds.y) ||
+			(currentRect.width != newBounds.width) ||
+			(currentRect.height != newBounds.height) )
+		{
+			
+			[self setFrame:NSMakeRect((newBounds.x < [[self superview] frame].origin.x) ? newBounds.x : [[self superview] frame].origin.x, 
+									  (newBounds.y < [[self superview] frame].origin.y) ? newBounds.y : [[self superview] frame].origin.y, 
+									  (newBounds.width > [[self superview] frame].size.width) ? newBounds.width : [[self superview] frame].size.width, 
+									  (newBounds.height > [[self superview] frame].size.height) ? newBounds.height : [[self superview] frame].size.height)];
+			
+			[[self superview] setNeedsDisplay:YES];
+		}
+	}
+	
 	self.shouldDelete = NO;
 	self.editLabel = NO;
 	[self setNeedsDisplay:YES]; 

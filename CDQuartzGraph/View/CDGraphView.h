@@ -124,6 +124,16 @@
 @property(retain) IBOutlet 	NSTextField *labelField;
 
 /**
+ Save the graph to the supplied file path.
+ **/
+-(BOOL)saveGraphToFilePath:(NSString *)filePath;
+
+/**
+ Open the graph from the supplied file path.
+ **/
+-(BOOL)openGraphFromFilePath:(NSString *)filePath;
+
+/**
  Swap the current graph out for a new graph.
  This effectively replaces the graph within the view state.
  **/
