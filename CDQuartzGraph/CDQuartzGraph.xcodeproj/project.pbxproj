@@ -45,6 +45,7 @@
 		6228D6D6127D5A1800DAA9CD /* IEditNodeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		622BE4761260650F00B6AB81 /* CDGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62602B30121663050018E683 /* CDGraph.framework */; };
 		623A1DD6123362AF00160A95 /* CDQuartzGraphHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 623A1DD5123362AF00160A95 /* CDQuartzGraphHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623C82AB1291279E008CCF9A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 623C82AA1291279E008CCF9A /* LICENSE.txt */; };
 		623CEC5D1250BB4800AED181 /* ITrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6240A7BD12165ADF00840C1B /* QuartzCocoaLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6240A7BC12165ACE00840C1B /* QuartzCocoaLib.framework */; };
 		6240A7C412165B0400840C1B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 6240A7C312165B0400840C1B /* README */; };
@@ -179,6 +180,7 @@
 		621759DA1218086C00E2120C /* CurvedRectanglePort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedRectanglePort.m; sourceTree = "<group>"; };
 		6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEditNodeDelegate.h; sourceTree = "<group>"; };
 		623A1DD5123362AF00160A95 /* CDQuartzGraphHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDQuartzGraphHeader.h; path = Library_Header/CDQuartzGraphHeader.h; sourceTree = "<group>"; };
+		623C82AA1291279E008CCF9A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITrackingViewBoundary.h; sourceTree = "<group>"; };
 		6240A5291216529D00840C1B /* CDGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraph.xcodeproj; path = ../../../CDGraph/CDGraph/CDGraph.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6240A7B712165ACE00840C1B /* QuartzCocoaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLib.xcodeproj; path = ../QuartzCocoaLib/QuartzCocoaLib.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -262,6 +264,7 @@
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				6240A7C312165B0400840C1B /* README */,
+				623C82AA1291279E008CCF9A /* LICENSE.txt */,
 			);
 			name = CDQuartzGraph;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				6240A7C412165B0400840C1B /* README in Resources */,
 				62602BB2121682C10018E683 /* AbstractGraphShape.h_2.xcclassmodel in Resources */,
 				620487AC1245D8720004ED3C /* ViewOperations.xcclassmodel in Resources */,
+				623C82AB1291279E008CCF9A /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,5 +4,7 @@ The CDGraph library dependency is not included in this project.
 
 It is located at the following repository:
 
-http://github.com/cxd/CxdMath
+http://github.com/cxd/CDGraph
+
+This project is provided for use under a BSD license.
 
