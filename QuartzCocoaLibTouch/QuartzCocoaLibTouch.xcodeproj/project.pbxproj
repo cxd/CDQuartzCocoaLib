@@ -84,6 +84,7 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		6231BDB511D5DEAE00327B84 /* libQuartzCocoaLibTouchTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQuartzCocoaLibTouchTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		623C831212912E1E008CCF9A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		6240A6D0121659B800840C1B /* PaintInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintInstance.h; path = ../QuartzCocoaLib/PaintInstance.h; sourceTree = SOURCE_ROOT; };
 		6240A6D1121659B800840C1B /* PaintInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintInstance.m; path = ../QuartzCocoaLib/PaintInstance.m; sourceTree = SOURCE_ROOT; };
 		6240A6D2121659B800840C1B /* PouredDroplet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PouredDroplet.h; path = ../QuartzCocoaLib/PouredDroplet.h; sourceTree = SOURCE_ROOT; };
@@ -188,6 +189,7 @@
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				6240A7C512165B3400840C1B /* README */,
+				623C831212912E1E008CCF9A /* LICENSE.txt */,
 			);
 			name = QuartzCocoaLib;
 			sourceTree = "<group>";
