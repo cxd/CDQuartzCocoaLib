@@ -9,3 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "QuartzCocoaLib.h"
 #import "CDGraph.h"
+#import "CDPersistedEdge.h"
+#import "CDGraphVisitor.h"
+#import "CDGraphTraversal.h"

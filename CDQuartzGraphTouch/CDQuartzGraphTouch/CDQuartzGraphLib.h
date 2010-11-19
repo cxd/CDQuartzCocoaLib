@@ -24,6 +24,7 @@
 #import "CDQuartzEdge.h"
 #import "CDQuartzGraph.h"
 
+#import "CDGraphView.h"
 #import "UIGraphView.h"
 
 #import "ForceDirectedLayout.h"

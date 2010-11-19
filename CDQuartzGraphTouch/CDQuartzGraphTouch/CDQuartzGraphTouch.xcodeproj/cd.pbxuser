@@ -2,6 +2,7 @@
 {
 	0867D690FE84028FC02AAC07 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
+		activeSDKPreference = iphoneos4.0;
 		activeTarget = D2AAC07D0554694100DB518D /* CDQuartzGraphTouch */;
 		addToTargets = (
 			D2AAC07D0554694100DB518D /* CDQuartzGraphTouch */,
@@ -9,6 +10,8 @@
 		breakpoints = (
 			62C571E4123664730035FDA0 /* UIGraphView.m:86 */,
 			62C571E91236647D0035FDA0 /* UIGraphView.m:76 */,
+			624B3317129619EA00CC50D1 /* CDGraphView.m:40 */,
+			624B335F12961BCA00CC50D1 /* CDGraphView.m:794 */,
 		);
 		codeSenseManager = 62655F211233AF1300A91E24 /* Code sense */;
 		perUserDictionary = {
@@ -32,6 +35,18 @@
 					PBXFileDataSource_Errors_ColumnID,
 					PBXFileDataSource_Warnings_ColumnID,
 					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					426,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
 				);
 			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
@@ -72,20 +87,39 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 308315246;
-			PBXWorkspaceStateSaveDate = 308315246;
+			PBXPerProjectTemplateStateSaveDate = 311818255;
+			PBXWorkspaceStateSaveDate = 311818255;
 		};
 		perUserProjectItems = {
-			62168C1C123518D9000941F2 /* PBXTextBookmark */ = 62168C1C123518D9000941F2 /* PBXTextBookmark */;
-			62168C1E123518D9000941F2 /* PBXTextBookmark */ = 62168C1E123518D9000941F2 /* PBXTextBookmark */;
-			62294D0912608E1A00003723 /* PBXTextBookmark */ = 62294D0912608E1A00003723 /* PBXTextBookmark */;
-			62294D0A12608E1A00003723 /* PBXTextBookmark */ = 62294D0A12608E1A00003723 /* PBXTextBookmark */;
-			62294D0B12608E1A00003723 /* PBXTextBookmark */ = 62294D0B12608E1A00003723 /* PBXTextBookmark */;
-			62294D0C12608E1A00003723 /* PBXTextBookmark */ = 62294D0C12608E1A00003723 /* PBXTextBookmark */;
-			623FAFCB1240E5AB009DB02A /* PBXTextBookmark */ = 623FAFCB1240E5AB009DB02A /* PBXTextBookmark */;
-			62655FA11233BE1500A91E24 /* PBXTextBookmark */ = 62655FA11233BE1500A91E24 /* PBXTextBookmark */;
-			62A7E54212606B4F003A617B /* PBXTextBookmark */ = 62A7E54212606B4F003A617B /* PBXTextBookmark */;
-			62C5712F12365EA30035FDA0 /* PBXTextBookmark */ = 62C5712F12365EA30035FDA0 /* PBXTextBookmark */;
+			62168C1C123518D9000941F2 = 62168C1C123518D9000941F2 /* PBXTextBookmark */;
+			623C80BD1291073A008CCF9A = 623C80BD1291073A008CCF9A /* PBXTextBookmark */;
+			623C82991291271B008CCF9A = 623C82991291271B008CCF9A /* PBXTextBookmark */;
+			624B332312961A2200CC50D1 /* PBXTextBookmark */ = 624B332312961A2200CC50D1 /* PBXTextBookmark */;
+			624B332412961A2200CC50D1 /* PBXTextBookmark */ = 624B332412961A2200CC50D1 /* PBXTextBookmark */;
+			624B332512961A2200CC50D1 /* PBXTextBookmark */ = 624B332512961A2200CC50D1 /* PBXTextBookmark */;
+			624B332612961A2200CC50D1 /* PBXTextBookmark */ = 624B332612961A2200CC50D1 /* PBXTextBookmark */;
+			624B332712961A2200CC50D1 /* PBXTextBookmark */ = 624B332712961A2200CC50D1 /* PBXTextBookmark */;
+			624B332812961A2200CC50D1 /* PBXTextBookmark */ = 624B332812961A2200CC50D1 /* PBXTextBookmark */;
+			624B332912961A2200CC50D1 /* PBXTextBookmark */ = 624B332912961A2200CC50D1 /* PBXTextBookmark */;
+			624B332A12961A2200CC50D1 /* PBXTextBookmark */ = 624B332A12961A2200CC50D1 /* PBXTextBookmark */;
+			624B332B12961A2200CC50D1 /* PBXTextBookmark */ = 624B332B12961A2200CC50D1 /* PBXTextBookmark */;
+			624B334F12961AA300CC50D1 /* PBXTextBookmark */ = 624B334F12961AA300CC50D1 /* PBXTextBookmark */;
+			624B343612962D3700CC50D1 /* PBXTextBookmark */ = 624B343612962D3700CC50D1 /* PBXTextBookmark */;
+			624B343712962D3700CC50D1 /* PBXTextBookmark */ = 624B343712962D3700CC50D1 /* PBXTextBookmark */;
+			624B343812962D3700CC50D1 /* PBXTextBookmark */ = 624B343812962D3700CC50D1 /* PBXTextBookmark */;
+			624B343912962D3700CC50D1 /* PBXTextBookmark */ = 624B343912962D3700CC50D1 /* PBXTextBookmark */;
+			624B343A12962D3700CC50D1 /* PBXTextBookmark */ = 624B343A12962D3700CC50D1 /* PBXTextBookmark */;
+			624B343B12962D3700CC50D1 /* PBXTextBookmark */ = 624B343B12962D3700CC50D1 /* PBXTextBookmark */;
+			6276A9B9129106800013EA5C = 6276A9B9129106800013EA5C /* PBXTextBookmark */;
+			6276A9BA129106800013EA5C = 6276A9BA129106800013EA5C /* PBXTextBookmark */;
+			62C7A5D4129229FD00338032 = 62C7A5D4129229FD00338032 /* PBXTextBookmark */;
+			62C7A5D9129229FD00338032 = 62C7A5D9129229FD00338032 /* PBXTextBookmark */;
+			62C7A5DB129229FD00338032 = 62C7A5DB129229FD00338032 /* PBXTextBookmark */;
+			62D061171295114700B4C47D = 62D061171295114700B4C47D /* PBXTextBookmark */;
+			62D061191295114700B4C47D = 62D061191295114700B4C47D /* PBXTextBookmark */;
+			62D0611B1295114700B4C47D = 62D0611B1295114700B4C47D /* PBXTextBookmark */;
+			62D061331295114800B4C47D = 62D061331295114800B4C47D /* PBXTextBookmark */;
+			62D061351295114800B4C47D = 62D061351295114800B4C47D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 62655F201233AF1300A91E24 /* Source Control */;
 		userBuildSettings = {
@@ -94,30 +128,30 @@
 	62168BE912350D2F000941F2 /* UIGraphView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {590, 754}}";
-			sepNavSelRange = "{687, 0}";
-			sepNavVisRange = "{551, 574}";
+			sepNavSelRange = "{722, 0}";
+			sepNavVisRange = "{441, 684}";
 		};
 	};
 	62168BEA12350D2F000941F2 /* UIGraphView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {590, 2197}}";
-			sepNavSelRange = "{263, 0}";
-			sepNavVisRange = "{211, 681}";
+			sepNavIntBoundsRect = "{{0, 0}, {590, 2223}}";
+			sepNavSelRange = "{1926, 0}";
+			sepNavVisRange = "{795, 694}";
 			sepNavWindowFrame = "{{229, 9}, {695, 869}}";
 		};
 	};
 	62168C1112351693000941F2 /* TrackedNode.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {713, 421}}";
+			sepNavIntBoundsRect = "{{0, 0}, {590, 494}}";
 			sepNavSelRange = "{341, 0}";
 			sepNavVisRange = "{0, 429}";
 		};
 	};
 	62168C1212351693000941F2 /* TrackedNode.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {713, 533}}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 650}}";
 			sepNavSelRange = "{447, 0}";
-			sepNavVisRange = "{86, 412}";
+			sepNavVisRange = "{0, 1841}";
 		};
 	};
 	62168C1C123518D9000941F2 /* PBXTextBookmark */ = {
@@ -137,79 +171,256 @@
 		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QFramework_Header/QFramework.h;
 		sourceTree = "<absolute>";
 	};
-	62168C1E123518D9000941F2 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 62655F4C1233B62800A91E24 /* AbstractNodeShape.h */;
-		name = "AbstractNodeShape.h: 8";
-		rLen = 0;
-		rLoc = 137;
-		rType = 0;
-		vrLen = 379;
-		vrLoc = 0;
-	};
 	62294CE7126084AA00003723 /* TrackingViewBoundary.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {590, 858}}";
-			sepNavSelRange = "{288, 0}";
-			sepNavVisRange = "{0, 498}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 1105}}";
+			sepNavSelRange = "{2293, 0}";
+			sepNavVisRange = "{1961, 595}";
 		};
 	};
 	62294CE8126084AA00003723 /* TrackingViewBoundary.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {590, 1365}}";
-			sepNavSelRange = "{395, 0}";
-			sepNavVisRange = "{286, 324}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 1989}}";
+			sepNavSelRange = "{2570, 48}";
+			sepNavVisRange = "{2172, 740}";
 		};
 	};
-	62294D0912608E1A00003723 /* PBXTextBookmark */ = {
+	62294CEB126084C500003723 /* CirclePortShape.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 923}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 571}";
+		};
+	};
+	623C80B3129106B2008CCF9A /* CDGraphViewState.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 3341}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1719, 683}";
+		};
+	};
+	623C80B4129106B2008CCF9A /* CDPersistentQuartzEdge.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 533}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 840}";
+		};
+	};
+	623C80BD1291073A008CCF9A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 62655F221233AF3400A91E24 /* CDQuartzGraphHeader.h */;
-		name = "CDQuartzGraphHeader.h: 5";
+		name = "CDQuartzGraphHeader.h: 10";
 		rLen = 0;
-		rLoc = 59;
+		rLoc = 192;
 		rType = 0;
-		vrLen = 212;
+		vrLen = 296;
 		vrLoc = 0;
 	};
-	62294D0A12608E1A00003723 /* PBXTextBookmark */ = {
+	623C82991291271B008CCF9A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 62294CE7126084AA00003723 /* TrackingViewBoundary.h */;
-		name = "TrackingViewBoundary.h: 15";
-		rLen = 0;
-		rLoc = 288;
+		fRef = AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */;
+		name = "CDQuartzGraphTouch_Prefix.pch: 5";
+		rLen = 6;
+		rLoc = 127;
 		rType = 0;
-		vrLen = 498;
+		vrLen = 188;
 		vrLoc = 0;
 	};
-	62294D0B12608E1A00003723 /* PBXTextBookmark */ = {
+	624B3317129619EA00CC50D1 /* CDGraphView.m:40 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		functionName = "-initWithFrame:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 40;
+		location = CDQuartzGraph;
+		modificationTime = 311832328.761763;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	624B332312961A2200CC50D1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 62294CE8126084AA00003723 /* TrackingViewBoundary.m */;
-		name = "TrackingViewBoundary.m: 1";
+		fRef = 62D061361295114800B4C47D /* QShape.m */;
+		name = "QShape.m: 52";
+		rLen = 0;
+		rLoc = 976;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 667;
+	};
+	624B332412961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62168BE912350D2F000941F2 /* UIGraphView.h */;
+		name = "UIGraphView.h: 39";
+		rLen = 0;
+		rLoc = 722;
+		rType = 0;
+		vrLen = 684;
+		vrLoc = 441;
+	};
+	624B332512961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62168BEA12350D2F000941F2 /* UIGraphView.m */;
+		name = "UIGraphView.m: 96";
+		rLen = 222;
+		rLoc = 1714;
+		rType = 0;
+		vrLen = 689;
+		vrLoc = 0;
+	};
+	624B332612961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62655F471233B62800A91E24 /* AbstractConnectorShape.h */;
+		name = "AbstractConnectorShape.h: 18";
+		rLen = 0;
+		rLoc = 1613;
+		rType = 0;
+		vrLen = 1938;
+		vrLoc = 298;
+	};
+	624B332712961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62168C1212351693000941F2 /* TrackedNode.m */;
+		name = "TrackedNode.m: 13";
+		rLen = 0;
+		rLoc = 447;
+		rType = 0;
+		vrLen = 1841;
+		vrLoc = 0;
+	};
+	624B332812961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A1129103F80013EA5C /* CDGraphView.h */;
+		name = "CDGraphView.h: 307";
+		rLen = 0;
+		rLoc = 7114;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 6578;
+	};
+	624B332912961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62655F571233B62800A91E24 /* CDQuartzGraphLib.h */;
+		name = "CDQuartzGraphLib.h: 27";
+		rLen = 0;
+		rLoc = 527;
+		rType = 0;
+		vrLen = 584;
+		vrLoc = 0;
+	};
+	624B332A12961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		name = "CDGraphView.m: 882";
+		rLen = 0;
+		rLoc = 22734;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 18031;
+	};
+	624B332B12961A2200CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		name = "CDGraphView.m: 40";
+		rLen = 0;
+		rLoc = 1943;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 1571;
+	};
+	624B334F12961AA300CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		name = "CDGraphView.m: 40";
+		rLen = 0;
+		rLoc = 1943;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 1571;
+	};
+	624B335F12961BCA00CC50D1 /* CDGraphView.m:794 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		functionName = "-initWithFrame:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 794;
+		location = CDQuartzGraph;
+		modificationTime = 311832328.762019;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	624B343612962D3700CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 623C80B3129106B2008CCF9A /* CDGraphViewState.h */;
+		name = "CDGraphViewState.h: 1";
 		rLen = 0;
 		rLoc = 0;
 		rType = 0;
-		vrLen = 446;
-		vrLoc = 0;
+		vrLen = 683;
+		vrLoc = 1719;
 	};
-	62294D0C12608E1A00003723 /* PBXTextBookmark */ = {
+	624B343712962D3700CC50D1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 62294CE8126084AA00003723 /* TrackingViewBoundary.m */;
-		name = "TrackingViewBoundary.m: 28";
+		fRef = 62168BEA12350D2F000941F2 /* UIGraphView.m */;
+		name = "UIGraphView.m: 102";
 		rLen = 0;
-		rLoc = 395;
+		rLoc = 1926;
 		rType = 0;
-		vrLen = 324;
-		vrLoc = 286;
+		vrLen = 694;
+		vrLoc = 795;
 	};
-	623FAFCB1240E5AB009DB02A /* PBXTextBookmark */ = {
+	624B343812962D3700CC50D1 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 62168BE912350D2F000941F2 /* UIGraphView.h */;
-		name = "UIGraphView.h: 36";
+		fRef = 6276A9491291018D0013EA5C /* Move.m */;
+		name = "Move.m: 49";
 		rLen = 0;
-		rLoc = 687;
+		rLoc = 2056;
 		rType = 0;
-		vrLen = 574;
-		vrLoc = 551;
+		vrLen = 811;
+		vrLoc = 1653;
+	};
+	624B343912962D3700CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A7129104230013EA5C /* CDGraphViewState.m */;
+		name = "CDGraphViewState.m: 266";
+		rLen = 33;
+		rLoc = 8125;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 7777;
+	};
+	624B343A12962D3700CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		name = "CDGraphView.m: 717";
+		rLen = 18;
+		rLoc = 18581;
+		rType = 0;
+		vrLen = 671;
+		vrLoc = 19299;
+	};
+	624B343B12962D3700CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
+		name = "CDGraphView.m: 230";
+		rLen = 0;
+		rLoc = 7122;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 6614;
 	};
 	62655F201233AF1300A91E24 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -227,16 +438,16 @@
 	};
 	62655F221233AF3400A91E24 /* CDQuartzGraphHeader.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {590, 411}}";
-			sepNavSelRange = "{59, 0}";
-			sepNavVisRange = "{0, 212}";
+			sepNavIntBoundsRect = "{{0, 0}, {590, 376}}";
+			sepNavSelRange = "{192, 0}";
+			sepNavVisRange = "{0, 296}";
 		};
 	};
 	62655F471233B62800A91E24 /* AbstractConnectorShape.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {716, 1482}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 142}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 1443}}";
+			sepNavSelRange = "{1613, 0}";
+			sepNavVisRange = "{298, 1938}";
 		};
 	};
 	62655F481233B62800A91E24 /* AbstractConnectorShape.m */ = {
@@ -246,11 +457,18 @@
 			sepNavVisRange = "{0, 243}";
 		};
 	};
+	62655F491233B62800A91E24 /* AbstractGraphShape.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 3445}}";
+			sepNavSelRange = "{5135, 0}";
+			sepNavVisRange = "{3022, 708}";
+		};
+	};
 	62655F4B1233B62800A91E24 /* AbstractGraphShape.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 4576}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 251}";
+			sepNavIntBoundsRect = "{{0, 0}, {642, 5538}}";
+			sepNavSelRange = "{7890, 0}";
+			sepNavVisRange = "{7473, 583}";
 		};
 	};
 	62655F4C1233B62800A91E24 /* AbstractNodeShape.h */ = {
@@ -269,44 +487,146 @@
 	};
 	62655F521233B62800A91E24 /* CDQuartzEdge.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 741}}";
+			sepNavIntBoundsRect = "{{0, 0}, {590, 741}}";
 			sepNavSelRange = "{312, 0}";
-			sepNavVisRange = "{215, 319}";
+			sepNavVisRange = "{0, 572}";
+		};
+	};
+	62655F561233B62800A91E24 /* CDQuartzGraph.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 5317}}";
+			sepNavSelRange = "{7878, 0}";
+			sepNavVisRange = "{7530, 684}";
 		};
 	};
 	62655F571233B62800A91E24 /* CDQuartzGraphLib.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {713, 428}}";
-			sepNavSelRange = "{515, 0}";
-			sepNavVisRange = "{0, 560}";
+			sepNavIntBoundsRect = "{{0, 0}, {590, 470}}";
+			sepNavSelRange = "{527, 0}";
+			sepNavVisRange = "{0, 584}";
 		};
 	};
-	62655FA11233BE1500A91E24 /* PBXTextBookmark */ = {
+	62655F5A1233B62800A91E24 /* CurvedRectangleNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 1534}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 673}";
+		};
+	};
+	62655F5E1233B62800A91E24 /* Drawable.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 385}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 190}";
+		};
+	};
+	62655F5F1233B62800A91E24 /* ForceDirectedLayout.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 962}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 562}";
+		};
+	};
+	6276A93F1291018D0013EA5C /* EdgeMove.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 1911}}";
+			sepNavSelRange = "{2255, 0}";
+			sepNavVisRange = "{1952, 735}";
+		};
+	};
+	6276A9491291018D0013EA5C /* Move.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 832}}";
+			sepNavSelRange = "{2056, 0}";
+			sepNavVisRange = "{1653, 811}";
+		};
+	};
+	6276A977129101CA0013EA5C /* CDGraphVisitor.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = CDGraphVisitor.m;
+		path = /Users/cd/Projects/CDGraph/CDGraphTouch/../CDGraph/CDGraphVisitor.m;
+		sourceTree = "<absolute>";
+	};
+	6276A97B129102480013EA5C /* CDGraphViewOperation.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 385}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 382}";
+		};
+	};
+	6276A97E129102480013EA5C /* QGraphViewOperation.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 455}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 567}";
+		};
+	};
+	6276A97F129102480013EA5C /* QGraphViewOperation.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 520}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 449}";
+		};
+	};
+	6276A981129102480013EA5C /* TrackedEdge.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 572}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{128, 376}";
+		};
+	};
+	6276A98B1291029C0013EA5C /* IEditNodeDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 385}}";
+			sepNavSelRange = "{138, 0}";
+			sepNavVisRange = "{0, 275}";
+		};
+	};
+	6276A98C1291029C0013EA5C /* ITrackingViewBoundary.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {590, 585}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{226, 419}";
+		};
+	};
+	6276A9A1129103F80013EA5C /* CDGraphView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 3887}}";
+			sepNavSelRange = "{7114, 0}";
+			sepNavVisRange = "{6578, 958}";
+		};
+	};
+	6276A9A2129103F80013EA5C /* CDGraphView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 11232}}";
+			sepNavSelRange = "{23434, 372}";
+			sepNavVisRange = "{21867, 1020}";
+		};
+	};
+	6276A9A7129104230013EA5C /* CDGraphViewState.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 6045}}";
+			sepNavSelRange = "{8125, 33}";
+			sepNavVisRange = "{7777, 662}";
+		};
+	};
+	6276A9B9129106800013EA5C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */;
-		name = "CDQuartzGraphTouch_Prefix.pch: 1";
+		fRef = 6276A977129101CA0013EA5C /* CDGraphVisitor.m */;
+		name = "CDGraphVisitor.m: 14";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 189;
 		rType = 0;
-		vrLen = 188;
+		vrLen = 194;
 		vrLoc = 0;
 	};
-	62A7E54212606B4F003A617B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 62168BEA12350D2F000941F2 /* UIGraphView.m */;
-		name = "UIGraphView.m: 20";
-		rLen = 0;
-		rLoc = 263;
-		rType = 0;
-		vrLen = 681;
-		vrLoc = 211;
-	};
-	62C5712F12365EA30035FDA0 /* PBXTextBookmark */ = {
+	6276A9BA129106800013EA5C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 62655F571233B62800A91E24 /* CDQuartzGraphLib.h */;
-		name = "CDQuartzGraphLib.h: 27";
+		name = "CDQuartzGraphLib.h: 12";
 		rLen = 0;
-		rLoc = 515;
+		rLoc = 185;
 		rType = 0;
 		vrLen = 560;
 		vrLoc = 0;
@@ -324,7 +644,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 86;
-		modificationTime = 305893405.649102;
+		modificationTime = 311832328.761592;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -341,14 +661,127 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 76;
-		modificationTime = 305893405.649366;
+		modificationTime = 311832328.761678;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
+	62C7A5D4129229FD00338032 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62655F471233B62800A91E24 /* AbstractConnectorShape.h */;
+		name = "AbstractConnectorShape.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1943;
+		vrLoc = 298;
+	};
+	62C7A5D9129229FD00338032 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 623C80B3129106B2008CCF9A /* CDGraphViewState.h */;
+		name = "CDGraphViewState.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 1719;
+	};
+	62C7A5DB129229FD00338032 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62168BE912350D2F000941F2 /* UIGraphView.h */;
+		name = "UIGraphView.h: 39";
+		rLen = 0;
+		rLoc = 722;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 437;
+	};
+	62D061171295114700B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D061181295114700B4C47D /* AbstractGraphShape.h */;
+		name = "AbstractGraphShape.h: 116";
+		rLen = 12;
+		rLoc = 2079;
+		rType = 0;
+		vrLen = 734;
+		vrLoc = 1716;
+	};
+	62D061181295114700B4C47D /* AbstractGraphShape.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AbstractGraphShape.h;
+		path = "/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraphTouch/CDQuartzGraphTouch/build/Debug-iphonesimulator/usr/local/include/AbstractGraphShape.h";
+		sourceTree = "<absolute>";
+	};
+	62D061191295114700B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D0611A1295114700B4C47D /* AbstractGraphShape.h */;
+		name = "AbstractGraphShape.h: 76";
+		rLen = 12;
+		rLoc = 2672;
+		rType = 0;
+		vrLen = 664;
+		vrLoc = 2255;
+	};
+	62D0611A1295114700B4C47D /* AbstractGraphShape.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AbstractGraphShape.h;
+		path = "/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraphTouch/CDQuartzGraphTouch/build/Debug-iphoneos/usr/local/include/AbstractGraphShape.h";
+		sourceTree = "<absolute>";
+	};
+	62D0611B1295114700B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62168BEA12350D2F000941F2 /* UIGraphView.m */;
+		name = "UIGraphView.m: 96";
+		rLen = 222;
+		rLoc = 1714;
+		rType = 0;
+		vrLen = 804;
+		vrLoc = 1412;
+	};
+	62D061331295114800B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D061341295114800B4C47D /* QShape.m */;
+		name = "QShape.m: 52";
+		rLen = 0;
+		rLoc = 976;
+		rType = 0;
+		vrLen = 802;
+		vrLoc = 647;
+	};
+	62D061341295114800B4C47D /* QShape.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QShape.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QShape.m;
+		sourceTree = "<absolute>";
+	};
+	62D061351295114800B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62D061361295114800B4C47D /* QShape.m */;
+		name = "QShape.m: 52";
+		rLen = 0;
+		rLoc = 976;
+		rType = 0;
+		vrLen = 780;
+		vrLoc = 669;
+	};
+	62D061361295114800B4C47D /* QShape.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = QShape.m;
+		path = /Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QShape.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {662, 1313}}";
+			sepNavSelRange = "{1147, 0}";
+			sepNavVisRange = "{667, 730}";
+		};
+	};
 	AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {845, 245}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {845, 494}}";
+			sepNavSelRange = "{127, 6}";
 			sepNavVisRange = "{0, 188}";
 		};
 	};
