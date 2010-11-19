@@ -33,11 +33,12 @@
 
 #ifdef UIKIT_EXTERN 
 
+@synthesize trackBounds;
 
 -(void)dealloc {
-	if (trackBounds != nil)
+	if (self.trackBounds != nil)
 	{
-		[trackBounds autorelease];	
+		[self.trackBounds autorelease];	
 	}
 	[super dealloc];	
 }
@@ -48,7 +49,13 @@
  **/
 -(void)attach:(UIView *)view InBoundary:(QRectangle *)bounds
 {
-	[self updateBoundary:bounds];
+	if (self.trackBounds != nil)
+	{
+		[self.trackBounds autorelease];	
+		self.trackBounds = nil;
+	}
+	self.trackBounds = bounds;
+	[self.trackBounds retain];
 }
 
 /**
@@ -56,10 +63,10 @@
  **/
 -(void)remove:(UIView *)fromView
 {
-	if (trackBounds != nil)
+	if (self.trackBounds != nil)
 	{
-		[trackBounds autorelease];	
-		trackBounds = nil;
+		[self.trackBounds autorelease];	
+		self.trackBounds = nil;
 	}
 }
 
@@ -70,12 +77,13 @@
  **/
 -(void)updateBoundary:(QRectangle *)bounds
 {
-	if (trackBounds != nil)
+	if (self.trackBounds != nil)
 	{
-		[trackBounds autorelease];	
+		[self.trackBounds autorelease];	
+		self.trackBounds = nil;
 	}
-	trackBounds = bounds;
-	[trackBounds retain];
+	self.trackBounds = bounds;
+	[self.trackBounds retain];
 }
 
 
@@ -87,11 +95,12 @@
 {
 	CGPoint point = [touch locationInView:fromView];
 	CGPoint clickLocation = [fromView convertPoint:point fromView:nil];
+	// the view is inverted so we need to convert to the correct coordinates.
 	float x = (float)clickLocation.x;
-	float y = (float)clickLocation.y;
+	float y =  [fromView frame].size.height - (float)clickLocation.y;
 	QPoint *p = [[QPoint alloc] initX:x Y:y];
 	[p retain];
-	BOOL result = [trackBounds contains:p];
+	BOOL result = [self.trackBounds contains:p];
 	[p release];
 	return result;
 }

@@ -144,4 +144,14 @@
  **/
 -(void)encodeWithCoder:(NSCoder *)aCoder;
 
+#ifdef UIKIT_EXTERN
+
+/**
+ Determine whether the start or end connectors
+ contain the supplied point.
+ **/
+-(BOOL)hasConnectorContaining:(UIView*)fromView withTouch:(UITouch *)touch;
+
+#endif
+
 @end

@@ -74,6 +74,12 @@
 	 Tracking view associated with the object.
 	 **/
 	TrackingViewBoundary *trackingView;
+	
+	/**
+	 A shape that can be used to display if highlighted.
+	 It is drawn beneath the current shape.
+	 **/
+	AbstractGraphShape* highlightShape;
 }
 
 /**
@@ -123,6 +129,13 @@
  Tracking view associated with the object.
  **/
 @property(retain) TrackingViewBoundary *trackingView;
+
+/**
+ A shape that can be used to display if highlighted.
+ It is drawn beneath the current shape.
+ **/
+@property(retain) AbstractGraphShape* highlightShape;
+
 
 /**
  Attach observers.

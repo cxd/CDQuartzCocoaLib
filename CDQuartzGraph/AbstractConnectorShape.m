@@ -101,10 +101,30 @@
 	self.startDecoration = [[CirclePortShape alloc] initWithParent:self];
 	self.startDecoration.bounds.width = 10;
 	self.startDecoration.bounds.height = 10;
+	
+	CirclePortShape* highlight = [[CirclePortShape alloc] initWithParent:self 
+															   AndBounds:[[QRectangle alloc] initX:startDecoration.bounds.x - 5 Y:startDecoration.bounds.y - 5 WIDTH:20 HEIGHT:20]];
+	highlight.fillColor.red = 1.0f;
+	highlight.fillColor.green = 1.0f;
+	highlight.fillColor.blue = 0.0f;
+	highlight.fillColor.alpha = 0.1f;
+	highlight.outlineColor.alpha = 0.0f;
+	[highlight onOutlineColorChanged];
+	self.startDecoration.highlightShape = highlight;
+	
 	self.endDecoration = [[CirclePortShape alloc] initWithParent:self];
 	self.endDecoration.bounds.width = 10;
 	self.endDecoration.bounds.height = 10;
 
+	CirclePortShape* highlight2 = [[CirclePortShape alloc] initWithParent:self
+																AndBounds:[[QRectangle alloc] initX:endDecoration.bounds.x - 5 Y:endDecoration.bounds.y - 5 WIDTH:20 HEIGHT:20]];
+	highlight2.fillColor.red = 1.0f;
+	highlight2.fillColor.green = 1.0f;
+	highlight2.fillColor.blue = 0.0f;
+	highlight2.fillColor.alpha = 0.1f;
+	highlight2.outlineColor.alpha = 0.0f;
+	[highlight2 onOutlineColorChanged];
+	self.endDecoration.highlightShape = highlight2;
 }
 
 
@@ -240,7 +260,69 @@
 
 #ifdef UIKIT_EXTERN 
 
-// TODO: define tracking boundary protocol for ui kit.
+/**
+ Attach the tracking area to a view.
+ Instead of using the default "attachTrackingAreaToView"
+ the cocoa touch version of a connector shape will create a bounds
+ that is 2 times the size of the end connector bounds to allow easier
+ access to the connectors using the touch interface.
+ **/
+-(void)attachTrackingAreaToView:(UIView *)view
+{
+	if (self.startDecoration != nil)
+	{
+		QRectangle *rect = self.startDecoration.bounds;
+		QRectangle *doubleRect = [[QRectangle alloc] initX:rect.x - rect.width/2.0f Y:rect.y - rect.height/2.0f WIDTH:rect.width*2.0f HEIGHT:rect.height*2.0f];
+		[self.startDecoration.trackingView attach:view InBoundary:doubleRect];	
+		
+		self.startDecoration.isHighlighted = YES;
+	}
+	if (self.endDecoration != nil)
+	{
+		QRectangle *rect = self.endDecoration.bounds;
+		QRectangle *doubleRect = [[QRectangle alloc] initX:rect.x - rect.width/2.0f Y:rect.y - rect.height/2.0f WIDTH:rect.width*2.0f HEIGHT:rect.height*2.0f];
+		[self.endDecoration.trackingView attach:view InBoundary:doubleRect];	
+		self.endDecoration.isHighlighted = YES;
+	}
+}
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)removeTrackingAreaFromView:(UIView *)view
+{
+	if (self.startDecoration != nil)
+	{
+		[self.startDecoration removeTrackingAreaFromView:view];	
+		self.startDecoration.isHighlighted = NO;
+	}
+	if (self.endDecoration != nil)
+	{
+		[self.endDecoration removeTrackingAreaFromView:view];	
+		self.endDecoration.isHighlighted = NO;
+	}	
+}
+
+
+/**
+ Determine whether the start or end connectors
+ contain the supplied point.
+ **/
+-(BOOL)hasConnectorContaining:(UIView*)fromView withTouch:(UITouch *)touch
+{
+	if (self.startDecoration != nil)
+	{
+		if ([self.startDecoration.trackingView isTouchInBounds:fromView withTouch:touch])
+			return YES;
+	}
+	if (self.endDecoration != nil)
+	{
+	if ([self.endDecoration.trackingView isTouchInBounds:fromView withTouch:touch])
+		return YES;
+	}
+	return NO;
+}
+
 
 #else
 
@@ -252,10 +334,14 @@
 	if (self.startDecoration != nil)
 	{
 		[self.startDecoration attachTrackingAreaToView:view];	
+		self.startDecoration.isHighlighted = YES;
+
 	}
 	if (self.endDecoration != nil)
 	{
 		[self.endDecoration attachTrackingAreaToView:view];	
+		self.endDecoration.isHighlighted = YES;
+
 	}
 }
 
@@ -266,11 +352,14 @@
 {
 	if (self.startDecoration != nil)
 	{
+		self.startDecoration.isHighlighted = NO;
 		[self.startDecoration removeTrackingAreaFromView:view];	
 	}
 	if (self.endDecoration != nil)
 	{
+		self.startDecoration.isHighlighted = NO;
 		[self.endDecoration removeTrackingAreaFromView:view];	
+		
 	}	
 }
 

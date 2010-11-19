@@ -25,7 +25,7 @@
 
 	/**
 	 A boundary area representing
-	 the bounds for tracking.
+	 the are to track.
 	 **/
 	QRectangle *trackBounds;
 #else
@@ -51,6 +51,13 @@
 
 
 #ifdef UIKIT_EXTERN 
+
+/**
+ A boundary area representing
+ the are to track.
+ This is a weak reference.
+ **/
+@property(assign) QRectangle *trackBounds;
 
 /**
  Associate with view.

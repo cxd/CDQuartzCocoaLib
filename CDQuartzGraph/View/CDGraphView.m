@@ -496,6 +496,7 @@ This will set the needs display flag to true.
 	{
 		[edge.shapeDelegate attachTrackingAreaToView:self];	
 	}
+	[self setNeedsDisplay];
 }
 
 /**
@@ -514,8 +515,9 @@ This will set the needs display flag to true.
 	// we also need to unregister shapes that are temporary detached edges in the display.
 	for(CDQuartzEdge *edge in self.state.detachedEdges)
 	{
-		[edge.shapeDelegate attachTrackingAreaToView:self];	
+		[edge.shapeDelegate removeTrackingAreaFromView:self];	
 	}
+	[self setNeedsDisplay];
 }
 
 
@@ -762,8 +764,6 @@ This will set the needs display flag to true.
 	 **/
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	NSLog(@"Touches Ended");
-	
 	int i=0;
 	for(UITouch *t in touches)
 	{
@@ -789,8 +789,6 @@ This will set the needs display flag to true.
  **/
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	NSLog(@"Touches Moved");
-	
 	int i=0;
 	for(UITouch *t in touches)
 	{
@@ -896,8 +894,8 @@ This will set the needs display flag to true.
 	{
 		if (edge.shapeDelegate != nil)
 		{
-			if ([edge.shapeDelegate.trackingView isTouchInBounds:self 
-													   withTouch:touch])
+			if ([edge.shapeDelegate hasConnectorContaining:self 
+												 withTouch:touch])
 			{
 			// generate the connection editing notifications.
 				[self updateLocationOfHoverOnConnection:touch];
@@ -909,8 +907,8 @@ This will set the needs display flag to true.
 	// we also need to unregister shapes that are temporary detached edges in the display.
 	for(CDQuartzEdge *edge in self.state.detachedEdges)
 	{
-		if ([edge.shapeDelegate.trackingView isTouchInBounds:self
-												   withTouch:touch])
+		if ([edge.shapeDelegate hasConnectorContaining:self
+											 withTouch:touch])
 		{
 		// generate the connection editing event.
 			[self updateLocationOfHoverOnConnection:touch];
@@ -933,6 +931,7 @@ Because NSTrackingArea is not provided in cocoa touch
 	float y = (float)location.y;
 	QPoint *p = [[QPoint alloc] init];
 	p.x = x;
+	// adjust height for flipped context.
 	p.y = [self frame].size.height - y;
 	if (self.state.editConnections)
 	{

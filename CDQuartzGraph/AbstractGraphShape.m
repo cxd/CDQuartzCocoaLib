@@ -30,6 +30,7 @@
 @synthesize textColor;
 @synthesize trackingView;
 @synthesize isHighlighted;
+@synthesize highlightShape;
 
 /**
  Default initialisation.
@@ -125,6 +126,10 @@
 	if (self.trackingView != nil)
 	{
 		[self.trackingView autorelease];
+	}
+	if (self.highlightShape != nil)
+	{
+		[self.highlightShape autorelease];	
 	}
 	[super dealloc];
 }
@@ -249,6 +254,12 @@
 {
 	self.bounds.x += point.x;
 	self.bounds.y += point.y;
+	
+	if (self.highlightShape != nil)
+	{
+		[self.highlightShape moveBy:point];
+	}
+	
 	if (self.labelShape != nil)
 	{
 		self.labelShape.x += point.x;
@@ -264,6 +275,12 @@
 {
 	self.bounds.x = point.x;
 	self.bounds.y = point.y;
+	if (self.highlightShape != nil)
+	{
+		[self.highlightShape moveTo:[[QPoint alloc] initX:point.x - self.highlightShape.bounds.width/2.0f + self.bounds.width/2.0f
+														Y:point.y - self.highlightShape.bounds.height/2.0f + self.bounds.height/2.0f]];
+	}
+	
 	if (self.labelShape != nil)
 	{
 		self.labelShape.x = point.x;
@@ -293,6 +310,12 @@
  **/
 -(void)update:(QContext*) context
 {
+	// draw any highlight shapes first.
+	if (self.highlightShape != nil && self.isHighlighted)
+	{
+		[self.highlightShape update:context];	
+	}
+	
 	if (self.labelShape != nil && !labelQueued)
 	{
 		labelQueued = YES;
@@ -329,6 +352,7 @@
 -(void)attachTrackingAreaToView:(UIView *)view
 {
 	[self.trackingView attach:view InBoundary:self.bounds];	
+	self.isHighlighted = YES;
 }
 
 /**
@@ -337,6 +361,7 @@
 -(void)removeTrackingAreaFromView:(UIView *)view
 {
 	[self.trackingView remove:view];	
+	self.isHighlighted = NO;
 }
 
 
@@ -347,7 +372,13 @@
  **/
 -(void)attachTrackingAreaToView:(NSView *)view
 {
-	[self.trackingView attach:view InBoundary:self.bounds];	
+	QRectangle *b = self.bounds;
+	if (self.highlightShape != nil)
+	{
+		b = self.highlightShape.bounds;	
+	}
+	[self.trackingView attach:view InBoundary:b];	
+	self.isHighlighted = YES;
 }
 
 /**
@@ -355,7 +386,8 @@
  **/
 -(void)removeTrackingAreaFromView:(NSView *)view
 {
-	[self.trackingView remove:view];	
+	[self.trackingView remove:view];
+	self.isHighlighted = NO;
 }
 
 #endif
