@@ -301,6 +301,13 @@
 -(void)endTracking:(UITouch *)touch atIndex:(int)idx;
 
 /**
+ Process double tap input from gesture recognizer.
+ Treat this as the same as the OSX double click.
+ It is used to indicate that the user may be editing text.
+ **/
+-(IBAction)handleDoubleTap:(UIGestureRecognizer *)sender;
+
+/**
  Test the connections for a touch that may reside
  within a connection boundary.
  **/

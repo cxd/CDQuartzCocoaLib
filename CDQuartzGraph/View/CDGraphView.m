@@ -66,6 +66,13 @@
 #ifdef UIKIT_EXTERN	
 		self.parentScrollView.contentSize = CGSizeMake([self frame].size.width, [self frame].size.height);
 		
+		UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc]
+													initWithTarget:self 
+											 action:@selector(handleDoubleTap:)];
+		doubleTap.numberOfTapsRequired = 2;
+		[self addGestureRecognizer:doubleTap];
+		[doubleTap release];
+		
 #else		
 		[[NSNotificationCenter defaultCenter] addObserver:self 
 												 selector:@selector(boundsDidChange:) 
@@ -89,7 +96,7 @@
 	[self.graph autorelease];
 	if (self.algorithm != nil)
 	{
-		[self.algorithm autorelease];	
+		[(id)self.algorithm autorelease];	
 	}
 	if (self.state != nil)
 	{
@@ -578,7 +585,12 @@ This will set the needs display flag to true.
 	
 	CGRect rect = [self.labelField bounds];
 	rect.origin.x = point.x;
+#ifdef UIKIT_EXTERN
+	// adjust for the flipped coordinate system.
+	rect.origin.y = [self frame].size.height - point.y;
+#else
 	rect.origin.y = point.y;
+#endif
 	rect.size.width = sz.width;
 	rect.size.height = sz.height;
 	[self.labelField setBounds:rect];
@@ -802,7 +814,27 @@ This will set the needs display flag to true.
 	self.state.redraw = NO;
 	
 }
+
+/**
+ Process double tap input from gesture recognizer.
+ Treat this as the same as the OSX double click.
+ It is used to indicate that the user may be editing text.
+ **/
+-(IBAction)handleDoubleTap:(UIGestureRecognizer *)sender {
 	
+	self.state.selectLabel = YES;
+	
+	CGPoint point = [sender locationInView:self];
+	QPoint *p = [[QPoint alloc] init];
+	p.x = point.x;
+	p.y = [self frame].size.height - point.y;
+	
+	[self.state trackShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] 
+				  andDelete:self.shouldDelete];
+	
+	[self.state updateState];
+	[self setNeedsDisplay];
+}	
 	
 /**
  Begin tracking the touch for the supplied index..
