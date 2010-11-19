@@ -223,7 +223,17 @@
 
 #ifdef UIKIT_EXTERN 
 
-// TODO: define tracking boundary protocol for ui kit.
+
+/**
+ Attach the tracking area to a view.
+ **/
+-(void)attachTrackingAreaToView:(UIView *)view;
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)removeTrackingAreaFromView:(UIView *)view;
+
 
 #else
 

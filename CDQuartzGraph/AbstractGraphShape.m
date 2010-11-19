@@ -140,6 +140,7 @@
 												 Y: self.bounds.y
 											 WIDTH: self.bounds.width
 											HEIGHT: self.bounds.height];
+	self.labelShape.isFlipped = YES;
 	self.labelShape.color;
 }
 
@@ -229,18 +230,7 @@
  **/
 -(BOOL)isWithinBounds:(QPoint *)point
 {
-	QPoint *topLeft = [[QPoint alloc] initX:self.bounds.x Y:self.bounds.y];
-	QPoint *bottomRight = [[QPoint alloc] initX:self.bounds.x + self.bounds.width Y:self.bounds.y + self.bounds.height];
-	
-	// distance should be positive as point is greater than top left.
-	float xTop = [topLeft horizontalDistanceTo:point];
-	float yTop = [topLeft verticalDistanceTo:point];
-	
-	// distance should be negative as point is less than bottom right.
-	float xBottom = [bottomRight horizontalDistanceTo:point];
-	float yBottom = [bottomRight verticalDistanceTo:point];
-	
-	return (xTop >= 0.0 && yTop >= 0.0 && xBottom <= 0.0 && yBottom <= 0.0);
+	return [self.bounds contains:point];
 }
 
 /**
@@ -249,21 +239,7 @@
  **/
 -(BOOL)intersects:(QRectangle *)other
 {
-	// very simple collision detection the rectangular intersection.
-	float left = self.bounds.x;
-	float left2 = other.x;
-	float right = self.bounds.x + self.bounds.width;
-	float right2 = other.x + other.width;
-	float top = self.bounds.y;
-	float top2 = other.y;
-	float bottom = self.bounds.y + self.bounds.height;
-	float bottom2 = other.y + other.height;
-	if ((left > right2) || 
-		(right < left2) ||
-		(top > bottom2) ||
-		(bottom < top2))
-		return NO;
-	return YES;	
+	return [self.bounds intersects:other];
 }
 
 /**
@@ -346,7 +322,23 @@
 
 #ifdef UIKIT_EXTERN 
 
-// TODO: define tracking boundary protocol for ui kit.
+
+/**
+ Attach the tracking area to a view.
+ **/
+-(void)attachTrackingAreaToView:(UIView *)view
+{
+	[self.trackingView attach:view InBoundary:self.bounds];	
+}
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)removeTrackingAreaFromView:(UIView *)view
+{
+	[self.trackingView remove:view];	
+}
+
 
 #else
 

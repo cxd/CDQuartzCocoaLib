@@ -171,6 +171,12 @@
  **/
 @property(retain) IBOutlet 	NSTextField *labelField;
 
+/**
+ A replacement method for the "setNeedsDisplay" provided in UIKit.
+ This will set the needs display flag to true.
+ **/
+-(void)setNeedsDisplay;
+
 #endif
 /**
  Save the graph to the supplied file path.
@@ -214,13 +220,19 @@
 /**
  Begin text editing.
  **/
--(void)onStartTextEdit:(NSPoint) point size:(NSSize) sz;
+-(void)onStartTextEdit:(CGPoint) point size:(CGSize) sz;
 
+#ifndef UIKIT_EXTERN
 /**
+ TODO: implement colour selection for Cocoa Touch.
+ Hint use a bitmap colour picker or HSV plenty of articles on how to do this.
+ 
  Receive the event for colour changes.
  This will change the fill colour of the selected node.
  **/
 -(void)onColorChangeNotification:(NSNotification*)notification;
+
+#endif
 
 /**
  Begin text editing.
@@ -263,6 +275,48 @@
  **/
 -(IBAction)onEdit:(id)sender;
 
+
+#ifdef UIKIT_EXTERN
+
+/**
+ Receive the change font event.
+ The default behaviour is to change the
+ font of the selected node.
+ **/
+-(void)onChangeFont:(UIFont *)font;
+
+/**
+ Begin tracking the touch for the supplied index..
+ **/
+-(void)beginTracking:(UITouch *)touch atIndex:(int)idx;
+
+/**
+ The touch has moved, track the movement for the supplied index.
+ **/
+-(void)moveTracked:(UITouch *)touch atIndex:(int)idx;
+
+/**
+ The touch is no longer active for the supplied index.
+ **/
+-(void)endTracking:(UITouch *)touch atIndex:(int)idx;
+
+/**
+ Test the connections for a touch that may reside
+ within a connection boundary.
+ **/
+-(void)testConnections:(UITouch *)touch;
+
+/**
+ Because NSTrackingArea is not provided in cocoa touch
+ instead we always search for a touch location
+ within the boundaries of each edge connector shape.
+ If it is then we add it to the hoverShapes collection in the state.
+ This simulates the result that "mouseMoved" would have if tracking
+ was supported.
+ **/
+-(void)updateLocationOfHoverOnConnection:(UITouch *)touch;
+
+#else
 /**
  Receive the change font event.
 The default behaviour is to change the
@@ -270,4 +324,5 @@ The default behaviour is to change the
  **/
 -(void)onChangeFont:(NSFont *)font;
 
+#endif
 @end

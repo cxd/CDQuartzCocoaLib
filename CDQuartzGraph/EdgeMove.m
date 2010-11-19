@@ -50,9 +50,6 @@
 		{
 			[self checkDisconnect:state trackEdge:t atPoint:p];
 			AbstractConnectorShape *connector = t.edge.shapeDelegate;
-			AbstractGraphShape *decorator = (moveStart) ? 
-												connector.startDecoration : 
-												connector.endDecoration;
 			if (moveStart)
 			{
 				[connector moveStartTo:p];	
@@ -60,7 +57,6 @@
 			else {
 				[connector moveEndTo:p];	
 			}
-			//[decorator moveTo:p];
 			[self checkConnect:state trackEdge:t atPoint:p];
 			state.redraw = YES;
 		}

@@ -18,19 +18,16 @@
 #import <Foundation/Foundation.h>
 #import "ITrackingViewBoundary.h"
 
-#ifdef UIKIT_EXTERN 
-// TODO: define tracking boundary protocol for ui kit.
-
-#else
-
-#endif
-
 @interface TrackingViewBoundary : NSObject<ITrackingViewBoundary> {
 
 	
 #ifdef UIKIT_EXTERN 
-	// TODO: define tracking boundary protocol for ui kit.
-	
+
+	/**
+	 A boundary area representing
+	 the bounds for tracking.
+	 **/
+	QRectangle *trackBounds;
 #else
 	
 	NSTrackingArea *trackArea;
@@ -47,11 +44,30 @@
 -(void)dealloc;
 
 
+/**
+ Update the boundary.
+ **/
+-(void)updateBoundary:(QRectangle *)bounds;
+
+
 #ifdef UIKIT_EXTERN 
-// TODO: define tracking boundary protocol for ui kit.
+
+/**
+ Associate with view.
+ **/
+-(void)attach:(UIView *)view InBoundary:(QRectangle *)bounds;
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)remove:(UIView *)fromView;
+
+/**
+ Check to see if the touch resides within the tracked boundary.
+ **/
+-(BOOL)isTouchInBounds:(UIView *)fromView withTouch:(UITouch *)touch;
 
 #else
-
 
 /**
  Associate with view.
@@ -62,12 +78,6 @@
  Remove the tracking area from the view.
  **/
 -(void)remove:(NSView *)fromView;
-
-/**
- Update the boundary.
- **/
--(void)updateBoundary:(QRectangle *)bounds;
-
 
 #endif
 

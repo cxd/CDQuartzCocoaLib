@@ -377,12 +377,21 @@
 -(void)updateState
 {
 	if (current == nil) return;
+#ifdef UIKIT_EXTERN
+	
+	NSString *previous = NSStringFromClass([self class]);
+#else
 	NSString *previous = [current.data className];
+#endif
 	for(CDNode *next in current.neighbours)
 	{
 		if ([next.data appliesTo:self])
 		{
+#ifdef UIKIT_EXTERN
+			NSString *nextName = NSStringFromClass([next.data class]);
+#else
 			NSString *nextName = [next.data className];
+#endif
 			current = next;
 			[current.data update:self];
 			

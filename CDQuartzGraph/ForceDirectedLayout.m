@@ -51,6 +51,14 @@
 
 
 /**
+ This algorithm follows the explanation of the force directed layout from
+ 
+ "The Handbook of Graph Drawing and Visualisation", Robert Tamassia Editor, CRC Press 2010.
+ 
+ A search for the title will produce the following link: http://www.cs.brown.edu/~rt/gdhandbook/
+ 
+ The force directed layout algorithm is described below:
+ 
  
  area:= W ∗ L; {W and L are the width and length of the frame} 
  

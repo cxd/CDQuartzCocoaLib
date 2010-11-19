@@ -20,8 +20,6 @@
 
 @implementation TrackingViewBoundary
 
-#ifdef UIKIT_EXTERN 
-// TODO: define tracking boundary protocol for ui kit.
 
 
 /**
@@ -33,8 +31,69 @@
 	return self;
 }
 
+#ifdef UIKIT_EXTERN 
+
+
 -(void)dealloc {
+	if (trackBounds != nil)
+	{
+		[trackBounds autorelease];	
+	}
 	[super dealloc];	
+}
+
+
+/**
+ Associate with view.
+ **/
+-(void)attach:(UIView *)view InBoundary:(QRectangle *)bounds
+{
+	[self updateBoundary:bounds];
+}
+
+/**
+ Remove the tracking area from the view.
+ **/
+-(void)remove:(UIView *)fromView
+{
+	if (trackBounds != nil)
+	{
+		[trackBounds autorelease];	
+		trackBounds = nil;
+	}
+}
+
+/**
+ Update the boundary.
+ This is achieved by removing the track area from the view
+ and creating a new track area.
+ **/
+-(void)updateBoundary:(QRectangle *)bounds
+{
+	if (trackBounds != nil)
+	{
+		[trackBounds autorelease];	
+	}
+	trackBounds = bounds;
+	[trackBounds retain];
+}
+
+
+
+/**
+ Check to see if the touch resides within the tracked boundary.
+ **/
+-(BOOL)isTouchInBounds:(UIView *)fromView withTouch:(UITouch *)touch
+{
+	CGPoint point = [touch locationInView:fromView];
+	CGPoint clickLocation = [fromView convertPoint:point fromView:nil];
+	float x = (float)clickLocation.x;
+	float y = (float)clickLocation.y;
+	QPoint *p = [[QPoint alloc] initX:x Y:y];
+	[p retain];
+	BOOL result = [trackBounds contains:p];
+	[p release];
+	return result;
 }
 
 #else
