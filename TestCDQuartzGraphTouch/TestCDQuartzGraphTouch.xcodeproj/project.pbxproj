@@ -16,6 +16,14 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* TestCDQuartzGraphTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TestCDQuartzGraphTouchViewController.m */; };
 		62294CDB1260844E00003723 /* libCDGraphTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A7E55912606DF0003A617B /* libCDGraphTouch.a */; };
+		624B3497129631D500CC50D1 /* colorize.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B348F129631D500CC50D1 /* colorize.png */; };
+		624B3498129631D500CC50D1 /* connect_creating.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3490129631D500CC50D1 /* connect_creating.png */; };
+		624B3499129631D500CC50D1 /* connect_established.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3491129631D500CC50D1 /* connect_established.png */; };
+		624B349A129631D500CC50D1 /* connect_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3492129631D500CC50D1 /* connect_no.png */; };
+		624B349B129631D500CC50D1 /* edit_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3493129631D500CC50D1 /* edit_add.png */; };
+		624B349C129631D500CC50D1 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3494129631D500CC50D1 /* edit.png */; };
+		624B349D129631D500CC50D1 /* editdelete.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3495129631D500CC50D1 /* editdelete.png */; };
+		624B349E129631D500CC50D1 /* loopnone.png in Resources */ = {isa = PBXBuildFile; fileRef = 624B3496129631D500CC50D1 /* loopnone.png */; };
 		62C570B3123656D60035FDA0 /* TestGraphUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C570B2123656D60035FDA0 /* TestGraphUIView.m */; };
 		62C5711E12365B300035FDA0 /* libCDQuartzGraphTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C5709C1236555D0035FDA0 /* libCDQuartzGraphTouch.a */; };
 		62C5712312365B410035FDA0 /* libQuartzCocoaLibTouchTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C570A21236556B0035FDA0 /* libQuartzCocoaLibTouchTouch.a */; };
@@ -26,7 +34,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 62C570A31236557E0035FDA0 /* CDGraphTouch.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* CDGraphTouch */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CDGraphTouch;
 		};
 		62A7E55812606DF0003A617B /* PBXContainerItemProxy */ = {
@@ -79,6 +87,14 @@
 		28D7ACF70DDB3853001CB0EB /* TestCDQuartzGraphTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCDQuartzGraphTouchViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TestCDQuartzGraphTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCDQuartzGraphTouch_Prefix.pch; sourceTree = "<group>"; };
+		624B348F129631D500CC50D1 /* colorize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colorize.png; path = Icons/colorize.png; sourceTree = "<group>"; };
+		624B3490129631D500CC50D1 /* connect_creating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connect_creating.png; path = Icons/connect_creating.png; sourceTree = "<group>"; };
+		624B3491129631D500CC50D1 /* connect_established.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connect_established.png; path = Icons/connect_established.png; sourceTree = "<group>"; };
+		624B3492129631D500CC50D1 /* connect_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connect_no.png; path = Icons/connect_no.png; sourceTree = "<group>"; };
+		624B3493129631D500CC50D1 /* edit_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit_add.png; path = Icons/edit_add.png; sourceTree = "<group>"; };
+		624B3494129631D500CC50D1 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edit.png; path = Icons/edit.png; sourceTree = "<group>"; };
+		624B3495129631D500CC50D1 /* editdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = editdelete.png; path = Icons/editdelete.png; sourceTree = "<group>"; };
+		624B3496129631D500CC50D1 /* loopnone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loopnone.png; path = Icons/loopnone.png; sourceTree = "<group>"; };
 		62C570971236555D0035FDA0 /* CDQuartzGraphTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDQuartzGraphTouch.xcodeproj; path = ../CDQuartzGraphTouch/CDQuartzGraphTouch/CDQuartzGraphTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62C5709D1236556B0035FDA0 /* QuartzCocoaLibTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLibTouch.xcodeproj; path = ../QuartzCocoaLibTouch/QuartzCocoaLibTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62C570A31236557E0035FDA0 /* CDGraphTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraphTouch.xcodeproj; path = ../../../CDGraph/CDGraphTouch/CDGraphTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -152,6 +168,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				624B348F129631D500CC50D1 /* colorize.png */,
+				624B3490129631D500CC50D1 /* connect_creating.png */,
+				624B3491129631D500CC50D1 /* connect_established.png */,
+				624B3492129631D500CC50D1 /* connect_no.png */,
+				624B3493129631D500CC50D1 /* edit_add.png */,
+				624B3494129631D500CC50D1 /* edit.png */,
+				624B3495129631D500CC50D1 /* editdelete.png */,
+				624B3496129631D500CC50D1 /* loopnone.png */,
 				2899E5210DE3E06400AC0155 /* TestCDQuartzGraphTouchViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* TestCDQuartzGraphTouch-Info.plist */,
@@ -278,6 +302,14 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* TestCDQuartzGraphTouchViewController.xib in Resources */,
+				624B3497129631D500CC50D1 /* colorize.png in Resources */,
+				624B3498129631D500CC50D1 /* connect_creating.png in Resources */,
+				624B3499129631D500CC50D1 /* connect_established.png in Resources */,
+				624B349A129631D500CC50D1 /* connect_no.png in Resources */,
+				624B349B129631D500CC50D1 /* edit_add.png in Resources */,
+				624B349C129631D500CC50D1 /* edit.png in Resources */,
+				624B349D129631D500CC50D1 /* editdelete.png in Resources */,
+				624B349E129631D500CC50D1 /* loopnone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +363,7 @@
 					/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph,
 					/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib,
 					/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLibTouch/QFramework_Header,
+					/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/View,
 				);
 				INFOPLIST_FILE = "TestCDQuartzGraphTouch-Info.plist";
 				PRODUCT_NAME = TestCDQuartzGraphTouch;

@@ -11,45 +11,33 @@
 
 @implementation TestGraphUIView
 
+@synthesize toolbar;
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
         // Initialization code
     }
+	self.labelField = [[UITextField alloc] initWithFrame:[self frame]];
     return self;
+}
+
+-(void)awakeFromNib
+{
+	[super awakeFromNib];
+	self.labelField = [[UITextField alloc] initWithFrame:[self frame]];
 }
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-	// Drawing code here.
-	
-    // a context reference.
-	// contexts can reference any type of graphics context.
-	QContext *context = [[QContext alloc] initWithContext:UIGraphicsGetCurrentContext()];
-	[context retain];
-	if (queue == nil)
+	if (self.algorithm == nil)
 	{
-		queue = [[QModifierQueue alloc] init];
-		[queue retain];
-		[queue enqueue:[self createGraph]];
-		
 		self.algorithm = [[ForceDirectedLayout alloc] initWidth:[self frame].size.width 
 														 Height:[self frame].size.height 
-														 Epochs:50
+														 Epochs:150
 													Temperature:50.0]; 
 	}
-	
-	
-	
-	self.algorithm.width = [self frame].size.width;
-	self.algorithm.height = [self frame].size.height;
-	[self.algorithm layout:self.graph];
-	
-	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:queue];
-	[queue autorelease];
-	queue = copy;
-	[context release];
+	[super drawRect:rect];
 }
 
 
@@ -135,5 +123,102 @@
 	
 	return self.graph;
 }
+
+
+
+
+/**
+ Receive select action from ui.
+ **/
+-(IBAction)onSelect:(id)sender
+{
+	[super onSelect:sender];	
+}
+
+/**
+ Receive add action from UI.
+ **/
+-(IBAction)onAdd:(id)sender
+{
+	self.state.newNode = [[CDQuartzNode alloc] init];
+	self.state.newNode.data = @"Untitled";
+	// add it to the centre of the screen.
+	float cx = [self frame].size.width/2.0f;
+	float cy = [self frame].size.height/2.0f;
+	
+	
+	CurvedRectangleNode *shape = [[CurvedRectangleNode alloc] initWithBounds:
+								  [[QRectangle alloc] initX:cx - 75.0f Y:cy - 50.0f 
+													  WIDTH:150 HEIGHT:100]
+																	AndLabel:@"Untitled"];
+	self.state.newNode.shapeDelegate = shape;
+	
+	[super onAdd:sender];
+}
+
+/**
+ Receive delete action from UI.
+ **/
+-(IBAction)onDelete:(id)sender
+{
+	[super onDelete:sender];	
+}
+
+/**
+ Begin text editing.
+ The default behaviour is to place the label at the same position as the node.
+ **/
+-(void)onStartTextEdit:(CGPoint) point size:(CGSize) sz
+{
+	[super onStartTextEdit:point size:sz];
+	
+	
+}
+
+/**
+ End text editing.
+ This will remove the text edit field from the subviews.
+ **/
+-(void)onEndTextEdit
+{
+	[super onEndTextEdit];
+}
+
+/**
+ Add a new connection to the graph.
+ **/
+-(IBAction)onAddConnect:(id)sender
+{
+	[super onAddConnect:sender];
+	if (self.toolbar != nil)
+	{
+		//[self.toolbar setSelectedItemIdentifier:@"connect"];	
+	}
+}
+
+/**
+ Receive connect action from UI.
+ **/
+-(IBAction)onConnect:(id)sender
+{
+	[super onConnect:sender];	
+}
+
+/**
+ Receive disconnect action from UI.
+ **/
+-(IBAction)onDisconnect:(id)sender
+{
+	[super onDisconnect:sender];	
+}
+
+/**
+ Receive edit action from UI.
+ **/
+-(IBAction)onEdit:(id)sender
+{
+	[super onEdit:sender];	
+}
+
 
 @end
