@@ -49,10 +49,10 @@
 
 -(void)visit:(id <QContextModifier>)modifier data:(id)arguments
 {
-	if (!([modifier respondsTo:@selector(getBoundary:)])) 
+	if (!([(id)modifier respondsToSelector:@selector(getBoundary:)])) 
 		return;
 	QRectangle* rect = (QRectangle*)arguments;
-	QRectangle* bounds = [modifier getBoundary];
+	QRectangle* bounds = [(id)modifier getBoundary];
 	if (bounds == nil) return;
 	if (rect.x == INFINITY)
 	{

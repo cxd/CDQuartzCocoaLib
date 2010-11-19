@@ -25,6 +25,7 @@
 	int fontSize;
 	float textX;
 	float textH;
+	BOOL isFlipped;
 }
 
 /**
@@ -55,6 +56,14 @@
 @property(retain) QColor *color;
 
 @property(assign) int fontSize;
+
+
+/**
+ Determine whether the coordinate system is flipped for drawing.
+ It it is not flipped on the iOS the x axis will be flipped before drawing text.
+ This affects iOS only.
+ **/
+@property(assign) BOOL isFlipped;
 
 /**
  Allow parameterless constructor for NSCoding.

@@ -89,4 +89,56 @@
 	[aCoder encodeFloat:self.height forKey:@"height"];
 }
 
+
+
+/**
+ Determine whether the supplied point resides within
+ the rectangle.
+ **/
+-(BOOL)contains:(QPoint *)point
+{
+	QPoint *topLeft = [[QPoint alloc] initX:self.x Y:self.y];
+	QPoint *bottomRight = [[QPoint alloc] initX:self.x + self.width Y:self.y + self.height];
+	[topLeft retain];
+	[bottomRight retain];
+	// distance should be positive as point is greater than top left.
+	float xTop = [topLeft horizontalDistanceTo:point];
+	float yTop = [topLeft verticalDistanceTo:point];
+	
+	// distance should be negative as point is less than bottom right.
+	float xBottom = [bottomRight horizontalDistanceTo:point];
+	float yBottom = [bottomRight verticalDistanceTo:point];
+	
+	[topLeft release];
+	[bottomRight release];
+	
+	return (xTop >= 0.0 && yTop >= 0.0 && xBottom <= 0.0 && yBottom <= 0.0);
+}
+
+
+/**
+ Check whether a rectangle intersects with the rectangle
+ of this object.
+ **/
+-(BOOL)intersects:(QRectangle *)other
+{
+	// very simple collision detection the rectangular intersection.
+	float left = self.x;
+	float left2 = other.x;
+	float right = self.x + self.width;
+	float right2 = other.x + other.width;
+	float top = self.y;
+	float top2 = other.y;
+	float bottom = self.y + self.height;
+	float bottom2 = other.y + other.height;
+	if ((left > right2) || 
+		(right < left2) ||
+		(top > bottom2) ||
+		(bottom < top2))
+		return NO;
+	return YES;	
+}
+
+
+
 @end

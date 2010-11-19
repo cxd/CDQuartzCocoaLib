@@ -17,6 +17,7 @@
 @synthesize fontSize;
 @synthesize textY;
 @synthesize textX;
+@synthesize isFlipped;
 
 /**
  Allow parameterless constructor for NSCoding.
@@ -112,9 +113,17 @@
 							 self.color.alpha);
 	
 #ifdef UIKIT_EXTERN
-	CGContextSetTextMatrix(context.context, 
-						   CGAffineTransformMake(-1.0,0.0, 0.0, 1.0, 0.0, 0.0));
 	
+	if (self.isFlipped)
+	{
+	CGContextSetTextMatrix(context.context, 
+						   CGAffineTransformMake(1.0,0.0, 0.0, 1.0, 0.0, 0.0));
+	} else {
+		// used when the coordinate system is not flipped to draw in touch os.
+		CGContextSetTextMatrix(context.context, 
+							   CGAffineTransformMake(-1.0,0.0, 0.0, 1.0, 0.0, 0.0));
+		
+	}
 #else
 	CGContextSetTextMatrix(context.context, 
 						   CGAffineTransformMake(1.0,0.0, 0.0, 1.0, 0.0, 0.0));

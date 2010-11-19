@@ -178,7 +178,12 @@
 	self.width = [aDecoder decodeFloatForKey:@"width"];
 	self.height = [aDecoder decodeFloatForKey:@"height"];
 	BOOL hasImage = [aDecoder decodeBoolForKey:@"imageExists"];
-	if (!hasImage) return;
+	if (!hasImage) return self;
+	
+	// the following is supported on iOS4.2 but not iOS3.2
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 42000
 	// read the image from the memory buffer.
 	NSMutableData *buffer = [aDecoder decodeObjectForKey:@"buffer"];
 	[buffer retain];
@@ -186,6 +191,19 @@
 	self.imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
 	CFRelease(source);
 	[buffer release];
+#endif
+	
+#else
+	
+	// read the image from the memory buffer.
+	NSMutableData *buffer = [aDecoder decodeObjectForKey:@"buffer"];
+	[buffer retain];
+	CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)buffer, NULL);
+	self.imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+	CFRelease(source);
+	[buffer release];
+	
+#endif
 	return self;
 }
 /**
@@ -205,6 +223,10 @@
 	}
 	[aCoder encodeBool:YES forKey:@"imageExists"];
 	// copy the image reference to the buffer.
+	// the following is supported on iOS4 but not iOS3.2
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 42000
 	NSMutableData *buffer = [NSMutableData data];
 	[buffer retain];
 	CGImageDestinationRef dest = CGImageDestinationCreateWithData((CFMutableDataRef)buffer, CFSTR("public.tiff"), 1, NULL);
@@ -213,5 +235,18 @@
 	CFRelease(dest);
 	[aCoder encodeObject:buffer forKey:@"buffer"];
 	[buffer release];
+#endif
+	
+#else
+	NSMutableData *buffer = [NSMutableData data];
+	[buffer retain];
+	CGImageDestinationRef dest = CGImageDestinationCreateWithData((CFMutableDataRef)buffer, CFSTR("public.tiff"), 1, NULL);
+	CGImageDestinationAddImage(dest, self.imageRef, NULL);
+	CGImageDestinationFinalize(dest);
+	CFRelease(dest);
+	[aCoder encodeObject:buffer forKey:@"buffer"];
+	[buffer release];
+	
+#endif
 }
 @end

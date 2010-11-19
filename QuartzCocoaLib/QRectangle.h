@@ -39,6 +39,18 @@
  **/
 -(QPoint *)midPoint;
 
+/**
+ Determine whether the supplied point resides within
+ the rectangle.
+ **/
+-(BOOL)contains:(QPoint *)point;
+
+/**
+ Check whether a rectangle intersects with the rectangle
+ of this object.
+ **/
+-(BOOL)intersects:(QRectangle *)other;
+
 #pragma mark Encoder and Decoder.
 /**
  Read data from an nscoder.
