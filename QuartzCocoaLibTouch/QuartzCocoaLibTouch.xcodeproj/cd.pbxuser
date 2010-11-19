@@ -86,15 +86,21 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 311504387;
-			PBXWorkspaceStateSaveDate = 311504387;
+			PBXPerProjectTemplateStateSaveDate = 311832611;
+			PBXWorkspaceStateSaveDate = 311832611;
 		};
 		perUserProjectItems = {
-			622D1E95128D6AC700D97241 = 622D1E95128D6AC700D97241 /* PBXTextBookmark */;
-			622D1E96128D6AC700D97241 = 622D1E96128D6AC700D97241 /* PBXTextBookmark */;
-			622D1E97128D6AC700D97241 = 622D1E97128D6AC700D97241 /* PBXTextBookmark */;
-			627AD7D611D8BF770064F2C7 = 627AD7D611D8BF770064F2C7 /* PBXTextBookmark */;
-			62CD06A90FFB8BD30001D102 = 62CD06A90FFB8BD30001D102 /* PBXTextBookmark */;
+			623C83B91291476B008CCF9A /* PBXTextBookmark */ = 623C83B91291476B008CCF9A /* PBXTextBookmark */;
+			624B349F129633AF00CC50D1 /* PBXTextBookmark */ = 624B349F129633AF00CC50D1 /* PBXTextBookmark */;
+			624B34A0129633AF00CC50D1 /* PBXTextBookmark */ = 624B34A0129633AF00CC50D1 /* PBXTextBookmark */;
+			624B34A1129633AF00CC50D1 /* PBXTextBookmark */ = 624B34A1129633AF00CC50D1 /* PBXTextBookmark */;
+			624B34A2129633AF00CC50D1 /* PBXTextBookmark */ = 624B34A2129633AF00CC50D1 /* PBXTextBookmark */;
+			627AD7D611D8BF770064F2C7 /* PBXTextBookmark */ = 627AD7D611D8BF770064F2C7 /* PBXTextBookmark */;
+			62CD06A90FFB8BD30001D102 /* PBXTextBookmark */ = 62CD06A90FFB8BD30001D102 /* PBXTextBookmark */;
+			62D061371295114800B4C47D /* PBXTextBookmark */ = 62D061371295114800B4C47D /* PBXTextBookmark */;
+			62D061381295114800B4C47D /* PBXTextBookmark */ = 62D061381295114800B4C47D /* PBXTextBookmark */;
+			62D061391295114800B4C47D /* PBXTextBookmark */ = 62D061391295114800B4C47D /* PBXTextBookmark */;
+			62D0613A1295114800B4C47D /* PBXTextBookmark */ = 62D0613A1295114800B4C47D /* PBXTextBookmark */;
 		};
 		sourceControlManager = 62D66FDB0FFA235C00B60B0A /* Source Control */;
 		userBuildSettings = {
@@ -107,36 +113,25 @@
 			sepNavVisRange = "{0, 45}";
 		};
 	};
-	622D1E95128D6AC700D97241 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6240A7C512165B3400840C1B /* README */;
-		name = "README: 2";
-		rLen = 0;
-		rLoc = 104;
-		rType = 0;
-		vrLen = 57;
-		vrLoc = 0;
-	};
-	622D1E96128D6AC700D97241 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "'CGImageSourceRef' undeclared (first use in this function)";
-		fRef = 6240A6EB121659B800840C1B /* QImage.m */;
-		rLen = 1;
-		rLoc = 189;
-		rType = 1;
-	};
-	622D1E97128D6AC700D97241 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6240A6EB121659B800840C1B /* QImage.m */;
-		name = "QImage.m: 215";
-		rLen = 0;
-		rLoc = 5245;
-		rType = 0;
-		vrLen = 930;
-		vrLoc = 4731;
-	};
 	6231BDB411D5DEAE00327B84 /* QuartzCocoaLibTouchTouch */ = {
 		activeExec = 0;
+	};
+	623C831212912E1E008CCF9A /* LICENSE.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 379}}";
+			sepNavSelRange = "{1478, 0}";
+			sepNavVisRange = "{0, 1478}";
+		};
+	};
+	623C83B91291476B008CCF9A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A7C512165B3400840C1B /* README */;
+		name = "README: 3";
+		rLen = 0;
+		rLoc = 103;
+		rType = 0;
+		vrLen = 104;
+		vrLoc = 0;
 	};
 	6240A6D0121659B800840C1B /* PaintInstance.h */ = {
 		uiCtxt = {
@@ -180,6 +175,20 @@
 			sepNavVisRange = "{4799, 888}";
 		};
 	};
+	6240A6F6121659B800840C1B /* QPoint.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 481}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{126, 546}";
+		};
+	};
+	6240A6F8121659B800840C1B /* QRectangle.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {626, 832}}";
+			sepNavSelRange = "{967, 0}";
+			sepNavVisRange = "{474, 609}";
+		};
+	};
 	6240A6FE121659B800840C1B /* QShadow.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {626, 1547}}";
@@ -192,6 +201,13 @@
 			sepNavIntBoundsRect = "{{0, 0}, {626, 430}}";
 			sepNavSelRange = "{136, 10}";
 			sepNavVisRange = "{0, 681}";
+		};
+	};
+	6240A700121659B800840C1B /* QShape.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1098, 1300}}";
+			sepNavSelRange = "{976, 0}";
+			sepNavVisRange = "{873, 234}";
 		};
 	};
 	6240A705121659B800840C1B /* QStrokePath.h */ = {
@@ -271,6 +287,46 @@
 			sepNavVisRange = "{0, 104}";
 		};
 	};
+	624B349F129633AF00CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62EA54490FFEEF7300B803C1 /* QRectangle.m */;
+		name = "QRectangle.m: 111";
+		rLen = 0;
+		rLoc = 2309;
+		rType = 0;
+		vrLen = 840;
+		vrLoc = 1593;
+	};
+	624B34A0129633AF00CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62C5716F123661A10035FDA0 /* QLabel.h */;
+		name = "QLabel.h: 48";
+		rLen = 0;
+		rLoc = 808;
+		rType = 0;
+		vrLen = 516;
+		vrLoc = 732;
+	};
+	624B34A1129633AF00CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62C57170123661A10035FDA0 /* QLabel.m */;
+		name = "QLabel.m: 20";
+		rLen = 0;
+		rLoc = 310;
+		rType = 0;
+		vrLen = 418;
+		vrLoc = 0;
+	};
+	624B34A2129633AF00CC50D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62C57170123661A10035FDA0 /* QLabel.m */;
+		name = "QLabel.m: 20";
+		rLen = 0;
+		rLoc = 310;
+		rType = 0;
+		vrLen = 883;
+		vrLoc = 2297;
+	};
 	62757C040FFF1A060086AD09 /* QShadow.m:98 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
@@ -284,7 +340,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 98;
-		modificationTime = 305893405.647837;
+		modificationTime = 311832948.485809;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -302,7 +358,7 @@
 		ignoreCount = 0;
 		lineNumber = 90;
 		location = TestGraphicsContext;
-		modificationTime = 305893405.6479689;
+		modificationTime = 311832948.48598;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -320,7 +376,7 @@
 		ignoreCount = 0;
 		lineNumber = 70;
 		location = TestGraphicsContext;
-		modificationTime = 305893405.647995;
+		modificationTime = 311832948.486102;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -347,7 +403,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 116;
-		modificationTime = 305893405.6481;
+		modificationTime = 311832948.48634;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -365,15 +421,22 @@
 		ignoreCount = 0;
 		lineNumber = 114;
 		location = TestGraphicsContext;
-		modificationTime = 305893405.648185;
+		modificationTime = 311832948.486457;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
+	62C5716F123661A10035FDA0 /* QLabel.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {677, 1300}}";
+			sepNavSelRange = "{808, 0}";
+			sepNavVisRange = "{732, 516}";
+		};
+	};
 	62C57170123661A10035FDA0 /* QLabel.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {803, 1807}}";
-			sepNavSelRange = "{2263, 0}";
-			sepNavVisRange = "{1674, 1045}";
+			sepNavIntBoundsRect = "{{0, 0}, {803, 2457}}";
+			sepNavSelRange = "{310, 0}";
+			sepNavVisRange = "{2297, 883}";
 		};
 	};
 	62CD06A90FFB8BD30001D102 /* PBXTextBookmark */ = {
@@ -385,6 +448,46 @@
 		rType = 0;
 		vrLen = 45;
 		vrLoc = 0;
+	};
+	62D061371295114800B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 623C831212912E1E008CCF9A /* LICENSE.txt */;
+		name = "LICENSE.txt: 10";
+		rLen = 0;
+		rLoc = 1478;
+		rType = 0;
+		vrLen = 1478;
+		vrLoc = 0;
+	};
+	62D061381295114800B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A6F6121659B800840C1B /* QPoint.h */;
+		name = "QPoint.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 546;
+		vrLoc = 126;
+	};
+	62D061391295114800B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A6F8121659B800840C1B /* QRectangle.h */;
+		name = "QRectangle.h: 53";
+		rLen = 0;
+		rLoc = 967;
+		rType = 0;
+		vrLen = 609;
+		vrLoc = 474;
+	};
+	62D0613A1295114800B4C47D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A700121659B800840C1B /* QShape.m */;
+		name = "QShape.m: 52";
+		rLen = 0;
+		rLoc = 976;
+		rType = 0;
+		vrLen = 721;
+		vrLoc = 698;
 	};
 	62D1823E1000399500113ED7 /* QShape.m:37 */ = {
 		isa = PBXFileBreakpoint;
@@ -400,7 +503,7 @@
 		ignoreCount = 0;
 		lineNumber = 37;
 		location = TestGraphicsContext;
-		modificationTime = 305893405.648067;
+		modificationTime = 311832948.486219;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -427,9 +530,9 @@
 	};
 	62EA54490FFEEF7300B803C1 /* QRectangle.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {626, 650}}";
-			sepNavSelRange = "{243, 0}";
-			sepNavVisRange = "{183, 533}";
+			sepNavIntBoundsRect = "{{0, 0}, {684, 1755}}";
+			sepNavSelRange = "{2309, 0}";
+			sepNavVisRange = "{1593, 840}";
 		};
 	};
 }
