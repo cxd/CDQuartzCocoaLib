@@ -51,6 +51,7 @@
 @synthesize isEditing;
 @synthesize selectLabel;
 @synthesize editDelegate;
+@synthesize lock;
 
 -(id)initWithBounds:(QRectangle *)b
 {
@@ -62,6 +63,7 @@
 	self.hoverPoints = [[NSMutableArray alloc] init];
 	self.selectEdges = [[NSMutableArray alloc] init];
 	self.detachedEdges = [[NSMutableArray alloc] init];
+	self.lock = [[NSLock alloc] init];
 	[self buildTransitions];
 	return self;
 }
@@ -79,6 +81,7 @@
 	self.hoverPoints = [[NSMutableArray alloc] init];
 	self.selectEdges = [[NSMutableArray alloc] init];
 	self.detachedEdges = [[NSMutableArray alloc] init];
+	self.lock = [[NSLock alloc] init];
 	[self buildTransitions];
 	return self;	
 }
@@ -121,6 +124,7 @@
 		[self.detachedEdges autorelease];
 	}
 	[transitions autorelease];
+	[self.lock autorelease];
 	self.editDelegate = nil; // remove weak reference.
 	[super dealloc];
 }

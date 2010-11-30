@@ -929,28 +929,34 @@ This will set the needs display flag to true.
 {
 	if (!self.state.editConnections) return;
 	BOOL isMatched = NO;
-	for(CDQuartzEdge *edge in self.graph.edges)
+	if ([self.state.lock tryLock])
 	{
-		if (edge.shapeDelegate != nil)
+		for(CDQuartzEdge *edge in self.graph.edges)
 		{
-			if ([edge.shapeDelegate hasConnectorContaining:self 
-												 withTouch:touch])
+			if (edge.shapeDelegate != nil)
 			{
-			// generate the connection editing notifications.
-				[self updateLocationOfHoverOnConnection:touch];
-				isMatched = YES;
+				if ([edge.shapeDelegate hasConnectorContaining:self 
+													 withTouch:touch])
+				{
+				// generate the connection editing notifications.
+					[self updateLocationOfHoverOnConnection:touch];
+					isMatched = YES;
+				}
 			}
 		}
 	}
 	if (isMatched) return;
-	// we also need to unregister shapes that are temporary detached edges in the display.
-	for(CDQuartzEdge *edge in self.state.detachedEdges)
+	if ([self.state.lock tryLock])
 	{
-		if ([edge.shapeDelegate hasConnectorContaining:self
-											 withTouch:touch])
+		// we also need to unregister shapes that are temporary detached edges in the display.
+		for(CDQuartzEdge *edge in self.state.detachedEdges)
 		{
-		// generate the connection editing event.
-			[self updateLocationOfHoverOnConnection:touch];
+			if ([edge.shapeDelegate hasConnectorContaining:self
+												 withTouch:touch])
+			{
+			// generate the connection editing event.
+				[self updateLocationOfHoverOnConnection:touch];
+			}
 		}
 	}
 }

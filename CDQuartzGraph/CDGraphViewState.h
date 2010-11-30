@@ -136,7 +136,18 @@
 	 **/
 	QPoint* minPoint;
 	QPoint* maxPoint;
+	
+	/**
+	 A lock to allow concurrent access to collections.
+	 **/
+	NSLock *lock;
 }
+
+
+/**
+ A lock to allow concurrent access to collections.
+ **/
+@property(retain) NSLock* lock;
 
 /**
  Internal graph instance.

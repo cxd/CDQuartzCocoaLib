@@ -9,12 +9,12 @@
 		breakpoints = (
 			62655E011233856600A91E24 /* ForceDirectedLayout.m:216 */,
 			620488751246100C0004ED3C /* Select.m:34 */,
-			620488A91246120B0004ED3C /* CDGraphViewState.m:307 */,
-			620488C31246128D0004ED3C /* CDGraphViewState.m:409 */,
+			620488A91246120B0004ED3C /* CDGraphViewState.m:311 */,
+			620488C31246128D0004ED3C /* CDGraphViewState.m:413 */,
 			6204890D124613B00004ED3C /* Cancel.m:42 */,
 			6204890F124613B40004ED3C /* Cancel.m:34 */,
 			62048920124613D60004ED3C /* Move.m:46 */,
-			6204895E1246159E0004ED3C /* CDGraphViewState.m:400 */,
+			6204895E1246159E0004ED3C /* CDGraphViewState.m:404 */,
 			62CC1465124DE496001AF7CD /* AbstractConnectorShape.m:136 */,
 			62CC14AE124DE6D8001AF7CD /* CirclePortShape.m:59 */,
 			62CC14BD124DE70F001AF7CD /* CirclePortShape.m:123 */,
@@ -36,7 +36,7 @@
 			62F798A31260347F001CC0F1 /* CDGraphView.m:708 */,
 			62F798AB126034B1001CC0F1 /* EdgeDelete.m:49 */,
 			62F7990312603AA4001CC0F1 /* CDQuartzGraph.m:163 */,
-			62F7992512603C86001CC0F1 /* EdgeMove.m:128 */,
+			62F7992512603C86001CC0F1 /* EdgeMove.m:132 */,
 			622BE2D712604AF800B6AB81 /* Delete.m:35 */,
 			622BE2E71260549C00B6AB81 /* Delete.m:45 */,
 			622BE3021260555B00B6AB81 /* Delete.m:53 */,
@@ -55,7 +55,7 @@
 			622D1DD2128D4FDB00D97241 /* CDGraphView.m:720 */,
 			622D1DD4128D4FE700D97241 /* CDGraphView.m:570 */,
 			622D1E0C128D595700D97241 /* CDGraphView.m:419 */,
-			62CAC17012A4842B0031379E /* CDGraphViewState.m:397 */,
+			62CAC17012A4842B0031379E /* CDGraphViewState.m:401 */,
 		);
 		codeSenseManager = 6240A5281216529A00840C1B /* Code sense */;
 		perUserDictionary = {
@@ -243,6 +243,12 @@
 			62CAC26212A48C730031379E /* PBXTextBookmark */ = 62CAC26212A48C730031379E /* PBXTextBookmark */;
 			62CAC26312A48C730031379E /* PBXTextBookmark */ = 62CAC26312A48C730031379E /* PBXTextBookmark */;
 			62CAC26412A48C730031379E /* PBXTextBookmark */ = 62CAC26412A48C730031379E /* PBXTextBookmark */;
+			62CAC2F812A499BD0031379E /* PBXTextBookmark */ = 62CAC2F812A499BD0031379E /* PBXTextBookmark */;
+			62CAC2F912A499BD0031379E /* PBXTextBookmark */ = 62CAC2F912A499BD0031379E /* PBXTextBookmark */;
+			62CAC2FA12A499BD0031379E /* PBXTextBookmark */ = 62CAC2FA12A499BD0031379E /* PBXTextBookmark */;
+			62CAC2FB12A499BD0031379E /* PBXTextBookmark */ = 62CAC2FB12A499BD0031379E /* PBXTextBookmark */;
+			62CAC2FC12A499BD0031379E /* PBXTextBookmark */ = 62CAC2FC12A499BD0031379E /* PBXTextBookmark */;
+			62CAC2FD12A499BD0031379E /* PBXTextBookmark */ = 62CAC2FD12A499BD0031379E /* PBXTextBookmark */;
 			62D0610B1295114700B4C47D = 62D0610B1295114700B4C47D /* PBXTextBookmark */;
 			62D3E305127C011A0023E502 = 62D3E305127C011A0023E502 /* PBXTextBookmark */;
 		};
@@ -575,11 +581,11 @@
 		ignoreCount = 0;
 		lineNumber = 34;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626026;
+		modificationTime = 312776237.42482;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	620488A91246120B0004ED3C /* CDGraphViewState.m:307 */ = {
+	620488A91246120B0004ED3C /* CDGraphViewState.m:311 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -591,13 +597,13 @@
 		functionName = "-searchForTrackingNodes";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 307;
+		lineNumber = 311;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.62606;
+		modificationTime = 312776237.42486;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	620488C31246128D0004ED3C /* CDGraphViewState.m:409 */ = {
+	620488C31246128D0004ED3C /* CDGraphViewState.m:413 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -609,9 +615,9 @@
 		functionName = "-updateState";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 409;
+		lineNumber = 413;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.62621;
+		modificationTime = 312776237.425017;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -628,7 +634,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 42;
-		modificationTime = 312773746.626312;
+		modificationTime = 312776237.425143;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -646,7 +652,7 @@
 		ignoreCount = 0;
 		lineNumber = 34;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626352;
+		modificationTime = 312776237.425186;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -664,11 +670,11 @@
 		ignoreCount = 0;
 		lineNumber = 46;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626437;
+		modificationTime = 312776237.425224;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	6204895E1246159E0004ED3C /* CDGraphViewState.m:400 */ = {
+	6204895E1246159E0004ED3C /* CDGraphViewState.m:404 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -680,9 +686,9 @@
 		functionName = "-updateState";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 400;
+		lineNumber = 404;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626468;
+		modificationTime = 312776237.425265;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -709,9 +715,9 @@
 	};
 	6205242712477042001053D6 /* EdgeMove.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {5304, 1833}}";
-			sepNavSelRange = "{1566, 0}";
-			sepNavVisRange = "{0, 1900}";
+			sepNavIntBoundsRect = "{{0, 0}, {726, 2366}}";
+			sepNavSelRange = "{4599, 0}";
+			sepNavVisRange = "{4144, 1002}";
 			sepNavWindowFrame = "{{15, 4}, {695, 869}}";
 		};
 	};
@@ -743,7 +749,7 @@
 		ignoreCount = 0;
 		lineNumber = 38;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626946;
+		modificationTime = 312776237.425877;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -796,7 +802,7 @@
 		ignoreCount = 0;
 		lineNumber = 35;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627967;
+		modificationTime = 312776237.42736;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -814,7 +820,7 @@
 		ignoreCount = 0;
 		lineNumber = 45;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.628006;
+		modificationTime = 312776237.427398;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -832,7 +838,7 @@
 		ignoreCount = 0;
 		lineNumber = 53;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.62804;
+		modificationTime = 312776237.427455;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -850,7 +856,7 @@
 		ignoreCount = 0;
 		lineNumber = 167;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638366;
+		modificationTime = 312776237.428638;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -868,7 +874,7 @@
 		ignoreCount = 0;
 		lineNumber = 720;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638451;
+		modificationTime = 312776237.428751;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -886,7 +892,7 @@
 		ignoreCount = 0;
 		lineNumber = 570;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638532;
+		modificationTime = 312776237.428841;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -904,7 +910,7 @@
 		ignoreCount = 0;
 		lineNumber = 419;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638612;
+		modificationTime = 312776237.428967;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1396,7 +1402,7 @@
 		ignoreCount = 0;
 		lineNumber = 249;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626906;
+		modificationTime = 312776237.425793;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1430,17 +1436,17 @@
 	};
 	6241B1CC123F8581001BE569 /* CDGraphViewState.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {5304, 4004}}";
-			sepNavSelRange = "{1574, 0}";
-			sepNavVisRange = "{0, 1769}";
+			sepNavIntBoundsRect = "{{0, 0}, {771, 4290}}";
+			sepNavSelRange = "{4010, 0}";
+			sepNavVisRange = "{3648, 551}";
 			sepNavWindowFrame = "{{15, 4}, {695, 869}}";
 		};
 	};
 	6241B1CD123F8581001BE569 /* CDGraphViewState.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {771, 6006}}";
-			sepNavSelRange = "{6000, 0}";
-			sepNavVisRange = "{4094, 1457}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 6357}}";
+			sepNavSelRange = "{4132, 0}";
+			sepNavVisRange = "{10506, 762}";
 		};
 	};
 	6241B1EA123F89E3001BE569 /* TrackedNode.h */ = {
@@ -1497,7 +1503,7 @@
 		ignoreCount = 0;
 		lineNumber = 35;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626987;
+		modificationTime = 312776237.425945;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1515,7 +1521,7 @@
 		ignoreCount = 0;
 		lineNumber = 491;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627021;
+		modificationTime = 312776237.425974;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1552,7 +1558,7 @@
 		ignoreCount = 0;
 		lineNumber = 37;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.62712;
+		modificationTime = 312776237.426058;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1570,7 +1576,7 @@
 		ignoreCount = 0;
 		lineNumber = 45;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627162;
+		modificationTime = 312776237.426132;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1588,7 +1594,7 @@
 		ignoreCount = 0;
 		lineNumber = 34;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627195;
+		modificationTime = 312776237.426215;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1606,7 +1612,7 @@
 		ignoreCount = 0;
 		lineNumber = 508;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627234;
+		modificationTime = 312776237.426315;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1624,7 +1630,7 @@
 		ignoreCount = 0;
 		lineNumber = 463;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627314;
+		modificationTime = 312776237.426431;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1642,7 +1648,7 @@
 		ignoreCount = 0;
 		lineNumber = 245;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627393;
+		modificationTime = 312776237.426525;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1655,9 +1661,9 @@
 	};
 	62547116122149DE00714D45 /* CDGraphView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1104, 12701}}";
-			sepNavSelRange = "{8056, 0}";
-			sepNavVisRange = "{7460, 976}";
+			sepNavIntBoundsRect = "{{0, 0}, {1104, 12610}}";
+			sepNavSelRange = "{24415, 0}";
+			sepNavVisRange = "{23917, 912}";
 			sepNavWindowFrame = "{{15, 4}, {695, 869}}";
 		};
 	};
@@ -1675,7 +1681,7 @@
 		ignoreCount = 0;
 		lineNumber = 419;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.63829;
+		modificationTime = 312776237.428477;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1693,7 +1699,7 @@
 		ignoreCount = 0;
 		lineNumber = 402;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638327;
+		modificationTime = 312776237.428567;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2032,7 +2038,7 @@
 		ignoreCount = 0;
 		lineNumber = 216;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.625983;
+		modificationTime = 312776237.424758;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2050,7 +2056,7 @@
 		ignoreCount = 0;
 		lineNumber = 271;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.637953;
+		modificationTime = 312776237.428115;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2068,7 +2074,7 @@
 		ignoreCount = 0;
 		lineNumber = 313;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638123;
+		modificationTime = 312776237.428259;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2086,7 +2092,7 @@
 		ignoreCount = 0;
 		lineNumber = 314;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.638211;
+		modificationTime = 312776237.428371;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2178,7 +2184,7 @@
 		ignoreCount = 0;
 		lineNumber = 529;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.628388;
+		modificationTime = 312776237.427647;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2196,7 +2202,7 @@
 		ignoreCount = 0;
 		lineNumber = 35;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.628501;
+		modificationTime = 312776237.427764;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2214,7 +2220,7 @@
 		ignoreCount = 0;
 		lineNumber = 332;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.628547;
+		modificationTime = 312776237.427826;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2232,7 +2238,7 @@
 		ignoreCount = 0;
 		lineNumber = 619;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.628627;
+		modificationTime = 312776237.427931;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2250,7 +2256,7 @@
 		ignoreCount = 0;
 		lineNumber = 47;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.63787;
+		modificationTime = 312776237.428041;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2296,7 +2302,7 @@
 		ignoreCount = 0;
 		lineNumber = 454;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.628266;
+		modificationTime = 312776237.42754;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2339,7 +2345,7 @@
 		vrLen = 1529;
 		vrLoc = 5329;
 	};
-	62CAC17012A4842B0031379E /* CDGraphViewState.m:397 */ = {
+	62CAC17012A4842B0031379E /* CDGraphViewState.m:401 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2351,9 +2357,9 @@
 		functionName = "-updateState";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 397;
+		lineNumber = 401;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.63869;
+		modificationTime = 312776237.429097;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2372,7 +2378,7 @@
 		fRef = 6241B1CD123F8581001BE569 /* CDGraphViewState.m */;
 		name = "CDGraphViewState.m: 181";
 		rLen = 0;
-		rLoc = 6000;
+		rLoc = 6116;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 4094;
@@ -2382,7 +2388,7 @@
 		fRef = 6241B1CD123F8581001BE569 /* CDGraphViewState.m */;
 		name = "CDGraphViewState.m: 181";
 		rLen = 0;
-		rLoc = 6000;
+		rLoc = 6116;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 4094;
@@ -2412,7 +2418,7 @@
 		fRef = 6241B1CD123F8581001BE569 /* CDGraphViewState.m */;
 		name = "CDGraphViewState.m: 424";
 		rLen = 0;
-		rLoc = 11941;
+		rLoc = 12057;
 		rType = 0;
 		vrLen = 1011;
 		vrLoc = 11261;
@@ -2480,7 +2486,7 @@
 		fRef = 6241B1CD123F8581001BE569 /* CDGraphViewState.m */;
 		name = "CDGraphViewState.m: 181";
 		rLen = 0;
-		rLoc = 6000;
+		rLoc = 6116;
 		rType = 0;
 		vrLen = 1457;
 		vrLoc = 4094;
@@ -2585,6 +2591,66 @@
 		vrLen = 976;
 		vrLoc = 7460;
 	};
+	62CAC2F812A499BD0031379E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6241B1CC123F8581001BE569 /* CDGraphViewState.h */;
+		name = "CDGraphViewState.h: 151";
+		rLen = 0;
+		rLoc = 4010;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 3648;
+	};
+	62CAC2F912A499BD0031379E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6241B1CD123F8581001BE569 /* CDGraphViewState.m */;
+		name = "CDGraphViewState.m: 127";
+		rLen = 0;
+		rLoc = 4132;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 10506;
+	};
+	62CAC2FA12A499BD0031379E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6205242712477042001053D6 /* EdgeMove.m */;
+		name = "EdgeMove.m: 148";
+		rLen = 0;
+		rLoc = 4833;
+		rType = 0;
+		vrLen = 1012;
+		vrLoc = 4119;
+	};
+	62CAC2FB12A499BD0031379E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62F797571260151D001CC0F1 /* EdgeDelete.m */;
+		name = "EdgeDelete.m: 61";
+		rLen = 0;
+		rLoc = 2498;
+		rType = 0;
+		vrLen = 875;
+		vrLoc = 1679;
+	};
+	62CAC2FC12A499BD0031379E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62547116122149DE00714D45 /* CDGraphView.m */;
+		name = "CDGraphView.m: 931";
+		rLen = 0;
+		rLoc = 24094;
+		rType = 0;
+		vrLen = 1130;
+		vrLoc = 23917;
+	};
+	62CAC2FD12A499BD0031379E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62547116122149DE00714D45 /* CDGraphView.m */;
+		name = "CDGraphView.m: 945";
+		rLen = 0;
+		rLoc = 24418;
+		rType = 0;
+		vrLen = 912;
+		vrLoc = 23917;
+	};
 	62CC1407124DDA79001AF7CD /* CirclePortShape.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {5304, 1092}}";
@@ -2613,7 +2679,7 @@
 		ignoreCount = 0;
 		lineNumber = 136;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.62656;
+		modificationTime = 312776237.425394;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2631,7 +2697,7 @@
 		ignoreCount = 0;
 		lineNumber = 59;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626595;
+		modificationTime = 312776237.425436;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2649,7 +2715,7 @@
 		ignoreCount = 0;
 		lineNumber = 123;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626736;
+		modificationTime = 312776237.425617;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2667,7 +2733,7 @@
 		ignoreCount = 0;
 		lineNumber = 135;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.626821;
+		modificationTime = 312776237.4257;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2700,9 +2766,9 @@
 	};
 	62F797571260151D001CC0F1 /* EdgeDelete.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {5304, 1001}}";
-			sepNavSelRange = "{1567, 0}";
-			sepNavVisRange = "{0, 1674}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 910}}";
+			sepNavSelRange = "{2495, 0}";
+			sepNavVisRange = "{1679, 875}";
 			sepNavWindowFrame = "{{15, 4}, {695, 869}}";
 		};
 	};
@@ -2720,7 +2786,7 @@
 		ignoreCount = 0;
 		lineNumber = 72;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.62754;
+		modificationTime = 312776237.426699;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2738,7 +2804,7 @@
 		ignoreCount = 0;
 		lineNumber = 227;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627577;
+		modificationTime = 312776237.426769;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2756,7 +2822,7 @@
 		ignoreCount = 0;
 		lineNumber = 661;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627661;
+		modificationTime = 312776237.426884;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2774,7 +2840,7 @@
 		ignoreCount = 0;
 		lineNumber = 35;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627746;
+		modificationTime = 312776237.427;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2792,7 +2858,7 @@
 		ignoreCount = 0;
 		lineNumber = 708;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627786;
+		modificationTime = 312776237.427062;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2810,7 +2876,7 @@
 		ignoreCount = 0;
 		lineNumber = 49;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627862;
+		modificationTime = 312776237.427189;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -2828,11 +2894,11 @@
 		ignoreCount = 0;
 		lineNumber = 163;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627901;
+		modificationTime = 312776237.427229;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	62F7992512603C86001CC0F1 /* EdgeMove.m:128 */ = {
+	62F7992512603C86001CC0F1 /* EdgeMove.m:132 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -2844,9 +2910,9 @@
 		functionName = "-checkConnect:trackEdge:atPoint:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 128;
+		lineNumber = 132;
 		location = CDQuartzGraph;
-		modificationTime = 312773746.627936;
+		modificationTime = 312776237.42729;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};

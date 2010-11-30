@@ -285,14 +285,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>47</integer>
+									<integer>43</integer>
+									<integer>14</integer>
 									<integer>13</integer>
 									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 162}, {346, 760}}</string>
+							<string>{{0, 625}, {346, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -311,7 +312,7 @@
 							<real>346</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>7 59 1200 819 0 0 1440 878 </string>
+						<string>248 59 1200 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -341,7 +342,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62CAC26412A48C730031379E</string>
+										<string>62CAC2FD12A499BD0031379E</string>
 										<key>history</key>
 										<array>
 											<string>62602C1E12168C7E0018E683</string>
@@ -399,9 +400,7 @@
 											<string>623C835C12912ECE008CCF9A</string>
 											<string>623C835D12912ECE008CCF9A</string>
 											<string>62D0610B1295114700B4C47D</string>
-											<string>6234331112A3986B00CB3259</string>
 											<string>62CAC09E12A47EA20031379E</string>
-											<string>62CAC25A12A48C730031379E</string>
 											<string>62CAC25B12A48C730031379E</string>
 											<string>62CAC25C12A48C730031379E</string>
 											<string>62CAC25D12A48C730031379E</string>
@@ -410,7 +409,11 @@
 											<string>62CAC26012A48C730031379E</string>
 											<string>62CAC26112A48C730031379E</string>
 											<string>62CAC26212A48C730031379E</string>
-											<string>62CAC26312A48C730031379E</string>
+											<string>62CAC2F812A499BD0031379E</string>
+											<string>62CAC2F912A499BD0031379E</string>
+											<string>62CAC2FA12A499BD0031379E</string>
+											<string>62CAC2FB12A499BD0031379E</string>
+											<string>62CAC2FC12A499BD0031379E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -424,7 +427,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {832, 540}}</string>
 								<key>RubberWindowFrame</key>
-								<string>7 59 1200 819 0 0 1440 878 </string>
+								<string>248 59 1200 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -444,7 +447,7 @@
 								<key>Frame</key>
 								<string>{{0, 545}, {832, 233}}</string>
 								<key>RubberWindowFrame</key>
-								<string>7 59 1200 819 0 0 1440 878 </string>
+								<string>248 59 1200 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -609,11 +612,11 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>6240A54F121652F800840C1B</string>
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.xcodeproj</string>
+		<string>6240A54F121652F800840C1B</string>
 	</array>
 	<key>WindowString</key>
-	<string>7 59 1200 819 0 0 1440 878 </string>
+	<string>248 59 1200 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -634,7 +637,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CirclePortShape.m</string>
+								<string>EdgeMove.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

@@ -75,9 +75,13 @@
 	if ((t.edge.source != nil) && 
 		(t.edge.target != nil))
 	{
-		[state.detachedEdges addObject:t.edge];
-		// 
-		[state.graph disconnect:t.edge.source to:t.edge.target];
+		if ([state.lock tryLock])
+		{
+			[state.detachedEdges addObject:t.edge];
+			// 
+			[state.graph disconnect:t.edge.source to:t.edge.target];
+			[state.lock unlock];
+		}
 	}
 	
 	// use the minimum absolute distance from the edge shapes to determine which
@@ -125,7 +129,7 @@
 		return;
 	
 	// reconnect the edge.
-	if ((moveStart) && (t.edge.target != nil))
+	if ((moveStart) && (t.edge.target != nil) && ([state.lock tryLock]))
 	{
 		[state.graph connect:node
 						 to: t.edge.target
@@ -133,14 +137,15 @@
 				   fromPort:closest
 					 toPort:t.edge.shapeDelegate.endPort];
 		[state.detachedEdges removeObject:t.edge];
-	
-	} else if (t.edge.source != nil) {
+		[state.lock unlock];
+	} else if ((t.edge.source != nil) && ([state.lock tryLock])) {
 		[state.graph connect:t.edge.source
 						  to: node
 				   withShape:t.edge.shapeDelegate
 					fromPort:t.edge.shapeDelegate.startPort
 					  toPort:closest];
-		[state.detachedEdges removeObject:t.edge];	
+		[state.detachedEdges removeObject:t.edge];
+		[state.lock unlock];
 	} else if (moveStart && t.edge.target == nil) {
 		// connect to start only.
 		// remain detached.

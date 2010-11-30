@@ -49,7 +49,7 @@
 	for(QPoint *p in state.hoverPoints)
 	{
 		TrackedEdge *t = [state findTrackedEdge:i];
-		if (t.edge != nil)
+		if ( (t.edge != nil) && ([state.lock tryLock]) )
 		{
 			// disconnect the items.
 			[state.graph disconnect:t.edge.source to:t.edge.target]; 
@@ -58,6 +58,7 @@
 			t.edge.target = nil;
 			[state.detachedEdges removeObject:(id)t.edge];
 			[state.selectEdges removeObjectAtIndex:t.index];
+			[state.lock unlock];
 		}
 	}
 	state.shouldDelete = NO;
