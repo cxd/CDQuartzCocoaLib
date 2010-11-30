@@ -283,7 +283,7 @@
 		ignoreCount = 0;
 		lineNumber = 103;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.570558;
+		modificationTime = 312788518.603971;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -358,7 +358,7 @@
 		ignoreCount = 0;
 		lineNumber = 121;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.570628;
+		modificationTime = 312788518.604019;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -657,9 +657,9 @@
 	};
 	6240A61D1216570000840C1B /* QModifierQueue.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {761, 1768}}";
-			sepNavSelRange = "{278, 0}";
-			sepNavVisRange = "{0, 439}";
+			sepNavIntBoundsRect = "{{0, 0}, {761, 1664}}";
+			sepNavSelRange = "{2068, 0}";
+			sepNavVisRange = "{1947, 604}";
 		};
 	};
 	6240A61E1216570000840C1B /* QMove.h */ = {
@@ -916,7 +916,7 @@
 		ignoreCount = 0;
 		lineNumber = 115;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.570665;
+		modificationTime = 312788518.604058;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -934,7 +934,7 @@
 		ignoreCount = 0;
 		lineNumber = 127;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.571055;
+		modificationTime = 312788518.604175;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1022,7 +1022,7 @@
 		ignoreCount = 0;
 		lineNumber = 99;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.57118;
+		modificationTime = 312788518.604249;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1040,7 +1040,7 @@
 		ignoreCount = 0;
 		lineNumber = 32;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.571344;
+		modificationTime = 312788518.604323;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1058,7 +1058,7 @@
 		ignoreCount = 0;
 		lineNumber = 49;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.571381;
+		modificationTime = 312788518.604365;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1076,7 +1076,7 @@
 		ignoreCount = 0;
 		lineNumber = 40;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.571413;
+		modificationTime = 312788518.604403;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1094,7 +1094,7 @@
 		ignoreCount = 0;
 		lineNumber = 32;
 		location = QuartzCocoaLib;
-		modificationTime = 312782938.571438;
+		modificationTime = 312788518.604461;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1493,7 +1493,7 @@
 		fRef = 6240A62B1216570000840C1B /* QShape.m */;
 		name = "QShape.m: 91";
 		rLen = 0;
-		rLoc = 1822;
+		rLoc = 1799;
 		rType = 0;
 		vrLen = 384;
 		vrLoc = 1359;

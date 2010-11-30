@@ -20,7 +20,6 @@
 }
 -(void)dealloc
 {
-	[self.queue dealloc];
 	[self.queue autorelease];
 	[super dealloc];
 }
