@@ -41,10 +41,10 @@
     if (self) {
         self.graph = [[CDQuartzGraph alloc] init];
 		self.state = [[CDGraphViewState alloc] initWithGraph:self.graph 
-												   andBounds:[[QRectangle alloc] initX:[self frame].origin.x
+												   andBounds:[[[QRectangle alloc] initX:[self frame].origin.x
 																					 Y:[self frame].origin.y
 																				 WIDTH:[self frame].size.width
-																				HEIGHT:[self frame].size.height]];
+																				HEIGHT:[self frame].size.height] autorelease]];
 		self.state.editDelegate = self;
 	}
     return self;
@@ -56,10 +56,10 @@
 	[super awakeFromNib];
 	self.graph = [[CDQuartzGraph alloc] init];
 	self.state = [[CDGraphViewState alloc] initWithGraph:self.graph 
-											   andBounds:[[QRectangle alloc] initX:[self frame].origin.x
+											   andBounds:[[[QRectangle alloc] initX:[self frame].origin.x
 																				 Y:[self frame].origin.y
 																			 WIDTH:[self frame].size.width
-																			HEIGHT:[self frame].size.height]];
+																			HEIGHT:[self frame].size.height] autorelease]];
 	self.state.editDelegate = self;
 	if (self.parentScrollView != nil)
 	{
@@ -71,7 +71,7 @@
 											 action:@selector(handleDoubleTap:)];
 		doubleTap.numberOfTapsRequired = 2;
 		[self addGestureRecognizer:doubleTap];
-		[doubleTap release];
+		[doubleTap autorelease];
 		
 #else		
 		[[NSNotificationCenter defaultCenter] addObserver:self 
@@ -171,10 +171,10 @@
 	[self.queue retain];
 	self.graph = newGraph;
 	self.state = [[CDGraphViewState alloc] initWithGraph:self.graph 
-											   andBounds:[[QRectangle alloc] initX:[self frame].origin.x
+											   andBounds:[[[QRectangle alloc] initX:[self frame].origin.x
 																				 Y:[self frame].origin.y
 																			 WIDTH:[self frame].size.width
-																			HEIGHT:[self frame].size.height]];	
+																			HEIGHT:[self frame].size.height] autorelease]];	
 	self.state.editDelegate = self;
 	[self.queue enqueue:self.graph];
 	
@@ -194,6 +194,7 @@
 									  (newBounds.width > [[self superview] frame].size.width) ? newBounds.width : [[self superview] frame].size.width, 
 									  (newBounds.height > [[self superview] frame].size.height) ? newBounds.height : [[self superview] frame].size.height)];
 		}
+		[currentRect autorelease];
 	}
 	
 	self.shouldDelete = NO;
@@ -241,7 +242,6 @@ This will set the needs display flag to true.
 	
 #endif
 	
-	[context retain];
 	if (self.queue == nil)
 	{
 		self.queue = [[QModifierQueue alloc] init];
@@ -257,9 +257,8 @@ This will set the needs display flag to true.
 	}
 	
 	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:self.queue];
-	[self.queue autorelease];
 	self.queue = copy;
-	[context release];
+	[context autorelease];
 	
 	// update any detached edges.
 	for(CDQuartzEdge *edge in self.state.detachedEdges)
@@ -357,12 +356,12 @@ This will set the needs display flag to true.
 	}
 	
 	if (!self.state.editConnections) {
-		[self.state trackShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] 
+		[self.state trackShapes:[[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] autorelease] 
 					  andDelete:self.shouldDelete];
 	} else {
-		[self.state hoverShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]]];
+		[self.state hoverShapes:[[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] autorelease]];
 	}
-	
+	[p autorelease];
 	// update the state again if the label is being selected.
 	if (self.state.selectLabel)
 	{
@@ -413,12 +412,12 @@ This will set the needs display flag to true.
 	
 	if (!self.state.editConnections)
 	{
-		[self.state trackShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] 
+		[self.state trackShapes:[[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] autorelease] 
 					  andDelete:self.shouldDelete];
 	} else {
-		[self.state hoverShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]]];
+		[self.state hoverShapes:[[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] autorelease]];
 	}
-	
+	[p autorelease];
 	if (self.state.redraw && self.parentScrollView != nil)
 	{
 		// recompute the bounds
@@ -437,6 +436,7 @@ This will set the needs display flag to true.
 			
 			[[self superview] setNeedsDisplay:YES];
 		}
+		[currentRect autorelease];
 	}
 	
 	[self setNeedsDisplay:self.state.redraw];
@@ -466,9 +466,10 @@ This will set the needs display flag to true.
 		
 		if (self.state.editConnections)
 		{
-			[self.state hoverShapes:[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]]];
+			[self.state hoverShapes:
+			 [[[NSMutableArray alloc] initWithArray:[NSArray arrayWithObjects:p,nil]] autorelease]];
 		}
-		
+		[p autorelease];
 		[self setNeedsDisplay:state.redraw];
 		
 		state.redraw = NO;
@@ -674,15 +675,21 @@ This will set the needs display flag to true.
 	// create a new connection object centre screen.
 	BezierLineConnector *connect = [[BezierLineConnector alloc] initWithBounds:bounds];
 	
+	[bounds autorelease];
+	
 	QPoint *start = [[QPoint alloc] initX:cx-50 Y:cy+50];
 	QPoint *end = [[QPoint alloc] initX:cx+50 Y:cy-50];
 	
 	[connect moveStartTo:start];
 	[connect moveEndTo:end];
 	
+	[start autorelease];
+	[end autorelease];
+	
 	CDQuartzEdge *edge = [[CDQuartzEdge alloc] init];
 	edge.shapeDelegate = connect;
 	[self.state.detachedEdges addObject:edge];
+	[edge autorelease];
 	self.state.redraw = YES;
 	// update the state.
 	[self onStartConnection];

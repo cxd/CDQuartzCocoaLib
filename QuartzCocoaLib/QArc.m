@@ -168,7 +168,7 @@
 	[mid autorelease];
 	[end autorelease];
 	
-	return [[QRectangle alloc] initX:startX Y:startY WIDTH:width HEIGHT:height];	
+	return [[[QRectangle alloc] initX:startX Y:startY WIDTH:width HEIGHT:height] autorelease];	
 }
 
 #pragma mark Encoder and Decoder.

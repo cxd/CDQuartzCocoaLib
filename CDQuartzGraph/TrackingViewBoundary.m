@@ -101,7 +101,7 @@
 	QPoint *p = [[QPoint alloc] initX:x Y:y];
 	[p retain];
 	BOOL result = [self.trackBounds contains:p];
-	[p release];
+	[p autorelease];
 	return result;
 }
 

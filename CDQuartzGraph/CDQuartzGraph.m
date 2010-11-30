@@ -118,11 +118,10 @@
  **/
 -(CDNode *)add:(NSObject *)objData {
 	id node = [[CDQuartzNode alloc] init];
-	[node retain];
 	[node setData:(id) objData];
 	// add it to the array.
 	[nodes addObject:node];
-	return node;
+	return [node autorelease];
 }
 
 /**
@@ -176,19 +175,20 @@
 		[self.nodes addObject:nodeTo];
 	}
 	CDQuartzEdge *edge = [[CDQuartzEdge alloc] init];
-	[edge retain];
 	edge.source = nodeFrom;
 	edge.target = nodeTo;
 	[edges addObject:(id)edge];
 	[nodeFrom addNeighbour:(CDNode *) nodeTo];
 	CDEdge* tmp =(CDEdge*) edge;
 	if (isBidirectional) {
+		[edge autorelease];
 		edge = [[CDQuartzEdge alloc] init];
 		edge.source = nodeTo;
 		edge.target = nodeFrom;
 		[edges addObject:(id)edge];
 		[nodeTo addNeighbour:(CDNode*)nodeFrom];
 	}
+	[edge autorelease];
 	return (CDEdge*)tmp;
 }
 
@@ -334,7 +334,9 @@
 		edge.targetIdx = i;
 		edge.edgeShape = qEdge.shapeDelegate;
 		[set addObject:edge];
+		[edge autorelease];
 	}
+	[set autorelease];
 	return set;
 }
 
@@ -369,7 +371,7 @@
 		CDQuartzNode *source = [self.nodes objectAtIndex:p.sourceIdx];
 		CDQuartzNode *dest = [self.nodes objectAtIndex:p.targetIdx];
 		AbstractConnectorShape* connect= p.edgeShape;
-		AbstractPortShape *start, *end;
+		AbstractPortShape *start = nil, *end = nil;
 		// find the closest source port
 		if (connect.startPort != nil)
 		{
@@ -400,6 +402,6 @@
 {
 	NSData *archive = [NSKeyedArchiver archivedDataWithRootObject: self];
 	CDQuartzGraph *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
-	return copy;
+	return [copy retain];
 }
 @end

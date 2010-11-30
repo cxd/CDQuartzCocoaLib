@@ -103,7 +103,7 @@
 	self.startDecoration.bounds.height = 10;
 	
 	CirclePortShape* highlight = [[CirclePortShape alloc] initWithParent:self 
-															   AndBounds:[[QRectangle alloc] initX:startDecoration.bounds.x - 5 Y:startDecoration.bounds.y - 5 WIDTH:20 HEIGHT:20]];
+															   AndBounds:[[[QRectangle alloc] initX:startDecoration.bounds.x - 5 Y:startDecoration.bounds.y - 5 WIDTH:20 HEIGHT:20] autorelease]];
 	highlight.fillColor.red = 1.0f;
 	highlight.fillColor.green = 1.0f;
 	highlight.fillColor.blue = 0.0f;
@@ -117,7 +117,7 @@
 	self.endDecoration.bounds.height = 10;
 
 	CirclePortShape* highlight2 = [[CirclePortShape alloc] initWithParent:self
-																AndBounds:[[QRectangle alloc] initX:endDecoration.bounds.x - 5 Y:endDecoration.bounds.y - 5 WIDTH:20 HEIGHT:20]];
+																AndBounds:[[[QRectangle alloc] initX:endDecoration.bounds.x - 5 Y:endDecoration.bounds.y - 5 WIDTH:20 HEIGHT:20] autorelease]];
 	highlight2.fillColor.red = 1.0f;
 	highlight2.fillColor.green = 1.0f;
 	highlight2.fillColor.blue = 0.0f;
@@ -149,7 +149,7 @@
  **/
 -(void)updateConnections 
 {
-	float sX, sY, eX, eY = 0.0;
+	float sX = 0.0, sY = 0.0, eX = 0.0, eY = 0.0;
 	// move to the mid point of the port shape.
 	if (self.startDecoration != nil)
 	{
@@ -178,13 +178,13 @@
 	}
 	if (self.startDecoration != nil)
 	{
-	[self.startDecoration moveTo:[[QPoint alloc] initX:sX - self.startDecoration.bounds.width/2.0f 
-													 Y:sY - self.startDecoration.bounds.height/2.0f]];
+	[self.startDecoration moveTo:[[[QPoint alloc] initX:sX - self.startDecoration.bounds.width/2.0f 
+													 Y:sY - self.startDecoration.bounds.height/2.0f] autorelease]];
 	}
 	if (self.endDecoration != nil)
 	{
-	[self.endDecoration moveTo:[[QPoint alloc] initX:eX - self.endDecoration.bounds.width/2.0f 
-												   Y:eY - self.endDecoration.bounds.height/2.0f]];
+	[self.endDecoration moveTo:[[[QPoint alloc] initX:eX - self.endDecoration.bounds.width/2.0f 
+												   Y:eY - self.endDecoration.bounds.height/2.0f] autorelease]];
 	}
 }
 

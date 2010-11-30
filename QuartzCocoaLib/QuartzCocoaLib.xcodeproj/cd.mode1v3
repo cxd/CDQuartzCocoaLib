@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>623C83A81291476B008CCF9A</string>
+										<string>6234331712A3987000CB3259</string>
 										<key>history</key>
 										<array>
 											<string>6240A6A31216589E00840C1B</string>
@@ -384,7 +384,6 @@
 											<string>6264D42D128B7D2700C5368A</string>
 											<string>6264D42E128B7D2700C5368A</string>
 											<string>6264D42F128B7D2700C5368A</string>
-											<string>6264D430128B7D2700C5368A</string>
 											<string>6264D431128B7D2700C5368A</string>
 											<string>6264D432128B7D2700C5368A</string>
 											<string>6264D433128B7D2700C5368A</string>
@@ -400,14 +399,13 @@
 											<string>6264D43D128B7D2700C5368A</string>
 											<string>6264D43E128B7D2700C5368A</string>
 											<string>6264D440128B7D2700C5368A</string>
-											<string>6276A9CD1291068E0013EA5C</string>
 											<string>6276A9CE1291068E0013EA5C</string>
 											<string>6276A9CF1291068E0013EA5C</string>
 											<string>623C83A31291476B008CCF9A</string>
 											<string>623C83A41291476B008CCF9A</string>
 											<string>623C83A51291476B008CCF9A</string>
 											<string>623C83A61291476B008CCF9A</string>
-											<string>623C83A71291476B008CCF9A</string>
+											<string>624B36F812968EB900CC50D1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -419,14 +417,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {743, 413}}</string>
+								<string>{{0, 0}, {743, 395}}</string>
 								<key>RubberWindowFrame</key>
 								<string>2 100 1044 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>413pt</string>
+							<string>395pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -439,14 +437,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 418}, {743, 319}}</string>
+								<string>{{0, 400}, {743, 337}}</string>
 								<key>RubberWindowFrame</key>
 								<string>2 100 1044 778 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>319pt</string>
+							<string>337pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -465,9 +463,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>623C83A91291476B008CCF9A</string>
+				<string>6234331812A3987000CB3259</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>623C83AA1291476B008CCF9A</string>
+				<string>6234331912A3987000CB3259</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -606,6 +604,7 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>6240A5EB1216562000840C1B</string>
+		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/QuartzCocoaLib/QuartzCocoaLib.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>2 100 1044 778 0 0 1440 878 </string>
@@ -685,7 +684,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6240A5EB1216562000840C1B</string>
-				<string>623C83AB1291476B008CCF9A</string>
+				<string>6234331A12A3987000CB3259</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

@@ -118,8 +118,8 @@ const float TO_DEGREES = (180.0 / M_PI);
  **/
 +(Vector2D *)add:(Vector2D *)a AND:(Vector2D *)b
 {
-	return [[Vector2D alloc] initX:(a.x + b.x)
-									 Y:(a.y + b.y)];
+	return [[[Vector2D alloc] initX:(a.x + b.x)
+									 Y:(a.y + b.y)] autorelease];
 }
 
 /**
@@ -127,8 +127,8 @@ const float TO_DEGREES = (180.0 / M_PI);
  **/
 +(Vector2D *)subtract:(Vector2D *)a AND:(Vector2D *)b
 {
-	return [[Vector2D alloc] initX:(a.x - b.x)
-									 Y:(a.y - b.y)];	
+	return [[[Vector2D alloc] initX:(a.x - b.x)
+									 Y:(a.y - b.y)] autorelease];	
 }
 
 
@@ -166,7 +166,7 @@ Dot product of two vectors.
  **/
 +(Vector2D *)crossProduct:(Vector2D *)a AND:(Vector2D *)b
 {
-	return [[Vector2D alloc] initX:(a.x*b.y) - (a.y*b.x)  Y:(a.y*b.x) - (a.x*b.y)];
+	return [[[Vector2D alloc] initX:(a.x*b.y) - (a.y*b.x)  Y:(a.y*b.x) - (a.x*b.y)] autorelease];
 }
 
 @end

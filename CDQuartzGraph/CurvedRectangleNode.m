@@ -134,8 +134,8 @@
 {
 	strokeColor = [[QStrokeColor alloc] initWithQColor:self.outlineColor];
 	[self.queue enqueue:strokeColor];
-	[self.queue enqueue:[[QLineCap alloc] initWithStyle:QLineCapRounded]];
-	[self.queue enqueue:[[QJoinCap alloc] initWithStyle:QJoinCapRounded]];
+	[self.queue enqueue:[[[QLineCap alloc] initWithStyle:QLineCapRounded] autorelease]];
+	[self.queue enqueue:[[[QJoinCap alloc] initWithStyle:QJoinCapRounded] autorelease]];
 	strokeWidth = [[QStrokeWidth alloc] initWidth:self.outlineWeight];
 	[self.queue enqueue:strokeWidth];
 	color = [[QFillColor alloc] initWithQColor:self.fillColor];
@@ -169,6 +169,7 @@
 												WIDTH:portWidth
 											   HEIGHT:portWidth];
 	self.leftPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:leftB];
+	[leftB autorelease];
 	[self.ports addObject:self.leftPort];
 	
 	QRectangle *topB = [[QRectangle alloc] initX:self.bounds.x + self.bounds.width/2.0 - portWidth/2.0
@@ -176,13 +177,16 @@
 											   WIDTH:portWidth 
 											  HEIGHT:portWidth];
 	self.topPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:topB];
+	[topB autorelease];
 	[self.ports addObject:self.topPort];
+	
 	
 	QRectangle *rightB = [[QRectangle alloc] initX: self.bounds.x + self.bounds.width - portWidth/2.0
 													Y: self.bounds.y + self.bounds.height/2.0 - portWidth/2.0
 												WIDTH:portWidth
 											   HEIGHT:portWidth];
 	self.rightPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:rightB];
+	[rightB autorelease];
 	[self.ports addObject:self.rightPort];
 	
 	QRectangle *bottomB = [[QRectangle alloc] initX:self.bounds.x + self.bounds.width/2.0 - portWidth/2.0
@@ -190,6 +194,7 @@
 											   WIDTH:portWidth 
 											  HEIGHT:portWidth];
 	self.bottomPort = [[CurvedRectanglePort alloc] initWithParent:self AndBounds:bottomB];
+	[bottomB autorelease];
 	[self.ports addObject:self.bottomPort];
 }
 
@@ -234,19 +239,19 @@
 	
 	float left = self.bounds.x - portWidth/2.0;
 	float top = self.bounds.height/2.0 - portWidth/2.0;
-	[self.leftPort moveTo:[[QPoint alloc] initX:left Y:top]];
+	[self.leftPort moveTo:[[[QPoint alloc] initX:left Y:top] autorelease]];
 	
 	left = self.bounds.x + self.bounds.width/2.0 - portWidth/2.0;
 	top = self.bounds.y - portWidth/2.0;
-	[self.topPort moveTo:[[QPoint alloc] initX:left Y:top]];
+	[self.topPort moveTo:[[[QPoint alloc] initX:left Y:top] autorelease]];
 	
 	left = self.bounds.x + self.bounds.width - portWidth/2.0;
 	top = self.bounds.height/2.0 - portWidth/2.0;
-	[self.rightPort moveTo:[[QPoint alloc] initX:left Y:top]];
+	[self.rightPort moveTo:[[[QPoint alloc] initX:left Y:top] autorelease]];
 	
 	left = self.bounds.x + self.bounds.width/2.0 - portWidth/2.0;
 	top = self.bounds.y + self.bounds.height - portWidth/2.0;
-	[self.bottomPort moveTo:[[QPoint alloc] initX:left Y:top]];
+	[self.bottomPort moveTo:[[[QPoint alloc] initX:left Y:top] autorelease]];
 }
 
 #pragma mark Encoder and Decoder.

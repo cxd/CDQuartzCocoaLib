@@ -73,15 +73,16 @@
 										START:YES 
 										  END:YES 
 									CLOCKWISE:YES];
+	[centre autorelease];
 	strokeWidth = [[QStrokeWidth alloc] initWidth:1.0f];
 	[self.queue enqueue:fillColor];
 	[self.queue enqueue:filledCircle];
-	[self.queue enqueue:[[QFillPath alloc] init]];
+	[self.queue enqueue:[[[QFillPath alloc] init] autorelease]];
 	
 	[self.queue enqueue:strokeColor];
 	[self.queue enqueue:strokeWidth];
 	[self.queue enqueue:outlineArc];
-	[self.queue enqueue:[[QStrokePath alloc] init]];
+	[self.queue enqueue:[[[QStrokePath alloc] init] autorelease]];
 }
 
 /**
@@ -123,6 +124,7 @@
 	QPoint *centre = [[QPoint alloc] initX:self.bounds.x + self.bounds.width/2 Y:self.bounds.y + self.bounds.height/2];
 	filledCircle.centre = centre;
 	outlineArc.centre = centre;
+	[centre autorelease];
 }
 
 /**
@@ -134,6 +136,7 @@
 	QPoint *centre = [[QPoint alloc] initX:self.bounds.x + self.bounds.width/2 Y:self.bounds.y + self.bounds.height/2];
 	filledCircle.centre = centre;
 	outlineArc.centre = centre;
+	[centre autorelease];
 }
 
 /**
@@ -147,6 +150,7 @@
 	outlineArc.centre = centre;
 	filledCircle.radius = w;
 	outlineArc.radius = w;
+	[centre autorelease];
 }
 
 #pragma mark Encoder and Decoder.

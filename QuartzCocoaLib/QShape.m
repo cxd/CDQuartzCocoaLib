@@ -35,7 +35,7 @@
 -(void)update:(QContext *)context
 {
 	QModifierQueue *copy = [QModifierQueue updateContext:context SourceQueue:self.queue];
-	[self.queue autorelease];
+	// the modifier queue will autorelease the self queue reference.
 	self.queue = copy;
 }
 
@@ -44,7 +44,7 @@
 	QRectangle *args = [[QRectangle alloc] initX:INFINITY Y:INFINITY WIDTH:0 HEIGHT:0];
 	QModifierQueue *copy = [QModifierQueue traverseQueue:self.queue Visitor:self Args:args];
 	self.queue = copy;
-	return args;
+	return [args autorelease];
 }
 
 -(void)visit:(id <QContextModifier>)modifier data:(id)arguments

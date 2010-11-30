@@ -62,15 +62,15 @@ const float MAX_RADIUS = 100.0;
 
 -(void)enqueue:(QModifierQueue *)queue
 {
-	[queue enqueue:[[QSaveContext alloc] init]];
+	[queue enqueue:[[[QSaveContext alloc] init] autorelease]];
 	
 	for(PouredDroplet *drop in self.droplets)
 	{
 		[queue enqueue:self.fillColor];
 		[queue enqueue:drop.arc];	
-		[queue enqueue:[[QFillPath alloc] init]];
+		[queue enqueue:[[[QFillPath alloc] init] autorelease]];
 	}
-	[queue enqueue:[[QRestoreContext alloc] init]];
+	[queue enqueue:[[[QRestoreContext alloc] init] autorelease]];
 }
 
 -(void)updateMotion:(Vector2D *)motion
@@ -156,6 +156,7 @@ const float MAX_RADIUS = 100.0;
 			radius = DEFAULT_RADIUS;
 		PouredDroplet *drop = [[PouredDroplet alloc] initX:self.point.x + var Y:self.point.y Radius: radius];
 		[self.droplets addObject:drop];
+		[drop autorelease];
 	}
 	// recalculate the x and y positions based on their acceleration and the direction of motion.
 	/*

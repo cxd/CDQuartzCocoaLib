@@ -53,6 +53,7 @@
 			QPoint *move = [[QPoint alloc] initX:p.x - bounds.width/2.0f Y:p.y - bounds.height/2.0f];
 			// move the node so that the centre of the shape is positioned at the new point.
 			[state.graph moveNode:node.node To:move];
+			[move autorelease];
 			state.redraw = YES;
 		}
 		i++;

@@ -277,8 +277,8 @@
 	self.bounds.y = point.y;
 	if (self.highlightShape != nil)
 	{
-		[self.highlightShape moveTo:[[QPoint alloc] initX:point.x - self.highlightShape.bounds.width/2.0f + self.bounds.width/2.0f
-														Y:point.y - self.highlightShape.bounds.height/2.0f + self.bounds.height/2.0f]];
+		[self.highlightShape moveTo:[[[QPoint alloc] initX:point.x - self.highlightShape.bounds.width/2.0f + self.bounds.width/2.0f
+														Y:point.y - self.highlightShape.bounds.height/2.0f + self.bounds.height/2.0f] autorelease]];
 	}
 	
 	if (self.labelShape != nil)
@@ -408,6 +408,7 @@
 	self.labelShape = [aDecoder decodeObjectForKey:@"AbstractGraphShape_labelShape"];
 	self.textColor = [aDecoder decodeObjectForKey:@"AbstractGraphShape_textColor"];
 	self.label = [aDecoder decodeObjectForKey:@"AbstractGraphShape_label"];
+	self.highlightShape = [aDecoder decodeObjectForKey:@"AbstractGraphShape_highlightShape"];
 	return self;
 }
 /**
@@ -424,6 +425,7 @@
 	[aCoder encodeObject:self.labelShape forKey:@"AbstractGraphShape_labelShape"];
 	[aCoder encodeObject:self.textColor forKey:@"AbstractGraphShape_textColor"];
 	[aCoder encodeObject:self.label forKey:@"AbstractGraphShape_label"];
+	[aCoder encodeObject:self.highlightShape forKey:@"AbstractGraphShape_highlightShape"];
 }
 
 

@@ -161,6 +161,7 @@
 				gradient.y = gradient.y/magnitude;
 				node1.shapeDelegate.displacement.x = node1.shapeDelegate.displacement.x + gradient.x * r;
 				node1.shapeDelegate.displacement.y = node1.shapeDelegate.displacement.y + gradient.y * r;
+				[gradient autorelease];
 			}
 		}		
 		/**
@@ -198,6 +199,7 @@
 			v.shapeDelegate.displacement.y = v.shapeDelegate.displacement.y + gradient.y * a;
 			u.shapeDelegate.displacement.x = u.shapeDelegate.displacement.x + gradient.x * a;
 			u.shapeDelegate.displacement.y = u.shapeDelegate.displacement.y + gradient.y * a;
+			[gradient autorelease];
 		}
 		
 		/**
@@ -230,6 +232,7 @@
 						And: [self max:-1.0*(self.height/2.0) And:p.y]];
 			
 			[graph moveNode:node To:p];
+			[p autorelease];
 		}
 		// cool the initial temperature.
 		temperature =  temperature * (1.0 - i + 1.0) / (epochs - 1.0);

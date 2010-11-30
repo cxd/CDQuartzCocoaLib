@@ -22,17 +22,15 @@
 
 -(void)enqueue:(id<QContextModifier>) modifier 
 {
-	[modifier retain];
-	[sequence addObject:(id)modifier];
+	[sequence addObject:[modifier retain]];
 }
 -(id<QContextModifier>)dequeue 
 {
 	id<QContextModifier> obj = [self top];
 	if (obj != nil) {
 		[sequence removeObjectAtIndex:0];
-		[obj autorelease];
 	}
-	return obj;
+	return [obj autorelease];
 }
 
 -(id<QContextModifier>)top
@@ -61,7 +59,7 @@
 -(void)dealloc
 {
 	[self clear];
-	[sequence release];
+	[sequence autorelease];
 	[super dealloc];
 }
 
@@ -74,7 +72,7 @@
 		[modifier update:context];
 		[queue enqueue:modifier];
 	}
-	return queue;
+	return [queue autorelease];
 }
 
 /**
@@ -89,7 +87,7 @@
 		[visitor visit:modifier data:arguments];
 		[queue enqueue:modifier];
 	}
-	return queue;	
+	return [queue autorelease];	
 }
 
 
@@ -125,6 +123,7 @@
 		[aCoder encodeObject:o forKey:name];
 		i++;
 	}
+	[copy autorelease];
 	[aCoder encodeInt:i forKey:@"sequenceCount"];
 }
 @end

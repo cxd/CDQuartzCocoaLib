@@ -96,6 +96,7 @@
 	{
 		[p moveBy:delta];	
 	}
+	[delta autorelease];
 }
 
 /**

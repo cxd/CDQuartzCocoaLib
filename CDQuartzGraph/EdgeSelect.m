@@ -34,7 +34,7 @@
 {
 	if (state.isCancelled) 
 		return NO;
-	return ([state.hoverPoints count] > 0);
+	return ( ([state.selectEdges count] == 0) && ([state.hoverPoints count] > 0) );
 }
 
 /**

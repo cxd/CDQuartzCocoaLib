@@ -37,14 +37,14 @@
 	
 	QPoint *bottomArcCentre = [[QPoint alloc] initX:centre.x Y:centre.y - 25];
 	
-	QArc *topArc = [[QArc alloc] initWithCentre:topArcCentre
+	QArc *topArc = [[QArc alloc] initWithCentre:[topArcCentre autorelease]
 										 Radius: 25
 									 StartAngle:90
 									   EndAngle:270
 										  START:NO
 											END:YES
 									  CLOCKWISE:NO];
-	QArc *bottomArc = [[QArc alloc] initWithCentre:bottomArcCentre
+	QArc *bottomArc = [[QArc alloc] initWithCentre:[bottomArcCentre autorelease]
 											Radius: 25
 										StartAngle:90
 										  EndAngle:270
@@ -54,22 +54,23 @@
 	QPoint *topEyeCentre = [[QPoint alloc] initX:centre.x Y:centre.y + 25];
 	QPoint *bottomEyeCentre = [[QPoint alloc] initX:centre.x Y:centre.y - 25];
 	
-	QArc *topEye = [[QArc alloc] initWithCentre:topEyeCentre
+	QArc *topEye = [[QArc alloc] initWithCentre:[topEyeCentre autorelease]
 										 Radius: 10.0
 									 StartAngle:0.0
 									   EndAngle:360.0
 										  START:YES
 											END:YES];
 	
-	QArc *bottomEye = [[QArc alloc] initWithCentre:bottomEyeCentre
+	
+	QArc *bottomEye = [[QArc alloc] initWithCentre:[bottomEyeCentre autorelease]
 											Radius: 10.0
 										StartAngle:0.0
 										  EndAngle:360.0
 											 START:YES
 											   END:YES];
 	
-	
 	[self add:bgStroke];
+	[bgStroke autorelease];
 	
 	[self add:[[QSaveContext alloc] init]];
 	[self add:bgFill];
@@ -90,17 +91,17 @@
 	[self add:[[QFillPath alloc] init]];
 	
 	[self add:[[QSaveContext alloc] init]];
-	[self add:[[QShadow alloc] initWithBlur:5.0 O:5.0 YO:-3.0]];
+	[self add:[[[QShadow alloc] initWithBlur:5.0 O:5.0 YO:-3.0] autorelease]];
 	
 	[self add:bgFill];
 	[self add:topEye];
-	[self add:[[QFillPath alloc] init]];
+	[self add:[[[QFillPath alloc] init] autorelease]];
 	
 	[self add:fgFill];
 	[self add:bottomEye];
-	[self add:[[QFillPath alloc] init]];
+	[self add:[[[QFillPath alloc] init] autorelease]];
 	
-	[self add:[[QRestoreContext alloc] init]];
+	[self add:[[[QRestoreContext alloc] init] autorelease]];
 	return self;
 }
 

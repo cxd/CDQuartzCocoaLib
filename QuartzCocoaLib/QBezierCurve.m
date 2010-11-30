@@ -127,11 +127,9 @@ NSInteger sortValue(id val1, id val2, void* reverse)
 	NSArray *heightSorted = [heightArray sortedArrayUsingFunction:sortValue context:&reverse];
 	width = [(NSNumber *)[widthSorted objectAtIndex:0] floatValue];
 	height = [(NSNumber *)[heightSorted objectAtIndex:0] floatValue];
-	[widthArray autorelease];
 	[heightArray autorelease];
-	[widthSorted autorelease];
-	[heightSorted autorelease];
-	return [[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height];
+	[widthArray autorelease];
+	return [[[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height] autorelease];
 }
 
 #pragma mark Encoder and Decoder.

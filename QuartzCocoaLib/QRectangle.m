@@ -61,7 +61,7 @@
  **/
 -(QPoint *)midPoint
 {
-	return [[QPoint alloc] initX:self.x + (self.width/ 2.0f) Y:self.y + (self.height/2.0f)];	
+	return [[[QPoint alloc] initX:self.x + (self.width/ 2.0f) Y:self.y + (self.height/2.0f)] autorelease];	
 }
 
 #pragma mark Encoder and Decoder.
@@ -99,8 +99,6 @@
 {
 	QPoint *topLeft = [[QPoint alloc] initX:self.x Y:self.y];
 	QPoint *bottomRight = [[QPoint alloc] initX:self.x + self.width Y:self.y + self.height];
-	[topLeft retain];
-	[bottomRight retain];
 	// distance should be positive as point is greater than top left.
 	float xTop = [topLeft horizontalDistanceTo:point];
 	float yTop = [topLeft verticalDistanceTo:point];
@@ -109,8 +107,8 @@
 	float xBottom = [bottomRight horizontalDistanceTo:point];
 	float yBottom = [bottomRight verticalDistanceTo:point];
 	
-	[topLeft release];
-	[bottomRight release];
+	[topLeft autorelease];
+	[bottomRight autorelease];
 	
 	return (xTop >= 0.0 && yTop >= 0.0 && xBottom <= 0.0 && yBottom <= 0.0);
 }

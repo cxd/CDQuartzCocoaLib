@@ -34,7 +34,7 @@
 {
 	QPoint *mid = [[QPoint alloc] initX: (self.x + other.x)/2.0 
 										 Y: (self.y + other.y)/2.0];
-	return mid;
+	return [mid autorelease];
 }
 
 -(float)distanceTo:(QPoint *)other

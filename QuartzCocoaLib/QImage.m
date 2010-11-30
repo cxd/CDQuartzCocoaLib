@@ -164,7 +164,7 @@
 
 -(QRectangle*)getBoundary
 {
-	return [[QRectangle alloc] initX:self.anchor.x Y:self.anchor.y WIDTH:self.width HEIGHT:self.height];
+	return [[[QRectangle alloc] initX:self.anchor.x Y:self.anchor.y WIDTH:self.width HEIGHT:self.height] autorelease];
 }
 
 #pragma mark Encoder and Decoder.
@@ -190,7 +190,7 @@
 	CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)buffer, NULL);
 	self.imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
 	CFRelease(source);
-	[buffer release];
+	[buffer autorelease];
 #endif
 	
 #else
@@ -201,7 +201,7 @@
 	CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)buffer, NULL);
 	self.imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
 	CFRelease(source);
-	[buffer release];
+	[buffer autorelease];
 	
 #endif
 	return self;
@@ -234,7 +234,7 @@
 	CGImageDestinationFinalize(dest);
 	CFRelease(dest);
 	[aCoder encodeObject:buffer forKey:@"buffer"];
-	[buffer release];
+	[buffer autorelease];
 #endif
 	
 #else
@@ -245,7 +245,7 @@
 	CGImageDestinationFinalize(dest);
 	CFRelease(dest);
 	[aCoder encodeObject:buffer forKey:@"buffer"];
-	[buffer release];
+	[buffer autorelease];
 	
 #endif
 }

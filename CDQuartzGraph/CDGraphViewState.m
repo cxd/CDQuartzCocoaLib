@@ -174,6 +174,20 @@
 	CDNode *edgeMoveNode = [transitions add:edgeMove];
 	CDNode *edgeDeleteNode = [transitions add:edgeDelete];
 	
+	[init autorelease];
+	[select autorelease];
+	[cancel autorelease];
+	[move autorelease];
+	[delete autorelease];
+	[add autorelease];
+	[place autorelease];
+	[join autorelease];
+	[edit autorelease];
+	[startConnect autorelease];
+	[edgeSelect autorelease];
+	[edgeMove autorelease];
+	[edgeDelete autorelease];
+	
 	current = initNode;
 	
 	/*
@@ -204,6 +218,7 @@
 	[transitions connect:edgeSelectNode to:cancelNode];
 	[transitions connect:edgeSelectNode to:edgeMoveNode];
 	[transitions connect:edgeSelectNode to:edgeDeleteNode];
+	[transitions connect:edgeSelectNode to: edgeSelectNode];
 	
 	/*
 	 EdgeMove -> { Join, Cancel, EdgeMove, EdgeSelect }
@@ -296,7 +311,7 @@
 		// find a node that is associated with the click event.
 		CDQuartzNode* node = [self.graph findNodeContaining:p];
 		TrackedNode *tNode = [[TrackedNode alloc] initWithNode:node atIndex:i];
-		[self.trackNodes addObject:tNode];
+		[self.trackNodes addObject:[tNode autorelease]];
 		i++;
 	}
 }
@@ -323,9 +338,11 @@
 				}
 			}
 		}
-		
-		TrackedEdge *tEdge = [[TrackedEdge alloc] initWithEdge:edge atIndex:i];
-		[self.selectEdges addObject:tEdge];
+		if (edge != nil)
+		{
+			TrackedEdge *tEdge = [[TrackedEdge alloc] initWithEdge:edge atIndex:i];
+			[self.selectEdges addObject:[tEdge autorelease]];
+		}
 		i++;
 	}
 }
@@ -366,7 +383,7 @@
 -(void)addNode:(CDQuartzNode *)node
 {
 	[self.trackPoints removeAllObjects];
-	[self.trackPoints addObject:[[QPoint alloc] initX:node.shapeDelegate.bounds.x Y:node.shapeDelegate.bounds.y]];
+	[self.trackPoints addObject:[[[QPoint alloc] initX:node.shapeDelegate.bounds.x Y:node.shapeDelegate.bounds.y] autorelease]];
 	self.newNode = node;
 	[self updateState];
 }
@@ -418,10 +435,11 @@
 	// visit nodes and calculate the bounds.
 	CDGraphTraversal *traversal = [[CDGraphTraversal alloc] init];
 	[traversal traverse:self graphInstance:self.graph];
-	return [[QRectangle alloc] initX:minPoint.x 
+	[traversal autorelease];
+	return [[[QRectangle alloc] initX:minPoint.x 
 								   Y:minPoint.y 
 							   WIDTH:[minPoint horizontalDistanceTo:maxPoint] 
-							  HEIGHT:[minPoint verticalDistanceTo:maxPoint]];
+							  HEIGHT:[minPoint verticalDistanceTo:maxPoint]] autorelease];
 }
 
 

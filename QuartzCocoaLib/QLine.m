@@ -90,7 +90,7 @@
 {
 	float width = [self.start horizontalDistanceTo:self.end];
 	float height = [self.start verticalDistanceTo:self.end];
-	return [[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height];
+	return [[[QRectangle alloc] initX:self.start.x Y:self.start.y WIDTH:width HEIGHT:height] autorelease];
 }
 
 #pragma mark Encoder and Decoder.

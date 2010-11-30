@@ -86,8 +86,8 @@
 {
 	strokeColor = [[QStrokeColor alloc] initWithQColor:self.outlineColor];
 	[self.queue enqueue:strokeColor];
-	[self.queue enqueue:[[QLineCap alloc] initWithStyle:QLineCapRounded]];
-	[self.queue enqueue:[[QJoinCap alloc] initWithStyle:QJoinCapRounded]];
+	[self.queue enqueue:[[[QLineCap alloc] initWithStyle:QLineCapRounded] autorelease]];
+	[self.queue enqueue:[[[QJoinCap alloc] initWithStyle:QJoinCapRounded] autorelease]];
 	strokeWidth = [[QStrokeWidth alloc] initWidth:self.outlineWeight];
 	[self.queue enqueue:strokeWidth];
 	color = [[QFillColor alloc] initWithQColor:self.fillColor];

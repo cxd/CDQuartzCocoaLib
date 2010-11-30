@@ -112,7 +112,7 @@
 	[self.queue enqueue:self.strokeColor];
 	[self.queue enqueue:self.strokeWidth];
 	[self.queue enqueue:self.curve];
-	[self.queue enqueue:[[QStrokePath alloc] init]];
+	[self.queue enqueue:[[[QStrokePath alloc] init] autorelease]];
 }
 
 /**
@@ -159,8 +159,15 @@
 -(void)updateConnections
 {
 	[super updateConnections];
-	float sX, sY, sCX, sCY, eX, eY, eCX, eCY = 0.0;
-	
+	float	sX = 0.0, 
+			sY = 0.0, 
+			sCX = 0.0, 
+			sCY = 0.0, 
+			eX = 0.0, 
+			eY = 0.0, 
+			eCX = 0.0, 
+			eCY = 0.0;
+			
 	// store the original positions.
 	if (self.startDecoration != nil)
 	{
