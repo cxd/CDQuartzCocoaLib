@@ -38,12 +38,12 @@
 -(id)init
 {
 	self = [super init];
-	self.bounds = [[QRectangle alloc] init];
-	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
-	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
+	self.bounds = [[[QRectangle alloc] init] autorelease];
+	self.fillColor = [[[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0] autorelease];
+	self.outlineColor = [[[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0] autorelease];
 	self.outlineWeight = 1.0;
-	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
-	self.trackingView = [[TrackingViewBoundary alloc] init];
+	self.displacement = [[[QPoint alloc] initX:0.0 Y:0.0] autorelease];
+	self.trackingView = [[[TrackingViewBoundary alloc] init] autorelease];
 	[self attachObservers];
 	return self;
 }
@@ -54,13 +54,13 @@
 -(id)initWithLabel:(NSString *)l
 {
 	self = [super init];
-	self.bounds = [[QRectangle alloc] init];
-	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
-	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
+	self.bounds = [[[QRectangle alloc] init] autorelease];
+	self.fillColor = [[[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0] autorelease];
+	self.outlineColor = [[[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0] autorelease];
 	self.outlineWeight = 1.0;
-	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	self.displacement = [[[QPoint alloc] initX:0.0 Y:0.0] autorelease];
 	self.label = l;
-	self.trackingView = [[TrackingViewBoundary alloc] init];
+	self.trackingView = [[[TrackingViewBoundary alloc] init] autorelease];
 	[self createLabel];
 	[self attachObservers];
 	return self;
@@ -73,11 +73,11 @@
 {
 	self = [super init];
 	self.bounds = b;
-	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
-	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
+	self.fillColor = [[[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0] autorelease];
+	self.outlineColor = [[[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0] autorelease];
 	self.outlineWeight = 1.0;
-	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
-	self.trackingView = [[TrackingViewBoundary alloc] init];
+	self.displacement = [[[QPoint alloc] initX:0.0 Y:0.0] autorelease];
+	self.trackingView = [[[TrackingViewBoundary alloc] init] autorelease];
 	[self attachObservers];
 	return self;
 }
@@ -89,12 +89,12 @@
 {
 	self = [super init];
 	self.bounds = b;
-	self.fillColor = [[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0];
-	self.outlineColor = [[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0];
+	self.fillColor = [[[QColor alloc] initWithRGB:1.0 G:1.0 B:1.0] autorelease];
+	self.outlineColor = [[[QColor alloc] initWithRGB:0.0 G:0.0 B:0.0] autorelease];
 	self.outlineWeight = 1.0;
-	self.displacement = [[QPoint alloc] initX:0.0 Y:0.0];
+	self.displacement = [[[QPoint alloc] initX:0.0 Y:0.0] autorelease];
 	self.label = l;
-	self.trackingView = [[TrackingViewBoundary alloc] init];
+	self.trackingView = [[[TrackingViewBoundary alloc] init] autorelease];
 	[self createLabel];
 	[self attachObservers];
 	return self;
@@ -140,11 +140,11 @@
  **/
 -(void)createLabel
 {
-	self.labelShape = [[QLabel alloc] initWithText:self.label 
+	self.labelShape = [[[QLabel alloc] initWithText:self.label 
 												 X: self.bounds.x 
 												 Y: self.bounds.y
 											 WIDTH: self.bounds.width
-											HEIGHT: self.bounds.height];
+											HEIGHT: self.bounds.height] autorelease];
 	self.labelShape.isFlipped = YES;
 	self.labelShape.color;
 }

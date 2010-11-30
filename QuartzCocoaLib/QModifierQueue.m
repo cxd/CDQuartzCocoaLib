@@ -16,7 +16,6 @@
 {
 	self = [super init];
 	sequence = [[NSMutableArray alloc] init];
-	[sequence retain];
 	return self;
 }
 

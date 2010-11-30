@@ -15,7 +15,7 @@
 
 -(id)init {
 	self = [super init];
-	self.queue = [[QModifierQueue alloc] init];
+	self.queue = [[[QModifierQueue alloc] init] autorelease];
 	return self;
 }
 -(void)dealloc

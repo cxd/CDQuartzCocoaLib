@@ -32,7 +32,7 @@
 -(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float) sa EndAngle:(float)ea
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initX:cx Y:cy];
+	self.centre = [[[QPoint alloc] initX:cx Y:cy] autorelease];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -45,7 +45,7 @@
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initX:cp.x Y:cp.y];
+	self.centre = [[[QPoint alloc] initX:cp.x Y:cp.y] autorelease];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -58,7 +58,7 @@
 -(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initX:cx Y:cy];
+	self.centre = [[[QPoint alloc] initX:cx Y:cy] autorelease];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -72,7 +72,7 @@
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initX:cp.x Y:cp.y];
+	self.centre = [[[QPoint alloc] initX:cp.x Y:cp.y] autorelease];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -86,7 +86,7 @@
 -(id)initX:(float)cx Y:(float)cy Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw 
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initX:cx Y:cy];
+	self.centre = [[[QPoint alloc] initX:cx Y:cy] autorelease];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;
@@ -98,7 +98,7 @@
 -(id)initWithCentre:(QPoint *)cp Radius:(float)rad StartAngle:(float)sa EndAngle:(float)ea START:(BOOL) s END:(BOOL) e CLOCKWISE:(BOOL)cw 
 {
 	self = [super init];
-	self.centre = [[QPoint alloc] initX:cp.x Y:cp.y];
+	self.centre = [[[QPoint alloc] initX:cp.x Y:cp.y] autorelease];
 	self.radius = rad;
 	self.startAngle = sa;
 	self.endAngle = ea;

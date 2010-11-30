@@ -139,7 +139,7 @@
 		{
 			if (node1.shapeDelegate == nil)
 				continue;
-			node1.shapeDelegate.displacement = [[QPoint alloc] init];
+			node1.shapeDelegate.displacement = [[[QPoint alloc] init] autorelease];
 			for(CDQuartzNode *node2 in graph.nodes)
 			{
 				if (node2.shapeDelegate == nil)

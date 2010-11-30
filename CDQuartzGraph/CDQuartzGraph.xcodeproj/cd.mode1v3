@@ -269,7 +269,6 @@
 								<string>08FB77AEFE84172EC02AAC07</string>
 								<string>6200946D1233402E009CB3BC</string>
 								<string>62547114122149CD00714D45</string>
-								<string>62027EFB12423B54001535AA</string>
 								<string>62602B67121669050018E683</string>
 								<string>62602B5E121666AF0018E683</string>
 								<string>62602AC51216603D0018E683</string>
@@ -285,14 +284,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>58</integer>
-									<integer>56</integer>
+									<integer>29</integer>
+									<integer>27</integer>
 									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 581}, {346, 760}}</string>
+							<string>{{0, 0}, {346, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -341,7 +340,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62CAC31C12A4A0440031379E</string>
+										<string>62CAC3C212A4B4400031379E</string>
 										<key>history</key>
 										<array>
 											<string>62602C1E12168C7E0018E683</string>
@@ -402,10 +401,6 @@
 											<string>62CAC25F12A48C730031379E</string>
 											<string>62CAC26012A48C730031379E</string>
 											<string>62CAC26112A48C730031379E</string>
-											<string>62CAC2F812A499BD0031379E</string>
-											<string>62CAC2FA12A499BD0031379E</string>
-											<string>62CAC2FB12A499BD0031379E</string>
-											<string>62CAC31312A4A0440031379E</string>
 											<string>62CAC31412A4A0440031379E</string>
 											<string>62CAC31512A4A0440031379E</string>
 											<string>62CAC31612A4A0440031379E</string>
@@ -413,7 +408,14 @@
 											<string>62CAC31812A4A0440031379E</string>
 											<string>62CAC31912A4A0440031379E</string>
 											<string>62CAC31A12A4A0440031379E</string>
-											<string>62CAC31B12A4A0440031379E</string>
+											<string>62CAC35E12A4A7150031379E</string>
+											<string>62CAC35F12A4A7150031379E</string>
+											<string>62CAC36012A4A7150031379E</string>
+											<string>62CAC36112A4A7150031379E</string>
+											<string>62CAC36212A4A7150031379E</string>
+											<string>62CAC3BF12A4B4400031379E</string>
+											<string>62CAC3C012A4B4400031379E</string>
+											<string>62CAC3C112A4B4400031379E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -611,8 +613,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>6240A54F121652F800840C1B</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

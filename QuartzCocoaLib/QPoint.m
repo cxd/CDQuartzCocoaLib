@@ -30,6 +30,11 @@
 	return self;
 }
 
+-(void)dealloc
+{
+	[super dealloc];
+}
+
 -(QPoint *)midPoint:(QPoint *)other
 {
 	QPoint *mid = [[QPoint alloc] initX: (self.x + other.x)/2.0 

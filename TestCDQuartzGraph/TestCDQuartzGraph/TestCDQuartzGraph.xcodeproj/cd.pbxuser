@@ -222,7 +222,7 @@
 		ignoreCount = 0;
 		lineNumber = 155;
 		location = CDGraph;
-		modificationTime = 312778886.91306;
+		modificationTime = 312783870.072986;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -240,7 +240,7 @@
 		ignoreCount = 0;
 		lineNumber = 148;
 		location = CDGraph;
-		modificationTime = 312778886.913117;
+		modificationTime = 312783870.073023;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -258,7 +258,7 @@
 		ignoreCount = 0;
 		lineNumber = 78;
 		location = CDGraph;
-		modificationTime = 312778886.913167;
+		modificationTime = 312783870.073059;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -343,8 +343,8 @@
 	6238FFA1121C0C7E00599B3C /* TestGraphView.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {642, 3185}}";
-			sepNavSelRange = "{4149, 0}";
-			sepNavVisRange = "{3864, 887}";
+			sepNavSelRange = "{4082, 0}";
+			sepNavVisRange = "{3864, 885}";
 		};
 	};
 	6238FFE5121C0F8400599B3C /* TestGraphView.m:48 */ = {
@@ -361,7 +361,7 @@
 		ignoreCount = 0;
 		lineNumber = 48;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.912557;
+		modificationTime = 312783870.072367;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -379,7 +379,7 @@
 		ignoreCount = 0;
 		lineNumber = 48;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.912782;
+		modificationTime = 312783870.0726;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -438,7 +438,7 @@
 		ignoreCount = 0;
 		lineNumber = 47;
 		location = CDQuartzGraph;
-		modificationTime = 312778886.913018;
+		modificationTime = 312783870.07295;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -496,7 +496,7 @@
 		ignoreCount = 0;
 		lineNumber = 56;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.912856;
+		modificationTime = 312783870.072729;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -514,7 +514,7 @@
 		ignoreCount = 0;
 		lineNumber = 87;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913742;
+		modificationTime = 312783870.073608;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -532,7 +532,7 @@
 		ignoreCount = 0;
 		lineNumber = 62;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913774;
+		modificationTime = 312783870.07364;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -560,7 +560,7 @@
 		ignoreCount = 0;
 		lineNumber = 68;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913822;
+		modificationTime = 312783870.073669;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -585,7 +585,7 @@
 		ignoreCount = 0;
 		lineNumber = 204;
 		location = CDQuartzGraph;
-		modificationTime = 312778886.91387;
+		modificationTime = 312783870.073759;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -610,7 +610,7 @@
 		ignoreCount = 0;
 		lineNumber = 51;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.912925;
+		modificationTime = 312783870.072839;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -628,7 +628,7 @@
 		ignoreCount = 0;
 		lineNumber = 37;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913564;
+		modificationTime = 312783870.073482;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -646,7 +646,7 @@
 		ignoreCount = 0;
 		lineNumber = 42;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913607;
+		modificationTime = 312783870.073515;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -664,7 +664,7 @@
 		ignoreCount = 0;
 		lineNumber = 38;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913656;
+		modificationTime = 312783870.073548;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -682,7 +682,7 @@
 		ignoreCount = 0;
 		lineNumber = 32;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913691;
+		modificationTime = 312783870.073579;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -700,7 +700,7 @@
 		ignoreCount = 0;
 		lineNumber = 417;
 		location = CDQuartzGraph;
-		modificationTime = 312778886.913287;
+		modificationTime = 312783870.07322;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -718,7 +718,7 @@
 		ignoreCount = 0;
 		lineNumber = 28;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913399;
+		modificationTime = 312783870.073257;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -735,7 +735,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 125;
-		modificationTime = 312778886.913193;
+		modificationTime = 312783870.073088;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -837,7 +837,7 @@
 		ignoreCount = 0;
 		lineNumber = 142;
 		location = TestCDQuartzGraph;
-		modificationTime = 312778886.913494;
+		modificationTime = 312783870.073369;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
