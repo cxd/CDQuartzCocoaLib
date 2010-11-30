@@ -285,15 +285,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>43</integer>
-									<integer>14</integer>
-									<integer>13</integer>
+									<integer>58</integer>
+									<integer>56</integer>
 									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 625}, {346, 760}}</string>
+							<string>{{0, 581}, {346, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -330,7 +329,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CDGraphView.m</string>
+								<string>AbstractGraphShape.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -338,11 +337,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CDGraphView.m</string>
+										<string>AbstractGraphShape.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62CAC2FD12A499BD0031379E</string>
+										<string>62CAC31C12A4A0440031379E</string>
 										<key>history</key>
 										<array>
 											<string>62602C1E12168C7E0018E683</string>
@@ -387,7 +386,6 @@
 											<string>623C834312912ECE008CCF9A</string>
 											<string>623C834412912ECE008CCF9A</string>
 											<string>623C834712912ECE008CCF9A</string>
-											<string>623C834912912ECE008CCF9A</string>
 											<string>623C834F12912ECE008CCF9A</string>
 											<string>623C835212912ECE008CCF9A</string>
 											<string>623C835312912ECE008CCF9A</string>
@@ -400,20 +398,22 @@
 											<string>623C835C12912ECE008CCF9A</string>
 											<string>623C835D12912ECE008CCF9A</string>
 											<string>62D0610B1295114700B4C47D</string>
-											<string>62CAC09E12A47EA20031379E</string>
-											<string>62CAC25B12A48C730031379E</string>
-											<string>62CAC25C12A48C730031379E</string>
 											<string>62CAC25D12A48C730031379E</string>
-											<string>62CAC25E12A48C730031379E</string>
 											<string>62CAC25F12A48C730031379E</string>
 											<string>62CAC26012A48C730031379E</string>
 											<string>62CAC26112A48C730031379E</string>
-											<string>62CAC26212A48C730031379E</string>
 											<string>62CAC2F812A499BD0031379E</string>
-											<string>62CAC2F912A499BD0031379E</string>
 											<string>62CAC2FA12A499BD0031379E</string>
 											<string>62CAC2FB12A499BD0031379E</string>
-											<string>62CAC2FC12A499BD0031379E</string>
+											<string>62CAC31312A4A0440031379E</string>
+											<string>62CAC31412A4A0440031379E</string>
+											<string>62CAC31512A4A0440031379E</string>
+											<string>62CAC31612A4A0440031379E</string>
+											<string>62CAC31712A4A0440031379E</string>
+											<string>62CAC31812A4A0440031379E</string>
+											<string>62CAC31912A4A0440031379E</string>
+											<string>62CAC31A12A4A0440031379E</string>
+											<string>62CAC31B12A4A0440031379E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -612,8 +612,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.xcodeproj</string>
 		<string>6240A54F121652F800840C1B</string>
+		<string>/Users/cd/Projects/Quartz/CDQuartzCocoaLib/CDQuartzGraph/CDQuartzGraph.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>248 59 1200 819 0 0 1440 878 </string>
@@ -632,12 +632,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EdgeMove.m</string>
+								<string>EdgeDelete.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -654,8 +656,6 @@
 							<string>545pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

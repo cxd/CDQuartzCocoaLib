@@ -235,6 +235,11 @@
  **/
 -(BOOL)isWithinBounds:(QPoint *)point
 {
+	if (self.isHighlighted && self.highlightShape != nil)
+	{
+		if ([self.highlightShape isWithinBounds:point])
+			return YES;
+	}
 	return [self.bounds contains:point];
 }
 
@@ -244,6 +249,11 @@
  **/
 -(BOOL)intersects:(QRectangle *)other
 {
+	if (self.isHighlighted && self.highlightShape != nil)
+	{
+		if ([self.highlightShape intersects:other])
+			return YES;
+	}
 	return [self.bounds intersects:other];
 }
 

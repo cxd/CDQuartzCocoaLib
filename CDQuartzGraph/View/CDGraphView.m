@@ -944,6 +944,7 @@ This will set the needs display flag to true.
 				}
 			}
 		}
+		[self.state.lock unlock];
 	}
 	if (isMatched) return;
 	if ([self.state.lock tryLock])
@@ -958,6 +959,7 @@ This will set the needs display flag to true.
 				[self updateLocationOfHoverOnConnection:touch];
 			}
 		}
+		[self.state.lock unlock];
 	}
 }
 

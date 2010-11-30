@@ -11,14 +11,14 @@
 			62C571E4123664730035FDA0 /* UIGraphView.m:86 */,
 			62C571E91236647D0035FDA0 /* UIGraphView.m:76 */,
 			624B3317129619EA00CC50D1 /* CDGraphView.m:40 */,
-			624B335F12961BCA00CC50D1 /* CDGraphView.m:804 */,
+			624B335F12961BCA00CC50D1 /* CDGraphView.m:803 */,
 			624B353D129648C000CC50D1 /* TrackingViewBoundary.m:66 */,
 			624B353F129648C300CC50D1 /* TrackingViewBoundary.m:80 */,
 			624B359412964E9400CC50D1 /* TrackingViewBoundary.m:52 */,
-			624B365512965FCC00CC50D1 /* AbstractGraphShape.m:316 */,
+			624B365512965FCC00CC50D1 /* AbstractGraphShape.m:326 */,
 			6234331D12A398DF00CB3259 /* EdgeMove.m:45 */,
 			6234332712A3998400CB3259 /* EdgeMove.m:49 */,
-			6234332E12A399CE00CB3259 /* CDGraphViewState.m:311 */,
+			6234332E12A399CE00CB3259 /* CDGraphViewState.m:329 */,
 		);
 		codeSenseManager = 62655F211233AF1300A91E24 /* Code sense */;
 		perUserDictionary = {
@@ -94,8 +94,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 312711021;
-			PBXWorkspaceStateSaveDate = 312711021;
+			PBXPerProjectTemplateStateSaveDate = 312778996;
+			PBXWorkspaceStateSaveDate = 312778996;
 		};
 		perUserProjectItems = {
 			62168C1C123518D9000941F2 = 62168C1C123518D9000941F2 /* PBXTextBookmark */;
@@ -218,7 +218,7 @@
 		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
 		name = "CDGraphView.m: 573";
 		rLen = 0;
-		rLoc = 15649;
+		rLoc = 15806;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 15647;
@@ -237,7 +237,7 @@
 		ignoreCount = 0;
 		lineNumber = 45;
 		location = TestCDQuartzGraphTouch;
-		modificationTime = 312712436.832704;
+		modificationTime = 312778886.915046;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -255,11 +255,11 @@
 		ignoreCount = 0;
 		lineNumber = 49;
 		location = TestCDQuartzGraphTouch;
-		modificationTime = 312712436.832754;
+		modificationTime = 312778886.91507;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	6234332E12A399CE00CB3259 /* CDGraphViewState.m:311 */ = {
+	6234332E12A399CE00CB3259 /* CDGraphViewState.m:329 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -271,9 +271,9 @@
 		functionName = "-searchForTrackingEdges";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 311;
+		lineNumber = 329;
 		location = TestCDQuartzGraphTouch;
-		modificationTime = 312712436.832784;
+		modificationTime = 312778886.915089;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -325,7 +325,7 @@
 		ignoreCount = 0;
 		lineNumber = 40;
 		location = CDQuartzGraph;
-		modificationTime = 312712436.83255;
+		modificationTime = 312778886.914692;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -359,7 +359,7 @@
 		vrLen = 584;
 		vrLoc = 0;
 	};
-	624B335F12961BCA00CC50D1 /* CDGraphView.m:804 */ = {
+	624B335F12961BCA00CC50D1 /* CDGraphView.m:803 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -371,9 +371,9 @@
 		functionName = "-initWithFrame:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 804;
+		lineNumber = 803;
 		location = CDQuartzGraph;
-		modificationTime = 312712436.832574;
+		modificationTime = 312778886.914724;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -402,7 +402,7 @@
 		fRef = 6276A9A7129104230013EA5C /* CDGraphViewState.m */;
 		name = "CDGraphViewState.m: 266";
 		rLen = 33;
-		rLoc = 8183;
+		rLoc = 8604;
 		rType = 0;
 		vrLen = 662;
 		vrLoc = 7777;
@@ -495,7 +495,7 @@
 		ignoreCount = 0;
 		lineNumber = 66;
 		location = CDQuartzGraph;
-		modificationTime = 312712436.832599;
+		modificationTime = 312778886.914758;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -513,7 +513,7 @@
 		ignoreCount = 0;
 		lineNumber = 80;
 		location = CDQuartzGraph;
-		modificationTime = 312712436.832622;
+		modificationTime = 312778886.914809;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -531,7 +531,7 @@
 		ignoreCount = 0;
 		lineNumber = 52;
 		location = CDQuartzGraph;
-		modificationTime = 312712436.832646;
+		modificationTime = 312778886.914852;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -595,7 +595,7 @@
 		vrLen = 1884;
 		vrLoc = 125;
 	};
-	624B365512965FCC00CC50D1 /* AbstractGraphShape.m:316 */ = {
+	624B365512965FCC00CC50D1 /* AbstractGraphShape.m:326 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -607,9 +607,9 @@
 		functionName = "-update:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 316;
+		lineNumber = 326;
 		location = CDQuartzGraph;
-		modificationTime = 312712436.832675;
+		modificationTime = 312778886.914892;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -648,7 +648,7 @@
 		fRef = 62294CEC126084C500003723 /* CirclePortShape.m */;
 		name = "CirclePortShape.m: 98";
 		rLen = 18;
-		rLoc = 3434;
+		rLoc = 3485;
 		rType = 0;
 		vrLen = 803;
 		vrLoc = 3332;
@@ -688,7 +688,7 @@
 		fRef = 62655F4B1233B62800A91E24 /* AbstractGraphShape.m */;
 		name = "AbstractGraphShape.m: 376";
 		rLen = 0;
-		rLoc = 8727;
+		rLoc = 8975;
 		rType = 0;
 		vrLen = 635;
 		vrLoc = 8217;
@@ -718,7 +718,7 @@
 		fRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */;
 		name = "CDGraphView.m: 590";
 		rLen = 0;
-		rLoc = 16145;
+		rLoc = 16302;
 		rType = 0;
 		vrLen = 805;
 		vrLoc = 15646;
@@ -879,9 +879,9 @@
 	};
 	6276A93D1291018D0013EA5C /* EdgeDelete.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {5304, 897}}";
-			sepNavSelRange = "{2081, 0}";
-			sepNavVisRange = "{1675, 826}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 910}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1775, 787}";
 		};
 	};
 	6276A93F1291018D0013EA5C /* EdgeMove.m */ = {
@@ -977,9 +977,9 @@
 	};
 	6276A9A2129103F80013EA5C /* CDGraphView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {642, 13026}}";
-			sepNavSelRange = "{15957, 0}";
-			sepNavVisRange = "{17602, 968}";
+			sepNavIntBoundsRect = "{{0, 0}, {642, 13156}}";
+			sepNavSelRange = "{15806, 0}";
+			sepNavVisRange = "{15645, 820}";
 		};
 	};
 	6276A9A7129104230013EA5C /* CDGraphViewState.m */ = {
@@ -1019,7 +1019,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 86;
-		modificationTime = 312712436.832437;
+		modificationTime = 312778886.91462;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
@@ -1036,7 +1036,7 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 76;
-		modificationTime = 312712436.832519;
+		modificationTime = 312778886.914669;
 		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
