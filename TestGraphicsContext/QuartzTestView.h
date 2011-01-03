@@ -11,6 +11,9 @@
 
 @interface QuartzTestView : NSView {
 
+	QModifierQueue *queue;
+	QContext *context;
+	
 }
 
 
