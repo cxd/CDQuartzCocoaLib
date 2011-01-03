@@ -89,6 +89,9 @@
 		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* QuartzCocoaLib_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzCocoaLib_Prefix.pch; sourceTree = "<group>"; };
+		6205F19012D19D17009EA0EE /* QContext.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = QContext.xcclassmodel; sourceTree = "<group>"; };
+		6205F1A612D1A5FC009EA0EE /* QModifierQueue.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = QModifierQueue.xcclassmodel; sourceTree = "<group>"; };
+		6205F1AB12D1A82D009EA0EE /* QContextModifier.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = QContextModifier.xcclassmodel; sourceTree = "<group>"; };
 		6211ED6F122BD1A6000A40AE /* QLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLabel.h; sourceTree = "<group>"; };
 		6211ED70122BD1A6000A40AE /* QLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLabel.m; sourceTree = "<group>"; };
 		623C82DF12912DB5008CCF9A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -256,6 +259,7 @@
 				6240A61A1216570000840C1B /* QLineCap.h */,
 				6240A61B1216570000840C1B /* QLineCap.m */,
 				6240A61C1216570000840C1B /* QModifierQueue.h */,
+				6205F19012D19D17009EA0EE /* QContext.xcclassmodel */,
 				6240A61D1216570000840C1B /* QModifierQueue.m */,
 				6240A61E1216570000840C1B /* QMove.h */,
 				6240A61F1216570000840C1B /* QMove.m */,
@@ -285,6 +289,8 @@
 				6240A63A1216570000840C1B /* README */,
 				6211ED6F122BD1A6000A40AE /* QLabel.h */,
 				6211ED70122BD1A6000A40AE /* QLabel.m */,
+				6205F1A612D1A5FC009EA0EE /* QModifierQueue.xcclassmodel */,
+				6205F1AB12D1A82D009EA0EE /* QContextModifier.xcclassmodel */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

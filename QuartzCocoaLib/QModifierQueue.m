@@ -101,7 +101,7 @@
 	for(int i=0;i<cnt;i++)
 	{
 		NSString *name = [NSString stringWithFormat:@"sequence%i", i];
-		NSObject *o = [aDecoder decodeObjectForKey:name];
+		NSObject *o = [[aDecoder decodeObjectForKey:name] retain];
 		if (o == nil) continue;
 		[sequence addObject:o];
 	}
