@@ -166,9 +166,7 @@
 {
 	[self.graph autorelease];	
 	[self.state autorelease];
-	[self.queue autorelease];
-	self.queue = [[QModifierQueue alloc] init];
-	[self.queue retain];
+	self.queue = [[[QModifierQueue alloc] init] autorelease];
 	self.graph = newGraph;
 	self.state = [[CDGraphViewState alloc] initWithGraph:self.graph 
 											   andBounds:[[[QRectangle alloc] initX:[self frame].origin.x
@@ -303,7 +301,7 @@ This will set the needs display flag to true.
 
 #ifndef UIKIT_EXTERN
 
-/* TODO: find a way to implement colour selection in Cocoa Touch. */
+/* find a way to implement colour selection in Cocoa Touch. */
 	
 /**
  Receive the event for colour changes.
@@ -749,7 +747,7 @@ This will set the needs display flag to true.
 	
 	self.state.isEditing = YES;
 	
-	//TODO: gesture for editing text
+	// gesture for editing text
 	if (!self.editLabel)
 	{
 		//	self.state.selectLabel = [event clickCount] > 1;

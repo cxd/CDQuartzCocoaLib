@@ -38,6 +38,8 @@
 		6205242912477042001053D6 /* EdgeMove.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205242712477042001053D6 /* EdgeMove.m */; };
 		6205243612477976001053D6 /* TrackedEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6205243412477976001053D6 /* TrackedEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6205243712477976001053D6 /* TrackedEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6205243512477976001053D6 /* TrackedEdge.m */; };
+		6208002C12A7870100DF1BE7 /* GraphStateNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 6208002A12A7870100DF1BE7 /* GraphStateNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6208002D12A7870100DF1BE7 /* GraphStateNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 6208002B12A7870100DF1BE7 /* GraphStateNotifications.m */; };
 		621759CF121801BA00E2120C /* AbstractPortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759CD121801BA00E2120C /* AbstractPortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		621759D0121801BA00E2120C /* AbstractPortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 621759CE121801BA00E2120C /* AbstractPortShape.m */; };
 		621759DB1218086C00E2120C /* CurvedRectanglePort.h in Headers */ = {isa = PBXBuildFile; fileRef = 621759D91218086C00E2120C /* CurvedRectanglePort.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +84,8 @@
 		62602BF6121689630018E683 /* CurvedRectangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BF4121689630018E683 /* CurvedRectangleNode.m */; };
 		628BFC22125212F20049A675 /* TrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 628BFC20125212F20049A675 /* TrackingViewBoundary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 628BFC21125212F20049A675 /* TrackingViewBoundary.m */; };
+		628DC06612A6095F0048080B /* NestedGraphShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 628DC06412A6095F0048080B /* NestedGraphShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		628DC06712A6095F0048080B /* NestedGraphShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 628DC06512A6095F0048080B /* NestedGraphShape.m */; };
 		62A4064C128A8DAE0016B682 /* CDPersistentQuartzEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A4064A128A8DAE0016B682 /* CDPersistentQuartzEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62A4064D128A8DAE0016B682 /* CDPersistentQuartzEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A4064B128A8DAE0016B682 /* CDPersistentQuartzEdge.m */; };
 		62CC1409124DDA79001AF7CD /* CirclePortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CC1407124DDA79001AF7CD /* CirclePortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -174,6 +178,8 @@
 		6205242712477042001053D6 /* EdgeMove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeMove.m; sourceTree = "<group>"; };
 		6205243412477976001053D6 /* TrackedEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackedEdge.h; sourceTree = "<group>"; };
 		6205243512477976001053D6 /* TrackedEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackedEdge.m; sourceTree = "<group>"; };
+		6208002A12A7870100DF1BE7 /* GraphStateNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphStateNotifications.h; sourceTree = "<group>"; };
+		6208002B12A7870100DF1BE7 /* GraphStateNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphStateNotifications.m; sourceTree = "<group>"; };
 		621759CD121801BA00E2120C /* AbstractPortShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPortShape.h; sourceTree = "<group>"; };
 		621759CE121801BA00E2120C /* AbstractPortShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPortShape.m; sourceTree = "<group>"; };
 		621759D91218086C00E2120C /* CurvedRectanglePort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvedRectanglePort.h; sourceTree = "<group>"; };
@@ -219,6 +225,8 @@
 		62602BF4121689630018E683 /* CurvedRectangleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedRectangleNode.m; sourceTree = "<group>"; };
 		628BFC20125212F20049A675 /* TrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingViewBoundary.h; sourceTree = "<group>"; };
 		628BFC21125212F20049A675 /* TrackingViewBoundary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingViewBoundary.m; sourceTree = "<group>"; };
+		628DC06412A6095F0048080B /* NestedGraphShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestedGraphShape.h; sourceTree = "<group>"; };
+		628DC06512A6095F0048080B /* NestedGraphShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestedGraphShape.m; sourceTree = "<group>"; };
 		62A4064A128A8DAE0016B682 /* CDPersistentQuartzEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPersistentQuartzEdge.h; sourceTree = "<group>"; };
 		62A4064B128A8DAE0016B682 /* CDPersistentQuartzEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPersistentQuartzEdge.m; sourceTree = "<group>"; };
 		62CC1407124DDA79001AF7CD /* CirclePortShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePortShape.h; sourceTree = "<group>"; };
@@ -410,6 +418,8 @@
 				6205243412477976001053D6 /* TrackedEdge.h */,
 				6205243512477976001053D6 /* TrackedEdge.m */,
 				6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */,
+				6208002A12A7870100DF1BE7 /* GraphStateNotifications.h */,
+				6208002B12A7870100DF1BE7 /* GraphStateNotifications.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -462,6 +472,8 @@
 				623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */,
 				628BFC20125212F20049A675 /* TrackingViewBoundary.h */,
 				628BFC21125212F20049A675 /* TrackingViewBoundary.m */,
+				628DC06412A6095F0048080B /* NestedGraphShape.h */,
+				628DC06512A6095F0048080B /* NestedGraphShape.m */,
 			);
 			name = Shapes;
 			sourceTree = "<group>";
@@ -514,6 +526,8 @@
 				62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */,
 				6228D6D6127D5A1800DAA9CD /* IEditNodeDelegate.h in Headers */,
 				62A4064C128A8DAE0016B682 /* CDPersistentQuartzEdge.h in Headers */,
+				628DC06612A6095F0048080B /* NestedGraphShape.h in Headers */,
+				6208002C12A7870100DF1BE7 /* GraphStateNotifications.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +686,8 @@
 				62441E211258676B0077600B /* StartConnections.m in Sources */,
 				62F797591260151D001CC0F1 /* EdgeDelete.m in Sources */,
 				62A4064D128A8DAE0016B682 /* CDPersistentQuartzEdge.m in Sources */,
+				628DC06712A6095F0048080B /* NestedGraphShape.m in Sources */,
+				6208002D12A7870100DF1BE7 /* GraphStateNotifications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

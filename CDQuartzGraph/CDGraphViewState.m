@@ -32,6 +32,9 @@
 #import "StartConnections.h"
 #import "EdgeDelete.h"
 
+#import "GraphStateNotifications.h"
+
+
 @implementation CDGraphViewState
 
 
@@ -316,6 +319,8 @@
 		CDQuartzNode* node = [self.graph findNodeContaining:p];
 		TrackedNode *tNode = [[TrackedNode alloc] initWithNode:node atIndex:i];
 		[self.trackNodes addObject:[tNode autorelease]];
+		// raise an event to indicate the node is selected.
+		[GraphStateNotifications raiseNodeSelected:self node:node];
 		i++;
 	}
 }
@@ -379,6 +384,42 @@
 {
 	self.isCancelled = cancelFlag;
 	[self updateState];
+}
+
+/**
+ Find the closest node that intersects with the supplied node.
+ When it intersects it is regarded as a collision.
+ **/
+-(void)searchForClosestCollisionWithNode:(CDQuartzNode *)node
+{
+	if (node.shapeDelegate == nil)
+		return;
+	float distance = MAXFLOAT;
+	CDQuartzNode *closestIntersecting = nil;
+	for(CDQuartzNode *other in self.graph.nodes)
+	{
+		if (other.shapeDelegate == nil)
+			continue;
+		if ([(id)other isEqual:(id)node])
+			continue;
+		if (![other.shapeDelegate.bounds intersects:node.shapeDelegate.bounds])
+			continue;
+		
+		float dist = [[other.shapeDelegate.bounds midPoint] 
+					  distanceTo:[node.shapeDelegate.bounds midPoint]];
+		if (dist < distance)
+		{
+			distance = dist;
+			closestIntersecting = other;
+		}
+	}
+	
+	if (closestIntersecting == nil)
+		return;
+	
+	[GraphStateNotifications raiseNodeCollided:self 
+										  node:node 
+									 otherNode:closestIntersecting];
 }
 
 /**

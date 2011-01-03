@@ -52,6 +52,8 @@
 		{
 			if ([state.graph removeNode:node.node])
 			{
+				// raise an event to indicate the node is selected.
+				[GraphStateNotifications raiseNodeDeleted:state node:node.node];
 				state.redraw = YES;
 			}
 		}

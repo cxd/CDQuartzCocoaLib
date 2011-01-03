@@ -17,6 +17,7 @@
 
 #import <Foundation/Foundation.h>
 #import "QGraphViewOperation.h"
+#import "GraphStateNotifications.h"
 
 @interface Add : QGraphViewOperation {
 

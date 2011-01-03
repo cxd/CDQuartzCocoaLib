@@ -31,14 +31,20 @@
 #import <float.h>
 
 
-@interface CDQuartzGraph : CDGraph<QContextModifier,Drawable> {
+@interface CDQuartzGraph : CDGraph<QContextModifier,Drawable,CDGraphVisitor> {
 	/**
 	 A shape delegate is used to perform 
 	 the drawing of the graphical representation of
 	 the vertice.
 	 **/
 	AbstractGraphShape* shapeDelegate;
+
 	
+	/**
+	 Used to calculate bounds.
+	 **/
+	QPoint *minPoint;
+	QPoint *maxPoint;
 }
 
 /**
@@ -47,6 +53,7 @@
  the vertice.
  **/
 @property(retain) AbstractGraphShape* shapeDelegate;
+
 
 /**
  Default initialiser
@@ -119,6 +126,11 @@
 -(void)moveNode:(CDQuartzNode *)node To:(QPoint *)point;
 
 /**
+ Move all nodes by a relative distance specified as a point.
+ **/
+-(void)moveAllNodesBy:(QPoint *)point;
+
+/**
  Resize by with and height.
  **/
 -(void)resizeNode:(CDQuartzNode *)node ToWidth:(int)w height:(int)h;
@@ -132,6 +144,16 @@
  Find the closest port.
  **/
 -(AbstractPortShape *)closestPort:(QPoint *)point toNode:(CDQuartzNode *)node;
+
+/**
+ Compute the size of the graph.
+ **/
+-(QRectangle *)computeBounds;
+
+/**
+ Vist method used when processing the graph to compute the bounds.
+ **/
+-(void) visit:(CDNode *) node;
 
 #pragma mark Encoder and Decoder.
 /**

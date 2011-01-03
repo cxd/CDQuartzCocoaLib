@@ -160,11 +160,11 @@
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
 	[super initWithCoder:aDecoder];
-	fillColor = [aDecoder decodeObjectForKey:@"CirclePortShape_fillColor"];
-	strokeColor = [aDecoder decodeObjectForKey:@"CirclePortShape_strokeColor"];
-	filledCircle = [aDecoder decodeObjectForKey:@"CirclePortShape_filledCircle"];
-	outlineArc = [aDecoder decodeObjectForKey:@"CirclePortShape_outlineArc"];
-	strokeWidth = [aDecoder decodeObjectForKey:@"CirclePortShape_strokeWidth"];
+	fillColor = [[aDecoder decodeObjectForKey:@"CirclePortShape_fillColor"] retain];
+	strokeColor = [[aDecoder decodeObjectForKey:@"CirclePortShape_strokeColor"] retain];
+	filledCircle = [[aDecoder decodeObjectForKey:@"CirclePortShape_filledCircle"] retain];
+	outlineArc = [[aDecoder decodeObjectForKey:@"CirclePortShape_outlineArc"] retain];
+	strokeWidth = [[aDecoder decodeObjectForKey:@"CirclePortShape_strokeWidth"] retain];
 	return self;
 }
 /**

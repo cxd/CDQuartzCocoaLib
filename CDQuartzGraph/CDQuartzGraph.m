@@ -108,6 +108,14 @@
 	[self.shapeDelegate autorelease];
 	self.shapeDelegate = nil;
 	}
+	if (minPoint != nil)
+	{
+		[minPoint autorelease];	
+	}
+	if (maxPoint != nil)
+	{
+		[maxPoint autorelease];	
+	}
 	[super dealloc];
 }
 
@@ -278,6 +286,19 @@
 	[self updateConnections:node];
 }
 
+
+/**
+ Move all nodes by a relative distance specified as a point.
+ **/
+-(void)moveAllNodesBy:(QPoint *)point
+{
+	for(CDQuartzNode *node in self.nodes)
+	{
+		[self moveNode:node By:point];
+	}
+}
+
+
 /**
  Move to an absolute position.
  **/
@@ -404,4 +425,54 @@
 	CDQuartzGraph *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
 	return [copy retain];
 }
+
+/**
+ Compute the bounds for the graph.
+ **/
+-(QRectangle *)computeBounds
+{
+	if (minPoint != nil)
+	{
+		[minPoint autorelease];	
+	}
+	if (maxPoint != nil)
+	{
+		[maxPoint autorelease];	
+	}
+	minPoint = [[QPoint alloc] initX:MAXFLOAT Y:MAXFLOAT];
+	maxPoint = [[QPoint alloc] initX:-1.0f*MAXFLOAT Y:-1.0f*MAXFLOAT]; 
+	// visit nodes and calculate the bounds.
+	CDGraphTraversal *traversal = [[CDGraphTraversal alloc] init];
+	[traversal traverse:self graphInstance:self];
+	[traversal autorelease];
+	return [[[QRectangle alloc] initX:minPoint.x 
+									Y:minPoint.y 
+								WIDTH:[minPoint horizontalDistanceTo:maxPoint] 
+							   HEIGHT:[minPoint verticalDistanceTo:maxPoint]] autorelease];
+}
+
+
+/**
+ Vist method used when processing the graph to compute the bounds.
+ **/
+-(void) visit:(CDNode *) node
+{
+	CDQuartzNode* qNode = (CDQuartzNode *)node;
+	if (qNode.shapeDelegate == nil)
+		return;
+	
+	if (qNode.shapeDelegate.bounds.x < minPoint.x)
+	{
+		minPoint.x = qNode.shapeDelegate.bounds.x;	
+	} else if (qNode.shapeDelegate.bounds.x + qNode.shapeDelegate.bounds.width > maxPoint.x) {
+		maxPoint.x = qNode.shapeDelegate.bounds.x + qNode.shapeDelegate.bounds.width;	
+	}
+	if (qNode.shapeDelegate.bounds.y < minPoint.y)
+	{
+		minPoint.y = qNode.shapeDelegate.bounds.y;	
+	} else if (qNode.shapeDelegate.bounds.y + qNode.shapeDelegate.bounds.height > maxPoint.y) {
+		maxPoint.y = qNode.shapeDelegate.bounds.y + qNode.shapeDelegate.bounds.height;
+	}
+}
+
 @end

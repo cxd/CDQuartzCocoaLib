@@ -53,6 +53,10 @@
 			QPoint *move = [[QPoint alloc] initX:p.x - bounds.width/2.0f Y:p.y - bounds.height/2.0f];
 			// move the node so that the centre of the shape is positioned at the new point.
 			[state.graph moveNode:node.node To:move];
+			// find any nodes that overlap with the moving node
+			// and issue a collision event if they do.
+			[state searchForClosestCollisionWithNode:node.node];
+			
 			[move autorelease];
 			state.redraw = YES;
 		}

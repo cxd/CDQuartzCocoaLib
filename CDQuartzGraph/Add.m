@@ -50,6 +50,8 @@
 	[state.newNode autorelease];
 	state.newNode = nil;
 	state.redraw = YES;
+	// raise an event to indicate the node is added.
+	[GraphStateNotifications raiseNodeAdded:state node:node];
 }
 
 @end

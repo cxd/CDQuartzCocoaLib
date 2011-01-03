@@ -37,6 +37,8 @@
 
 #import "IEditNodeDelegate.h"
 
+
+
 @protocol CDGraphViewOperation;
 
 @interface CDGraphViewState : NSObject<CDGraphVisitor> {
@@ -270,6 +272,12 @@
  of the points used to hover over the edge shapes.
  **/
 -(void)searchForTrackingEdges;
+
+/**
+ Find the closest node that intersects with the supplied node.
+ When it intersects it is regarded as a collision.
+ **/
+-(void)searchForClosestCollisionWithNode:(CDQuartzNode *)node;
 
 /**
  Update the state with the selection of points

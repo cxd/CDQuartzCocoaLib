@@ -38,7 +38,11 @@
  **/
 -(id)initWithParent:(AbstractGraphShape *)p AndBounds:(QRectangle *)r;
 
+/**
+ Create the shapes for this node.
+ **/
 -(void)createShapes;
+
 /**
  Event raised when outline weight has changed.
  **/
