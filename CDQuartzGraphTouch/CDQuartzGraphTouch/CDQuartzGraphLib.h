@@ -25,6 +25,8 @@
 #import "CDQuartzGraph.h"
 
 #import "CDGraphView.h"
+#import "CDGraphViewState.h"
 #import "UIGraphView.h"
+#import "GraphStateNotifications.h"
 
 #import "ForceDirectedLayout.h"

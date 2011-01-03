@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6208003D12A7888400DF1BE7 /* GraphStateNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 6208003B12A7888400DF1BE7 /* GraphStateNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6208003E12A7888400DF1BE7 /* GraphStateNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 6208003C12A7888400DF1BE7 /* GraphStateNotifications.m */; };
 		62168BEB12350D2F000941F2 /* UIGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BE912350D2F000941F2 /* UIGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62168BEC12350D2F000941F2 /* UIGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BEA12350D2F000941F2 /* UIGraphView.m */; };
 		62168C1312351693000941F2 /* TrackedNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168C1112351693000941F2 /* TrackedNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,6 +90,8 @@
 		6276A9A4129103F80013EA5C /* CDGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6276A9A2129103F80013EA5C /* CDGraphView.m */; };
 		6276A9A9129104230013EA5C /* CDGraphViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6276A9A7129104230013EA5C /* CDGraphViewState.m */; };
 		6276A9AA129104230013EA5C /* CDPersistentQuartzEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6276A9A8129104230013EA5C /* CDPersistentQuartzEdge.m */; };
+		628DC09F12A619A80048080B /* NestedGraphShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 628DC09D12A619A80048080B /* NestedGraphShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		628DC0A012A619A80048080B /* NestedGraphShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 628DC09E12A619A80048080B /* NestedGraphShape.m */; };
 		AA747D9F0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +128,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6208003B12A7888400DF1BE7 /* GraphStateNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphStateNotifications.h; path = ../../CDQuartzGraph/GraphStateNotifications.h; sourceTree = SOURCE_ROOT; };
+		6208003C12A7888400DF1BE7 /* GraphStateNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphStateNotifications.m; path = ../../CDQuartzGraph/GraphStateNotifications.m; sourceTree = SOURCE_ROOT; };
 		62168BD11235074A000941F2 /* CDGraphTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDGraphTouch.xcodeproj; path = ../../../../CDGraph/CDGraphTouch/CDGraphTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62168BE912350D2F000941F2 /* UIGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGraphView.h; sourceTree = "<group>"; };
 		62168BEA12350D2F000941F2 /* UIGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGraphView.m; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 		622D1E88128D6AB600D97241 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		623C80B3129106B2008CCF9A /* CDGraphViewState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraphViewState.h; path = ../../CDQuartzGraph/CDGraphViewState.h; sourceTree = SOURCE_ROOT; };
 		623C80B4129106B2008CCF9A /* CDPersistentQuartzEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDPersistentQuartzEdge.h; path = ../../CDQuartzGraph/CDPersistentQuartzEdge.h; sourceTree = SOURCE_ROOT; };
+		62563D1012A8A31F00EDA237 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		62655F221233AF3400A91E24 /* CDQuartzGraphHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphHeader.h; sourceTree = "<group>"; };
 		62655F3A1233AF9000A91E24 /* QuartzCocoaLibTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuartzCocoaLibTouch.xcodeproj; path = ../../QuartzCocoaLibTouch/QuartzCocoaLibTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 		62655F471233B62800A91E24 /* AbstractConnectorShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractConnectorShape.h; path = ../../CDQuartzGraph/AbstractConnectorShape.h; sourceTree = SOURCE_ROOT; };
@@ -207,6 +214,8 @@
 		6276A9A2129103F80013EA5C /* CDGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraphView.m; path = ../../CDQuartzGraph/View/CDGraphView.m; sourceTree = SOURCE_ROOT; };
 		6276A9A7129104230013EA5C /* CDGraphViewState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraphViewState.m; path = ../../CDQuartzGraph/CDGraphViewState.m; sourceTree = SOURCE_ROOT; };
 		6276A9A8129104230013EA5C /* CDPersistentQuartzEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDPersistentQuartzEdge.m; path = ../../CDQuartzGraph/CDPersistentQuartzEdge.m; sourceTree = SOURCE_ROOT; };
+		628DC09D12A619A80048080B /* NestedGraphShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestedGraphShape.h; path = ../../CDQuartzGraph/NestedGraphShape.h; sourceTree = SOURCE_ROOT; };
+		628DC09E12A619A80048080B /* NestedGraphShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestedGraphShape.m; path = ../../CDQuartzGraph/NestedGraphShape.m; sourceTree = SOURCE_ROOT; };
 		AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphTouch_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libCDQuartzGraphTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDQuartzGraphTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +254,7 @@
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				62563D1012A8A31F00EDA237 /* LICENCE.txt */,
 			);
 			name = CDQuartzGraphTouch;
 			sourceTree = "<group>";
@@ -285,11 +295,13 @@
 		62168C09123511B8000941F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6208003B12A7888400DF1BE7 /* GraphStateNotifications.h */,
+				6208003C12A7888400DF1BE7 /* GraphStateNotifications.m */,
 				623C80B3129106B2008CCF9A /* CDGraphViewState.h */,
-				623C80B4129106B2008CCF9A /* CDPersistentQuartzEdge.h */,
-				6276A98B1291029C0013EA5C /* IEditNodeDelegate.h */,
 				6276A9A7129104230013EA5C /* CDGraphViewState.m */,
+				623C80B4129106B2008CCF9A /* CDPersistentQuartzEdge.h */,
 				6276A9A8129104230013EA5C /* CDPersistentQuartzEdge.m */,
+				6276A98B1291029C0013EA5C /* IEditNodeDelegate.h */,
 				6276A9A1129103F80013EA5C /* CDGraphView.h */,
 				6276A9A2129103F80013EA5C /* CDGraphView.m */,
 				6276A97B129102480013EA5C /* CDGraphViewOperation.h */,
@@ -361,6 +373,8 @@
 		6276A9AF129104490013EA5C /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				628DC09D12A619A80048080B /* NestedGraphShape.h */,
+				628DC09E12A619A80048080B /* NestedGraphShape.m */,
 				6276A98C1291029C0013EA5C /* ITrackingViewBoundary.h */,
 				62294CEB126084C500003723 /* CirclePortShape.h */,
 				62294CEC126084C500003723 /* CirclePortShape.m */,
@@ -476,6 +490,8 @@
 				6276A9A3129103F80013EA5C /* CDGraphView.h in Headers */,
 				623C80B5129106B2008CCF9A /* CDGraphViewState.h in Headers */,
 				623C80B6129106B2008CCF9A /* CDPersistentQuartzEdge.h in Headers */,
+				628DC09F12A619A80048080B /* NestedGraphShape.h in Headers */,
+				6208003D12A7888400DF1BE7 /* GraphStateNotifications.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +608,8 @@
 				6276A9A4129103F80013EA5C /* CDGraphView.m in Sources */,
 				6276A9A9129104230013EA5C /* CDGraphViewState.m in Sources */,
 				6276A9AA129104230013EA5C /* CDPersistentQuartzEdge.m in Sources */,
+				628DC0A012A619A80048080B /* NestedGraphShape.m in Sources */,
+				6208003E12A7888400DF1BE7 /* GraphStateNotifications.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
