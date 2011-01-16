@@ -52,6 +52,7 @@
 		[queue enqueue:[[QFilledRectangle alloc] initX:120 Y:120 WIDTH:100 HEIGHT:100]];
 		[queue enqueue:[[QRestoreContext alloc] init]];
 		
+		
 		[queue enqueue:[[QSaveContext alloc] init]];
 		
 		[queue enqueue:[[QLineCap alloc] initWithStyle:QLineCapRounded]];
@@ -61,12 +62,44 @@
 		[queue enqueue:[[QStrokedRectangle alloc] initX:120 Y:120 WIDTH:100 HEIGHT:100]];
 		[queue enqueue:[[QRestoreContext alloc] init]];
 		
+		
+		[queue enqueue:[[QSaveContext alloc] init]];
+		
+		[queue enqueue:[[QFillColor alloc] initWithRGBA:1.0 G:0.0 B:0.0 A:1]];
+		[queue enqueue:[[QFilledEllipse alloc] initX:200 Y:250 WIDTH:200 HEIGHT:60]];
+		[queue enqueue:[[QStrokeColor alloc] initWithRGBA:0.0 G:0.0 B:1.0 A:1]];
+		[queue enqueue:[[QStrokeWidth alloc] initWidth:5]];
+		[queue enqueue:[[QStrokedEllipse alloc] initX:200 Y:250 WIDTH:200 HEIGHT:60]];
+		[queue enqueue:[[QRestoreContext alloc] init]];
+		
+		
 		// create test shape yin/yan circle.
 		[queue enqueue:[[QTestYinYang alloc] initWithCentre:[[QPoint alloc]initX:110 Y:110]]];
 					
 		// test loading an image from a url.
 		[queue enqueue:[[QImage alloc] initWithUrl:@"http://devimages.apple.com/home/images/iphonedevcenter.png" X:10 Y:300]];
 
+		[queue enqueue:[[QSaveContext alloc] init]];
+		
+		[queue enqueue:[[QFillColor alloc] initWithRGBA:1.0 G:0.5 B:1.0 A:0.5]];
+		[queue enqueue:[[QFilledCircle alloc] initX:350 Y:100 Radius:50]];
+		
+		[queue enqueue:[[QStrokeColor alloc] initWithRGBA:0.0 G:1.0 B:0.0 A:1]];
+		[queue enqueue:[[QStrokeWidth alloc] initWidth:15]];
+		[queue enqueue:[[QStrokedCircle alloc] initX:350 Y:100 Radius:50]];
+		
+		[queue enqueue:[[QRestoreContext alloc] init]];
+	
+		[queue enqueue:[[QSaveContext alloc] init]];
+		
+		[queue enqueue:[[QFillColor alloc] initWithRGBA:1.0 G:0.0 B:0.0 A:1]];
+		[queue enqueue:[[QFilledCurvedRectangle alloc] initX:200 Y:350 WIDTH:200 HEIGHT:60]];
+		[queue enqueue:[[QStrokeColor alloc] initWithRGBA:0.0 G:0.0 B:1.0 A:1]];
+		[queue enqueue:[[QStrokeWidth alloc] initWidth:5]];
+		[queue enqueue:[[QStrokedCurvedRectangle alloc] initX:200 Y:350 WIDTH:200 HEIGHT:60]];
+		[queue enqueue:[[QRestoreContext alloc] init]];
+		
+		
 		
 		[queue enqueue:[[QSaveContext alloc] init]];
 		[queue enqueue:[[QStrokeColor alloc] initWithRGBA:0 G:0 B:0 A: 1]];
