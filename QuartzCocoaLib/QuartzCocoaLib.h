@@ -35,6 +35,15 @@
 #import "QMove.h"
 #import "QImage.h"
 #import "QLabel.h"
+#import "QCircle.h"
+#import "QStrokedCircle.h"
+#import "QFilledCircle.h"
+#import "QStrokedEllipse.h"
+#import "QFilledEllipse.h"
+#import "QCurvedRectangle.h"
+#import "QFilledCurvedRectangle.h"
+#import "QStrokedCurvedRectangle.h"
+
 #import "QTestYinYang.h"
 
 

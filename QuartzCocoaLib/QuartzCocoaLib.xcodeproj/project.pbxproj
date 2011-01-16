@@ -79,6 +79,22 @@
 		6240A6811216570000840C1B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 6240A63A1216570000840C1B /* README */; };
 		6240A6841216570000840C1B /* Vector2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240A63D1216570000840C1B /* Vector2D.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6240A6851216570000840C1B /* Vector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240A63E1216570000840C1B /* Vector2D.m */; };
+		624B3D4512DB16BA00041BF9 /* QCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 624B3D4312DB16BA00041BF9 /* QCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		624B3D4612DB16BA00041BF9 /* QCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 624B3D4412DB16BA00041BF9 /* QCircle.m */; };
+		62B377EF12E2965800EC62DC /* QStrokedCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B377ED12E2965800EC62DC /* QStrokedCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B377F012E2965800EC62DC /* QStrokedCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B377EE12E2965800EC62DC /* QStrokedCircle.m */; };
+		62B377F312E2966400EC62DC /* QFilledCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B377F112E2966400EC62DC /* QFilledCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B377F412E2966400EC62DC /* QFilledCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B377F212E2966400EC62DC /* QFilledCircle.m */; };
+		62B377FD12E2A14200EC62DC /* QStrokedEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B377FB12E2A14200EC62DC /* QStrokedEllipse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B377FE12E2A14200EC62DC /* QStrokedEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B377FC12E2A14200EC62DC /* QStrokedEllipse.m */; };
+		62B3780312E2A68A00EC62DC /* QFilledEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B3780112E2A68A00EC62DC /* QFilledEllipse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B3780412E2A68A00EC62DC /* QFilledEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B3780212E2A68A00EC62DC /* QFilledEllipse.m */; };
+		62B379FF12E2E2F400EC62DC /* QCurvedRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B379FD12E2E2F400EC62DC /* QCurvedRectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B37A0012E2E2F400EC62DC /* QCurvedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B379FE12E2E2F400EC62DC /* QCurvedRectangle.m */; };
+		62B37A1F12E2E4E900EC62DC /* QStrokedCurvedRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37A1D12E2E4E900EC62DC /* QStrokedCurvedRectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B37A2012E2E4E900EC62DC /* QStrokedCurvedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37A1E12E2E4E900EC62DC /* QStrokedCurvedRectangle.m */; };
+		62B37A2312E2E4F800EC62DC /* QFilledCurvedRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37A2112E2E4F800EC62DC /* QFilledCurvedRectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B37A2412E2E4F800EC62DC /* QFilledCurvedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37A2212E2E4F800EC62DC /* QFilledCurvedRectangle.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -164,6 +180,22 @@
 		6240A63A1216570000840C1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		6240A63D1216570000840C1B /* Vector2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 		6240A63E1216570000840C1B /* Vector2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector2D.m; sourceTree = "<group>"; };
+		624B3D4312DB16BA00041BF9 /* QCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCircle.h; sourceTree = "<group>"; };
+		624B3D4412DB16BA00041BF9 /* QCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCircle.m; sourceTree = "<group>"; };
+		62B377ED12E2965800EC62DC /* QStrokedCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QStrokedCircle.h; sourceTree = "<group>"; };
+		62B377EE12E2965800EC62DC /* QStrokedCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QStrokedCircle.m; sourceTree = "<group>"; };
+		62B377F112E2966400EC62DC /* QFilledCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFilledCircle.h; sourceTree = "<group>"; };
+		62B377F212E2966400EC62DC /* QFilledCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFilledCircle.m; sourceTree = "<group>"; };
+		62B377FB12E2A14200EC62DC /* QStrokedEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QStrokedEllipse.h; sourceTree = "<group>"; };
+		62B377FC12E2A14200EC62DC /* QStrokedEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QStrokedEllipse.m; sourceTree = "<group>"; };
+		62B3780112E2A68A00EC62DC /* QFilledEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFilledEllipse.h; sourceTree = "<group>"; };
+		62B3780212E2A68A00EC62DC /* QFilledEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFilledEllipse.m; sourceTree = "<group>"; };
+		62B379FD12E2E2F400EC62DC /* QCurvedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCurvedRectangle.h; sourceTree = "<group>"; };
+		62B379FE12E2E2F400EC62DC /* QCurvedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCurvedRectangle.m; sourceTree = "<group>"; };
+		62B37A1D12E2E4E900EC62DC /* QStrokedCurvedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QStrokedCurvedRectangle.h; sourceTree = "<group>"; };
+		62B37A1E12E2E4E900EC62DC /* QStrokedCurvedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QStrokedCurvedRectangle.m; sourceTree = "<group>"; };
+		62B37A2112E2E4F800EC62DC /* QFilledCurvedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFilledCurvedRectangle.h; sourceTree = "<group>"; };
+		62B37A2212E2E4F800EC62DC /* QFilledCurvedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFilledCurvedRectangle.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* QuartzCocoaLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuartzCocoaLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -291,6 +323,22 @@
 				6211ED70122BD1A6000A40AE /* QLabel.m */,
 				6205F1A612D1A5FC009EA0EE /* QModifierQueue.xcclassmodel */,
 				6205F1AB12D1A82D009EA0EE /* QContextModifier.xcclassmodel */,
+				624B3D4312DB16BA00041BF9 /* QCircle.h */,
+				624B3D4412DB16BA00041BF9 /* QCircle.m */,
+				62B377ED12E2965800EC62DC /* QStrokedCircle.h */,
+				62B377EE12E2965800EC62DC /* QStrokedCircle.m */,
+				62B377F112E2966400EC62DC /* QFilledCircle.h */,
+				62B377F212E2966400EC62DC /* QFilledCircle.m */,
+				62B377FB12E2A14200EC62DC /* QStrokedEllipse.h */,
+				62B377FC12E2A14200EC62DC /* QStrokedEllipse.m */,
+				62B3780112E2A68A00EC62DC /* QFilledEllipse.h */,
+				62B3780212E2A68A00EC62DC /* QFilledEllipse.m */,
+				62B379FD12E2E2F400EC62DC /* QCurvedRectangle.h */,
+				62B379FE12E2E2F400EC62DC /* QCurvedRectangle.m */,
+				62B37A2112E2E4F800EC62DC /* QFilledCurvedRectangle.h */,
+				62B37A2212E2E4F800EC62DC /* QFilledCurvedRectangle.m */,
+				62B37A1D12E2E4E900EC62DC /* QStrokedCurvedRectangle.h */,
+				62B37A1E12E2E4E900EC62DC /* QStrokedCurvedRectangle.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -397,6 +445,14 @@
 				6240A6801216570000840C1B /* QVisitor.h in Headers */,
 				6240A6841216570000840C1B /* Vector2D.h in Headers */,
 				6211ED71122BD1A6000A40AE /* QLabel.h in Headers */,
+				624B3D4512DB16BA00041BF9 /* QCircle.h in Headers */,
+				62B377EF12E2965800EC62DC /* QStrokedCircle.h in Headers */,
+				62B377F312E2966400EC62DC /* QFilledCircle.h in Headers */,
+				62B377FD12E2A14200EC62DC /* QStrokedEllipse.h in Headers */,
+				62B3780312E2A68A00EC62DC /* QFilledEllipse.h in Headers */,
+				62B379FF12E2E2F400EC62DC /* QCurvedRectangle.h in Headers */,
+				62B37A1F12E2E4E900EC62DC /* QStrokedCurvedRectangle.h in Headers */,
+				62B37A2312E2E4F800EC62DC /* QFilledCurvedRectangle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +552,14 @@
 				6240A67C1216570000840C1B /* QTestYinYang.m in Sources */,
 				6240A6851216570000840C1B /* Vector2D.m in Sources */,
 				6211ED72122BD1A6000A40AE /* QLabel.m in Sources */,
+				624B3D4612DB16BA00041BF9 /* QCircle.m in Sources */,
+				62B377F012E2965800EC62DC /* QStrokedCircle.m in Sources */,
+				62B377F412E2966400EC62DC /* QFilledCircle.m in Sources */,
+				62B377FE12E2A14200EC62DC /* QStrokedEllipse.m in Sources */,
+				62B3780412E2A68A00EC62DC /* QFilledEllipse.m in Sources */,
+				62B37A0012E2E2F400EC62DC /* QCurvedRectangle.m in Sources */,
+				62B37A2012E2E4E900EC62DC /* QStrokedCurvedRectangle.m in Sources */,
+				62B37A2412E2E4F800EC62DC /* QFilledCurvedRectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
