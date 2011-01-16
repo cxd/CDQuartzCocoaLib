@@ -75,6 +75,22 @@
 		6240A79C12165A4400840C1B /* QTestYinYang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240A70A121659B800840C1B /* QTestYinYang.m */; };
 		6240A7B212165AA000840C1B /* QFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240A7B112165AA000840C1B /* QFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62978045123B8FC700A132F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62978044123B8FC700A132F9 /* UIKit.framework */; };
+		62B37AD212E2EFB900EC62DC /* QCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37AC212E2EFB900EC62DC /* QCircle.h */; };
+		62B37AD312E2EFB900EC62DC /* QCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37AC312E2EFB900EC62DC /* QCircle.m */; };
+		62B37AD412E2EFB900EC62DC /* QCurvedRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37AC412E2EFB900EC62DC /* QCurvedRectangle.h */; };
+		62B37AD512E2EFB900EC62DC /* QCurvedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37AC512E2EFB900EC62DC /* QCurvedRectangle.m */; };
+		62B37AD612E2EFB900EC62DC /* QFilledCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37AC612E2EFB900EC62DC /* QFilledCircle.h */; };
+		62B37AD712E2EFB900EC62DC /* QFilledCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37AC712E2EFB900EC62DC /* QFilledCircle.m */; };
+		62B37AD812E2EFB900EC62DC /* QFilledCurvedRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37AC812E2EFB900EC62DC /* QFilledCurvedRectangle.h */; };
+		62B37AD912E2EFB900EC62DC /* QFilledCurvedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37AC912E2EFB900EC62DC /* QFilledCurvedRectangle.m */; };
+		62B37ADA12E2EFB900EC62DC /* QFilledEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37ACA12E2EFB900EC62DC /* QFilledEllipse.h */; };
+		62B37ADB12E2EFB900EC62DC /* QFilledEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37ACB12E2EFB900EC62DC /* QFilledEllipse.m */; };
+		62B37ADC12E2EFB900EC62DC /* QStrokedCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37ACC12E2EFB900EC62DC /* QStrokedCircle.h */; };
+		62B37ADD12E2EFB900EC62DC /* QStrokedCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37ACD12E2EFB900EC62DC /* QStrokedCircle.m */; };
+		62B37ADE12E2EFB900EC62DC /* QStrokedCurvedRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37ACE12E2EFB900EC62DC /* QStrokedCurvedRectangle.h */; };
+		62B37ADF12E2EFB900EC62DC /* QStrokedCurvedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37ACF12E2EFB900EC62DC /* QStrokedCurvedRectangle.m */; };
+		62B37AE012E2EFB900EC62DC /* QStrokedEllipse.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B37AD012E2EFB900EC62DC /* QStrokedEllipse.h */; };
+		62B37AE112E2EFB900EC62DC /* QStrokedEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37AD112E2EFB900EC62DC /* QStrokedEllipse.m */; };
 		62C57171123661A10035FDA0 /* QLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C5716F123661A10035FDA0 /* QLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62C57172123661A10035FDA0 /* QLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C57170123661A10035FDA0 /* QLabel.m */; };
 /* End PBXBuildFile section */
@@ -153,6 +169,22 @@
 		6240A7B112165AA000840C1B /* QFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFramework.h; path = QFramework_Header/QFramework.h; sourceTree = "<group>"; };
 		6240A7C512165B3400840C1B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		62978044123B8FC700A132F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		62B37AC212E2EFB900EC62DC /* QCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCircle.h; path = ../QuartzCocoaLib/QCircle.h; sourceTree = SOURCE_ROOT; };
+		62B37AC312E2EFB900EC62DC /* QCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCircle.m; path = ../QuartzCocoaLib/QCircle.m; sourceTree = SOURCE_ROOT; };
+		62B37AC412E2EFB900EC62DC /* QCurvedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCurvedRectangle.h; path = ../QuartzCocoaLib/QCurvedRectangle.h; sourceTree = SOURCE_ROOT; };
+		62B37AC512E2EFB900EC62DC /* QCurvedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCurvedRectangle.m; path = ../QuartzCocoaLib/QCurvedRectangle.m; sourceTree = SOURCE_ROOT; };
+		62B37AC612E2EFB900EC62DC /* QFilledCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFilledCircle.h; path = ../QuartzCocoaLib/QFilledCircle.h; sourceTree = SOURCE_ROOT; };
+		62B37AC712E2EFB900EC62DC /* QFilledCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFilledCircle.m; path = ../QuartzCocoaLib/QFilledCircle.m; sourceTree = SOURCE_ROOT; };
+		62B37AC812E2EFB900EC62DC /* QFilledCurvedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFilledCurvedRectangle.h; path = ../QuartzCocoaLib/QFilledCurvedRectangle.h; sourceTree = SOURCE_ROOT; };
+		62B37AC912E2EFB900EC62DC /* QFilledCurvedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFilledCurvedRectangle.m; path = ../QuartzCocoaLib/QFilledCurvedRectangle.m; sourceTree = SOURCE_ROOT; };
+		62B37ACA12E2EFB900EC62DC /* QFilledEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QFilledEllipse.h; path = ../QuartzCocoaLib/QFilledEllipse.h; sourceTree = SOURCE_ROOT; };
+		62B37ACB12E2EFB900EC62DC /* QFilledEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QFilledEllipse.m; path = ../QuartzCocoaLib/QFilledEllipse.m; sourceTree = SOURCE_ROOT; };
+		62B37ACC12E2EFB900EC62DC /* QStrokedCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokedCircle.h; path = ../QuartzCocoaLib/QStrokedCircle.h; sourceTree = SOURCE_ROOT; };
+		62B37ACD12E2EFB900EC62DC /* QStrokedCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokedCircle.m; path = ../QuartzCocoaLib/QStrokedCircle.m; sourceTree = SOURCE_ROOT; };
+		62B37ACE12E2EFB900EC62DC /* QStrokedCurvedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokedCurvedRectangle.h; path = ../QuartzCocoaLib/QStrokedCurvedRectangle.h; sourceTree = SOURCE_ROOT; };
+		62B37ACF12E2EFB900EC62DC /* QStrokedCurvedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokedCurvedRectangle.m; path = ../QuartzCocoaLib/QStrokedCurvedRectangle.m; sourceTree = SOURCE_ROOT; };
+		62B37AD012E2EFB900EC62DC /* QStrokedEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QStrokedEllipse.h; path = ../QuartzCocoaLib/QStrokedEllipse.h; sourceTree = SOURCE_ROOT; };
+		62B37AD112E2EFB900EC62DC /* QStrokedEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QStrokedEllipse.m; path = ../QuartzCocoaLib/QStrokedEllipse.m; sourceTree = SOURCE_ROOT; };
 		62C5716F123661A10035FDA0 /* QLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QLabel.h; path = ../QuartzCocoaLib/QLabel.h; sourceTree = SOURCE_ROOT; };
 		62C57170123661A10035FDA0 /* QLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QLabel.m; path = ../QuartzCocoaLib/QLabel.m; sourceTree = SOURCE_ROOT; };
 		62EA54490FFEEF7300B803C1 /* QRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRectangle.m; path = ../QuartzCocoaLib/QRectangle.m; sourceTree = "<group>"; };
@@ -215,6 +247,22 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				62B37AC212E2EFB900EC62DC /* QCircle.h */,
+				62B37AC312E2EFB900EC62DC /* QCircle.m */,
+				62B37AC412E2EFB900EC62DC /* QCurvedRectangle.h */,
+				62B37AC512E2EFB900EC62DC /* QCurvedRectangle.m */,
+				62B37AC612E2EFB900EC62DC /* QFilledCircle.h */,
+				62B37AC712E2EFB900EC62DC /* QFilledCircle.m */,
+				62B37AC812E2EFB900EC62DC /* QFilledCurvedRectangle.h */,
+				62B37AC912E2EFB900EC62DC /* QFilledCurvedRectangle.m */,
+				62B37ACA12E2EFB900EC62DC /* QFilledEllipse.h */,
+				62B37ACB12E2EFB900EC62DC /* QFilledEllipse.m */,
+				62B37ACC12E2EFB900EC62DC /* QStrokedCircle.h */,
+				62B37ACD12E2EFB900EC62DC /* QStrokedCircle.m */,
+				62B37ACE12E2EFB900EC62DC /* QStrokedCurvedRectangle.h */,
+				62B37ACF12E2EFB900EC62DC /* QStrokedCurvedRectangle.m */,
+				62B37AD012E2EFB900EC62DC /* QStrokedEllipse.h */,
+				62B37AD112E2EFB900EC62DC /* QStrokedEllipse.m */,
 				62C5716F123661A10035FDA0 /* QLabel.h */,
 				62C57170123661A10035FDA0 /* QLabel.m */,
 				6240A7B112165AA000840C1B /* QFramework.h */,
@@ -382,6 +430,14 @@
 				6240A79B12165A4400840C1B /* QTestYinYang.h in Headers */,
 				6240A7B212165AA000840C1B /* QFramework.h in Headers */,
 				62C57171123661A10035FDA0 /* QLabel.h in Headers */,
+				62B37AD212E2EFB900EC62DC /* QCircle.h in Headers */,
+				62B37AD412E2EFB900EC62DC /* QCurvedRectangle.h in Headers */,
+				62B37AD612E2EFB900EC62DC /* QFilledCircle.h in Headers */,
+				62B37AD812E2EFB900EC62DC /* QFilledCurvedRectangle.h in Headers */,
+				62B37ADA12E2EFB900EC62DC /* QFilledEllipse.h in Headers */,
+				62B37ADC12E2EFB900EC62DC /* QStrokedCircle.h in Headers */,
+				62B37ADE12E2EFB900EC62DC /* QStrokedCurvedRectangle.h in Headers */,
+				62B37AE012E2EFB900EC62DC /* QStrokedEllipse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +522,14 @@
 				6240A79A12165A4400840C1B /* Vector2D.m in Sources */,
 				6240A79C12165A4400840C1B /* QTestYinYang.m in Sources */,
 				62C57172123661A10035FDA0 /* QLabel.m in Sources */,
+				62B37AD312E2EFB900EC62DC /* QCircle.m in Sources */,
+				62B37AD512E2EFB900EC62DC /* QCurvedRectangle.m in Sources */,
+				62B37AD712E2EFB900EC62DC /* QFilledCircle.m in Sources */,
+				62B37AD912E2EFB900EC62DC /* QFilledCurvedRectangle.m in Sources */,
+				62B37ADB12E2EFB900EC62DC /* QFilledEllipse.m in Sources */,
+				62B37ADD12E2EFB900EC62DC /* QStrokedCircle.m in Sources */,
+				62B37ADF12E2EFB900EC62DC /* QStrokedCurvedRectangle.m in Sources */,
+				62B37AE112E2EFB900EC62DC /* QStrokedEllipse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
