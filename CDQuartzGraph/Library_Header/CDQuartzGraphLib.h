@@ -29,6 +29,15 @@
 #import "CurvedRectangleNode.h"
 #import "CurvedRectanglePort.h"
 #import "CirclePortShape.h"
+#import "RectangleNode.h"
+#import "RectanglePortNodeShape.h"
+#import "CircleNode.h"
+#import "EllipseNode.h"
+#import "NestedGraphShape.h"
+
+#import "TrackingViewBoundary.h"
+#import "ITrackingViewBoundary.h"
+
 
 #import "CDQuartzNode.h"
 #import "CDQuartzEdge.h"
