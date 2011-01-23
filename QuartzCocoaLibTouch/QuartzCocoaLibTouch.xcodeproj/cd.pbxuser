@@ -87,15 +87,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 316862316;
-			PBXWorkspaceStateSaveDate = 316862316;
+			PBXPerProjectTemplateStateSaveDate = 317440019;
+			PBXWorkspaceStateSaveDate = 317440019;
 		};
 		perUserProjectItems = {
 			623C83B91291476B008CCF9A /* PBXTextBookmark */ = 623C83B91291476B008CCF9A /* PBXTextBookmark */;
 			624B349F129633AF00CC50D1 /* PBXTextBookmark */ = 624B349F129633AF00CC50D1 /* PBXTextBookmark */;
 			627AD7D611D8BF770064F2C7 /* PBXTextBookmark */ = 627AD7D611D8BF770064F2C7 /* PBXTextBookmark */;
+			62920B3812EBC02400B3A95B /* PBXTextBookmark */ = 62920B3812EBC02400B3A95B /* PBXTextBookmark */;
 			62B37AEF12E2EFFB00EC62DC /* PBXTextBookmark */ = 62B37AEF12E2EFFB00EC62DC /* PBXTextBookmark */;
-			62B37AF012E2EFFB00EC62DC /* PBXTextBookmark */ = 62B37AF012E2EFFB00EC62DC /* PBXTextBookmark */;
 			62B37AF112E2EFFB00EC62DC /* PBXTextBookmark */ = 62B37AF112E2EFFB00EC62DC /* PBXTextBookmark */;
 			62CD06A90FFB8BD30001D102 /* PBXTextBookmark */ = 62CD06A90FFB8BD30001D102 /* PBXTextBookmark */;
 			62D061371295114800B4C47D /* PBXTextBookmark */ = 62D061371295114800B4C47D /* PBXTextBookmark */;
@@ -242,7 +242,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {626, 650}}";
 			sepNavSelRange = "{910, 0}";
-			sepNavVisRange = "{546, 520}";
+			sepNavVisRange = "{525, 541}";
 		};
 	};
 	6240A70C121659B800840C1B /* QuartzCocoaLibExt.h */ = {
@@ -367,6 +367,16 @@
 		vrLen = 1067;
 		vrLoc = 5623;
 	};
+	62920B3812EBC02400B3A95B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6240A70B121659B800840C1B /* QuartzCocoaLib.h */;
+		name = "QuartzCocoaLib.h: 41";
+		rLen = 0;
+		rLoc = 910;
+		rType = 0;
+		vrLen = 541;
+		vrLoc = 525;
+	};
 	62B37AEF12E2EFFB00EC62DC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 62C5716F123661A10035FDA0 /* QLabel.h */;
@@ -376,16 +386,6 @@
 		rType = 0;
 		vrLen = 453;
 		vrLoc = 732;
-	};
-	62B37AF012E2EFFB00EC62DC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6240A70B121659B800840C1B /* QuartzCocoaLib.h */;
-		name = "QuartzCocoaLib.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 587;
-		vrLoc = 0;
 	};
 	62B37AF112E2EFFB00EC62DC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
