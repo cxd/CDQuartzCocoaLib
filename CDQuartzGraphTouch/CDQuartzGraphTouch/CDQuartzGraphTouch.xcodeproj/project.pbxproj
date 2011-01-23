@@ -92,6 +92,14 @@
 		6276A9AA129104230013EA5C /* CDPersistentQuartzEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6276A9A8129104230013EA5C /* CDPersistentQuartzEdge.m */; };
 		628DC09F12A619A80048080B /* NestedGraphShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 628DC09D12A619A80048080B /* NestedGraphShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		628DC0A012A619A80048080B /* NestedGraphShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 628DC09E12A619A80048080B /* NestedGraphShape.m */; };
+		62920B7112EBC08000B3A95B /* CircleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62920B6912EBC08000B3A95B /* CircleNode.h */; };
+		62920B7212EBC08000B3A95B /* CircleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62920B6A12EBC08000B3A95B /* CircleNode.m */; };
+		62920B7312EBC08000B3A95B /* EllipseNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62920B6B12EBC08000B3A95B /* EllipseNode.h */; };
+		62920B7412EBC08000B3A95B /* EllipseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62920B6C12EBC08000B3A95B /* EllipseNode.m */; };
+		62920B7512EBC08000B3A95B /* RectangleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62920B6D12EBC08000B3A95B /* RectangleNode.h */; };
+		62920B7612EBC08000B3A95B /* RectangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62920B6E12EBC08000B3A95B /* RectangleNode.m */; };
+		62920B7712EBC08000B3A95B /* RectanglePortNodeShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62920B6F12EBC08000B3A95B /* RectanglePortNodeShape.h */; };
+		62920B7812EBC08000B3A95B /* RectanglePortNodeShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62920B7012EBC08000B3A95B /* RectanglePortNodeShape.m */; };
 		AA747D9F0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -216,6 +224,14 @@
 		6276A9A8129104230013EA5C /* CDPersistentQuartzEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDPersistentQuartzEdge.m; path = ../../CDQuartzGraph/CDPersistentQuartzEdge.m; sourceTree = SOURCE_ROOT; };
 		628DC09D12A619A80048080B /* NestedGraphShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NestedGraphShape.h; path = ../../CDQuartzGraph/NestedGraphShape.h; sourceTree = SOURCE_ROOT; };
 		628DC09E12A619A80048080B /* NestedGraphShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NestedGraphShape.m; path = ../../CDQuartzGraph/NestedGraphShape.m; sourceTree = SOURCE_ROOT; };
+		62920B6912EBC08000B3A95B /* CircleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleNode.h; path = ../../CDQuartzGraph/CircleNode.h; sourceTree = SOURCE_ROOT; };
+		62920B6A12EBC08000B3A95B /* CircleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleNode.m; path = ../../CDQuartzGraph/CircleNode.m; sourceTree = SOURCE_ROOT; };
+		62920B6B12EBC08000B3A95B /* EllipseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EllipseNode.h; path = ../../CDQuartzGraph/EllipseNode.h; sourceTree = SOURCE_ROOT; };
+		62920B6C12EBC08000B3A95B /* EllipseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EllipseNode.m; path = ../../CDQuartzGraph/EllipseNode.m; sourceTree = SOURCE_ROOT; };
+		62920B6D12EBC08000B3A95B /* RectangleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RectangleNode.h; path = ../../CDQuartzGraph/RectangleNode.h; sourceTree = SOURCE_ROOT; };
+		62920B6E12EBC08000B3A95B /* RectangleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RectangleNode.m; path = ../../CDQuartzGraph/RectangleNode.m; sourceTree = SOURCE_ROOT; };
+		62920B6F12EBC08000B3A95B /* RectanglePortNodeShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RectanglePortNodeShape.h; path = ../../CDQuartzGraph/RectanglePortNodeShape.h; sourceTree = SOURCE_ROOT; };
+		62920B7012EBC08000B3A95B /* RectanglePortNodeShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RectanglePortNodeShape.m; path = ../../CDQuartzGraph/RectanglePortNodeShape.m; sourceTree = SOURCE_ROOT; };
 		AA747D9E0F9514B9006C5449 /* CDQuartzGraphTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzGraphTouch_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libCDQuartzGraphTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDQuartzGraphTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,6 +389,14 @@
 		6276A9AF129104490013EA5C /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				62920B6912EBC08000B3A95B /* CircleNode.h */,
+				62920B6A12EBC08000B3A95B /* CircleNode.m */,
+				62920B6B12EBC08000B3A95B /* EllipseNode.h */,
+				62920B6C12EBC08000B3A95B /* EllipseNode.m */,
+				62920B6D12EBC08000B3A95B /* RectangleNode.h */,
+				62920B6E12EBC08000B3A95B /* RectangleNode.m */,
+				62920B6F12EBC08000B3A95B /* RectanglePortNodeShape.h */,
+				62920B7012EBC08000B3A95B /* RectanglePortNodeShape.m */,
 				628DC09D12A619A80048080B /* NestedGraphShape.h */,
 				628DC09E12A619A80048080B /* NestedGraphShape.m */,
 				6276A98C1291029C0013EA5C /* ITrackingViewBoundary.h */,
@@ -492,6 +516,10 @@
 				623C80B6129106B2008CCF9A /* CDPersistentQuartzEdge.h in Headers */,
 				628DC09F12A619A80048080B /* NestedGraphShape.h in Headers */,
 				6208003D12A7888400DF1BE7 /* GraphStateNotifications.h in Headers */,
+				62920B7112EBC08000B3A95B /* CircleNode.h in Headers */,
+				62920B7312EBC08000B3A95B /* EllipseNode.h in Headers */,
+				62920B7512EBC08000B3A95B /* RectangleNode.h in Headers */,
+				62920B7712EBC08000B3A95B /* RectanglePortNodeShape.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +638,10 @@
 				6276A9AA129104230013EA5C /* CDPersistentQuartzEdge.m in Sources */,
 				628DC0A012A619A80048080B /* NestedGraphShape.m in Sources */,
 				6208003E12A7888400DF1BE7 /* GraphStateNotifications.m in Sources */,
+				62920B7212EBC08000B3A95B /* CircleNode.m in Sources */,
+				62920B7412EBC08000B3A95B /* EllipseNode.m in Sources */,
+				62920B7612EBC08000B3A95B /* RectangleNode.m in Sources */,
+				62920B7812EBC08000B3A95B /* RectanglePortNodeShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
