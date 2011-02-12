@@ -46,6 +46,8 @@
 		621759DC1218086C00E2120C /* CurvedRectanglePort.m in Sources */ = {isa = PBXBuildFile; fileRef = 621759DA1218086C00E2120C /* CurvedRectanglePort.m */; };
 		6228D6D6127D5A1800DAA9CD /* IEditNodeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		622BE4761260650F00B6AB81 /* CDGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62602B30121663050018E683 /* CDGraph.framework */; };
+		622DABCE130612BD008143E5 /* ESGraphParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 622DABCC130612BD008143E5 /* ESGraphParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		622DABCF130612BD008143E5 /* ESGraphParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 622DABCD130612BD008143E5 /* ESGraphParser.m */; };
 		623A1DD6123362AF00160A95 /* CDQuartzGraphHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 623A1DD5123362AF00160A95 /* CDQuartzGraphHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		623C82AB1291279E008CCF9A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 623C82AA1291279E008CCF9A /* LICENSE.txt */; };
 		623CEC5D1250BB4800AED181 /* ITrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,8 +61,14 @@
 		6241B1F1123F8CCF001BE569 /* QGraphViewOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6241B1EF123F8CCF001BE569 /* QGraphViewOperation.m */; };
 		62441E201258676B0077600B /* StartConnections.h in Headers */ = {isa = PBXBuildFile; fileRef = 62441E1E1258676B0077600B /* StartConnections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62441E211258676B0077600B /* StartConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = 62441E1F1258676B0077600B /* StartConnections.m */; };
+		6253446F130007EE003E6A58 /* ESShapeDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 6253446D130007EE003E6A58 /* ESShapeDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62534470130007EE003E6A58 /* ESShapeDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6253446E130007EE003E6A58 /* ESShapeDescription.m */; };
+		6253447313000887003E6A58 /* ESBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 6253447113000887003E6A58 /* ESBounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6253447413000887003E6A58 /* ESBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 6253447213000887003E6A58 /* ESBounds.m */; };
 		62547117122149DE00714D45 /* CDGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62547115122149DE00714D45 /* CDGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62547118122149DE00714D45 /* CDGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62547116122149DE00714D45 /* CDGraphView.m */; };
+		6254ABA3130409CA0032CCED /* graphBindings.js in Sources */ = {isa = PBXBuildFile; fileRef = 6254ABA2130409CA0032CCED /* graphBindings.js */; };
+		6254ABA613040EB40032CCED /* example.js in Sources */ = {isa = PBXBuildFile; fileRef = 6254ABA513040EB40032CCED /* example.js */; };
 		62602AD11216608C0018E683 /* CDQuartzGraphLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602AD01216608C0018E683 /* CDQuartzGraphLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602AD6121660B90018E683 /* CDQuartzNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602AD4121660B90018E683 /* CDQuartzNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602AD7121660B90018E683 /* CDQuartzNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602AD5121660B90018E683 /* CDQuartzNode.m */; };
@@ -82,6 +90,11 @@
 		62602BF21216894D0018E683 /* BezierLineConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BF01216894D0018E683 /* BezierLineConnector.m */; };
 		62602BF5121689630018E683 /* CurvedRectangleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62602BF3121689630018E683 /* CurvedRectangleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62602BF6121689630018E683 /* CurvedRectangleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62602BF4121689630018E683 /* CurvedRectangleNode.m */; };
+		628369A112FEB073007A1214 /* ESGraphBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 6283699F12FEB073007A1214 /* ESGraphBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		628369A212FEB073007A1214 /* ESGraphBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 628369A012FEB073007A1214 /* ESGraphBinding.m */; };
+		628369A812FEB0F7007A1214 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628369A712FEB0F7007A1214 /* WebKit.framework */; };
+		628452D31302ACA700239A3C /* ESColourParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 628452D11302ACA700239A3C /* ESColourParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		628452D41302ACA700239A3C /* ESColourParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 628452D21302ACA700239A3C /* ESColourParser.m */; };
 		628BFC22125212F20049A675 /* TrackingViewBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 628BFC20125212F20049A675 /* TrackingViewBoundary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		628BFC23125212F20049A675 /* TrackingViewBoundary.m in Sources */ = {isa = PBXBuildFile; fileRef = 628BFC21125212F20049A675 /* TrackingViewBoundary.m */; };
 		628DC06612A6095F0048080B /* NestedGraphShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 628DC06412A6095F0048080B /* NestedGraphShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,6 +111,7 @@
 		62B37B8812E30B2000EC62DC /* RectanglePortNodeShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B37B8612E30B2000EC62DC /* RectanglePortNodeShape.m */; };
 		62CC1409124DDA79001AF7CD /* CirclePortShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CC1407124DDA79001AF7CD /* CirclePortShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62CC140A124DDA79001AF7CD /* CirclePortShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CC1408124DDA79001AF7CD /* CirclePortShape.m */; };
+		62EC203C130556AA00EEA965 /* scriptpage.htm in Resources */ = {isa = PBXBuildFile; fileRef = 62EC203B130556AA00EEA965 /* scriptpage.htm */; };
 		62F797581260151D001CC0F1 /* EdgeDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F797561260151D001CC0F1 /* EdgeDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62F797591260151D001CC0F1 /* EdgeDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F797571260151D001CC0F1 /* EdgeDelete.m */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
@@ -193,6 +207,8 @@
 		621759D91218086C00E2120C /* CurvedRectanglePort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvedRectanglePort.h; sourceTree = "<group>"; };
 		621759DA1218086C00E2120C /* CurvedRectanglePort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedRectanglePort.m; sourceTree = "<group>"; };
 		6228D6D5127D5A1800DAA9CD /* IEditNodeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEditNodeDelegate.h; sourceTree = "<group>"; };
+		622DABCC130612BD008143E5 /* ESGraphParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGraphParser.h; sourceTree = "<group>"; };
+		622DABCD130612BD008143E5 /* ESGraphParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGraphParser.m; sourceTree = "<group>"; };
 		623A1DD5123362AF00160A95 /* CDQuartzGraphHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDQuartzGraphHeader.h; path = Library_Header/CDQuartzGraphHeader.h; sourceTree = "<group>"; };
 		623C82AA1291279E008CCF9A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		623CEC5C1250BB4800AED181 /* ITrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITrackingViewBoundary.h; sourceTree = "<group>"; };
@@ -207,8 +223,14 @@
 		6241B1EF123F8CCF001BE569 /* QGraphViewOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGraphViewOperation.m; sourceTree = "<group>"; };
 		62441E1E1258676B0077600B /* StartConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartConnections.h; sourceTree = "<group>"; };
 		62441E1F1258676B0077600B /* StartConnections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartConnections.m; sourceTree = "<group>"; };
+		6253446D130007EE003E6A58 /* ESShapeDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESShapeDescription.h; sourceTree = "<group>"; };
+		6253446E130007EE003E6A58 /* ESShapeDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESShapeDescription.m; sourceTree = "<group>"; };
+		6253447113000887003E6A58 /* ESBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESBounds.h; sourceTree = "<group>"; };
+		6253447213000887003E6A58 /* ESBounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESBounds.m; sourceTree = "<group>"; };
 		62547115122149DE00714D45 /* CDGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraphView.h; path = View/CDGraphView.h; sourceTree = "<group>"; };
 		62547116122149DE00714D45 /* CDGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraphView.m; path = View/CDGraphView.m; sourceTree = "<group>"; };
+		6254ABA2130409CA0032CCED /* graphBindings.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = graphBindings.js; sourceTree = "<group>"; };
+		6254ABA513040EB40032CCED /* example.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = example.js; sourceTree = "<group>"; };
 		62602AD01216608C0018E683 /* CDQuartzGraphLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDQuartzGraphLib.h; path = Library_Header/CDQuartzGraphLib.h; sourceTree = "<group>"; };
 		62602AD4121660B90018E683 /* CDQuartzNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDQuartzNode.h; sourceTree = "<group>"; };
 		62602AD5121660B90018E683 /* CDQuartzNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDQuartzNode.m; sourceTree = "<group>"; };
@@ -231,6 +253,11 @@
 		62602BF01216894D0018E683 /* BezierLineConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierLineConnector.m; sourceTree = "<group>"; };
 		62602BF3121689630018E683 /* CurvedRectangleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurvedRectangleNode.h; sourceTree = "<group>"; };
 		62602BF4121689630018E683 /* CurvedRectangleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurvedRectangleNode.m; sourceTree = "<group>"; };
+		6283699F12FEB073007A1214 /* ESGraphBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESGraphBinding.h; sourceTree = "<group>"; };
+		628369A012FEB073007A1214 /* ESGraphBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESGraphBinding.m; sourceTree = "<group>"; };
+		628369A712FEB0F7007A1214 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		628452D11302ACA700239A3C /* ESColourParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESColourParser.h; sourceTree = "<group>"; };
+		628452D21302ACA700239A3C /* ESColourParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESColourParser.m; sourceTree = "<group>"; };
 		628BFC20125212F20049A675 /* TrackingViewBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingViewBoundary.h; sourceTree = "<group>"; };
 		628BFC21125212F20049A675 /* TrackingViewBoundary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingViewBoundary.m; sourceTree = "<group>"; };
 		628DC06412A6095F0048080B /* NestedGraphShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestedGraphShape.h; sourceTree = "<group>"; };
@@ -247,6 +274,7 @@
 		62B37B8612E30B2000EC62DC /* RectanglePortNodeShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectanglePortNodeShape.m; sourceTree = "<group>"; };
 		62CC1407124DDA79001AF7CD /* CirclePortShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePortShape.h; sourceTree = "<group>"; };
 		62CC1408124DDA79001AF7CD /* CirclePortShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePortShape.m; sourceTree = "<group>"; };
+		62EC203B130556AA00EEA965 /* scriptpage.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = scriptpage.htm; sourceTree = "<group>"; };
 		62F797561260151D001CC0F1 /* EdgeDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeDelete.h; sourceTree = "<group>"; };
 		62F797571260151D001CC0F1 /* EdgeDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeDelete.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -263,6 +291,7 @@
 				6240A7BD12165ADF00840C1B /* QuartzCocoaLib.framework in Frameworks */,
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
 				62602AE31216611A0018E683 /* QuartzCocoaLib.framework in Frameworks */,
+				628369A812FEB0F7007A1214 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +343,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6283699A12FEAE72007A1214 /* Scripting */,
 				6200946D1233402E009CB3BC /* Layout */,
 				62547114122149CD00714D45 /* View */,
 				62602B67121669050018E683 /* Shapes */,
@@ -341,6 +371,7 @@
 				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
 				D2F7E79907B2D74100F64583 /* CoreData.framework */,
 				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				628369A712FEB0F7007A1214 /* WebKit.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -440,6 +471,16 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		6254ABA1130409AD0032CCED /* Ecmascript */ = {
+			isa = PBXGroup;
+			children = (
+				6254ABA2130409CA0032CCED /* graphBindings.js */,
+				6254ABA513040EB40032CCED /* example.js */,
+				62EC203B130556AA00EEA965 /* scriptpage.htm */,
+			);
+			name = Ecmascript;
+			sourceTree = "<group>";
+		};
 		62602AC51216603D0018E683 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +543,24 @@
 			name = Shapes;
 			sourceTree = "<group>";
 		};
+		6283699A12FEAE72007A1214 /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				6254ABA1130409AD0032CCED /* Ecmascript */,
+				6283699F12FEB073007A1214 /* ESGraphBinding.h */,
+				628369A012FEB073007A1214 /* ESGraphBinding.m */,
+				6253446D130007EE003E6A58 /* ESShapeDescription.h */,
+				6253446E130007EE003E6A58 /* ESShapeDescription.m */,
+				6253447113000887003E6A58 /* ESBounds.h */,
+				6253447213000887003E6A58 /* ESBounds.m */,
+				628452D11302ACA700239A3C /* ESColourParser.h */,
+				628452D21302ACA700239A3C /* ESColourParser.m */,
+				622DABCC130612BD008143E5 /* ESGraphParser.h */,
+				622DABCD130612BD008143E5 /* ESGraphParser.m */,
+			);
+			name = Scripting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -556,6 +615,11 @@
 				62B37B4512E2F0B600EC62DC /* EllipseNode.h in Headers */,
 				62B37B4912E2F0D700EC62DC /* RectangleNode.h in Headers */,
 				62B37B8712E30B2000EC62DC /* RectanglePortNodeShape.h in Headers */,
+				628369A112FEB073007A1214 /* ESGraphBinding.h in Headers */,
+				6253446F130007EE003E6A58 /* ESShapeDescription.h in Headers */,
+				6253447313000887003E6A58 /* ESBounds.h in Headers */,
+				628452D31302ACA700239A3C /* ESColourParser.h in Headers */,
+				622DABCE130612BD008143E5 /* ESGraphParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +735,7 @@
 				62602BB2121682C10018E683 /* AbstractGraphShape.h_2.xcclassmodel in Resources */,
 				620487AC1245D8720004ED3C /* ViewOperations.xcclassmodel in Resources */,
 				623C82AB1291279E008CCF9A /* LICENSE.txt in Resources */,
+				62EC203C130556AA00EEA965 /* scriptpage.htm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +785,13 @@
 				62B37B4612E2F0B600EC62DC /* EllipseNode.m in Sources */,
 				62B37B4A12E2F0D700EC62DC /* RectangleNode.m in Sources */,
 				62B37B8812E30B2000EC62DC /* RectanglePortNodeShape.m in Sources */,
+				628369A212FEB073007A1214 /* ESGraphBinding.m in Sources */,
+				62534470130007EE003E6A58 /* ESShapeDescription.m in Sources */,
+				6253447413000887003E6A58 /* ESBounds.m in Sources */,
+				628452D41302ACA700239A3C /* ESColourParser.m in Sources */,
+				6254ABA3130409CA0032CCED /* graphBindings.js in Sources */,
+				6254ABA613040EB40032CCED /* example.js in Sources */,
+				622DABCF130612BD008143E5 /* ESGraphParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
