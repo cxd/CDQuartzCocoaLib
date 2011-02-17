@@ -216,7 +216,7 @@
  **/
 - (void) textDidChange: (NSNotification *) notification
 {
-	//self.scriptData = [NSString stringWithString:[[self.textView textStorage] string]]; 	
+	self.scriptData = [NSString stringWithString:[[self.textView textStorage] string]]; 	
 }
 
 

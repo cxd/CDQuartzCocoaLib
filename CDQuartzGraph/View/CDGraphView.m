@@ -94,31 +94,16 @@
 -(void)dealloc
 {
 	[self.graph autorelease];
+	
 	if (self.algorithm != nil)
 	{
 		[(id)self.algorithm autorelease];	
 	}
-	if (self.state != nil)
-	{
-		[self.state autorelease];	
-	}
-	if (self.queue != nil)
-	{
-		[self.queue autorelease];	
-	}
-	if (self.parentScrollView != nil)
-	{
-		[self.parentScrollView autorelease];	
-	}
-	if (self.labelField != nil)
-	{
-		[self.labelField autorelease];	
-	}
-	if (self.selected != nil)
-	{
-		[self.selected autorelease];
-		self.selected = nil;
-	}
+	self.state = nil;
+	self.queue = nil;
+	self.parentScrollView = nil;
+	self.labelField = nil;
+	self.selected = nil;
 	[super dealloc];
 }
 
@@ -616,7 +601,6 @@ This will set the needs display flag to true.
 #else
 		[self.selected.shapeDelegate changeLabel: [self.labelField stringValue]];
 #endif	
-		[self.selected autorelease];
 		self.selected = nil;
 	}
 	[self setNeedsDisplay];

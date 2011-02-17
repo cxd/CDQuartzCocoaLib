@@ -183,7 +183,7 @@
 		height = @"50";
 		color = @"rgb(1.0, 1.0, 1.0)";
 		outlineColor = @"rgb(0.0, 0.0, 0.0)";
-		outlineWeight = "1.0";
+		outlineWeight = @"1.0";
 	}
 	
 	[self.builder appendString:@"{\n"];
@@ -220,18 +220,6 @@
 	
 	
 	[self.builder appendString:@"}"];
-	
-	
-	[nodeName autorelease];
-	[labelText autorelease];
-	[shape autorelease];
-	[xPos autorelease];
-	[yPos autorelease];
-	[width autorelease];
-	[height autorelease];
-	[color autorelease];
-	[outlineColor autorelease];
-	[outlineWeight autorelease];
 	
 }
 

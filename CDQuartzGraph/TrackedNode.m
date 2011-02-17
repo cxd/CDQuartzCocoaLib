@@ -39,10 +39,7 @@
 
 -(void)dealloc
 {
-	if (self.node != nil)
-	{
-		[self.node autorelease];
-	}
+	self.node = nil;
 	[super dealloc];
 }
 

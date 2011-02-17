@@ -46,3 +46,10 @@
 #import "CDGraphView.h"
 
 #import "ForceDirectedLayout.h"
+
+// ecmascript
+#import "ESGraphBinding.h"
+#import "ESShapeDescription.h"
+#import "ESBounds.h"
+#import "ESColourParser.h"
+#import "ESGraphParser.h"
