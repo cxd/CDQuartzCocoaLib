@@ -111,7 +111,7 @@
 
 -(void)dealloc
 {
-	[self.centre autorelease];
+	self.centre = nil;
 	[super dealloc];
 }
 

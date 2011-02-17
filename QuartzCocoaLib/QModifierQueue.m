@@ -29,7 +29,7 @@
 	if (obj != nil) {
 		[sequence removeObjectAtIndex:0];
 	}
-	return [obj autorelease];
+	return obj;
 }
 
 -(id<QContextModifier>)top
