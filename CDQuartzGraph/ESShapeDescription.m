@@ -116,5 +116,54 @@
 }
 
 
++ (NSString *)webScriptNameForSelector:(SEL)sel
+{
+	
+    // change the javascript name from 'forward_' to 'forward' ...
+	if (sel == @selector(getShapeBounds))
+		return @"getShapeBounds";
+	if (sel == @selector(setShapeColor:))
+		return @"setShapeColor";
+	if (sel == @selector(getShapeColor))
+		return @"getShapeColor";
+	if (sel == @selector(setShapeOutlineColor:))
+		return @"setShapeOutlineColor";
+	if (sel == @selector(getShapeOutlineColor))
+		return @"getShapeOutlineColor";
+	if (sel == @selector(setShapeOutlineWidth:))
+		return @"setShapeOutlineWidth";
+	if (sel == @selector(setShapeOutlineWidth))
+		return @"getShapeOutlineWidth";
+	if (sel == @selector(setShapeTypeName:))
+		return @"setShapeTypeName";
+	if (sel == @selector(getShapeTypeName))
+		return @"getShapeTypeName";
+	if (sel == @selector(setShapeLabelText:))
+		return @"setShapeLabelText";
+	if (sel == @selector(getShapeLabelText))
+		return @"getShapeLabelText";
+	if (sel == @selector(setShapeAlpha:))
+		return @"setShapeAlpha";
+	if (sel == @selector(getShapeAlpha))
+		return @"getShapeAlpha";
+	return nil;
+}
+
+
+-(ESBounds* )getShapeBounds { return self.bounds; }
+-(void)setShapeColor:(NSString*)c { self.color = c; }
+-(NSString*)getShapeColor { return self.color; }
+-(void)setShapeOutlineColor:(NSString*)c { self.outlineColor = c; }
+-(NSString*)getShapeOutlineColor { return self.outlineColor; }
+-(void)setShapeOutlineWidth:(float)w { self.outlineWidth= w; }
+-(float)getShapeOutlineWidth { return self.outlineWidth; }
+-(void)setShapeTypeName:(NSString*)n { self.shapeType = n; }
+-(NSString*)getShapeTypeName { return self.shapeType; }
+-(void)setShapeLabelText:(NSString*)n { self.labelText = n; }
+-(NSString*)getShapeLabelText { return self.labelText; }
+-(void)setShapeAlpha:(float)a { self.alpha= a; }
+-(float)getShapeAlpha { return self.alpha; }
+
+
 
 @end

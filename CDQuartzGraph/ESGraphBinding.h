@@ -78,4 +78,9 @@
  **/
 -(IBAction)applyChanges:(id)sender;
 
+/**
+ Process the supplied graph.
+ **/
+-(NSString *)ecmascriptForGraph;
+
 @end

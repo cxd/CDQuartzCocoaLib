@@ -55,12 +55,14 @@ function parseGraphObject(graphObject) {
 	processGraphNodes(graphObject);
 	
 }
+
 /**
  Add all nodes defined in the graph object.
  **/
 function processGraphNodes(graphObject) {
-	for(var obj in graphObject.nodes) {
-		
+	
+	for(var i = 0; i < graphObject.nodes.length; i++) {
+		var obj = graphObject.nodes[i];
 		if (typeof(obj.node) == 'undefined')
 			continue;
 		
@@ -69,46 +71,46 @@ function processGraphNodes(graphObject) {
 		var shape = graph.makeShapeInstance();
 		
 		if (typeof(obj.color) != 'undefined') {
-			shape.color = obj.color;
+			graph.setColorForShape(obj.color, shape);
 		} else {
-			shape.color = "rgb(1.0, 1.0, 1.0)";
+			graph.setColorForShape("rgb(1.0, 1.0, 1.0)", shape);
 		}
 		
 		if (typeof(obj.outlineColor) != 'undefined') {
-			shape.outlineColor = obj.outlineColor;
+			graph.setOutlineColorForShape(obj.outlineColor, shape);
 		} else {
-			shape.outlineColor = "rgb(1.0, 1.0, 1.0)";	
+			graph.setOutlineColorForShape("rgb(1.0, 1.0, 1.0)", shape);	
 		}
 		
 		if (typeof(obj.width) != 'undefined') {
-			shape.bounds.width = parseFloat(obj.width);
+			graph.setWidthForShape(parseFloat(obj.width), shape);
 		} else {
-			shape.bounds.width = 100.0f;
+			graph.setWidthForShape(100.0, shape);
 		}
 		
 		if (typeof(obj.height) != 'undefined') {
-			shape.bounds.height = parseFloat(obj.height);
+			graph.setHeightForShape(parseFloat(obj.height), shape);
 		} else {
-			shape.bounds.height = 50.0f;
+			graph.setHeightForShape(50.0, shape);
 		}
 		
 		
 		if (typeof(obj.x) != 'undefined') {
-			shape.bounds.x = parseFloat(obj.x);
+			graph.setXForShape(parseFloat(obj.x), shape);
 		} else {
-			shape.bounds.x = 50.0f;
+			graph.setXForShape(50.0, shape);
 		}
 		
 		if (typeof(obj.y) != 'undefined') {
-			shape.bounds.y = parseFloat(obj.y);
+			graph.setYForShape(parseFloat(obj.y), shape);
 		} else {
-			shape.bounds.y = 50.0f;
+			graph.setYForShape(50.0, shape);
 		}
 		
 		if (typeof(obj.shapeType) != 'undefined') {
-			shape.shapeType = obj.shapeType;
+			graph.setTypeNameForShape(obj.shapeType, shape);
 		} else {
-			shape.shapeType = 'CURVED_RECT';	
+			graph.setTypeNameForShape('CURVED_RECT', shape);	
 		}
 		
 		graph.setShapeForName(shape, obj.node);
@@ -116,12 +118,14 @@ function processGraphNodes(graphObject) {
 	}
 }
 
+
 /**
  Connect the edges.
  **/
 function processEdges(graphObject) {
 
-	for(var edge in graphObject.edges) {
+	for(var i = 0; i<graphObject.edges.length; i++) {
+		var edge = graphObject.edges[i];
 		
 		graphObject.connectNodeToTarget(edge.from, edge.to);
 		

@@ -151,6 +151,35 @@
 }
 
 
+
+-(void)setColor: (NSString*)c ForShape:(ESShapeDescription*) s { s.color = c; }
+-(NSString*)getColorForShape:(ESShapeDescription *)s { return s.color; }
+-(void)setOutlineColor:(NSString*)c ForShape:(ESShapeDescription *)s { s.outlineColor = c; }
+-(NSString*)getOutlineColorForShape:(ESShapeDescription *)s { return s.outlineColor; }
+-(void)setOutlineWidth:(float)w ForShape:(ESShapeDescription *)s { s.outlineWidth= w; }
+-(float)getOutlineWidthForShape:(ESShapeDescription *)s { return s.outlineWidth; }
+-(void)setTypeName:(NSString*)n ForShape:(ESShapeDescription *)s { s.shapeType = n; }
+-(NSString*)getTypeNameForShape:(ESShapeDescription *)s { return s.shapeType; }
+-(void)setLabelText:(NSString*)n ForShape:(ESShapeDescription *)s { s.labelText = n; }
+-(NSString*)getLabelTextForShape:(ESShapeDescription *)s { return s.labelText; }
+-(void)setAlpha:(float)a ForShape:(ESShapeDescription *)s { s.alpha= a; }
+-(float)getAlphaForShape:(ESShapeDescription *)s { return s.alpha; }
+
+-(void)setX:(float)x ForShape:(ESShapeDescription *)s { s.bounds.x = x; }
+-(float)getXForShape:(ESShapeDescription *)s { return s.bounds.x; }
+
+-(void)setY:(float)y ForShape:(ESShapeDescription *)s { s.bounds.y = y; }
+-(float)getYForShape:(ESShapeDescription *)s { return s.bounds.y; }
+
+
+-(void)setWidth:(float)w ForShape:(ESShapeDescription *)s { s.bounds.width = w; }
+-(float)getWidthForShape:(ESShapeDescription *)s { return s.bounds.width; }
+
+-(void)setHeight:(float)h ForShape:(ESShapeDescription *)s { s.bounds.height = h; }
+-(float)getHeightForShape:(ESShapeDescription *)s { return s.bounds.height; }
+
+
+
 + (NSString *)webScriptNameForSelector:(SEL)sel
 {
     // change the javascript name from 'forward_' to 'forward' ...
@@ -162,6 +191,43 @@
 		return @"setShapeForName";
 	if (sel == @selector(connectNode:ToTarget:))
 		return @"connectNodeToTarget";
+	if (sel == @selector(setColor:ForShape:))
+		return @"setColorForShape";
+	if (sel == @selector(getColorForShape:))
+		return @"getColorForShape";
+	if (sel == @selector(setOutlineColor:ForShape:))
+		return @"setOutlineColorForShape";
+	if (sel == @selector(getOutlineColorForShape:))
+		return @"getOutlineColorForShape";
+	if (sel == @selector(setTypeName:ForShape:))
+		return @"setTypeNameForShape";
+	if (sel == @selector(getTypeNameForShape:))
+		return @"getTypeNameForShape";
+	if (sel == @selector(setLabelText:ForShape:))
+		return @"setLabelTextForShape";
+	if (sel == @selector(getLabelTextForShape:))
+		return @"getLabelTextForShape";
+	if (sel == @selector(setAlpha:ForShape:))
+		return @"setAlphaForShape";
+	if (sel == @selector(getAlphaForShape:))
+		return @"getAlphaForShape";
+	if (sel == @selector(setX:ForShape:))
+		return @"setXForShape";
+	if (sel == @selector(getXForShape:))
+		return @"getXForShape";
+	if (sel == @selector(setY:ForShape:))
+		return @"setYForShape";
+	if (sel == @selector(getYForShape:))
+		return @"getYForShape";
+	if (sel == @selector(setWidth:ForShape:))
+		return @"setWidthForShape";
+	if (sel == @selector(getWidthForShape:))
+		return @"getWidthForShape";
+	if (sel == @selector(setHeight:ForShape:))
+		return @"setHeightForShape";
+	if (sel == @selector(getHeightForShape:))
+		return @"getHeightForShape";
+	
 	return nil;
 }
 
